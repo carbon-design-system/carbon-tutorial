@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import Add24 from '@carbon/icons-react/es/add/24';
+import Notification20 from '@carbon/icons-react/lib/notification/20';
+import UserAvatar20 from '@carbon/icons-react/lib/user--avatar/20';
+import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 import {
   Header,
   HeaderName,
@@ -23,14 +25,14 @@ class TutorialHeader extends Component {
             <HeaderMenuItem href="/repos">Link 1</HeaderMenuItem>
           </HeaderNavigation>
           <HeaderGlobalBar>
-            <HeaderGlobalAction aria-label="Notifications">
-              <Add24 />
+            <HeaderGlobalAction>
+              <Notification20 />
             </HeaderGlobalAction>
-            <HeaderGlobalAction aria-label="Notifications">
-              <Add24 />
+            <HeaderGlobalAction>
+              <UserAvatar20 />
             </HeaderGlobalAction>
-            <HeaderGlobalAction aria-label="Notifications">
-              <Add24 />
+            <HeaderGlobalAction>
+              <AppSwitcher20 />
             </HeaderGlobalAction>
           </HeaderGlobalBar>
         </Header>
