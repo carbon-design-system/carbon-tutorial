@@ -1,10 +1,10 @@
 .landing-page {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: $spacing-05;
+  padding-right: $spacing-05;
 }
 
 .landing-page .bx--row {
-  padding: 2rem;
+  padding: $spacing-07;
 }
 
 .landing-page__banner {
@@ -24,7 +24,7 @@
 .landing-page__r2 .bx--tabs {
   position: absolute;
   top: rem(-42px);
-  right: rem(16px);
+  right: $spacing-05;
   display: flex;
   justify-content: flex-end;
 }
@@ -66,7 +66,7 @@
   content: '';
   position: absolute;
   bottom: 0;
-  left: 2rem;
+  left: $spacing-07;
   width: calc(100% - 4rem);
   height: rem(1px);
   background-color: $active-ui;
