@@ -1,6 +1,20 @@
-.repo-page {
-  .bx--row {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
+.repo-page .bx--row {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.repo-page .bx--search {
+  margin-bottom: 1rem;
+}
+
+tr.bx--parent-row.bx--expandable-row + tr[data-child-row] td {
+  padding-left: rem(60px);
+  padding-top: 1rem;
+}
+
+tr.bx--parent-row.bx--expandable-row
+  + tr[data-child-row]
+  td
+  .bx--child-row-inner-container {
+  max-width: rem(515px);
 }
