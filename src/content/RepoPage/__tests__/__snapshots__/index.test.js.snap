@@ -33,44 +33,43 @@ ShallowWrapper {
           <Search
             id="search-1"
             labelText="Filter by repo"
-            light={false}
             onChange={[Function]}
             placeHolderText="Filter repo"
             small={true}
             type="text"
           />
-          <ForwardRef
+          <ForwardRef(Checkbox)
             checked={true}
             id="checkbox-label-0"
             indeterminate={false}
             labelText="All"
             onChange={[Function]}
           />
-          <ForwardRef
+          <ForwardRef(Checkbox)
             id="checkbox-label-1"
             indeterminate={false}
             labelText="Repo 1"
             onChange={[Function]}
           />
-          <ForwardRef
+          <ForwardRef(Checkbox)
             id="checkbox-label-2"
             indeterminate={false}
             labelText="Repo 2"
             onChange={[Function]}
           />
-          <ForwardRef
+          <ForwardRef(Checkbox)
             id="checkbox-label-3"
             indeterminate={false}
             labelText="Repo 3"
             onChange={[Function]}
           />
-          <ForwardRef
+          <ForwardRef(Checkbox)
             id="checkbox-label-4"
             indeterminate={false}
             labelText="Repo 4"
             onChange={[Function]}
           />
-          <ForwardRef
+          <ForwardRef(Button)
             disabled={false}
             iconDescription="Provide icon description if icon is used"
             kind="ghost"
@@ -79,7 +78,7 @@ ShallowWrapper {
             type="button"
           >
             See more
-          </ForwardRef>
+          </ForwardRef(Button)>
         </div>
         <div
           className="bx--col-lg-13"
@@ -147,8 +146,6 @@ ShallowWrapper {
                 },
               ]
             }
-            short={false}
-            shouldShowBorder={true}
             sortRow={[Function]}
             translateWithId={[Function]}
           />
@@ -200,44 +197,43 @@ ShallowWrapper {
             <Search
               id="search-1"
               labelText="Filter by repo"
-              light={false}
               onChange={[Function]}
               placeHolderText="Filter repo"
               small={true}
               type="text"
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               checked={true}
               id="checkbox-label-0"
               indeterminate={false}
               labelText="All"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-1"
               indeterminate={false}
               labelText="Repo 1"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-2"
               indeterminate={false}
               labelText="Repo 2"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-3"
               indeterminate={false}
               labelText="Repo 3"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-4"
               indeterminate={false}
               labelText="Repo 4"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Button)
               disabled={false}
               iconDescription="Provide icon description if icon is used"
               kind="ghost"
@@ -246,7 +242,7 @@ ShallowWrapper {
               type="button"
             >
               See more
-            </ForwardRef>
+            </ForwardRef(Button)>
           </div>,
           <div
             className="bx--col-lg-13"
@@ -314,8 +310,6 @@ ShallowWrapper {
                   },
                 ]
               }
-              short={false}
-              shouldShowBorder={true}
               sortRow={[Function]}
               translateWithId={[Function]}
             />
@@ -365,44 +359,43 @@ ShallowWrapper {
               <Search
                 id="search-1"
                 labelText="Filter by repo"
-                light={false}
                 onChange={[Function]}
                 placeHolderText="Filter repo"
                 small={true}
                 type="text"
               />,
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 checked={true}
                 id="checkbox-label-0"
                 indeterminate={false}
                 labelText="All"
                 onChange={[Function]}
               />,
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-1"
                 indeterminate={false}
                 labelText="Repo 1"
                 onChange={[Function]}
               />,
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-2"
                 indeterminate={false}
                 labelText="Repo 2"
                 onChange={[Function]}
               />,
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-3"
                 indeterminate={false}
                 labelText="Repo 3"
                 onChange={[Function]}
               />,
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-4"
                 indeterminate={false}
                 labelText="Repo 4"
                 onChange={[Function]}
               />,
-              <ForwardRef
+              <ForwardRef(Button)
                 disabled={false}
                 iconDescription="Provide icon description if icon is used"
                 kind="ghost"
@@ -411,7 +404,7 @@ ShallowWrapper {
                 type="button"
               >
                 See more
-              </ForwardRef>,
+              </ForwardRef(Button)>,
             ],
             "className": "bx--col-lg-3",
           },
@@ -437,7 +430,6 @@ ShallowWrapper {
               "props": Object {
                 "id": "search-1",
                 "labelText": "Filter by repo",
-                "light": false,
                 "onChange": [Function],
                 "placeHolderText": "Filter repo",
                 "small": true,
@@ -733,8 +725,6 @@ ShallowWrapper {
                     },
                   ]
                 }
-                short={false}
-                shouldShowBorder={true}
                 sortRow={[Function]}
                 translateWithId={[Function]}
               />,
@@ -831,8 +821,6 @@ ShallowWrapper {
                     "status": "Active",
                   },
                 ],
-                "short": false,
-                "shouldShowBorder": true,
                 "sortRow": [Function],
                 "translateWithId": [Function],
               },
@@ -900,44 +888,43 @@ ShallowWrapper {
             <Search
               id="search-1"
               labelText="Filter by repo"
-              light={false}
               onChange={[Function]}
               placeHolderText="Filter repo"
               small={true}
               type="text"
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               checked={true}
               id="checkbox-label-0"
               indeterminate={false}
               labelText="All"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-1"
               indeterminate={false}
               labelText="Repo 1"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-2"
               indeterminate={false}
               labelText="Repo 2"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-3"
               indeterminate={false}
               labelText="Repo 3"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Checkbox)
               id="checkbox-label-4"
               indeterminate={false}
               labelText="Repo 4"
               onChange={[Function]}
             />
-            <ForwardRef
+            <ForwardRef(Button)
               disabled={false}
               iconDescription="Provide icon description if icon is used"
               kind="ghost"
@@ -946,7 +933,7 @@ ShallowWrapper {
               type="button"
             >
               See more
-            </ForwardRef>
+            </ForwardRef(Button)>
           </div>
           <div
             className="bx--col-lg-13"
@@ -1014,8 +1001,6 @@ ShallowWrapper {
                   },
                 ]
               }
-              short={false}
-              shouldShowBorder={true}
               sortRow={[Function]}
               translateWithId={[Function]}
             />
@@ -1067,44 +1052,43 @@ ShallowWrapper {
               <Search
                 id="search-1"
                 labelText="Filter by repo"
-                light={false}
                 onChange={[Function]}
                 placeHolderText="Filter repo"
                 small={true}
                 type="text"
               />
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 checked={true}
                 id="checkbox-label-0"
                 indeterminate={false}
                 labelText="All"
                 onChange={[Function]}
               />
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-1"
                 indeterminate={false}
                 labelText="Repo 1"
                 onChange={[Function]}
               />
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-2"
                 indeterminate={false}
                 labelText="Repo 2"
                 onChange={[Function]}
               />
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-3"
                 indeterminate={false}
                 labelText="Repo 3"
                 onChange={[Function]}
               />
-              <ForwardRef
+              <ForwardRef(Checkbox)
                 id="checkbox-label-4"
                 indeterminate={false}
                 labelText="Repo 4"
                 onChange={[Function]}
               />
-              <ForwardRef
+              <ForwardRef(Button)
                 disabled={false}
                 iconDescription="Provide icon description if icon is used"
                 kind="ghost"
@@ -1113,7 +1097,7 @@ ShallowWrapper {
                 type="button"
               >
                 See more
-              </ForwardRef>
+              </ForwardRef(Button)>
             </div>,
             <div
               className="bx--col-lg-13"
@@ -1181,8 +1165,6 @@ ShallowWrapper {
                     },
                   ]
                 }
-                short={false}
-                shouldShowBorder={true}
                 sortRow={[Function]}
                 translateWithId={[Function]}
               />
@@ -1232,44 +1214,43 @@ ShallowWrapper {
                 <Search
                   id="search-1"
                   labelText="Filter by repo"
-                  light={false}
                   onChange={[Function]}
                   placeHolderText="Filter repo"
                   small={true}
                   type="text"
                 />,
-                <ForwardRef
+                <ForwardRef(Checkbox)
                   checked={true}
                   id="checkbox-label-0"
                   indeterminate={false}
                   labelText="All"
                   onChange={[Function]}
                 />,
-                <ForwardRef
+                <ForwardRef(Checkbox)
                   id="checkbox-label-1"
                   indeterminate={false}
                   labelText="Repo 1"
                   onChange={[Function]}
                 />,
-                <ForwardRef
+                <ForwardRef(Checkbox)
                   id="checkbox-label-2"
                   indeterminate={false}
                   labelText="Repo 2"
                   onChange={[Function]}
                 />,
-                <ForwardRef
+                <ForwardRef(Checkbox)
                   id="checkbox-label-3"
                   indeterminate={false}
                   labelText="Repo 3"
                   onChange={[Function]}
                 />,
-                <ForwardRef
+                <ForwardRef(Checkbox)
                   id="checkbox-label-4"
                   indeterminate={false}
                   labelText="Repo 4"
                   onChange={[Function]}
                 />,
-                <ForwardRef
+                <ForwardRef(Button)
                   disabled={false}
                   iconDescription="Provide icon description if icon is used"
                   kind="ghost"
@@ -1278,7 +1259,7 @@ ShallowWrapper {
                   type="button"
                 >
                   See more
-                </ForwardRef>,
+                </ForwardRef(Button)>,
               ],
               "className": "bx--col-lg-3",
             },
@@ -1304,7 +1285,6 @@ ShallowWrapper {
                 "props": Object {
                   "id": "search-1",
                   "labelText": "Filter by repo",
-                  "light": false,
                   "onChange": [Function],
                   "placeHolderText": "Filter repo",
                   "small": true,
@@ -1600,8 +1580,6 @@ ShallowWrapper {
                       },
                     ]
                   }
-                  short={false}
-                  shouldShowBorder={true}
                   sortRow={[Function]}
                   translateWithId={[Function]}
                 />,
@@ -1698,8 +1676,6 @@ ShallowWrapper {
                       "status": "Active",
                     },
                   ],
-                  "short": false,
-                  "shouldShowBorder": true,
                   "sortRow": [Function],
                   "translateWithId": [Function],
                 },

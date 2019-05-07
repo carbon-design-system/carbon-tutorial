@@ -69,7 +69,7 @@ ShallowWrapper {
                   <p>
                     Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                   </p>
-                  <ForwardRef
+                  <ForwardRef(Button)
                     disabled={false}
                     iconDescription="Provide icon description if icon is used"
                     kind="primary"
@@ -78,7 +78,7 @@ ShallowWrapper {
                     type="button"
                   >
                     Learn more
-                  </ForwardRef>
+                  </ForwardRef(Button)>
                 </div>
                 <div
                   className="bx--col-lg-8"
@@ -170,12 +170,7 @@ ShallowWrapper {
           className="bx--row landing-page__r5"
         >
           <div
-            className="bx--col-lg-4"
-          >
-            1/4
-          </div>
-          <div
-            className="bx--col-lg-4"
+            className="bx--offset-lg-4 bx--col-lg-4"
           >
             1/4
           </div>
@@ -332,7 +327,7 @@ ShallowWrapper {
                   <p>
                     Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                   </p>
-                  <ForwardRef
+                  <ForwardRef(Button)
                     disabled={false}
                     iconDescription="Provide icon description if icon is used"
                     kind="primary"
@@ -341,7 +336,7 @@ ShallowWrapper {
                     type="button"
                   >
                     Learn more
-                  </ForwardRef>
+                  </ForwardRef(Button)>
                 </div>
                 <div
                   className="bx--col-lg-8"
@@ -412,7 +407,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef
+                    <ForwardRef(Button)
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -421,7 +416,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef>
+                    </ForwardRef(Button)>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -486,7 +481,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef
+                    <ForwardRef(Button)
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -495,7 +490,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef>
+                    </ForwardRef(Button)>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -531,7 +526,7 @@ ShallowWrapper {
                       <p>
                         Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                       </p>
-                      <ForwardRef
+                      <ForwardRef(Button)
                         disabled={false}
                         iconDescription="Provide icon description if icon is used"
                         kind="primary"
@@ -540,7 +535,7 @@ ShallowWrapper {
                         type="button"
                       >
                         Learn more
-                      </ForwardRef>
+                      </ForwardRef(Button)>
                     </div>,
                     <div
                       className="bx--col-lg-8"
@@ -568,7 +563,7 @@ ShallowWrapper {
                         <p>
                           Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                         </p>,
-                        <ForwardRef
+                        <ForwardRef(Button)
                           disabled={false}
                           iconDescription="Provide icon description if icon is used"
                           kind="primary"
@@ -577,7 +572,7 @@ ShallowWrapper {
                           type="button"
                         >
                           Learn more
-                        </ForwardRef>,
+                        </ForwardRef(Button)>,
                       ],
                       "className": "bx--col-lg-8",
                     },
@@ -931,12 +926,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <div
-              className="bx--col-lg-4"
-            >
-              1/4
-            </div>,
-            <div
-              className="bx--col-lg-4"
+              className="bx--offset-lg-4 bx--col-lg-4"
             >
               1/4
             </div>,
@@ -956,19 +946,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": "1/4",
-              "className": "bx--col-lg-4",
-            },
-            "ref": null,
-            "rendered": "1/4",
-            "type": "div",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "1/4",
-              "className": "bx--col-lg-4",
+              "className": "bx--offset-lg-4 bx--col-lg-4",
             },
             "ref": null,
             "rendered": "1/4",
@@ -1145,7 +1123,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef
+                    <ForwardRef(Button)
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -1154,7 +1132,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef>
+                    </ForwardRef(Button)>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -1246,12 +1224,7 @@ ShallowWrapper {
             className="bx--row landing-page__r5"
           >
             <div
-              className="bx--col-lg-4"
-            >
-              1/4
-            </div>
-            <div
-              className="bx--col-lg-4"
+              className="bx--offset-lg-4 bx--col-lg-4"
             >
               1/4
             </div>
@@ -1408,7 +1381,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef
+                    <ForwardRef(Button)
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -1417,7 +1390,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef>
+                    </ForwardRef(Button)>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -1488,7 +1461,7 @@ ShallowWrapper {
                       <p>
                         Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                       </p>
-                      <ForwardRef
+                      <ForwardRef(Button)
                         disabled={false}
                         iconDescription="Provide icon description if icon is used"
                         kind="primary"
@@ -1497,7 +1470,7 @@ ShallowWrapper {
                         type="button"
                       >
                         Learn more
-                      </ForwardRef>
+                      </ForwardRef(Button)>
                     </div>
                     <div
                       className="bx--col-lg-8"
@@ -1562,7 +1535,7 @@ ShallowWrapper {
                       <p>
                         Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                       </p>
-                      <ForwardRef
+                      <ForwardRef(Button)
                         disabled={false}
                         iconDescription="Provide icon description if icon is used"
                         kind="primary"
@@ -1571,7 +1544,7 @@ ShallowWrapper {
                         type="button"
                       >
                         Learn more
-                      </ForwardRef>
+                      </ForwardRef(Button)>
                     </div>
                     <div
                       className="bx--col-lg-8"
@@ -1607,7 +1580,7 @@ ShallowWrapper {
                         <p>
                           Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                         </p>
-                        <ForwardRef
+                        <ForwardRef(Button)
                           disabled={false}
                           iconDescription="Provide icon description if icon is used"
                           kind="primary"
@@ -1616,7 +1589,7 @@ ShallowWrapper {
                           type="button"
                         >
                           Learn more
-                        </ForwardRef>
+                        </ForwardRef(Button)>
                       </div>,
                       <div
                         className="bx--col-lg-8"
@@ -1644,7 +1617,7 @@ ShallowWrapper {
                           <p>
                             Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                           </p>,
-                          <ForwardRef
+                          <ForwardRef(Button)
                             disabled={false}
                             iconDescription="Provide icon description if icon is used"
                             kind="primary"
@@ -1653,7 +1626,7 @@ ShallowWrapper {
                             type="button"
                           >
                             Learn more
-                          </ForwardRef>,
+                          </ForwardRef(Button)>,
                         ],
                         "className": "bx--col-lg-8",
                       },
@@ -2007,12 +1980,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <div
-                className="bx--col-lg-4"
-              >
-                1/4
-              </div>,
-              <div
-                className="bx--col-lg-4"
+                className="bx--offset-lg-4 bx--col-lg-4"
               >
                 1/4
               </div>,
@@ -2032,19 +2000,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": "1/4",
-                "className": "bx--col-lg-4",
-              },
-              "ref": null,
-              "rendered": "1/4",
-              "type": "div",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "1/4",
-                "className": "bx--col-lg-4",
+                "className": "bx--offset-lg-4 bx--col-lg-4",
               },
               "ref": null,
               "rendered": "1/4",
