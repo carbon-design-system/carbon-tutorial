@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -29,7 +28,7 @@ export default class LandingPage extends Component {
         <div className="bx--row banner">
           <Breadcrumb noTrailingSlash>
             <BreadcrumbItem>
-              <Link href="/">Getting started</Link>
+              <a href="/">Getting started</a>
             </BreadcrumbItem>
           </Breadcrumb>
           <h1>Design &amp; build with Carbon</h1>
