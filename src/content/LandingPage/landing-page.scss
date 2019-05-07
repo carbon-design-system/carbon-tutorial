@@ -7,6 +7,10 @@
   padding: $spacing-07;
 }
 
+.landing-page .bx--row > .bx--col-lg-4:first-of-type {
+  padding-left: 0;
+}
+
 .landing-page__banner {
   flex-direction: column;
   height: rem(208px);
@@ -27,6 +31,10 @@
   right: $spacing-05;
   display: flex;
   justify-content: flex-end;
+}
+
+.landing-page__r2 .bx--row {
+  padding: 0;
 }
 
 .landing-page__r2 strong,
