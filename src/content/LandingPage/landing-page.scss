@@ -1,0 +1,45 @@
+.landing-page {
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  > .bx--row {
+    padding: 2rem;
+  }
+
+  .banner {
+    flex-direction: column;
+    height: rem(208px);
+    background-color: $ui-01;
+  }
+
+  .intro {
+    position: relative;
+
+    strong,
+    p {
+      @include type-style('productive-heading-03');
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    p {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .bx--tabs {
+      position: absolute;
+      top: rem(-42px);
+      right: rem(16px);
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .landing-page-illustration {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
