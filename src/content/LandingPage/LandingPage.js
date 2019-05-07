@@ -50,6 +50,7 @@ export default class LandingPage extends Component {
                 </div>
                 <div className="bx--col-lg-8">
                   <img
+                    className="landing-page-illustration"
                     src={`${process.env.PUBLIC_URL}/Banner_illustration.png`}
                     alt="Carbon illustration"
                   />
