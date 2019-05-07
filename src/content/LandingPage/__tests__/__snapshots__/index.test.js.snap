@@ -20,7 +20,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="bx--row banner"
+          className="bx--row landing-page__banner"
         >
           <Breadcrumb
             noTrailingSlash={true}
@@ -38,7 +38,7 @@ ShallowWrapper {
           </h1>
         </div>,
         <div
-          className="bx--row intro"
+          className="bx--row landing-page__r2"
         >
           <Tabs
             ariaLabel="listbox"
@@ -69,7 +69,7 @@ ShallowWrapper {
                   <p>
                     Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                   </p>
-                  <ForwardRef(Button)
+                  <ForwardRef
                     disabled={false}
                     iconDescription="Provide icon description if icon is used"
                     kind="primary"
@@ -78,7 +78,7 @@ ShallowWrapper {
                     type="button"
                   >
                     Learn more
-                  </ForwardRef(Button)>
+                  </ForwardRef>
                 </div>
                 <div
                   className="bx--col-lg-8"
@@ -120,7 +120,7 @@ ShallowWrapper {
           </Tabs>
         </div>,
         <div
-          className="bx--row"
+          className="bx--row landing-page__r3"
         >
           <div
             className="bx--col-lg-4"
@@ -146,7 +146,7 @@ ShallowWrapper {
           </div>
         </div>,
         <div
-          className="bx--row"
+          className="bx--row landing-page__r4"
         >
           <div
             className="bx--col-lg-4"
@@ -163,8 +163,12 @@ ShallowWrapper {
           <div
             className="bx--col-lg-8"
           >
-            1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!
+            1/2
           </div>
+        </div>,
+        <div
+          className="bx--row landing-page__r5"
+        >
           <div
             className="bx--col-lg-4"
           >
@@ -178,11 +182,11 @@ ShallowWrapper {
           <div
             className="bx--col-lg-8"
           >
-            1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.
+            1/2
           </div>
         </div>,
         <div
-          className="bx--row"
+          className="bx--row landing-page__r6"
         >
           <div
             className="bx--col-lg-4"
@@ -233,7 +237,7 @@ ShallowWrapper {
               Design & build with Carbon
             </h1>,
           ],
-          "className": "bx--row banner",
+          "className": "bx--row landing-page__banner",
         },
         "ref": null,
         "rendered": Array [
@@ -328,7 +332,7 @@ ShallowWrapper {
                   <p>
                     Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                   </p>
-                  <ForwardRef(Button)
+                  <ForwardRef
                     disabled={false}
                     iconDescription="Provide icon description if icon is used"
                     kind="primary"
@@ -337,7 +341,7 @@ ShallowWrapper {
                     type="button"
                   >
                     Learn more
-                  </ForwardRef(Button)>
+                  </ForwardRef>
                 </div>
                 <div
                   className="bx--col-lg-8"
@@ -377,7 +381,7 @@ ShallowWrapper {
               </div>
             </Tab>
           </Tabs>,
-          "className": "bx--row intro",
+          "className": "bx--row landing-page__r2",
         },
         "ref": null,
         "rendered": Object {
@@ -408,7 +412,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef(Button)
+                    <ForwardRef
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -417,7 +421,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef(Button)>
+                    </ForwardRef>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -482,7 +486,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef(Button)
+                    <ForwardRef
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -491,7 +495,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef(Button)>
+                    </ForwardRef>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -527,7 +531,7 @@ ShallowWrapper {
                       <p>
                         Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                       </p>
-                      <ForwardRef(Button)
+                      <ForwardRef
                         disabled={false}
                         iconDescription="Provide icon description if icon is used"
                         kind="primary"
@@ -536,7 +540,7 @@ ShallowWrapper {
                         type="button"
                       >
                         Learn more
-                      </ForwardRef(Button)>
+                      </ForwardRef>
                     </div>,
                     <div
                       className="bx--col-lg-8"
@@ -564,7 +568,7 @@ ShallowWrapper {
                         <p>
                           Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                         </p>,
-                        <ForwardRef(Button)
+                        <ForwardRef
                           disabled={false}
                           iconDescription="Provide icon description if icon is used"
                           kind="primary"
@@ -573,7 +577,7 @@ ShallowWrapper {
                           type="button"
                         >
                           Learn more
-                        </ForwardRef(Button)>,
+                        </ForwardRef>,
                       ],
                       "className": "bx--col-lg-8",
                     },
@@ -774,7 +778,7 @@ ShallowWrapper {
               1/4
             </div>,
           ],
-          "className": "bx--row",
+          "className": "bx--row landing-page__r3",
         },
         "ref": null,
         "rendered": Array [
@@ -862,25 +866,10 @@ ShallowWrapper {
             <div
               className="bx--col-lg-8"
             >
-              1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!
-            </div>,
-            <div
-              className="bx--col-lg-4"
-            >
-              1/4
-            </div>,
-            <div
-              className="bx--col-lg-4"
-            >
-              1/4
-            </div>,
-            <div
-              className="bx--col-lg-8"
-            >
-              1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.
+              1/2
             </div>,
           ],
-          "className": "bx--row",
+          "className": "bx--row landing-page__r4",
         },
         "ref": null,
         "rendered": Array [
@@ -925,13 +914,42 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!",
+              "children": "1/2",
               "className": "bx--col-lg-8",
             },
             "ref": null,
-            "rendered": "1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!",
+            "rendered": "1/2",
             "type": "div",
           },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="bx--col-lg-4"
+            >
+              1/4
+            </div>,
+            <div
+              className="bx--col-lg-4"
+            >
+              1/4
+            </div>,
+            <div
+              className="bx--col-lg-8"
+            >
+              1/2
+            </div>,
+          ],
+          "className": "bx--row landing-page__r5",
+        },
+        "ref": null,
+        "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
@@ -961,11 +979,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.",
+              "children": "1/2",
               "className": "bx--col-lg-8",
             },
             "ref": null,
-            "rendered": "1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.",
+            "rendered": "1/2",
             "type": "div",
           },
         ],
@@ -1000,7 +1018,7 @@ ShallowWrapper {
               1/4
             </div>,
           ],
-          "className": "bx--row",
+          "className": "bx--row landing-page__r6",
         },
         "ref": null,
         "rendered": Array [
@@ -1078,7 +1096,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="bx--row banner"
+            className="bx--row landing-page__banner"
           >
             <Breadcrumb
               noTrailingSlash={true}
@@ -1096,7 +1114,7 @@ ShallowWrapper {
             </h1>
           </div>,
           <div
-            className="bx--row intro"
+            className="bx--row landing-page__r2"
           >
             <Tabs
               ariaLabel="listbox"
@@ -1127,7 +1145,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef(Button)
+                    <ForwardRef
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -1136,7 +1154,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef(Button)>
+                    </ForwardRef>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -1178,7 +1196,7 @@ ShallowWrapper {
             </Tabs>
           </div>,
           <div
-            className="bx--row"
+            className="bx--row landing-page__r3"
           >
             <div
               className="bx--col-lg-4"
@@ -1204,7 +1222,7 @@ ShallowWrapper {
             </div>
           </div>,
           <div
-            className="bx--row"
+            className="bx--row landing-page__r4"
           >
             <div
               className="bx--col-lg-4"
@@ -1221,8 +1239,12 @@ ShallowWrapper {
             <div
               className="bx--col-lg-8"
             >
-              1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!
+              1/2
             </div>
+          </div>,
+          <div
+            className="bx--row landing-page__r5"
+          >
             <div
               className="bx--col-lg-4"
             >
@@ -1236,11 +1258,11 @@ ShallowWrapper {
             <div
               className="bx--col-lg-8"
             >
-              1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.
+              1/2
             </div>
           </div>,
           <div
-            className="bx--row"
+            className="bx--row landing-page__r6"
           >
             <div
               className="bx--col-lg-4"
@@ -1291,7 +1313,7 @@ ShallowWrapper {
                 Design & build with Carbon
               </h1>,
             ],
-            "className": "bx--row banner",
+            "className": "bx--row landing-page__banner",
           },
           "ref": null,
           "rendered": Array [
@@ -1386,7 +1408,7 @@ ShallowWrapper {
                     <p>
                       Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                     </p>
-                    <ForwardRef(Button)
+                    <ForwardRef
                       disabled={false}
                       iconDescription="Provide icon description if icon is used"
                       kind="primary"
@@ -1395,7 +1417,7 @@ ShallowWrapper {
                       type="button"
                     >
                       Learn more
-                    </ForwardRef(Button)>
+                    </ForwardRef>
                   </div>
                   <div
                     className="bx--col-lg-8"
@@ -1435,7 +1457,7 @@ ShallowWrapper {
                 </div>
               </Tab>
             </Tabs>,
-            "className": "bx--row intro",
+            "className": "bx--row landing-page__r2",
           },
           "ref": null,
           "rendered": Object {
@@ -1466,7 +1488,7 @@ ShallowWrapper {
                       <p>
                         Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                       </p>
-                      <ForwardRef(Button)
+                      <ForwardRef
                         disabled={false}
                         iconDescription="Provide icon description if icon is used"
                         kind="primary"
@@ -1475,7 +1497,7 @@ ShallowWrapper {
                         type="button"
                       >
                         Learn more
-                      </ForwardRef(Button)>
+                      </ForwardRef>
                     </div>
                     <div
                       className="bx--col-lg-8"
@@ -1540,7 +1562,7 @@ ShallowWrapper {
                       <p>
                         Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                       </p>
-                      <ForwardRef(Button)
+                      <ForwardRef
                         disabled={false}
                         iconDescription="Provide icon description if icon is used"
                         kind="primary"
@@ -1549,7 +1571,7 @@ ShallowWrapper {
                         type="button"
                       >
                         Learn more
-                      </ForwardRef(Button)>
+                      </ForwardRef>
                     </div>
                     <div
                       className="bx--col-lg-8"
@@ -1585,7 +1607,7 @@ ShallowWrapper {
                         <p>
                           Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                         </p>
-                        <ForwardRef(Button)
+                        <ForwardRef
                           disabled={false}
                           iconDescription="Provide icon description if icon is used"
                           kind="primary"
@@ -1594,7 +1616,7 @@ ShallowWrapper {
                           type="button"
                         >
                           Learn more
-                        </ForwardRef(Button)>
+                        </ForwardRef>
                       </div>,
                       <div
                         className="bx--col-lg-8"
@@ -1622,7 +1644,7 @@ ShallowWrapper {
                           <p>
                             Carbon is IBM’s open-source design system for digital products and experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.
                           </p>,
-                          <ForwardRef(Button)
+                          <ForwardRef
                             disabled={false}
                             iconDescription="Provide icon description if icon is used"
                             kind="primary"
@@ -1631,7 +1653,7 @@ ShallowWrapper {
                             type="button"
                           >
                             Learn more
-                          </ForwardRef(Button)>,
+                          </ForwardRef>,
                         ],
                         "className": "bx--col-lg-8",
                       },
@@ -1832,7 +1854,7 @@ ShallowWrapper {
                 1/4
               </div>,
             ],
-            "className": "bx--row",
+            "className": "bx--row landing-page__r3",
           },
           "ref": null,
           "rendered": Array [
@@ -1920,25 +1942,10 @@ ShallowWrapper {
               <div
                 className="bx--col-lg-8"
               >
-                1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!
-              </div>,
-              <div
-                className="bx--col-lg-4"
-              >
-                1/4
-              </div>,
-              <div
-                className="bx--col-lg-4"
-              >
-                1/4
-              </div>,
-              <div
-                className="bx--col-lg-8"
-              >
-                1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.
+                1/2
               </div>,
             ],
-            "className": "bx--row",
+            "className": "bx--row landing-page__r4",
           },
           "ref": null,
           "rendered": Array [
@@ -1983,13 +1990,42 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!",
+                "children": "1/2",
                 "className": "bx--col-lg-8",
               },
               "ref": null,
-              "rendered": "1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reiciendis fuga architecto omnis temporibus quam, voluptatibus, at aspernatur, blanditiis animi vitae esse voluptates quis corporis quo eveniet magni possimus minima!",
+              "rendered": "1/2",
               "type": "div",
             },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="bx--col-lg-4"
+              >
+                1/4
+              </div>,
+              <div
+                className="bx--col-lg-4"
+              >
+                1/4
+              </div>,
+              <div
+                className="bx--col-lg-8"
+              >
+                1/2
+              </div>,
+            ],
+            "className": "bx--row landing-page__r5",
+          },
+          "ref": null,
+          "rendered": Array [
             Object {
               "instance": null,
               "key": undefined,
@@ -2019,11 +2055,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.",
+                "children": "1/2",
                 "className": "bx--col-lg-8",
               },
               "ref": null,
-              "rendered": "1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam magni, pariatur aut voluptas quae facilis vitae animi? Fugit necessitatibus, vitae qui quos aut in doloremque, aspernatur voluptas, recusandae doloribus illo.",
+              "rendered": "1/2",
               "type": "div",
             },
           ],
@@ -2058,7 +2094,7 @@ ShallowWrapper {
                 1/4
               </div>,
             ],
-            "className": "bx--row",
+            "className": "bx--row landing-page__r6",
           },
           "ref": null,
           "rendered": Array [
