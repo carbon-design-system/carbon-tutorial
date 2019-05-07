@@ -81,8 +81,7 @@ export default class LandingPage extends Component {
           <div className="bx--col-lg-8">1/2</div>
         </div>
         <div className="bx--row landing-page__r5">
-          <div className="bx--col-lg-4">1/4</div>
-          <div className="bx--col-lg-4">1/4</div>
+          <div className="bx--offset-lg-4 bx--col-lg-4">1/4</div>
           <div className="bx--col-lg-8">1/2</div>
         </div>
         <div className="bx--row landing-page__r6">

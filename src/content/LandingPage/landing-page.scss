@@ -7,8 +7,9 @@
   padding: $spacing-07;
 }
 
-.landing-page .bx--row > .bx--col-lg-4:first-of-type {
-  padding-left: 0;
+.landing-page .bx--col-lg-4,
+.landing-page .bx--col-lg-8 {
+  padding: 0;
 }
 
 .landing-page__banner {
