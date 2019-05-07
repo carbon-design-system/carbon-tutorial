@@ -1,45 +1,73 @@
 .landing-page {
   padding-left: 1rem;
   padding-right: 1rem;
+}
 
-  > .bx--row {
-    padding: 2rem;
-  }
+.landing-page .bx--row {
+  padding: 2rem;
+}
 
-  .banner {
-    flex-direction: column;
-    height: rem(208px);
-    background-color: $ui-01;
-  }
+.landing-page__banner {
+  flex-direction: column;
+  height: rem(208px);
+  background-color: $ui-01;
+}
 
-  .intro {
-    position: relative;
+.landing-page h1 {
+  @include type-style('productive-heading-05');
+}
 
-    strong,
-    p {
-      @include type-style('productive-heading-03');
-    }
+.landing-page__r2 {
+  position: relative;
+}
 
-    strong {
-      font-weight: 600;
-    }
+.landing-page__r2 .bx--tabs {
+  position: absolute;
+  top: rem(-42px);
+  right: rem(16px);
+  display: flex;
+  justify-content: flex-end;
+}
 
-    p {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-    }
+.landing-page__r2 strong,
+.landing-page__r2 p {
+  @include type-style('productive-heading-03');
+}
 
-    .bx--tabs {
-      position: absolute;
-      top: rem(-42px);
-      right: rem(16px);
-      display: flex;
-      justify-content: flex-end;
-    }
+.landing-page__r2 strong {
+  font-weight: 600;
+}
 
-    .landing-page-illustration {
-      width: 100%;
-      height: 100%;
-    }
-  }
+.landing-page__r2 p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.landing-page-illustration {
+  width: 100%;
+  height: 100%;
+}
+
+.landing-page__r3 {
+  background-color: $ui-01;
+}
+
+.landing-page__r3 strong,
+.landing-page__r4 strong,
+.landing-page__r6 strong {
+  @include type-style('heading-01');
+}
+
+.landing-page__r4 {
+  position: relative;
+}
+
+.landing-page__r4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  width: calc(100% - 4rem);
+  height: rem(1px);
+  background-color: $active-ui;
 }
