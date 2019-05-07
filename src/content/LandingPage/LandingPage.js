@@ -25,7 +25,7 @@ export default class LandingPage extends Component {
   render() {
     return (
       <div className="bx--grid bx--grid--full-width landing-page">
-        <div className="bx--row banner">
+        <div className="bx--row landing-page__banner">
           <Breadcrumb noTrailingSlash>
             <BreadcrumbItem>
               <a href="/">Getting started</a>
@@ -33,7 +33,7 @@ export default class LandingPage extends Component {
           </Breadcrumb>
           <h1>Design &amp; build with Carbon</h1>
         </div>
-        <div className="bx--row intro">
+        <div className="bx--row landing-page__r2">
           <Tabs {...props.tabs()}>
             <Tab {...props.tab()} label="Tab label 1">
               <div className="bx--row">
@@ -65,7 +65,7 @@ export default class LandingPage extends Component {
             </Tab>
           </Tabs>
         </div>
-        <div className="bx--row">
+        <div className="bx--row landing-page__r3">
           <div className="bx--col-lg-4">
             <strong>The Principles</strong>
           </div>
@@ -73,27 +73,18 @@ export default class LandingPage extends Component {
           <div className="bx--col-lg-4">1/4</div>
           <div className="bx--col-lg-4">1/4</div>
         </div>
-        <div className="bx--row">
+        <div className="bx--row landing-page__r4">
           <div className="bx--col-lg-4">
             <strong>Who is Carbon for?</strong>
           </div>
           <div className="bx--col-lg-4">1/4</div>
-          <div className="bx--col-lg-8">
-            1/2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias
-            reiciendis fuga architecto omnis temporibus quam, voluptatibus, at
-            aspernatur, blanditiis animi vitae esse voluptates quis corporis quo
-            eveniet magni possimus minima!
-          </div>
-          <div className="bx--col-lg-4">1/4</div>
-          <div className="bx--col-lg-4">1/4</div>
-          <div className="bx--col-lg-8">
-            1/2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-            magni, pariatur aut voluptas quae facilis vitae animi? Fugit
-            necessitatibus, vitae qui quos aut in doloremque, aspernatur
-            voluptas, recusandae doloribus illo.
-          </div>
+          <div className="bx--col-lg-8">1/2</div>
         </div>
-        <div className="bx--row">
+        <div className="bx--row landing-page__r5">
+          <div className="bx--offset-lg-4 bx--col-lg-4">1/4</div>
+          <div className="bx--col-lg-8">1/2</div>
+        </div>
+        <div className="bx--row landing-page__r6">
           <div className="bx--col-lg-4">
             <strong>Get design guidance &amp; code</strong>
           </div>
