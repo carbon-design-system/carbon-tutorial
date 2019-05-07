@@ -75,7 +75,7 @@ export default class RepoPage extends Component {
       },
     ];
     return (
-      <div className="bx--grid">
+      <div className="bx--grid repo-page">
         <div className="bx--row">
           <div className="bx--col-lg-3">
             <label htmlFor="search-1" className="bx--label">
@@ -87,7 +87,7 @@ export default class RepoPage extends Component {
               id="search-1"
               small
             />
-            <Checkbox checked labelText="All" id="checkbox-label-1" />
+            <Checkbox checked labelText="All" id="checkbox-label-0" />
             <Checkbox labelText="Repo 1" id="checkbox-label-1" />
             <Checkbox labelText="Repo 2" id="checkbox-label-2" />
             <Checkbox labelText="Repo 3" id="checkbox-label-3" />
