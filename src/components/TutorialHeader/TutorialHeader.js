@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import {
   Header,
   HeaderName,
@@ -18,23 +17,11 @@ class TutorialHeader extends Component {
     return (
       <Header aria-label="Carbon Tutorial">
         <SkipToContent />
-        {/* <HeaderName href="/" prefix="IBM">
+        <HeaderName href="/" prefix="IBM">
           Carbon Tutorial
-        </HeaderName> */}
-        <Link to="/" style={{ textDecoration: 'none' }}>
-          <HeaderName prefix="IBM">Carbon Tutorial</HeaderName>
-        </Link>
+        </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          {/* <HeaderMenuItem href="/repos">Link 1</HeaderMenuItem> */}
-          <li>
-            <Link
-              to="/repos"
-              className="bx--header__menu-item"
-              role="menuitem"
-              tabindex="0">
-              <span className="bx--text-truncate--end">Link 1</span>
-            </Link>
-          </li>
+          <HeaderMenuItem href="/repos">Link 1</HeaderMenuItem>
         </HeaderNavigation>
         <HeaderGlobalBar>
           <HeaderGlobalAction>
