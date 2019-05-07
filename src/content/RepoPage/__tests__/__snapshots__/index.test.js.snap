@@ -40,7 +40,7 @@ ShallowWrapper {
           />
           <ForwardRef(Checkbox)
             checked={true}
-            id="checkbox-label-1"
+            id="checkbox-label-0"
             indeterminate={false}
             labelText="All"
             onChange={[Function]}
@@ -176,7 +176,7 @@ ShallowWrapper {
           />
         </div>
       </div>,
-      "className": "bx--grid",
+      "className": "bx--grid repo-page",
     },
     "ref": null,
     "rendered": Object {
@@ -204,7 +204,7 @@ ShallowWrapper {
             />
             <ForwardRef(Checkbox)
               checked={true}
-              id="checkbox-label-1"
+              id="checkbox-label-0"
               indeterminate={false}
               labelText="All"
               onChange={[Function]}
@@ -366,7 +366,7 @@ ShallowWrapper {
               />,
               <ForwardRef(Checkbox)
                 checked={true}
-                id="checkbox-label-1"
+                id="checkbox-label-0"
                 indeterminate={false}
                 labelText="All"
                 onChange={[Function]}
@@ -445,7 +445,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "checked": true,
-                "id": "checkbox-label-1",
+                "id": "checkbox-label-0",
                 "indeterminate": false,
                 "labelText": "All",
                 "onChange": [Function],
@@ -895,7 +895,7 @@ ShallowWrapper {
             />
             <ForwardRef(Checkbox)
               checked={true}
-              id="checkbox-label-1"
+              id="checkbox-label-0"
               indeterminate={false}
               labelText="All"
               onChange={[Function]}
@@ -1031,7 +1031,7 @@ ShallowWrapper {
             />
           </div>
         </div>,
-        "className": "bx--grid",
+        "className": "bx--grid repo-page",
       },
       "ref": null,
       "rendered": Object {
@@ -1059,7 +1059,7 @@ ShallowWrapper {
               />
               <ForwardRef(Checkbox)
                 checked={true}
-                id="checkbox-label-1"
+                id="checkbox-label-0"
                 indeterminate={false}
                 labelText="All"
                 onChange={[Function]}
@@ -1221,7 +1221,7 @@ ShallowWrapper {
                 />,
                 <ForwardRef(Checkbox)
                   checked={true}
-                  id="checkbox-label-1"
+                  id="checkbox-label-0"
                   indeterminate={false}
                   labelText="All"
                   onChange={[Function]}
@@ -1300,7 +1300,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "checked": true,
-                  "id": "checkbox-label-1",
+                  "id": "checkbox-label-0",
                   "indeterminate": false,
                   "labelText": "All",
                   "onChange": [Function],

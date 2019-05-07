@@ -18,30 +18,29 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": <Header
-        aria-label="Carbon Tutorial"
-      >
+      "aria-label": "Carbon Tutorial",
+      "children": Array [
         <SkipToContent
           href="#main-content"
           tabIndex="0"
         >
           Skip to main content
-        </SkipToContent>
+        </SkipToContent>,
         <HeaderName
           href="/"
           prefix="IBM"
         >
           Carbon Tutorial
-        </HeaderName>
+        </HeaderName>,
         <HeaderNavigation
           aria-label="Carbon Tutorial"
         >
-          <ForwardRef
+          <ForwardRef(HeaderMenuItem)
             href="/repos"
           >
             Link 1
-          </ForwardRef>
-        </HeaderNavigation>
+          </ForwardRef(HeaderMenuItem)>
+        </HeaderNavigation>,
         <HeaderGlobalBar>
           <HeaderGlobalAction>
             <ForwardRef
@@ -70,11 +69,283 @@ ShallowWrapper {
               xmlns="http://www.w3.org/2000/svg"
             />
           </HeaderGlobalAction>
-        </HeaderGlobalBar>
-      </Header>,
+        </HeaderGlobalBar>,
+      ],
     },
     "ref": null,
-    "rendered": Object {
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Skip to main content",
+          "href": "#main-content",
+          "tabIndex": "0",
+        },
+        "ref": null,
+        "rendered": "Skip to main content",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": "Carbon Tutorial",
+          "href": "/",
+          "prefix": "IBM",
+        },
+        "ref": null,
+        "rendered": "Carbon Tutorial",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "aria-label": "Carbon Tutorial",
+          "children": <ForwardRef(HeaderMenuItem)
+            href="/repos"
+          >
+            Link 1
+          </ForwardRef(HeaderMenuItem)>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": "Link 1",
+            "href": "/repos",
+          },
+          "ref": null,
+          "rendered": "Link 1",
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "propTypes": Object {
+              "children": [Function],
+              "className": [Function],
+              "element": [Function],
+              "role": [Function],
+            },
+            "render": [Function],
+          },
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <HeaderGlobalAction>
+              <ForwardRef
+                height={20}
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              />
+            </HeaderGlobalAction>,
+            <HeaderGlobalAction>
+              <ForwardRef
+                height={20}
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              />
+            </HeaderGlobalAction>,
+            <HeaderGlobalAction>
+              <ForwardRef
+                height={20}
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 20 20"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              />
+            </HeaderGlobalAction>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <ForwardRef
+                height={20}
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "height": 20,
+                "preserveAspectRatio": "xMidYMid meet",
+                "viewBox": "0 0 32 32",
+                "width": 20,
+                "xmlns": "http://www.w3.org/2000/svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "height": 20,
+                  "preserveAspectRatio": "xMidYMid meet",
+                  "viewBox": "0 0 32 32",
+                  "width": 20,
+                  "xmlns": "http://www.w3.org/2000/svg",
+                },
+                "displayName": "Notification20",
+                "propTypes": Object {
+                  "aria-hidden": [Function],
+                  "aria-label": [Function],
+                  "aria-labelledby": [Function],
+                  "children": [Function],
+                  "className": [Function],
+                  "height": [Function],
+                  "preserveAspectRatio": [Function],
+                  "tabIndex": [Function],
+                  "viewBox": [Function],
+                  "width": [Function],
+                  "xmlns": [Function],
+                },
+                "render": [Function],
+              },
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <ForwardRef
+                height={20}
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 32 32"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "height": 20,
+                "preserveAspectRatio": "xMidYMid meet",
+                "viewBox": "0 0 32 32",
+                "width": 20,
+                "xmlns": "http://www.w3.org/2000/svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "height": 20,
+                  "preserveAspectRatio": "xMidYMid meet",
+                  "viewBox": "0 0 32 32",
+                  "width": 20,
+                  "xmlns": "http://www.w3.org/2000/svg",
+                },
+                "displayName": "UserAvatar20",
+                "propTypes": Object {
+                  "aria-hidden": [Function],
+                  "aria-label": [Function],
+                  "aria-labelledby": [Function],
+                  "children": [Function],
+                  "className": [Function],
+                  "height": [Function],
+                  "preserveAspectRatio": [Function],
+                  "tabIndex": [Function],
+                  "viewBox": [Function],
+                  "width": [Function],
+                  "xmlns": [Function],
+                },
+                "render": [Function],
+              },
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": <ForwardRef
+                height={20}
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 20 20"
+                width={20}
+                xmlns="http://www.w3.org/2000/svg"
+              />,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "height": 20,
+                "preserveAspectRatio": "xMidYMid meet",
+                "viewBox": "0 0 20 20",
+                "width": 20,
+                "xmlns": "http://www.w3.org/2000/svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": Object {
+                  "height": 20,
+                  "preserveAspectRatio": "xMidYMid meet",
+                  "viewBox": "0 0 20 20",
+                  "width": 20,
+                  "xmlns": "http://www.w3.org/2000/svg",
+                },
+                "displayName": "AppSwitcher20",
+                "propTypes": Object {
+                  "aria-hidden": [Function],
+                  "aria-label": [Function],
+                  "aria-labelledby": [Function],
+                  "children": [Function],
+                  "className": [Function],
+                  "height": [Function],
+                  "preserveAspectRatio": [Function],
+                  "tabIndex": [Function],
+                  "viewBox": [Function],
+                  "width": [Function],
+                  "xmlns": [Function],
+                },
+                "render": [Function],
+              },
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
@@ -96,11 +367,11 @@ ShallowWrapper {
           <HeaderNavigation
             aria-label="Carbon Tutorial"
           >
-            <ForwardRef
+            <ForwardRef(HeaderMenuItem)
               href="/repos"
             >
               Link 1
-            </ForwardRef>
+            </ForwardRef(HeaderMenuItem)>
           </HeaderNavigation>,
           <HeaderGlobalBar>
             <HeaderGlobalAction>
@@ -167,11 +438,11 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "aria-label": "Carbon Tutorial",
-            "children": <ForwardRef
+            "children": <ForwardRef(HeaderMenuItem)
               href="/repos"
             >
               Link 1
-            </ForwardRef>,
+            </ForwardRef(HeaderMenuItem)>,
           },
           "ref": null,
           "rendered": Object {
@@ -404,403 +675,6 @@ ShallowWrapper {
         },
       ],
       "type": [Function],
-    },
-    "type": Symbol(react.fragment),
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "children": <Header
-          aria-label="Carbon Tutorial"
-        >
-          <SkipToContent
-            href="#main-content"
-            tabIndex="0"
-          >
-            Skip to main content
-          </SkipToContent>
-          <HeaderName
-            href="/"
-            prefix="IBM"
-          >
-            Carbon Tutorial
-          </HeaderName>
-          <HeaderNavigation
-            aria-label="Carbon Tutorial"
-          >
-            <ForwardRef
-              href="/repos"
-            >
-              Link 1
-            </ForwardRef>
-          </HeaderNavigation>
-          <HeaderGlobalBar>
-            <HeaderGlobalAction>
-              <ForwardRef
-                height={20}
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width={20}
-                xmlns="http://www.w3.org/2000/svg"
-              />
-            </HeaderGlobalAction>
-            <HeaderGlobalAction>
-              <ForwardRef
-                height={20}
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 32 32"
-                width={20}
-                xmlns="http://www.w3.org/2000/svg"
-              />
-            </HeaderGlobalAction>
-            <HeaderGlobalAction>
-              <ForwardRef
-                height={20}
-                preserveAspectRatio="xMidYMid meet"
-                viewBox="0 0 20 20"
-                width={20}
-                xmlns="http://www.w3.org/2000/svg"
-              />
-            </HeaderGlobalAction>
-          </HeaderGlobalBar>
-        </Header>,
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "aria-label": "Carbon Tutorial",
-          "children": Array [
-            <SkipToContent
-              href="#main-content"
-              tabIndex="0"
-            >
-              Skip to main content
-            </SkipToContent>,
-            <HeaderName
-              href="/"
-              prefix="IBM"
-            >
-              Carbon Tutorial
-            </HeaderName>,
-            <HeaderNavigation
-              aria-label="Carbon Tutorial"
-            >
-              <ForwardRef
-                href="/repos"
-              >
-                Link 1
-              </ForwardRef>
-            </HeaderNavigation>,
-            <HeaderGlobalBar>
-              <HeaderGlobalAction>
-                <ForwardRef
-                  height={20}
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 32 32"
-                  width={20}
-                  xmlns="http://www.w3.org/2000/svg"
-                />
-              </HeaderGlobalAction>
-              <HeaderGlobalAction>
-                <ForwardRef
-                  height={20}
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 32 32"
-                  width={20}
-                  xmlns="http://www.w3.org/2000/svg"
-                />
-              </HeaderGlobalAction>
-              <HeaderGlobalAction>
-                <ForwardRef
-                  height={20}
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 20 20"
-                  width={20}
-                  xmlns="http://www.w3.org/2000/svg"
-                />
-              </HeaderGlobalAction>
-            </HeaderGlobalBar>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "Skip to main content",
-              "href": "#main-content",
-              "tabIndex": "0",
-            },
-            "ref": null,
-            "rendered": "Skip to main content",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": "Carbon Tutorial",
-              "href": "/",
-              "prefix": "IBM",
-            },
-            "ref": null,
-            "rendered": "Carbon Tutorial",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "aria-label": "Carbon Tutorial",
-              "children": <ForwardRef
-                href="/repos"
-              >
-                Link 1
-              </ForwardRef>,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "children": "Link 1",
-                "href": "/repos",
-              },
-              "ref": null,
-              "rendered": "Link 1",
-              "type": Object {
-                "$$typeof": Symbol(react.forward_ref),
-                "propTypes": Object {
-                  "children": [Function],
-                  "className": [Function],
-                  "element": [Function],
-                  "role": [Function],
-                },
-                "render": [Function],
-              },
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "children": Array [
-                <HeaderGlobalAction>
-                  <ForwardRef
-                    height={20}
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  />
-                </HeaderGlobalAction>,
-                <HeaderGlobalAction>
-                  <ForwardRef
-                    height={20}
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  />
-                </HeaderGlobalAction>,
-                <HeaderGlobalAction>
-                  <ForwardRef
-                    height={20}
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 20 20"
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  />
-                </HeaderGlobalAction>,
-              ],
-            },
-            "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": <ForwardRef
-                    height={20}
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  />,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "height": 20,
-                    "preserveAspectRatio": "xMidYMid meet",
-                    "viewBox": "0 0 32 32",
-                    "width": 20,
-                    "xmlns": "http://www.w3.org/2000/svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "defaultProps": Object {
-                      "height": 20,
-                      "preserveAspectRatio": "xMidYMid meet",
-                      "viewBox": "0 0 32 32",
-                      "width": 20,
-                      "xmlns": "http://www.w3.org/2000/svg",
-                    },
-                    "displayName": "Notification20",
-                    "propTypes": Object {
-                      "aria-hidden": [Function],
-                      "aria-label": [Function],
-                      "aria-labelledby": [Function],
-                      "children": [Function],
-                      "className": [Function],
-                      "height": [Function],
-                      "preserveAspectRatio": [Function],
-                      "tabIndex": [Function],
-                      "viewBox": [Function],
-                      "width": [Function],
-                      "xmlns": [Function],
-                    },
-                    "render": [Function],
-                  },
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": <ForwardRef
-                    height={20}
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 32 32"
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  />,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "height": 20,
-                    "preserveAspectRatio": "xMidYMid meet",
-                    "viewBox": "0 0 32 32",
-                    "width": 20,
-                    "xmlns": "http://www.w3.org/2000/svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "defaultProps": Object {
-                      "height": 20,
-                      "preserveAspectRatio": "xMidYMid meet",
-                      "viewBox": "0 0 32 32",
-                      "width": 20,
-                      "xmlns": "http://www.w3.org/2000/svg",
-                    },
-                    "displayName": "UserAvatar20",
-                    "propTypes": Object {
-                      "aria-hidden": [Function],
-                      "aria-label": [Function],
-                      "aria-labelledby": [Function],
-                      "children": [Function],
-                      "className": [Function],
-                      "height": [Function],
-                      "preserveAspectRatio": [Function],
-                      "tabIndex": [Function],
-                      "viewBox": [Function],
-                      "width": [Function],
-                      "xmlns": [Function],
-                    },
-                    "render": [Function],
-                  },
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "children": <ForwardRef
-                    height={20}
-                    preserveAspectRatio="xMidYMid meet"
-                    viewBox="0 0 20 20"
-                    width={20}
-                    xmlns="http://www.w3.org/2000/svg"
-                  />,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "function",
-                  "props": Object {
-                    "height": 20,
-                    "preserveAspectRatio": "xMidYMid meet",
-                    "viewBox": "0 0 20 20",
-                    "width": 20,
-                    "xmlns": "http://www.w3.org/2000/svg",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": Object {
-                    "$$typeof": Symbol(react.forward_ref),
-                    "defaultProps": Object {
-                      "height": 20,
-                      "preserveAspectRatio": "xMidYMid meet",
-                      "viewBox": "0 0 20 20",
-                      "width": 20,
-                      "xmlns": "http://www.w3.org/2000/svg",
-                    },
-                    "displayName": "AppSwitcher20",
-                    "propTypes": Object {
-                      "aria-hidden": [Function],
-                      "aria-label": [Function],
-                      "aria-labelledby": [Function],
-                      "children": [Function],
-                      "className": [Function],
-                      "height": [Function],
-                      "preserveAspectRatio": [Function],
-                      "tabIndex": [Function],
-                      "viewBox": [Function],
-                      "width": [Function],
-                      "xmlns": [Function],
-                    },
-                    "render": [Function],
-                  },
-                },
-                "type": [Function],
-              },
-            ],
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      "type": Symbol(react.fragment),
     },
   ],
   Symbol(enzyme.__options__): Object {
