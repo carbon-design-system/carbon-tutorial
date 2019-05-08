@@ -1,3 +1,4 @@
+// Landing page
 .landing-page {
   padding-left: $spacing-05;
   padding-right: $spacing-05;
@@ -12,18 +13,24 @@
   padding: 0;
 }
 
+// Banner
 .landing-page__banner {
   flex-direction: column;
   height: rem(208px);
   background-color: $ui-01;
 }
 
-.landing-page h1 {
+.landing-page__banner h1 {
   @include type-style('productive-heading-05');
 }
 
+// Second row
 .landing-page__r2 {
   position: relative;
+}
+
+.landing-page .bx--row.landing-page__r2 {
+  padding: 0;
 }
 
 .landing-page__r2 .bx--tabs {
@@ -35,7 +42,8 @@
 }
 
 .landing-page__r2 .bx--row {
-  padding: 0;
+  padding-left: 0;
+  margin-left: $spacing-07;
 }
 
 .landing-page__r2 strong,
@@ -57,6 +65,7 @@
   height: 100%;
 }
 
+// Other rows
 .landing-page__r3 {
   background-color: $ui-01;
 }
