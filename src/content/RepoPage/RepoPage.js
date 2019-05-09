@@ -17,7 +17,7 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-export default class RepoPage extends Component {
+class RepoPage extends Component {
   render() {
     const initialRows = [
       {
@@ -162,3 +162,5 @@ export default class RepoPage extends Component {
     );
   }
 }
+
+export default RepoPage;
