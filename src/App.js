@@ -5,7 +5,7 @@ import TutorialHeader from './components/TutorialHeader/TutorialHeader';
 import LandingPage from './content/LandingPage/LandingPage';
 import RepoPage from './content/RepoPage/RepoPage';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Router>
@@ -20,5 +20,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;
