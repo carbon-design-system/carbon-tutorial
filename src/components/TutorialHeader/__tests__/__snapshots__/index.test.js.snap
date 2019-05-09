@@ -42,7 +42,9 @@ ShallowWrapper {
           </ForwardRef(HeaderMenuItem)>
         </HeaderNavigation>,
         <HeaderGlobalBar>
-          <HeaderGlobalAction>
+          <HeaderGlobalAction
+            aria-label="Notifications"
+          >
             <ForwardRef
               height={20}
               preserveAspectRatio="xMidYMid meet"
@@ -51,7 +53,9 @@ ShallowWrapper {
               xmlns="http://www.w3.org/2000/svg"
             />
           </HeaderGlobalAction>
-          <HeaderGlobalAction>
+          <HeaderGlobalAction
+            aria-label="User Avatar"
+          >
             <ForwardRef
               height={20}
               preserveAspectRatio="xMidYMid meet"
@@ -60,7 +64,9 @@ ShallowWrapper {
               xmlns="http://www.w3.org/2000/svg"
             />
           </HeaderGlobalAction>
-          <HeaderGlobalAction>
+          <HeaderGlobalAction
+            aria-label="App Switcher"
+          >
             <ForwardRef
               height={20}
               preserveAspectRatio="xMidYMid meet"
@@ -142,7 +148,9 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <HeaderGlobalAction>
+            <HeaderGlobalAction
+              aria-label="Notifications"
+            >
               <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -151,7 +159,9 @@ ShallowWrapper {
                 xmlns="http://www.w3.org/2000/svg"
               />
             </HeaderGlobalAction>,
-            <HeaderGlobalAction>
+            <HeaderGlobalAction
+              aria-label="User Avatar"
+            >
               <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -160,7 +170,9 @@ ShallowWrapper {
                 xmlns="http://www.w3.org/2000/svg"
               />
             </HeaderGlobalAction>,
-            <HeaderGlobalAction>
+            <HeaderGlobalAction
+              aria-label="App Switcher"
+            >
               <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -178,6 +190,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "aria-label": "Notifications",
               "children": <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -233,6 +246,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "aria-label": "User Avatar",
               "children": <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -288,6 +302,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "aria-label": "App Switcher",
               "children": <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -374,7 +389,9 @@ ShallowWrapper {
             </ForwardRef(HeaderMenuItem)>
           </HeaderNavigation>,
           <HeaderGlobalBar>
-            <HeaderGlobalAction>
+            <HeaderGlobalAction
+              aria-label="Notifications"
+            >
               <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -383,7 +400,9 @@ ShallowWrapper {
                 xmlns="http://www.w3.org/2000/svg"
               />
             </HeaderGlobalAction>
-            <HeaderGlobalAction>
+            <HeaderGlobalAction
+              aria-label="User Avatar"
+            >
               <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -392,7 +411,9 @@ ShallowWrapper {
                 xmlns="http://www.w3.org/2000/svg"
               />
             </HeaderGlobalAction>
-            <HeaderGlobalAction>
+            <HeaderGlobalAction
+              aria-label="App Switcher"
+            >
               <ForwardRef
                 height={20}
                 preserveAspectRatio="xMidYMid meet"
@@ -474,7 +495,9 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": Array [
-              <HeaderGlobalAction>
+              <HeaderGlobalAction
+                aria-label="Notifications"
+              >
                 <ForwardRef
                   height={20}
                   preserveAspectRatio="xMidYMid meet"
@@ -483,7 +506,9 @@ ShallowWrapper {
                   xmlns="http://www.w3.org/2000/svg"
                 />
               </HeaderGlobalAction>,
-              <HeaderGlobalAction>
+              <HeaderGlobalAction
+                aria-label="User Avatar"
+              >
                 <ForwardRef
                   height={20}
                   preserveAspectRatio="xMidYMid meet"
@@ -492,7 +517,9 @@ ShallowWrapper {
                   xmlns="http://www.w3.org/2000/svg"
                 />
               </HeaderGlobalAction>,
-              <HeaderGlobalAction>
+              <HeaderGlobalAction
+                aria-label="App Switcher"
+              >
                 <ForwardRef
                   height={20}
                   preserveAspectRatio="xMidYMid meet"
@@ -510,6 +537,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "aria-label": "Notifications",
                 "children": <ForwardRef
                   height={20}
                   preserveAspectRatio="xMidYMid meet"
@@ -565,6 +593,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "aria-label": "User Avatar",
                 "children": <ForwardRef
                   height={20}
                   preserveAspectRatio="xMidYMid meet"
@@ -620,6 +649,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "aria-label": "App Switcher",
                 "children": <ForwardRef
                   height={20}
                   preserveAspectRatio="xMidYMid meet"

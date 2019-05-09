@@ -24,13 +24,13 @@ class TutorialHeader extends Component {
           <HeaderMenuItem href="/repos">Link 1</HeaderMenuItem>
         </HeaderNavigation>
         <HeaderGlobalBar>
-          <HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="Notifications">
             <Notification20 />
           </HeaderGlobalAction>
-          <HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="User Avatar">
             <UserAvatar20 />
           </HeaderGlobalAction>
-          <HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="App Switcher">
             <AppSwitcher20 />
           </HeaderGlobalAction>
         </HeaderGlobalBar>

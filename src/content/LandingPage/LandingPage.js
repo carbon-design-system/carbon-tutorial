@@ -8,20 +8,20 @@ import {
 } from 'carbon-components-react';
 
 const props = {
-  tabs: () => ({
+  tabs: {
     className: 'some-class',
     selected: 0,
     triggerHref: '#',
     role: 'navigation',
-  }),
-  tab: () => ({
+  },
+  tab: {
     href: '#',
     role: 'presentation',
     tabIndex: 0,
-  }),
+  },
 };
 
-export default class LandingPage extends Component {
+class LandingPage extends Component {
   render() {
     return (
       <div className="bx--grid bx--grid--full-width landing-page">
@@ -34,8 +34,8 @@ export default class LandingPage extends Component {
           <h1>Design &amp; build with Carbon</h1>
         </div>
         <div className="bx--row landing-page__r2">
-          <Tabs {...props.tabs()}>
-            <Tab {...props.tab()} label="Tab label 1">
+          <Tabs {...props.tabs}>
+            <Tab {...props.tab} label="Tab label 1">
               <div className="bx--row">
                 <div className="bx--col-lg-8">
                   <strong>What is Carbon?</strong>
@@ -57,10 +57,10 @@ export default class LandingPage extends Component {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab()} label="Tab label 2">
+            <Tab {...props.tab} label="Tab label 2">
               <div>Content for second tab goes here.</div>
             </Tab>
-            <Tab {...props.tab()} label="Tab label 3">
+            <Tab {...props.tab} label="Tab label 3">
               <div>Content for third tab goes here.</div>
             </Tab>
           </Tabs>
@@ -96,3 +96,5 @@ export default class LandingPage extends Component {
     );
   }
 }
+
+export default LandingPage;
