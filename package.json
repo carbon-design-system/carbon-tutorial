@@ -12,7 +12,7 @@
     "format": "prettier --write '**/*.{js,md,scss}'",
     "format:diff": "prettier --list-different '**/*.{js,md,scss}'",
     "format:staged": "prettier --write",
-    "start": "react-scripts start",
+    "dev": "react-scripts dev",
     "test": "react-scripts test"
   },
   "dependencies": {
