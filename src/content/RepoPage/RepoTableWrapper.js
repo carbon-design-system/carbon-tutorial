@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import gql from 'graphql-tag';
+import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import DataTable from './RepoTable';
 import { Pagination, Link, DataTableSkeleton } from 'carbon-components-react';
