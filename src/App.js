@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as HashRouter, Route, Switch } from 'react-router-dom';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader/TutorialHeader';
 import LandingPage from './content/LandingPage/LandingPage';
@@ -8,7 +8,7 @@ import RepoPage from './content/RepoPage';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <HashRouter>
         <TutorialHeader />
         <Content>
           <Switch>
@@ -16,7 +16,7 @@ class App extends Component {
             <Route path="/repos" component={RepoPage} />
           </Switch>
         </Content>
-      </Router>
+      </HashRouter>
     );
   }
 }
