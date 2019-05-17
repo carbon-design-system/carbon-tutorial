@@ -2,3 +2,6 @@
 applications:
   - name: carbon-tutorial
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    command: node app.js
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN:
