@@ -21,26 +21,6 @@ const props = {
     role: 'presentation',
     tabIndex: 0,
   },
-  principlesSection: {
-    sectionTitle: 'The Principles',
-    cards: {
-      openCard: {
-        cardTitle: ['Carbon is', 'Open'],
-        cardBody:
-          "It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute.",
-      },
-      modularCard: {
-        cardTitle: ['Carbon is', 'Modular'],
-        cardBody:
-          "Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user.",
-      },
-      consistentCard: {
-        cardTitle: ['Carbon is', 'Consistent'],
-        cardBody:
-          'Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences.',
-      },
-    },
-  },
 };
 
 class LandingPage extends Component {
@@ -88,10 +68,19 @@ class LandingPage extends Component {
           </Tabs>
         </div>
 
-        <Section {...props.principlesSection} className="landing-page__r3">
-          <SectionCard {...props.principlesSection.cards.openCard} />
-          <SectionCard {...props.principlesSection.cards.modularCard} />
-          <SectionCard {...props.principlesSection.cards.consistentCard} />
+        <Section heading="The Principles" className="landing-page__r3">
+          <SectionCard
+            heading="Carbon is Open"
+            body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+          />
+          <SectionCard
+            heading="Carbon is Modular"
+            body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user."
+          />
+          <SectionCard
+            heading="Carbon is Consistent"
+            body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+          />
         </Section>
 
         <div className="bx--row landing-page__r4">
