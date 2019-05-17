@@ -10,20 +10,20 @@ function createArrayFromPhrase(phrase) {
 /**
  * The main content is devided into three main sections. Each one containing one or more cards.
  */
-const Section = ({ heading, className, children }) => (
-  <section className={`bx--row ${className}`}>
+const PrinciplesSection = props => (
+  <section className={`bx--row ${props.className} principles-section`}>
     <h2 className="bx--col bx--no-gutter bx--col-sm-4">
-      <strong>{heading}</strong>
+      <strong>{props.heading}</strong>
     </h2>
-    {children}
+    {props.children}
   </section>
 );
 
 /**
  * The cards inside the page's section. Containing headers and short body paragraphs
  */
-const PrinciplesSectionCard = ({ heading, body, cardIcon, icon }) => {
-  const splitHeading = createArrayFromPhrase(heading);
+const PrinciplesSectionCard = props => {
+  const splitHeading = createArrayFromPhrase(props.heading);
 
   return (
     <div className="section-card bx--col bx--col-4">
@@ -31,10 +31,10 @@ const PrinciplesSectionCard = ({ heading, body, cardIcon, icon }) => {
         {`${splitHeading[0]} `}
         <strong>{splitHeading[1]}</strong>
       </h3>
-      <p className="section-card__body">{body}</p>
-      {icon}
+      <p className="section-card__body">{props.body}</p>
+      {props.icon}
     </div>
   );
 };
 
-export { Section, PrinciplesSectionCard };
+export { PrinciplesSection, PrinciplesSectionCard };

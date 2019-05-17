@@ -7,9 +7,9 @@ import {
   Tab,
 } from 'carbon-components-react';
 import {
-  Section,
+  PrinciplesSection,
   PrinciplesSectionCard,
-} from '../../components/Section/Section.js';
+} from '../../components/PrinciplesSection';
 import Globe32 from '@carbon/icons-react/lib/globe/32';
 import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
 import Application32 from '@carbon/icons-react/lib/application/32';
@@ -73,7 +73,9 @@ class LandingPage extends Component {
           </Tabs>
         </div>
 
-        <Section heading="The Principles" className="landing-page__r3">
+        <PrinciplesSection
+          heading="The Principles"
+          className="landing-page__r3">
           <PrinciplesSectionCard
             heading="Carbon is Open"
             body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
@@ -89,7 +91,7 @@ class LandingPage extends Component {
             body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
             icon={<Globe32 />}
           />
-        </Section>
+        </PrinciplesSection>
 
         <div className="bx--row landing-page__r4">
           <div className="bx--col-lg-4">
