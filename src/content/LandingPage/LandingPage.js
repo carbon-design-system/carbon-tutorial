@@ -6,6 +6,8 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
+import { Section, SectionCard } from '../../components/Section/Section.js';
+import Globe20 from '@carbon/icons-react/lib/globe/20';
 
 const props = {
   tabs: {
@@ -18,6 +20,26 @@ const props = {
     href: '#',
     role: 'presentation',
     tabIndex: 0,
+  },
+  principlesSection: {
+    sectionTitle: 'The Principles',
+    cards: {
+      openCard: {
+        cardTitle: ['Carbon is', 'Open'],
+        cardBody:
+          "It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute.",
+      },
+      modularCard: {
+        cardTitle: ['Carbon is', 'Modular'],
+        cardBody:
+          "Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichevercombination suits the needs of the user.",
+      },
+      consistentCard: {
+        cardTitle: ['Carbon is', 'Consistent'],
+        cardBody:
+          'Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences.',
+      },
+    },
   },
 };
 
@@ -65,14 +87,13 @@ class LandingPage extends Component {
             </Tab>
           </Tabs>
         </div>
-        <div className="bx--row landing-page__r3">
-          <div className="bx--col-lg-4">
-            <strong>The Principles</strong>
-          </div>
-          <div className="bx--col-lg-4">1/4</div>
-          <div className="bx--col-lg-4">1/4</div>
-          <div className="bx--col-lg-4">1/4</div>
-        </div>
+
+        <Section {...props.principlesSection} className="landing-page__r3">
+          <SectionCard {...props.principlesSection.cards.openCard} />
+          <SectionCard {...props.principlesSection.cards.modularCard} />
+          <SectionCard {...props.principlesSection.cards.consistentCard} />
+        </Section>
+
         <div className="bx--row landing-page__r4">
           <div className="bx--col-lg-4">
             <strong>Who is Carbon for?</strong>

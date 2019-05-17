@@ -1,0 +1,17 @@
+.section {
+  height: 24rem;
+}
+
+.section-card {
+  border-left: 2px solid $ui-03;
+  height: 18rem;
+  max-width: 280px;
+}
+
+.section-card__heading {
+  margin-bottom: $spacing-05;
+}
+
+.section-card__body {
+  @include type-style('body-short-01');
+}

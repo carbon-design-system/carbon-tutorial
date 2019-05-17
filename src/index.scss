@@ -4,5 +4,6 @@ $feature-flags: (
 );
 @import 'carbon-components/scss/globals/scss/styles.scss';
 @import './components/TutorialHeader/tutorial-header.scss';
+@import './components/Section/section.scss';
 @import './content/LandingPage/landing-page.scss';
 @import './content/RepoPage/repo-page.scss';
