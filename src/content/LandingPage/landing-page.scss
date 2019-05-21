@@ -1,24 +1,13 @@
-.landing-page__r2 {
-  // right-align tabs
-  .bx--tabs {
+@include carbon--breakpoint(md) {
+  // right justify tab component
+  .landing-page__r2 .bx--tabs {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
   }
 
-  // full width tabs trigger small viewports
-  .bx--tabs-trigger {
-    width: 100%;
-  }
-
-  // full-width tab content
-  & > div {
-    width: 100%;
-  }
-
-  // reset margins because of the nested row
-  .bx--row {
-    margin-left: 0;
-    margin-right: 0;
+  // IE11 fix for right justification
+  .landing-page__r2 .bx--tabs__nav {
+    right: 0;
   }
 }
 
@@ -67,7 +56,7 @@
 }
 
 .landing-page__r2 p {
-  margin-top: $spacing-08;
+  margin-top: $spacing-06;
   margin-bottom: $spacing-08;
 }
 

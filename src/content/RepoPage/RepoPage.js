@@ -74,8 +74,8 @@ class RepoPage extends Component {
     ];
 
     return (
-      <div className="bx--grid repo-page">
-        <div className="bx--row">
+      <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+        <div className="bx--row repo-page__r1">
           <div className="bx--col-lg-16">
             <DataTable
               rows={initialRows}
