@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class RepoPage extends Component {
-  render() {
-    return <div>REPO PAGE</div>;
-  }
-}
+const RepoPage = () => {
+  return <div>REPO PAGE</div>;
+};
 
 export default RepoPage;
