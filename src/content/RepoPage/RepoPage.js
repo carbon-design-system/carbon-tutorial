@@ -6,7 +6,7 @@ import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
-    # Let's use carbon as our organization
+    # Let's use Carbon as our organization
     organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
