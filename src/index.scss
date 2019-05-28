@@ -1,3 +1,7 @@
+$feature-flags: (
+  ui-shell: true,
+);
+@import '../node_modules/carbon-components/scss/globals/scss/styles.scss';
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
