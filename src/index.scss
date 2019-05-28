@@ -2,7 +2,7 @@
 $feature-flags: (
   ui-shell: true,
 );
-
+// don't add too much
 @import 'carbon-components/scss/globals/scss/styles.scss';
 /*
 The React <Content /> component uses the `main` element which IE11 doesn't recognize
