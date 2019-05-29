@@ -1,0 +1,17 @@
+.landing-page {
+  text-align: center;
+  padding: 25px;
+  h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .main-icon {
+    position: absolute;
+    top: 50%;
+    // Mixin not added - I know :P
+    transform: translateY(-50%) scale(5);
+    fill: #ff8d31;
+    font-size: 30px;
+  }
+}
