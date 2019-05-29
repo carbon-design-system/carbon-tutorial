@@ -1,0 +1,101 @@
+@import 'carbon-components/scss/globals/scss/_typography.scss';
+@import 'carbon-components/scss/globals/scss/_vars.scss';
+
+.landing-page__r2 {
+  // right-align tabs
+  .bx--tabs {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  // full width tabs trigger small viewports
+  .bx--tabs-trigger {
+    width: 100%;
+  }
+
+  // full-width tab content
+  & > div {
+    width: 100%;
+  }
+
+  // reset margins because of the nested row
+  .bx--row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.landing-page__illo {
+  max-width: 100%;
+}
+
+.landing-page__banner {
+  position: relative;
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
+  background-color: $ui-01;
+}
+
+.landing-page__banner h1 {
+  position: relative;
+  @include type-style('productive-heading-05');
+}
+
+.landing-page__banner:before {
+  content: '';
+  position: absolute;
+  left: -$spacing-05;
+  top: 0;
+  right: -$spacing-05;
+  bottom: 0;
+  background-color: $ui-01;
+}
+
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+
+.landing-page__tab-content {
+  padding-top: $layout-05;
+  padding-bottom: $layout-05;
+}
+
+.landing-page__r2 strong,
+.landing-page__r2 p {
+  @include type-style('productive-heading-03');
+}
+
+.landing-page__r2 strong {
+  font-weight: 600;
+}
+
+.landing-page__r2 p {
+  margin-top: $spacing-08;
+  margin-bottom: $spacing-08;
+}
+
+.landing-page__r3 {
+  padding-top: $spacing-08;
+  padding-bottom: $spacing-08;
+  position: relative;
+  background-color: $ui-01;
+}
+
+.landing-page__r3:before {
+  content: '';
+  position: absolute;
+  left: -$spacing-05;
+  top: 0;
+  right: -$spacing-05;
+  bottom: 0;
+  background: $ui-01;
+}
+
+.landing-page__r3 > * {
+  // sit above the pseudo-element background
+  position: relative;
+}
+
+.landing-page__r3 strong {
+  @include type-style('heading-01');
+}
