@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<style>
+	body {font-family: helvetica; line-height: 1.4}
+	#root div {width: 50%; float: left;}
+	li {list-style: none; position: relative;}
+	li:not(.done):hover {cursor: pointer; color: #0088cc;}
+	li::before {content: "\2192"; position: absolute; top: 0; left: -1.3em;}
+	.done {text-decoration: line-through; color: #aaa;}
+	.done::before {content: "\2713"; text-decoration: none; left: -1em;}
+	</style>
+
+</head>
+
+<body>
+	<div id="root">
+		<div>
+			<h2>all tasks</h2>
+			<ul>
+				<li v-for="task in tasks" v-text="task.description" :class="{ done: task.completed  }" @click="toggleState(task)"></li>
+			</ul>
+		</div>
+		<div>
+			<h2>to do</h2>
+			<ul>
+				<li v-for="task in incompleteTasks" v-text="task.description"></li>
+			</ul>
+			<h2>done</h2>
+			<ul>
+				<li v-for="task in completeTasks" v-text="task.description" class="done"></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/vue@2.5.2/dist/vue.js"></script>
+
+	<script>
+		var app = new Vue({
+			el: '#root',
+			data: {
+				tasks : [
+					{ description: 'go to the store', completed: true} ,
+					{ description: 'howl at the moon', completed: false} ,
+					{ description: 'feed the cat', completed: true} ,
+					{ description: 'make dinner', completed: false} ,
+					{ description: 'wash dishes', completed: true}
+				]
+			},
+			computed: {
+				incompleteTasks(){
+					return this.tasks.filter(task => ! task.completed);
+				},
+				completeTasks(){
+					return this.tasks.filter(task => task.completed);
+				}
+			},
+			methods: {
+				toggleState(task){
+					task.completed = true;
+				}
+			}
+		});
+
+	</script>
+
+</body>
+</html>
