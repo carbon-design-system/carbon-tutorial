@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
 
+// A comment to force another commit (cause: Netlify limbo, so try again)
 class App extends Component {
   render() {
     return (
