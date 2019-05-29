@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-
-class LandingPage extends Component {
-  render() {
-    return <div> LANDING PAGE </div>;
-  }
-}
+const LandingPage = () => {
+  return <div>LANDING PAGE</div>;
+};
 
 export default LandingPage;
-
