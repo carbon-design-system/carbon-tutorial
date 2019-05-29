@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.scss';
 import { Button } from 'carbon-components-react';
+import { Content } from 'carbon-components-react/lib/components/UIShell';
+import TutorialHeader from './components/TutorialHeader';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Button>Button</Button>
-      </div>
+      <>
+        <TutorialHeader />
+        <Content>
+          <Button>Button</Button>
+        </Content>
+      </>
     );
   }
 }
