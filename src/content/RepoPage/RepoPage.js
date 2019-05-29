@@ -1,166 +1,154 @@
-import React, { Component } from 'react';
-import {
-  Button,
-  Checkbox,
-  DataTable,
-  Pagination,
-  Search,
-  TableContainer,
-  Table,
-  TableHead,
-  TableRow,
-  TableExpandHeader,
-  TableHeader,
-  TableBody,
-  TableExpandRow,
-  TableCell,
-  TableExpandedRow,
-} from 'carbon-components-react';
+import React, { Component, useState } from 'react';
+import { gql } from 'apollo-boost';
+import { Query } from 'react-apollo';
+import { Pagination, Link, DataTableSkeleton } from 'carbon-components-react';
+import RepoTable from './RepoTable';
 
-class RepoPage extends Component {
-  render() {
-    const initialRows = [
-      {
-        id: 'a',
-        name: 'Issue',
-        protocol: 'HTTP',
-        port: 3000,
-        rule: 'Round robin',
-        attached_groups: 'Kevins VM Groups',
-        status: 'Disabled',
-      },
-      {
-        id: 'b',
-        name: 'Load Balancer 1',
-        protocol: 'HTTP',
-        port: 443,
-        rule: 'Round robin',
-        attached_groups: 'Maureens VM Groups',
-        status: 'Starting',
-      },
-      {
-        id: 'c',
-        name: 'Load Balancer 2',
-        protocol: 'HTTP',
-        port: 80,
-        rule: 'DNS delegation',
-        attached_groups: 'Andrews VM Groups',
-        status: 'Active',
-      },
-    ];
-    const headers = [
-      {
-        key: 'name',
-        header: 'Name',
-      },
-      {
-        key: 'protocol',
-        header: 'Protocol',
-      },
-      {
-        key: 'port',
-        header: 'Port',
-      },
-      {
-        key: 'rule',
-        header: 'Rule',
-      },
-      {
-        key: 'attached_groups',
-        header: 'Attached Groups',
-      },
-      {
-        key: 'status',
-        header: 'Status',
-      },
-    ];
-    return (
-      <div className="bx--grid repo-page">
-        <div className="bx--row">
-          <div className="bx--col-lg-3">
-            <label htmlFor="search-1" className="bx--label">
-              Filter by repo
-            </label>
-            <Search
-              labelText="Filter by repo"
-              placeHolderText="Filter repo"
-              id="search-1"
-              small
-            />
-            <Checkbox checked labelText="All" id="checkbox-label-0" />
-            <Checkbox labelText="Repo 1" id="checkbox-label-1" />
-            <Checkbox labelText="Repo 2" id="checkbox-label-2" />
-            <Checkbox labelText="Repo 3" id="checkbox-label-3" />
-            <Checkbox labelText="Repo 4" id="checkbox-label-4" />
-            <Button kind="ghost">See more</Button>
-          </div>
-          <div className="bx--col-lg-13">
-            <DataTable
-              rows={initialRows}
-              headers={headers}
-              render={({
-                rows,
-                headers,
-                getHeaderProps,
-                getRowProps,
-                getTableProps,
-              }) => (
-                <TableContainer
-                  title="Data table title"
-                  description="Additional description if needed">
-                  <Table {...getTableProps()}>
-                    <TableHead>
-                      <TableRow>
-                        <TableExpandHeader />
-                        {headers.map(header => (
-                          <TableHeader {...getHeaderProps({ header })}>
-                            {header.header}
-                          </TableHeader>
-                        ))}
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {rows.map(row => (
-                        <React.Fragment key={row.id}>
-                          <TableExpandRow {...getRowProps({ row })}>
-                            {row.cells.map(cell => (
-                              <TableCell key={cell.id}>{cell.value}</TableCell>
-                            ))}
-                          </TableExpandRow>
-                          <TableExpandedRow colSpan={headers.length + 1}>
-                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit, sed do eiusmod tempor incididunt ut labore
-                              et dolore magna aliqua. Ut enim ad minim veniam,
-                              quis nostrud exercitation ullamco laboris nisi ut
-                              aliquip ex ea commodo consequat. Duis aute irure
-                              dolor in reprehenderit in voluptate velit esse
-                              cillum dolore eu fugiat nulla pariatur. Excepteur
-                              sint occaecat cupidatat non proident, sunt in
-                              culpa qui officia deserunt mollit anim id est
-                              laborum.
-                            </p>
-                          </TableExpandedRow>
-                        </React.Fragment>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              )}
-            />
-            <Pagination
-              totalItems={1228}
-              backwardText="Previous page"
-              forwardText="Next page"
-              pageSize={100}
-              pageSizes={[10, 25, 50, 100]}
-              itemsPerPageText="Items per page"
-            />
-          </div>
+const REPO_QUERY = gql`
+  query REPO_QUERY {
+    # Let's use Carbon as our organization
+    organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
+      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
+        totalCount
+        nodes {
+          url
+          homepageUrl
+          issues(filterBy: { states: OPEN }) {
+            totalCount
+          }
+          stargazers {
+            totalCount
+          }
+          releases(first: 1) {
+            totalCount
+            nodes {
+              name
+            }
+          }
+          name
+          updatedAt
+          createdAt
+          description
+          id
+        }
+      }
+    }
+  }
+`;
+
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+    header: 'Links',
+  },
+];
+
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
+
+const RepoPage = () => {
+  const [totalItems, setTotalItems] = useState(0);
+  const [firstRowIndex, setFirstRowIndex] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
+
+  return (
+    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+      <div className="bx--row repo-page__r1">
+        <div className="bx--col-lg-16">
+          <Query query={REPO_QUERY}>
+            {({ loading, error, data: { organization } }) => {
+              // Waiting for the request to complete
+              if (loading)
+                return (
+                  <DataTableSkeleton
+                    columnCount={headers.length + 1}
+                    rowCount={12}
+                    headers={headers}
+                  />
+                );
+
+              // Something went wrong with the data fetching
+              if (error) return `Error! ${error.message}`;
+
+              // If we're here, we've got our data!
+              const { repositories } = organization;
+              setTotalItems(repositories.totalCount);
+              const rows = getRowItems(repositories.nodes);
+              return (
+                <>
+                  <RepoTable
+                    headers={headers}
+                    rows={rows.slice(
+                      firstRowIndex,
+                      firstRowIndex + currentPageSize
+                    )}
+                  />
+                  <Pagination
+                    totalItems={totalItems}
+                    backwardText="Previous page"
+                    forwardText="Next page"
+                    pageSize={currentPageSize}
+                    pageSizes={[5, 10, 15, 25]}
+                    itemsPerPageText="Items per page"
+                    onChange={({ page, pageSize }) => {
+                      if (pageSize !== currentPageSize) {
+                        setCurrentPageSize(pageSize);
+                      }
+                      setFirstRowIndex(pageSize * (page - 1));
+                    }}
+                  />
+                </>
+              );
+            }}
+          </Query>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default RepoPage;
