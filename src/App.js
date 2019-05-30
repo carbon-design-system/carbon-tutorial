@@ -6,7 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
 
-export default class App extends Component {
+class App extends Component {
   render() {
     return (
       <>
@@ -21,3 +21,5 @@ export default class App extends Component {
     );
   }
 }
+
+export default App;
