@@ -5,7 +5,7 @@ class App extends Component {
     return (
       <div>
         Hello Carbon! Well, not quite yet. This is the starting point for the
-        Carbon tutorial.
+        Carbon tutorial. test.
       </div>
     );
   }
