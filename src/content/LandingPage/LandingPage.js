@@ -41,7 +41,7 @@ const LandingPage = () => {
             <Tab {...props.tab} label="About">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
-                  <div className="bx--col-lg-8">
+                  <div className="bx--col-md-4 bx--col-lg-7">
                     <h2 className="landing-page__subheading">
                       What is Carbon?
                     </h2>
@@ -54,7 +54,7 @@ const LandingPage = () => {
                     </p>
                     <Button>Learn more</Button>
                   </div>
-                  <div className="bx--col-lg-8">
+                  <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
                     <img
                       className="landing-page__illo"
                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}
