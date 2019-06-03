@@ -19,11 +19,11 @@ const TutorialHeader = () => (
   <Header aria-label="Carbon Tutorial">
     <SkipToContent />
     <HeaderName element={Link} to="/" prefix="IBM">
-      Carbon xTutorial
+      Carbon Tutorial
     </HeaderName>
     <HeaderNavigation aria-label="Carbon Tutorial">
       <HeaderMenuItem element={Link} to="/repos">
-        Repositoriesx
+        Repositories
       </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
