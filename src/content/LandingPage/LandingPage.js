@@ -34,7 +34,6 @@ const LandingPage = () => {
             Design &amp; build with Carbon
           </h1>
         </div>
-        <div className="bx--col-lg-16">1</div>
       </div>
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
