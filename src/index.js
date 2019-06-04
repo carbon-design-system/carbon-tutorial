@@ -5,6 +5,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 
+/* Token change to trigger re-build for Netlify */
+
 ReactDOM.render(
   <Router>
     <App />
