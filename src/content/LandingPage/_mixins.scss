@@ -1,0 +1,15 @@
+@mixin landing-page-background() {
+  background-color: #f3f3f3;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 0;
+    right: -16px;
+    bottom: 0;
+    background: #f3f3f3;
+    z-index: -1;
+  }
+}
