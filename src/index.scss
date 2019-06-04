@@ -1,5 +1,8 @@
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+
 $feature-flags: (
   ui-shell: true,
+  grid-columns-16: true,
 );
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
