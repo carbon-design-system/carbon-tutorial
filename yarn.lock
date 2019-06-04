@@ -2481,6 +2481,11 @@ carbon-components@^10.2.0:
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
 
+carbon-grid@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/carbon-grid/-/carbon-grid-1.1.2.tgz#e24289b0733b123c67ad6b82304c7f887386f9c5"
+  integrity sha512-IeXbqqAyLO4h8J4SCHzBc9nfAbc0yev8mXzDrOZIrjjXB627Uc19qYMtTDOL7FJCzaRg7JZv15nGaKBAzzTH5A==
+
 carbon-icons@^7.0.7:
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-7.0.7.tgz#ebafe3e9fa25df973796a8eca06d8a7c501cc610"
