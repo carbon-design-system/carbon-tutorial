@@ -1,5 +1,7 @@
 @import './_mixins.scss';
 @import './overrides.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
 
 .landing-page__banner {
   padding-top: $spacing-05;
