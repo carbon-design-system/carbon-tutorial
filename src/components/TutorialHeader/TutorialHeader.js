@@ -11,7 +11,13 @@ import {
   HeaderGlobalAction,
   SkipToContent,
 } from 'carbon-components-react/lib/components/UIShell';
+import { Link } from 'react-router-dom';
 
+//DC: <HeaderName href="/" prefix="IBM">
+//DC: <HeaderName element={Link} to="/" prefix="IBM">
+
+//DC: <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+//DC: <HeaderMenuItem element={Link} to="/repos"> Repositories </HeaderMenuItem>
 const TutorialHeader = () => (
   <Header aria-label="Carbon Tutorial">
     <SkipToContent />
@@ -20,9 +26,6 @@ const TutorialHeader = () => (
     </HeaderName>
     <HeaderNavigation aria-label="Carbon Tutorial">
       <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
-    </HeaderNavigation>
-    <HeaderNavigation aria-label="Carbon Tutorial 2">
-      <HeaderMenuItem href="/repos2">Repositories 2</HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">
