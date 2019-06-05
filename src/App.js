@@ -8,14 +8,14 @@ import { Content } from 'carbon-components-react/lib/components/UIShell'; //DC: 
 class App extends Component {
   render() {
     return (
-      <>
+      <React.Fragment>
         <TutorialHeader />
         <Content>
           Hello Carbon! Well, not quite yet. This is the starting point for the
           Carbon tutorial.
           <Button>Button</Button>
         </Content>
-      </>
+      </React.Fragment>
     );
   }
 }
