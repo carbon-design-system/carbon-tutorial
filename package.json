@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
-    "ci-check": "yarn format:diff",
+    "ci-check": "npm run format:diff",
     "clean": "yarn cache clean && yarn install",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
@@ -17,6 +17,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "^10.2.0",
     "@carbon/icons-react": "^10.2.0",
     "carbon-components": "^10.2.0",
     "carbon-components-react": "^7.2.0",
@@ -57,15 +58,15 @@
   },
   "lint-staged": {
     "*.js": [
-      "yarn format:staged",
+      "npm run format:staged",
       "git add"
     ],
     "*.{scss,css}": [
-      "yarn format:staged",
+      "npm run format:staged",
       "git add"
     ],
     "*.md": [
-      "yarn format:staged",
+      "npm run format:staged",
       "git add"
     ]
   },
