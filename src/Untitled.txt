@@ -1,0 +1,8 @@
+BCPii API query of group profile attributes does not return current group profile contents when it was modified by Change LPAR Group Controls task or its API equivalent.
+
+
+Use the Change LPAR Group Controls task or its equivalent to modify the group profile contents.  Then read the contents via BCPii API query.
+
+Change LPAR Group Controls' path to modify group profiles did not notify the cache that the group profiles contents was updated.
+
+Turn on flag to tell the logic to fire off group profile update event.
