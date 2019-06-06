@@ -9,7 +9,7 @@ import RepoPage from './content/RepoPage';
 class App extends Component {
   render() {
     return (
-      <>
+      <React.Fragment>
         <TutorialHeader />
         <Content>
           <Switch>
@@ -17,7 +17,7 @@ class App extends Component {
             <Route path="/repos" component={RepoPage} />
           </Switch>
         </Content>
-      </>
+      </React.Fragment>
     );
   }
 }
