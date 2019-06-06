@@ -1,0 +1,7 @@
+diff a/src/content/LandingPage/_overrides.scss b/src/content/LandingPage/_overrides.scss	(rejected hunks)
+@@ -2,2 +2,2 @@
+-    right: 0;
+-  }
+\ No newline at end of file
++  right: 0;
++}

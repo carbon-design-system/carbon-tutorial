@@ -1,0 +1,4 @@
+diff a/src/index.scss b/src/index.scss	(rejected hunks)
+@@ -3 +3 @@ $feature-flags: (
+-  grid-columns-16: true
++  grid-columns-16: true,

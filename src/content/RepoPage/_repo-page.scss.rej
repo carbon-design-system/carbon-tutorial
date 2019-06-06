@@ -1,0 +1,9 @@
+diff a/src/content/RepoPage/_repo-page.scss b/src/content/RepoPage/_repo-page.scss	(rejected hunks)
+@@ -2,3 +2,3 @@
+-    padding-top: $spacing-05;
+-    padding-bottom: $spacing-05;
+-  }
+\ No newline at end of file
++  padding-top: $spacing-05;
++  padding-bottom: $spacing-05;
++}
