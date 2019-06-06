@@ -5,7 +5,9 @@
 /.pnp
 .pnp.js
 
+# DC
 .env
+.yarn-offline-mirror
 
 # testing
 /coverage
