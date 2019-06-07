@@ -6,12 +6,12 @@ Closes #
 
 **New**
 
-- {{new thing}}
+* {{new thing}}
 
 **Changed**
 
-- {{change thing}}
+* {{change thing}}
 
 **Removed**
 
-- {{removed thing}}
+* {{removed thing}}

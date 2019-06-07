@@ -34,5 +34,5 @@ about: Something isn't working as expected? Here is the right place to report.
 
 ## Additional information
 
-- Screenshots or code
-- Notes
+* Screenshots or code
+* Notes
