@@ -7,8 +7,8 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
-    "ci-check": "yarn format:diff",
-    "clean": "yarn cache clean && yarn install",
+    "ci-check": "npm run format:diff",
+    "clean": "npm cache clean && npm install",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
@@ -17,6 +17,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "^10.2.0",
     "@carbon/icons-react": "^10.2.0",
     "carbon-components": "^10.2.0",
     "carbon-components-react": "^7.2.0",
