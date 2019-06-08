@@ -25,7 +25,7 @@ const TutorialHeader = () => (
     <HeaderNavigation aria-label="Carbon Tutorial">
       <HeaderMenuItem element={Link} to="/repos">
         Repositories
-      </HeaderMenuItem>{' '}
+      </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">
