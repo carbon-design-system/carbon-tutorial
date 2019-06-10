@@ -42,13 +42,30 @@ const LandingPage = () => {
             <Tab {...props.tab} label="About">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
-                  <div className="bx--col-md-4 bx--col-lg-7">7/16</div>
+                  <div className="bx--col-md-4 bx--col-lg-7">
+                    <h2 className="landing-page__subheading">
+                      What is Carbon?
+                    </h2>
+                    <p className="landing-page__p">
+                      Carbon is IBM’s open-source design system for digital
+                      products and experiences. With the IBM Design Language as
+                      its foundation, the system consists of working code,
+                      design tools and resources, human interface guidelines,
+                      and a vibrant community of contributors.
+                    </p>
+                    <Button>Learn more</Button>
+                  </div>
                   <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
-                    8/16
+                    <img
+                      className="landing-page__illo"
+                      src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+                      alt="Carbon illustration"
+                    />
                   </div>
                 </div>
               </div>
             </Tab>
+
             <Tab {...props.tab} label="Design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
@@ -73,10 +90,12 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">4/16</div>
-        <div className="bx--col-md-4 bx--col-lg-4">4/16</div>
-        <div className="bx--col-md-4 bx--col-lg-4">4/16</div>
-        <div className="bx--col-md-4 bx--col-lg-4">4/16</div>
+        <div className="bx--col-md-4 bx--col-lg-4">
+          <h3 className="landing-page__label">The Principles</h3>
+        </div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
       </div>
     </div>
   );
