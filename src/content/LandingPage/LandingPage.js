@@ -24,17 +24,15 @@ const LandingPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
-        <div className="bx--row landing-page__banner">
-          <div className="bx--col-lg-16">
-            <Breadcrumb noTrailingSlash aria-label="Page navigation">
-              <BreadcrumbItem>
-                <a href="/">Getting started</a>
-              </BreadcrumbItem>
-            </Breadcrumb>
-            <h1 className="landing-page__heading">
-              Design &amp; build with Carbon
-            </h1>
-          </div>
+        <div className="bx--col-lg-16">
+          <Breadcrumb noTrailingSlash aria-label="Page navigation">
+            <BreadcrumbItem>
+              <a href="/">Getting started</a>
+            </BreadcrumbItem>
+          </Breadcrumb>
+          <h1 className="landing-page__heading">
+            Design &amp; build with Carbon
+          </h1>
         </div>
       </div>
       <div className="bx--row landing-page__r2">
@@ -66,7 +64,6 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-
             <Tab {...props.tab} label="Design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
@@ -90,7 +87,6 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-
       <div className="bx--row landing-page__r3">
         <div className="bx--col-md-4 bx--col-lg-4">
           <h3 className="landing-page__label">The Principles</h3>
