@@ -861,6 +861,14 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@carbon/grid@^10.3.0":
+  version "10.3.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@carbon/grid/-/grid-10.3.0.tgz#327e21b2a3d9277efd4196af284ea6249bb43121"
+  integrity sha1-Mn4hsqPZJ379QZavKE6mJJu0MSE=
+  dependencies:
+    "@carbon/import-once" "10.2.0"
+    "@carbon/layout" "10.2.0"
+
 "@carbon/icon-helpers@0.0.1-beta.5":
   version "0.0.1-beta.5"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-0.0.1-beta.5.tgz#829e8593dbcee76e5d6300839d2b5d734f90c98d"
@@ -886,6 +894,16 @@
   dependencies:
     "@carbon/icon-helpers" "10.2.0"
     prop-types "^15.6.2"
+
+"@carbon/import-once@10.2.0":
+  version "10.2.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@carbon/import-once/-/import-once-10.2.0.tgz#374ffb5b39583de3c173e2df2b5302a317dd1126"
+  integrity sha1-N0/7WzlYPePBc+LfK1MCoxfdESY=
+
+"@carbon/layout@10.2.0":
+  version "10.2.0"
+  resolved "https://na.artifactory.swg-devops.com:443/artifactory/api/npm/wcp-wdp-npm-virtual/@carbon/layout/-/layout-10.2.0.tgz#3698b5c3e76bbe3b4b979708adbff68edfbb0e66"
+  integrity sha1-Npi1w+drvjtLl5cIrb/2jt+7DmY=
 
 "@commitlint/cli@^7.5.2":
   version "7.5.2"
