@@ -20,6 +20,10 @@
   padding-bottom: $layout-05;
 }
 
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+
 .landing-page__subheading {
   @include carbon--type-style('productive-heading-03');
   @include carbon--font-weight('semibold');
