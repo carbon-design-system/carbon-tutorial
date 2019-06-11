@@ -27,12 +27,10 @@ const LandingPage = () => {
             <BreadcrumbItem>
               <a href="/">Getting started</a>
             </BreadcrumbItem>
-            <BreadcrumbItem>
-              <h1 className="landing-page__heading">
-                Design &amp; build with Carbon
-              </h1>
-            </BreadcrumbItem>
           </Breadcrumb>
+          <h1 className="landing-page__heading">
+            Design &amp; build with Carbon
+          </h1>
         </div>
       </div>
       <div className="bx--row landing-page__r2">
