@@ -4,10 +4,6 @@
   max-width: 100%;
 }
 
-@import 'carbon-components/scss/globals/scss/typography.scss';
-@import 'carbon-components/scss/globals/scss/vars.scss';
-//@import 'carbon-components/scss/globals/scss/styles.scss';
-
 .landing-page__banner {
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
@@ -29,7 +25,7 @@
 
 .landing-page__subheading {
   @include carbon--type-style('productive-heading-03');
-  //@include carbon--font-weight('semibold');
+  @include carbon--font-weight('semibold');
 }
 
 .landing-page__p {
