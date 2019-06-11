@@ -10,8 +10,8 @@
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
     "eject": "react-scripts eject",
-    "format": "prettier --write '**/*.{js,md,scss}'",
-    "format:diff": "prettier --list-different '**/*.{js,md,scss}'",
+    "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
     "start": "react-scripts start",
     "test": "react-scripts test"
