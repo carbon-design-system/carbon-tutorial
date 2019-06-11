@@ -36,6 +36,7 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
+
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
