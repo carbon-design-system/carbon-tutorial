@@ -1,189 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" line="62" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cd3506ed-c648-4711-b261-d2df27e5e06a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/_overrides.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-code-frame-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-core-7.2.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-core-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-generator-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-annotate-as-pure-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-builder-binary-assignment-operator-visitor-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-builder-react-jsx-7.3.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-call-delegate-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-create-class-features-plugin-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-define-map-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-explode-assignable-expression-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-function-name-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-get-function-arity-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-hoist-variables-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-member-expression-to-functions-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-module-imports-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-module-transforms-7.2.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-optimise-call-expression-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-plugin-utils-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-regex-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-remap-async-to-generator-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-replace-supers-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-simple-access-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-split-export-declaration-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-wrap-function-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helpers-7.3.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-highlight-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-parser-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-async-generator-functions-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-class-properties-7.3.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-decorators-7.3.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-json-strings-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-object-rest-spread-7.3.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-object-rest-spread-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-optional-catch-binding-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-unicode-property-regex-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-async-generators-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-decorators-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-dynamic-import-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-flow-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-json-strings-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-jsx-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-object-rest-spread-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-optional-catch-binding-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-typescript-7.3.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-arrow-functions-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-async-to-generator-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-block-scoped-functions-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-block-scoping-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-classes-7.2.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-classes-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-computed-properties-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-destructuring-7.3.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-dotall-regex-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-duplicate-keys-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-exponentiation-operator-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-flow-strip-types-7.2.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-for-of-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-function-name-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-literals-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-amd-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-commonjs-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-systemjs-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-umd-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-named-capturing-groups-regex-7.3.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-new-target-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-object-super-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-parameters-7.3.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-constant-elements-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-display-name-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-jsx-7.3.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-jsx-self-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-jsx-source-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-regenerator-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-runtime-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-shorthand-properties-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-spread-7.2.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-sticky-regex-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-template-literals-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-typeof-symbol-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-typescript-7.3.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-unicode-regex-7.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-preset-env-7.3.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-preset-env-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-preset-react-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-preset-typescript-7.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-runtime-7.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-runtime-7.3.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-runtime-7.4.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-template-7.2.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-traverse-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-types-7.3.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icon-helpers-0.0.1-beta.5.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icon-helpers-10.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icons-react-0.0.1-beta.5.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icons-react-10.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-cli-7.5.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-config-conventional-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-ensure-7.5.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-execute-rule-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-format-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-is-ignored-7.5.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-lint-7.5.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-load-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-message-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-parse-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-read-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-resolve-extends-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-rules-7.5.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-to-lines-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-top-level-7.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@csstools-convert-colors-1.4.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@marionebl-sander-0.6.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@mrmlnc-readdir-enhanced-2.2.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@nodelib-fs.stat-1.1.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@samverschueren-stream-to-observable-0.3.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-add-jsx-attribute-4.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-remove-jsx-attribute-4.0.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-remove-jsx-empty-expression-4.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-replace-jsx-attribute-value-4.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-svg-dynamic-title-4.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-svg-em-dimensions-4.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-transform-react-native-svg-4.0.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-transform-svg-component-4.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-preset-4.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-core-4.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-hast-util-to-babel-ast-4.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-plugin-jsx-4.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-plugin-svgo-4.0.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-webpack-4.1.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-node-11.10.5.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-q-1.5.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-tapable-1.0.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-unist-2.0.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-vfile-3.0.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-vfile-message-1.0.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-ast-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-floating-point-hex-parser-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-api-error-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-buffer-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-code-frame-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-fsm-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-module-context-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-wasm-bytecode-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-helper-wasm-section-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-ieee754-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-leb128-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-utf8-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-wasm-edit-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-wasm-gen-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-wasm-opt-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-wasm-parser-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-wast-parser-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@webassemblyjs-wast-printer-1.7.11.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@xtuc-ieee754-1.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@xtuc-long-4.2.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/chokidar-2.1.5.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/color-name-1.1.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/commander-2.19.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/core-js-2.6.5.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cosmiconfig-5.2.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/extsprintf-1.4.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/js-yaml-3.13.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/minimist-0.0.10.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/nan-2.12.1.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-is-16.8.4.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/statuses-1.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/terser-webpack-plugin-1.2.3.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tough-cookie-2.5.0.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/upath-1.1.2.tgz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -195,12 +19,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/content/LandingPage/LandingPage.js">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/content/RepoPage/RepoPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+            <state relative-caret-position="429">
+              <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -209,13 +33,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/content/RepoPage/RepoPage.js">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="411">
-              <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="198">
+              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -232,7 +53,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/content/RepoPage/RepoTable.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
+            <state relative-caret-position="900">
               <caret line="63" selection-start-line="63" selection-end-line="63" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -262,11 +83,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            <state relative-caret-position="108">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -283,7 +104,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="609">
+            <state relative-caret-position="810">
               <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
             </state>
           </provider>
@@ -331,9 +152,9 @@
         <option value="$PROJECT_DIR$/src/content/LandingPage/_mixins.scss" />
         <option value="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" />
         <option value="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" />
-        <option value="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" />
         <option value="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" />
         <option value="$PROJECT_DIR$/src/app.scss" />
+        <option value="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" />
       </list>
     </option>
   </component>
@@ -345,60 +166,46 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
+              <item name="carbon-tutorial" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\carbon-tutorial" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="carbon-tutorial" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\carbon-tutorial" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="carbon-tutorial" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\carbon-tutorial" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="components" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="TutorialHeader" type="462c0819:PsiDirectoryNode" />
+              <item name="carbon-tutorial" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\carbon-tutorial" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="content" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="LandingPage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="carbon-tutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="carbon-tutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="content" type="462c0819:PsiDirectoryNode" />
-              <item name="RepoPage" type="462c0819:PsiDirectoryNode" />
+              <item name="carbon-tutorial" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="D:\carbon-tutorial" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="content" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="RepoPage" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,11 +243,12 @@
       <option name="presentableId" value="Default" />
       <updated>1560095376593</updated>
       <workItem from="1560095377666" duration="3984000" />
+      <workItem from="1560327662252" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5214000" />
+    <option name="totallyTimeSpent" value="6007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,9 +262,9 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992785" visible="true" weight="0.20205066" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4978355" visible="true" weight="0.20205066" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.5007215" side_tool="true" visible="true" weight="0.20205066" />
+      <window_info id="npm" order="2" sideWeight="0.5021645" side_tool="true" visible="true" weight="0.20205066" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -502,6 +310,24 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fix repo page wrapper" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix repo page wrapper" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.env">
@@ -552,6 +378,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/content/LandingPage/LandingPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/content/RepoPage/RepoTable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -576,13 +429,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/content/LandingPage/LandingPage.js">
+    <entry file="file://$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="95" column="12" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="810">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -593,44 +443,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss">
+    <entry file="file://$PROJECT_DIR$/src/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+        <state relative-caret-position="108">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/content/RepoPage/RepoTable.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/content/RepoPage/RepoPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="411">
-          <caret line="63" column="51" selection-start-line="63" selection-start-column="51" selection-end-line="63" selection-end-column="51" />
+        <state relative-caret-position="429">
+          <caret line="64" column="53" lean-forward="true" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
         </state>
       </provider>
     </entry>
