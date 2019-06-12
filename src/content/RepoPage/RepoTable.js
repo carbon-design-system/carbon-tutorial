@@ -47,7 +47,7 @@ const RepoTable = ({ rows, headers }) => {
                       <TableCell key={cell.id}>{cell.value}</TableCell>
                     ))}
                   </TableExpandRow>
-                  <TableExpandRow colSpand={headers.length + 1}>
+                  <TableExpandRow colSpan={headers.length + 1}>
                     <p>Row description</p>
                   </TableExpandRow>
                 </React.Fragment>
