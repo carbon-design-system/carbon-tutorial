@@ -108,7 +108,7 @@ const RepoPage = () => {
             />
           );
 
-        // Something went wrong with the data fetching
+        // Something went wrong with the data fetching if error
         if (error) return `Error! ${error.message}`;
 
         // If we're here, we've got our data!
