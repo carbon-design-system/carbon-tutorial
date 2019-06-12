@@ -11,6 +11,10 @@
 # production
 /build
 
+# DC
+.env
+.yarn-offline-mirror
+
 # misc
 .DS_Store
 .env.local
