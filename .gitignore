@@ -12,7 +12,7 @@
 /build
 
 # DC
-.env
+.env.local
 .yarn-offline-mirror
 
 # misc
