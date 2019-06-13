@@ -14,7 +14,7 @@ import { HashRouter as Router } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-const graphqlClient = new ApolloClient({
+const gqlClient = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
     authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
@@ -22,7 +22,7 @@ const graphqlClient = new ApolloClient({
 });
 
 ReactDOM.render(
-  <ApolloProvider client={graphqlClient}>
+  <ApolloProvider client={gqlClient}>
     <Router>
       <App />
     </Router>
