@@ -65,6 +65,7 @@ const headers = [
   },
 ];
 
+//DC: this is static test data
 const rows = [
   {
     id: '1',
@@ -134,7 +135,9 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              console.log(organization);
+              // console.log(organization);
+              const { repositories } = organization;
+              const rows = getRowItems(repositories.nodes);
 
               return (
                 <React.Fragment>
