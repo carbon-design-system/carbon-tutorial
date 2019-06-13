@@ -1,0 +1,10 @@
+/* 
+To optimize compile time, all app-specific styling will be set here...
+...otherwise, if added to index.scss, ALL carbon styling will be compiled everytime.
+Since carbon styling is not changing (only on updates or when overidden here),
+it doesn't make sense to compile something that is unchanged.
+*/
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './content/LandingPage/landing-page.scss';
+@import './content/RepoPage/repo-page.scss';
