@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="pde_compiler_errorwarnings_block">
+		<item value="true" key="0"/>
+		<item value="false" key="1"/>
+		<item value="false" key="2"/>
+		<item value="false" key="3"/>
+		<item value="false" key="4"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+</section>
