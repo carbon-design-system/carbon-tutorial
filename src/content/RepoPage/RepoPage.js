@@ -1,6 +1,7 @@
-import React from 'react';
+// import React from 'react';
+import React, { useState } from 'react';
 import RepoTable from './RepoTable';
-import { Link, DataTableSkeleton } from 'carbon-components-react';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 
@@ -122,6 +123,10 @@ const getRowItems = rows =>
   }));
 
 const RepoPage = () => {
+  const [totalItems, setTotalItems] = useState(0);
+  const [firstRowIndex, setFirstRowIndex] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
+
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
       <div className="bx--row repo-page__r1">
@@ -146,11 +151,33 @@ const RepoPage = () => {
               // If we're here, we've got our data!
               // console.log(organization);
               const { repositories } = organization;
+              setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
 
+              // <RepoTable headers={headers} rows={rows} />
               return (
                 <React.Fragment>
-                  <RepoTable headers={headers} rows={rows} />
+                  <RepoTable
+                    headers={headers}
+                    rows={rows.slice(
+                      firstRowIndex,
+                      firstRowIndex + currentPageSize
+                    )}
+                  />
+                  <Pagination
+                    totalItems={totalItems}
+                    backwardText="Previous page"
+                    forwardText="Next page"
+                    pageSize={currentPageSize}
+                    pageSizes={[5, 10, 15, 25]}
+                    itemsPerPageText="Items per page"
+                    onChange={({ page, pageSize }) => {
+                      if (pageSize !== currentPageSize) {
+                        setCurrentPageSize(pageSize);
+                      }
+                      setFirstRowIndex(pageSize * (page - 1));
+                    }}
+                  />
                 </React.Fragment>
               );
             }}
