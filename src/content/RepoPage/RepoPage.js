@@ -118,37 +118,36 @@ const RepoPage = () => {
         const rows = getRowItems(repositories.nodes);
 
         return (
-          <>
-            <RepoTable
-              headers={headers}
-              rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-            />
-            <Pagination
-              totalItems={totalItems}
-              backwardText="Previous page"
-              forwardText="Next page"
-              pageSize={currentPageSize}
-              pageSizes={[5, 10, 15, 25]}
-              itemsPerPageText="Items per page"
-              onChange={({ page, pageSize }) => {
-                if (pageSize !== currentPageSize) {
-                  setCurrentPageSize(pageSize);
-                }
-                setFirstRowIndex(pageSize * (page - 1));
-              }}
-            />
-          </>
+          <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+            <div className="bx--row repo-page__r1">
+              <div className="bx--col-lg-16">
+                <RepoTable
+                  headers={headers}
+                  rows={rows.slice(
+                    firstRowIndex,
+                    firstRowIndex + currentPageSize
+                  )}
+                />
+                <Pagination
+                  totalItems={totalItems}
+                  backwardText="Previous page"
+                  forwardText="Next page"
+                  pageSize={currentPageSize}
+                  pageSizes={[5, 10, 15, 25]}
+                  itemsPerPageText="Items per page"
+                  onChange={({ page, pageSize }) => {
+                    if (pageSize !== currentPageSize) {
+                      setCurrentPageSize(pageSize);
+                    }
+                    setFirstRowIndex(pageSize * (page - 1));
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         );
       }}
     </Query>
-
-    // <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
-    //   <div className="bx--row repo-page__r1">
-    //     <div className="bx--col-lg-16">
-    //       <RepoTable headers={headers} rows={rows} />
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
