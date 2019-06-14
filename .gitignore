@@ -12,6 +12,7 @@
 /build
 
 # misc
+.yarn-offline-mirror
 .DS_Store
 .env.local
 .env.development.local
