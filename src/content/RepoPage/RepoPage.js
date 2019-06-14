@@ -84,7 +84,7 @@ const getRowItems = rows =>
   rows.map(row => ({
     ...row,
     key: row.id,
-    stars: row.stargazers.totalConut,
+    stars: row.stargazers.totalCount,
     issueCount: row.issues.totalCount,
     createdAt: new Date(row.createdAt).toLocaleDateString(),
     updatedAt: new Date(row.updatedAt).toLocaleDateString(),
