@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TypeScriptCompiler">
+    <option name="useConfig" value="true" />
+    <option name="typeScriptServiceDirectory" value="C:\RTC\ProjectXWebUI\ProjectX_WebUI\WebUI\node_modules\typescript\lib" />
+    <option name="versionType" value="SERVICE_DIRECTORY" />
+  </component>
+</project>

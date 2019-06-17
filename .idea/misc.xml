@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="RTC.Settings">
+    <option name="historyRows" value="" />
+    <option name="projectName" value="ProjectX" />
+    <option name="repoPasswd" value="94La7TtS/u+CPLeqqKF17g==" />
+    <option name="repoUri" value="https://jazzc04.hursley.ibm.com:9443/ccm/" />
+    <option name="repoUser" value="mark.falconbridge@uk.ibm.com" />
+    <option name="wsListLimit" value="50" />
+  </component>
+</project>
