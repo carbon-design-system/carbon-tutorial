@@ -22,4 +22,5 @@ class App extends Component {
   }
 }
 
+//Just a comment
 export default App;
