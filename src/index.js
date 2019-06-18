@@ -22,12 +22,13 @@ const client = new ApolloClient({
   },
 });
 
-const Root = () => (
+ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
       <App />
     </Router>
-  </ApolloProvider>
+  </ApolloProvider>,
+  document.getElementById('root')
 );
 ReactDOM.render(<Root />, document.getElementById('root'));
 
