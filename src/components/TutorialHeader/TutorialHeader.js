@@ -25,13 +25,13 @@ const TutorialHeader = () => (
       </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
-      <HeaderGlobalAction aria-label="Notifications">
+      <HeaderGlobalAction aria-label="Notification">
         <Notification20 />
       </HeaderGlobalAction>
-      <HeaderGlobalAction aria-label="User Avatar">
+      <HeaderGlobalAction aria-label="User avatar">
         <UserAvatar20 />
       </HeaderGlobalAction>
-      <HeaderGlobalAction aria-label="App Switcher">
+      <HeaderGlobalAction aria-label="App switcher">
         <AppSwitcher20 />
       </HeaderGlobalAction>
     </HeaderGlobalBar>
