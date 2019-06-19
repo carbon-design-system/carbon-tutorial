@@ -1,11 +1,16 @@
-import React from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
   Button,
-  Tabs,
   Tab,
+  Tabs,
 } from 'carbon-components-react';
+import { InfoSection, InfoCard } from '../../components/Info';
+import Globe32 from '@carbon/icons-react/lib/globe/32';
+import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
+import Application32 from '@carbon/icons-react/lib/application/32';
+
+import React from 'react';
 
 const props = {
   tabs: {
@@ -59,7 +64,7 @@ const LandingPage = () => {
                       className="landing-page__illo"
                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}
                       alt="Carbon illustration"
-                    />
+                    />{' '}
                   </div>
                 </div>
               </div>
@@ -68,7 +73,7 @@ const LandingPage = () => {
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
-                    Rapidly build beautiful and accessible experiences. The
+                    Rapidly build beautiful and accessible experiences.The
                     Carbon kit contains all resources you need to get started.
                   </div>
                 </div>
@@ -87,14 +92,23 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-      <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">
-          <h3 className="landing-page__label">The Principles</h3>
-        </div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
-      </div>
+      <InfoSection heading="The Principles" className="landing-page__r3">
+        <InfoCard
+          heading="Carbon is Open"
+          body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+          icon={<PersonFavorite32 />}
+        />
+        <InfoCard
+          heading="Carbon is Modular"
+          body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+          icon={<Application32 />}
+        />
+        <InfoCard
+          heading="Carbon is Consistent"
+          body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+          icon={<Globe32 />}
+        />
+      </InfoSection>
     </div>
   );
 };
