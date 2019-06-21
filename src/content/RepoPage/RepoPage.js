@@ -118,7 +118,6 @@ const RepoPage = () => {
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-
               return (
                 <>
                   <RepoTable
