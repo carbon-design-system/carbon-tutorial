@@ -9,15 +9,10 @@ import RepoPage from './content/RepoPage';
 class App extends Component {
   render() {
     return (
-      <>
-        <TutorialHeader />
-        <Content>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/repos" component={RepoPage} />
-          </Switch>
-        </Content>
-      </>
+      <div>
+        Hello Carbon! Well, not quite yet. This is the starting point for the
+        Carbon tutorial.
+      </div>
     );
   }
 }
