@@ -1,3 +1,5 @@
+@import './overrides.scss';
+
 @include carbon--breakpoint(md) {
   // right justify tab component
   .landing-page__r2 .bx--tabs {
