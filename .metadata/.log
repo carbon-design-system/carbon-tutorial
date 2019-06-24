@@ -1,0 +1,429 @@
+!SESSION 2019-06-24 09:11:36.231 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_161
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.epp.mpc.core 4 0 2019-06-24 09:11:37.387
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core [154]
+  Unresolved requirement: Import-Package: org.apache.http.impl.client; version="4.5.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.epp.mpc.core.win32 4 0 2019-06-24 09:11:37.390
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.core.win32 [155]
+  Unresolved requirement: Import-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-version="1.7.0"
+    -> Export-Package: org.eclipse.epp.internal.mpc.core.transport.httpclient; bundle-symbolic-name="org.eclipse.epp.mpc.core"; bundle-version="1.7.0.v20180613-1243"; version="0.0.0"; x-friends:="org.eclipse.epp.mpc.core.win32"
+       org.eclipse.epp.mpc.core [154]
+         Unresolved requirement: Import-Package: org.apache.http.impl.client; version="4.5.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.epp.mpc.ui 4 0 2019-06-24 09:11:37.391
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.epp.mpc.ui [157]
+  Unresolved requirement: Require-Bundle: org.eclipse.epp.mpc.core; bundle-version="1.7.0"
+    -> Bundle-SymbolicName: org.eclipse.epp.mpc.core; bundle-version="1.7.0.v20180613-1243"; singleton:="true"
+       org.eclipse.epp.mpc.core [154]
+         Unresolved requirement: Import-Package: org.apache.http.impl.client; version="4.5.2"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.commons.repositories.http.core 4 0 2019-06-24 09:11:37.442
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.commons.repositories.http.core [294]
+  Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.5.2,4.6.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.hudson.core 4 0 2019-06-24 09:11:37.444
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.core [309]
+  Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.5.2,4.6.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.mylyn.hudson.ui 4 0 2019-06-24 09:11:37.446
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.mylyn.hudson.ui [310]
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.discovery; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.discovery; bundle-version="2.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.ecf.provider.jmdns; bundle-version="3.0.0"; resolution:="optional"
+  Unresolved requirement: Require-Bundle: org.eclipse.mylyn.hudson.core
+    -> Bundle-SymbolicName: org.eclipse.mylyn.hudson.core; bundle-version="1.16.0.v20180403-2055"; singleton:="true"
+       org.eclipse.mylyn.hudson.core [309]
+         Unresolved requirement: Import-Package: org.apache.http.impl.client; version="[4.5.2,4.6.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:444)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1682)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1624)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1555)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.jface 2 0 2019-06-24 09:11:42.347
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-24 09:11:42.347
+!MESSAGE A conflict occurred for CTRL+SHIFT+F9:
+Binding(CTRL+SHIFT+F9,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.deactivateAllTasks,Deactivate Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c3e686,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F9,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.checkin,Check-In,
+		Check-In,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1840986,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-24 09:11:42.348
+!MESSAGE A conflict occurred for CTRL+SHIFT+F11:
+Binding(CTRL+SHIFT+F11,
+	ParameterizedCommand(Command(org.eclipse.eclemma.ui.commands.CoverageLast,Coverage,
+		Coverage,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1229f6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F11,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.deliver,Deliver,
+		Deliver,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3b8eff,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2019-06-24 09:11:42.348
+!MESSAGE A conflict occurred for CTRL+SHIFT+F12:
+Binding(CTRL+SHIFT+F12,
+	ParameterizedCommand(Command(org.eclipse.mylyn.tasks.ui.command.searchForTask,Search Repository for Task,
+		,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@187a1e8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+F12,
+	ParameterizedCommand(Command(com.ibm.team.filesystem.ide.ui.command.accept,Accept,
+		Accept,
+		Category(com.ibm.team.filesystem.ide.ui.category,Jazz Source Control,Jazz Source Control,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@d65767,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.core.runtime 4 0 2019-06-24 09:11:49.877
+!MESSAGE Invalid input url:platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png
+!STACK 0
+java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png".
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:61)
+	at org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:290)
+	at org.eclipse.core.runtime.FileLocator.find(FileLocator.java:200)
+	at org.eclipse.ui.internal.menus.MenuHelper.getIconURI(MenuHelper.java:370)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.getImageURL(QuicklinksViewer.java:295)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.processDefinition(QuicklinksViewer.java:225)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.get(QuicklinksViewer.java:176)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.get(QuicklinksViewer.java:1)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.getQuicklinks(QuicklinksViewer.java:491)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.createContent(QuicklinksViewer.java:345)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroContent(IntroHTMLGenerator.java:718)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroElement(IntroHTMLGenerator.java:342)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroDiv(IntroHTMLGenerator.java:461)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroElement(IntroHTMLGenerator.java:336)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroDiv(IntroHTMLGenerator.java:461)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroElement(IntroHTMLGenerator.java:336)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateBodyElement(IntroHTMLGenerator.java:308)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLElement(IntroHTMLGenerator.java:143)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLforPage(IntroHTMLGenerator.java:77)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.generateContentForPage(BrowserIntroPartImplementation.java:323)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.dynamicStandbyStateChanged(BrowserIntroPartImplementation.java:582)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.doStandbyStateChanged(BrowserIntroPartImplementation.java:777)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroPartImplementation.standbyStateChanged(AbstractIntroPartImplementation.java:253)
+	at org.eclipse.ui.internal.intro.impl.model.IntroPartPresentation.standbyStateChanged(IntroPartPresentation.java:442)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.standbyStateChanged(CustomizableIntroPart.java:274)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.lambda$1(ViewIntroAdapterPart.java:114)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:71)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.setStandby(ViewIntroAdapterPart.java:111)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.lambda$0(ViewIntroAdapterPart.java:68)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:138)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:190)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:572)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1005)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:137)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:93)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:74)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1507)
+	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1478)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.updateActiveShell(WorkbenchSourceProvider.java:907)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.getCurrentState(WorkbenchSourceProvider.java:115)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.lambda$2(WorkbenchSourceProvider.java:668)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1190)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1051)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1540)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:2199)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4762)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.BringWindowToTop(Native Method)
+	at org.eclipse.swt.widgets.Decorations.bringToTop(Decorations.java:208)
+	at org.eclipse.swt.widgets.Shell.open(Shell.java:1250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.postProcess(WBWRenderer.java:782)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:690)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:778)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:749)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:743)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:727)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1096)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.core.runtime 4 0 2019-06-24 09:11:49.879
+!MESSAGE Invalid input url:platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png
+!STACK 0
+java.io.IOException: Unable to resolve plug-in "platform:/plugin/org.eclipse.epp.mpc.ui/intro/css/marketplace.png".
+	at org.eclipse.core.internal.runtime.PlatformURLPluginConnection.parse(PlatformURLPluginConnection.java:61)
+	at org.eclipse.core.internal.runtime.FindSupport.find(FindSupport.java:290)
+	at org.eclipse.core.runtime.FileLocator.find(FileLocator.java:200)
+	at org.eclipse.jface.resource.URLImageDescriptor.getStream(URLImageDescriptor.java:152)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:120)
+	at org.eclipse.jface.resource.URLImageDescriptor.getImageData(URLImageDescriptor.java:110)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.asDataURL(QuicklinksViewer.java:439)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.asBrowserURL(QuicklinksViewer.java:422)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.access$1(QuicklinksViewer.java:406)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.getImageURL(QuicklinksViewer.java:297)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.processDefinition(QuicklinksViewer.java:225)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.get(QuicklinksViewer.java:176)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer$ModelReader.get(QuicklinksViewer.java:1)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.getQuicklinks(QuicklinksViewer.java:491)
+	at org.eclipse.ui.intro.quicklinks.QuicklinksViewer.createContent(QuicklinksViewer.java:345)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroContent(IntroHTMLGenerator.java:718)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroElement(IntroHTMLGenerator.java:342)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroDiv(IntroHTMLGenerator.java:461)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroElement(IntroHTMLGenerator.java:336)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroDiv(IntroHTMLGenerator.java:461)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateIntroElement(IntroHTMLGenerator.java:336)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateBodyElement(IntroHTMLGenerator.java:308)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLElement(IntroHTMLGenerator.java:143)
+	at org.eclipse.ui.internal.intro.impl.html.IntroHTMLGenerator.generateHTMLforPage(IntroHTMLGenerator.java:77)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.generateContentForPage(BrowserIntroPartImplementation.java:323)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.dynamicStandbyStateChanged(BrowserIntroPartImplementation.java:582)
+	at org.eclipse.ui.internal.intro.impl.presentations.BrowserIntroPartImplementation.doStandbyStateChanged(BrowserIntroPartImplementation.java:777)
+	at org.eclipse.ui.internal.intro.impl.model.AbstractIntroPartImplementation.standbyStateChanged(AbstractIntroPartImplementation.java:253)
+	at org.eclipse.ui.internal.intro.impl.model.IntroPartPresentation.standbyStateChanged(IntroPartPresentation.java:442)
+	at org.eclipse.ui.intro.config.CustomizableIntroPart.standbyStateChanged(CustomizableIntroPart.java:274)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.lambda$1(ViewIntroAdapterPart.java:114)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:71)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.setStandby(ViewIntroAdapterPart.java:111)
+	at org.eclipse.ui.internal.ViewIntroAdapterPart.lambda$0(ViewIntroAdapterPart.java:68)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:144)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4567)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:212)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:196)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:52)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.emf.ecore.util.EcoreEList.dispatchNotification(EcoreEList.java:249)
+	at org.eclipse.emf.common.notify.impl.NotifyingListImpl.addUnique(NotifyingListImpl.java:304)
+	at org.eclipse.emf.common.util.AbstractEList.add(AbstractEList.java:304)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.setIntroStandby(WorkbenchIntroManager.java:200)
+	at org.eclipse.ui.internal.WorkbenchIntroManager.showIntro(WorkbenchIntroManager.java:138)
+	at org.eclipse.ui.application.WorkbenchWindowAdvisor.openIntro(WorkbenchWindowAdvisor.java:190)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchWindowAdvisor.openIntro(IDEWorkbenchWindowAdvisor.java:572)
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:782)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:1005)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:137)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:93)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:74)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1507)
+	at org.eclipse.ui.internal.Workbench.getActiveWorkbenchWindow(Workbench.java:1478)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.updateActiveShell(WorkbenchSourceProvider.java:907)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.getCurrentState(WorkbenchSourceProvider.java:115)
+	at org.eclipse.ui.internal.services.WorkbenchSourceProvider.lambda$2(WorkbenchSourceProvider.java:668)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1190)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1051)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1076)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1061)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1540)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:2199)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4762)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:345)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1499)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2159)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4757)
+	at org.eclipse.swt.internal.win32.OS.BringWindowToTop(Native Method)
+	at org.eclipse.swt.widgets.Decorations.bringToTop(Decorations.java:208)
+	at org.eclipse.swt.widgets.Shell.open(Shell.java:1250)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.postProcess(WBWRenderer.java:782)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:690)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:778)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:749)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:743)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:727)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1096)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1059)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:667)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:597)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:656)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:592)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1498)
+
+!ENTRY org.eclipse.egit.ui 2 0 2019-06-24 09:11:51.456
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\DanielaImmel'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.ui 4 0 2019-06-24 09:11:55.980
+!MESSAGE loader constraint violation: when resolving method "org.apache.http.impl.client.HttpClientBuilder.setConnectionManager(Lorg/apache/http/conn/HttpClientConnectionManager;)Lorg/apache/http/impl/client/HttpClientBuilder;" the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) of the current class, org/apache/http/client/fluent/Executor, and the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) for the method's defining class, org/apache/http/impl/client/HttpClientBuilder, have different Class objects for the type org/apache/http/conn/HttpClientConnectionManager used in the signature
+!STACK 0
+java.lang.LinkageError: loader constraint violation: when resolving method "org.apache.http.impl.client.HttpClientBuilder.setConnectionManager(Lorg/apache/http/conn/HttpClientConnectionManager;)Lorg/apache/http/impl/client/HttpClientBuilder;" the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) of the current class, org/apache/http/client/fluent/Executor, and the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) for the method's defining class, org/apache/http/impl/client/HttpClientBuilder, have different Class objects for the type org/apache/http/conn/HttpClientConnectionManager used in the signature
+	at org.apache.http.client.fluent.Executor.<clinit>(Executor.java:100)
+	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.createExecutor(OAuthCredentialsProvider.java:71)
+	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:28)
+	at org.eclipse.userstorage.oauth.OAuthCredentialsProvider.<init>(OAuthCredentialsProvider.java:66)
+	at org.eclipse.userstorage.oauth.EclipseOAuthCredentialsProvider.<init>(EclipseOAuthCredentialsProvider.java:136)
+	at org.eclipse.oomph.setup.ui.synchronizer.SynchronizerManager.createCredentialProvider(SynchronizerManager.java:413)
+	at org.eclipse.oomph.setup.ui.synchronizer.SynchronizerManager.<init>(SynchronizerManager.java:111)
+	at org.eclipse.oomph.setup.ui.synchronizer.SynchronizerManager.<clinit>(SynchronizerManager.java:78)
+	at org.eclipse.oomph.setup.ui.synchronizer.SynchronizerManager$Availability.<clinit>(SynchronizerManager.java:785)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:202)
+	at org.eclipse.oomph.setup.ui.EarlyStartup.earlyStartup(EarlyStartup.java:22)
+	at org.eclipse.oomph.internal.ui.EarlyStart.run(EarlyStart.java:112)
+	at org.eclipse.oomph.internal.ui.EarlyStart$1.run(EarlyStart.java:91)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:60)

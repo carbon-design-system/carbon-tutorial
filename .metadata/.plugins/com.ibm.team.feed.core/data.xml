@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.team.feed.core:FeedModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.team.feed.core="http:///com/ibm/team/feed/core.ecore">
+  <channels/>
+</com.ibm.team.feed.core:FeedModel>

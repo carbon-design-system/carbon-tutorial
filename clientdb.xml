@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.magnolia.clientmodel:ClientModelRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.magnolia.clientmodel="http:///com/ibm/magnolia/clientmodel.ecore">
+  <workItemEditorHistory/>
+  <queries/>
+  <queryViews/>
+</com.ibm.magnolia.clientmodel:ClientModelRoot>
