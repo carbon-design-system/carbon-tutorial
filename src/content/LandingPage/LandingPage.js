@@ -30,7 +30,7 @@ class LandingPage extends Component {
       <div className="bx--grid bx--grid--full-width landing-page">
         <div className="bx--row landing-page__banner">
           <div className="bx--col-lg-16">
-            <Breadcrumb noTrailingSlash>
+            <Breadcrumb noTrailingSlash aria-label="getting-started">
               <BreadcrumbItem>
                 <a href="/">Getting started</a>
               </BreadcrumbItem>
@@ -40,7 +40,7 @@ class LandingPage extends Component {
         </div>
         <div className="bx--row landing-page__r2">
           <div className="bx--col bx--no-gutter">
-            <Tabs {...props.tabs}>
+            <Tabs {...props.tabs} aria-label="menu2">
               <Tab {...props.tab} label="About">
                 <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                   <div className="bx--row landing-page__tab-content">
@@ -65,7 +65,7 @@ class LandingPage extends Component {
                   </div>
                 </div>
               </Tab>
-              <Tab {...props.tab} label="Design">
+              <Tab {...props.tab} label="Design" aria-label="design">
                 <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                   <div className="bx--row landing-page__tab-content">
                     <div className="bx--col-lg-16">
@@ -75,7 +75,7 @@ class LandingPage extends Component {
                   </div>
                 </div>
               </Tab>
-              <Tab {...props.tab} label="Develop">
+              <Tab {...props.tab} label="Develop" aria-label="develop">
                 <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                   <div className="bx--row landing-page__tab-content">
                     <div className="bx--col-lg-16">
