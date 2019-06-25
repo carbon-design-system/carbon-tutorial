@@ -31,36 +31,6 @@ const headers = [
   },
 ];
 
-const rows = [
-  {
-    id: '1',
-    name: 'Repo 1',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '2',
-    name: 'Repo 2',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '3',
-    name: 'Repo 3',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-];
-
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
@@ -134,7 +104,8 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              console.log(organization);
+              const { repositories } = organization;
+              const rows = getRowItems(repositories.nodes);
 
               return (
                 <>
