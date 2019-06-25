@@ -38,15 +38,15 @@ const REPO_QUERY = gql`
   }
 `;
 
-const LinkList = ({ url, homepageURL }) => (
+const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
       <Link href={url}>GitHub</Link>
     </li>
-    {homepageURL && (
+    {homepageUrl && (
       <li>
         <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageURL}>Homepage</Link>
+        <Link href={homepageUrl}>Homepage</Link>
       </li>
     )}
   </ul>
@@ -59,8 +59,8 @@ const getRowItems = rows =>
     stars: row.stargazers.totalCount,
     issueCount: row.issues.totalCount,
     createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocalDateString(),
-    links: <LinkList url={row.url} homepageURL={row.homepageURL} />,
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
 
 const headers = [
