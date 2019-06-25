@@ -12,7 +12,7 @@
 /build
 
 # DC
-.yarn-offline-mirror
+# .yarn-offline-mirror
 
 # misc
 .DS_Store
