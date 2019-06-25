@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
+import React, { Component, useState } from 'react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+import { Pagination, Link, DataTableSkeleton } from 'carbon-components-react';
+import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
-    # Let's use carbon as our organization
+    # Let's use Carbon as our organization
     organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
@@ -101,12 +101,12 @@ const RepoPage = () => {
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
             {({ loading, error, data: { organization } }) => {
-              // Wait for the request to complete
+              // Waiting for the request to complete
               if (loading)
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
-                    rowCount={10}
+                    rowCount={12}
                     headers={headers}
                   />
                 );
@@ -118,7 +118,6 @@ const RepoPage = () => {
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-
               return (
                 <>
                   <RepoTable
