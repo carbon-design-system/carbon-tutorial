@@ -7,8 +7,9 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
-    "ci-check": "yarn format:diff",
-    "clean": "yarn cache clean && yarn install",
+    "ci-check": "npm run format:diff",
+    "clean": "npm run cache clean && npm install",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
@@ -61,15 +62,15 @@
   },
   "lint-staged": {
     "*.js": [
-      "yarn format:staged",
+      "npm run format:staged",
       "git add"
     ],
     "*.{scss,css}": [
-      "yarn format:staged",
+      "npm run format:staged",
       "git add"
     ],
     "*.md": [
-      "yarn format:staged",
+      "npm run format:staged",
       "git add"
     ]
   },
