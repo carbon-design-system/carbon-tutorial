@@ -22,14 +22,14 @@ const client = new ApolloClient({
   },
 });
 
-ReactDOM.render(
+const Root = () => (
   <ApolloProvider client={client}>
     <Router>
       <App />
     </Router>
-  </ApolloProvider>,
-  document.getElementById('root')
+  </ApolloProvider>
 );
+ReactDOM.render(<Root />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
