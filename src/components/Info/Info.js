@@ -15,6 +15,7 @@ const InfoSection = props => (
     {props.children}
   </section>
 );
+
 const InfoCard = props => {
   const splitHeading = createArrayFromPhrase(props.heading);
 
