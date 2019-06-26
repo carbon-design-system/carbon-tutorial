@@ -7,16 +7,18 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
-    "ci-check": "yarn format:diff && yarn test",
+    "ci-check": "yarn format:diff",
+    "clean": "yarn cache clean && yarn install",
     "eject": "react-scripts eject",
-    "format": "prettier --write '**/*.{js,md,scss}'",
-    "format:diff": "prettier --list-different '**/*.{js,md,scss}'",
+    "format": "prettier --write \"**/*.{js,md,scss}\"",
+    "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
   },
   "dependencies": {
+
     "@carbon/grid": "^10.1.1",
     "@carbon/icons-react": "^10.1.1",
     "apollo-boost": "^0.3.1",
