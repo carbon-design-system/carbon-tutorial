@@ -3,5 +3,3 @@ applications:
   - name: carbon-tutorial-ibmer20
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-    env:
-    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: d5c9dbfa5bbaafbb740f1363a03b4871c941a690
