@@ -1,10 +1,5 @@
 ---
 applications:
-<<<<<<< HEAD
   - name: carbon-tutorial-rblath
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-=======
-  - name: carbon-tutorial
-    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
->>>>>>> e79592b0e1d59cc20d13d9b34cb7fa0c196976a2
