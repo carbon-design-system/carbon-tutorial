@@ -1,5 +1,15 @@
-@import './mixins.scss';
-@import './overrides.scss';
+@include carbon--breakpoint(md) {
+  // right justify tab component
+  .landing-page__r2 .bx--tabs {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  // IE11 fix for right justification
+  .landing-page__r2 .bx--tabs__nav {
+    right: 0;
+  }
+}
 
 .landing-page__illo {
   max-width: 100%;
@@ -8,11 +18,23 @@
 .landing-page__banner {
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
-  @include landing-page-background;
+  background-color: $ui-01;
+  position: relative;
 }
 
-.landing-page__heading {
-  @include carbon--type-style('productive-heading-05');
+.landing-page__banner h1 {
+  position: relative;
+  @include type-style('productive-heading-05');
+}
+
+.landing-page__banner:before {
+  content: '';
+  position: absolute;
+  left: -$spacing-05;
+  top: 0;
+  right: -$spacing-05;
+  bottom: 0;
+  background: $ui-01;
 }
 
 .landing-page__r2 {
@@ -24,27 +46,42 @@
   padding-bottom: $layout-05;
 }
 
-.landing-page__subheading {
-  @include carbon--type-style('productive-heading-03');
-  @include carbon--font-weight('semibold');
+.landing-page__r2 strong,
+.landing-page__r2 p {
+  @include type-style('productive-heading-03');
 }
 
-.landing-page__p {
-  @include carbon--type-style('productive-heading-03');
+.landing-page__r2 strong {
+  font-weight: 600;
+}
+
+.landing-page__r2 p {
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
-
-  @include carbon--breakpoint-between((320px + 1), md) {
-    max-width: 75%;
-  }
 }
 
 .landing-page__r3 {
-  padding-top: $spacing-09;
-  padding-bottom: $spacing-09;
-  @include landing-page-background;
+  padding-top: $spacing-08;
+  padding-bottom: $spacing-08;
+  position: relative;
+  background-color: $ui-01;
 }
 
-.landing-page__label {
-  @include carbon--type-style('heading-01');
+.landing-page__r3:before {
+  content: '';
+  position: absolute;
+  left: -$spacing-05;
+  top: 0;
+  right: -$spacing-05;
+  bottom: 0;
+  background: $ui-01;
+}
+
+.landing-page__r3 > * {
+  // sit above the pseudo-element background
+  position: relative;
+}
+
+.landing-page__r3 strong {
+  @include type-style('heading-01');
 }

@@ -7,6 +7,7 @@ import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
+
     organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
@@ -102,6 +103,7 @@ const RepoPage = () => {
           <Query query={REPO_QUERY}>
             {({ loading, error, data: { organization } }) => {
               // Wait for the request to complete
+
               if (loading)
                 return (
                   <DataTableSkeleton
