@@ -106,7 +106,7 @@ const RepoPage = () => {
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
-                    rowCount={12}
+                    rowCount={10}
                     headers={headers}
                   />
                 );
