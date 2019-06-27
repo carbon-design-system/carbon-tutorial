@@ -1,6 +1,8 @@
 // Feature flags
-$css--font-face: true;
-$css--plex: true;
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
 
 // Global styles
 @import 'carbon-components/scss/globals/scss/css--font-face';
