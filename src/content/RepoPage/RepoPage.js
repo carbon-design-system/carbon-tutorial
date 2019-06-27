@@ -4,10 +4,6 @@ import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
-const [totalItems, setTotalItems] = useState(0);
-const [firstRowIndex, setFirstRowIndex] = useState(0);
-const [currentPageSize, setCurrentPageSize] = useState(10);
-
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
@@ -95,6 +91,9 @@ const getRowItems = rows =>
   }));
 
 const RepoPage = () => {
+  const [totalItems, setTotalItems] = useState(0);
+  const [firstRowIndex, setFirstRowIndex] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
       <div className="bx--row repo-page__r1">
