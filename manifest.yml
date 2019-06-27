@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-mradulgujar
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    instances: 4
