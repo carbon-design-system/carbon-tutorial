@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-mark-VIII
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    
