@@ -1,0 +1,6 @@
+# node_modules/.cache
+# ignore more (65.22 -> 51.26MB)
+.yarn-offline-mirror
+# reducing to < 50KB!
+src/
+node_modules/
