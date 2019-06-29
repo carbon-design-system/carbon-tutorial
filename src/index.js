@@ -9,11 +9,25 @@ import 'core-js/modules/es6.array.fill';
 import 'core-js/modules/es6.string.includes';
 import 'core-js/modules/es6.string.trim';
 import 'core-js/modules/es7.object.values';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
+
+const client = new ApolloClient({
+  uri: 'https://api.github.com/graphql',
+  headers: {
+    authorization: `Bearer ${
+      '245c634a5f72c5a1ed960c99bec2ff83b33da6b4'
+      //      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+    }`,
+  },
+});
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ApolloProvider client={client}>
+    <Router>
+      <App />
+    </Router>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
