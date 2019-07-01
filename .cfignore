@@ -1,0 +1,8 @@
+node_modules/.cache
+.yarn-offline-mirror
+.git
+node_modules
+src
+public
+.github
+.circleci
