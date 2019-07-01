@@ -37,6 +37,11 @@
   background: $ui-01;
 }
 
+.landing-page__subheading {
+  @include carbon--type-style('productive-heading-03');
+  @include carbon--font-weight('semibold');
+}
+
 .landing-page__r2 {
   margin-top: rem(-40px);
 }
@@ -61,8 +66,8 @@
 }
 
 .landing-page__r3 {
-  padding-top: $spacing-08;
-  padding-bottom: $spacing-08;
+  padding-top: $spacing-09;
+  padding-bottom: $spacing-09;
   position: relative;
   background-color: $ui-01;
 }
@@ -80,8 +85,4 @@
 .landing-page__r3 > * {
   // sit above the pseudo-element background
   position: relative;
-}
-
-.landing-page__r3 strong {
-  @include type-style('heading-01');
 }
