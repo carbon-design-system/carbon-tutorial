@@ -3,4 +3,3 @@ applications:
   - name: carbon-tutorial-cyrusfurtado
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-    github_personal_access_token: 6b8e09def52167771c9f34ec62beaaee60651854
