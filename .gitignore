@@ -10,6 +10,7 @@
 
 # production
 /build
+cf.exe
 
 # misc
 .DS_Store
