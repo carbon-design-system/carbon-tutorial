@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Header,
   HeaderName,
+  HeaderNavigation,
   HeaderMenuItem,
   HeaderGlobalBar,
   HeaderGlobalAction,
@@ -18,9 +19,11 @@ const TutorialHeader = () => (
     <HeaderName element={Link} to="/" prefix="IBM">
       Carbon Tutorial
     </HeaderName>
-    <HeaderMenuItem element={Link} to="/repos">
-      Repositories
-    </HeaderMenuItem>
+    <HeaderNavigation aria-label="Carbon Tutorial">
+      <HeaderMenuItem element={Link} to="/repos">
+        Repositories
+      </HeaderMenuItem>
+    </HeaderNavigation>
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">
         <Notification20 />
