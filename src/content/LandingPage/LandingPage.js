@@ -65,7 +65,7 @@ class LandingPage extends Component {
                   </div>
                 </div>
               </Tab>
-              <Tab {...props.tab} label="Design">
+              <Tab {...props.tab} label="Design" aria-label="design">
                 <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                   <div className="bx--row landing-page__tab-content">
                     <div className="bx--col-lg-16">
@@ -75,7 +75,7 @@ class LandingPage extends Component {
                   </div>
                 </div>
               </Tab>
-              <Tab {...props.tab} label="Develop">
+              <Tab {...props.tab} label="Develop" aria-label="develop">
                 <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                   <div className="bx--row landing-page__tab-content">
                     <div className="bx--col-lg-16">
