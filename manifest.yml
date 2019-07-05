@@ -1,4 +1,3 @@
----
 applications:
-  - name: carbon-tutorial
+  - name: carbon-tutorial-mihaelamiches
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
