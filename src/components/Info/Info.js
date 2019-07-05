@@ -29,5 +29,4 @@ const InfoCard = props => {
     </div>
   );
 };
-
 export { InfoSection, InfoCard };
