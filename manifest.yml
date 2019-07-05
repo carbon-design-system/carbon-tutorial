@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-tim-baldwin
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
