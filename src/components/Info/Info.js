@@ -1,4 +1,4 @@
-import React from './node_modules/react';
+import React from 'react';
 
 // Take in a phrase and separate the third word in an array
 function createArrayFromPhrase(phrase) {
