@@ -1,4 +1,20 @@
-.repo-page__r1 {
+.repo-page {
+  padding: $spacing-07;
+}
+
+// Data table expanded row
+tr.bx--parent-row.bx--expandable-row + tr[data-child-row] td {
+  padding-left: rem(60px);
   padding-top: $spacing-05;
-  padding-bottom: $spacing-05;
+}
+
+tr.bx--parent-row.bx--expandable-row
+  + tr[data-child-row]
+  td
+  .bx--child-row-inner-container {
+  max-width: rem(515px);
+}
+
+.link-list {
+  display: flex;
 }

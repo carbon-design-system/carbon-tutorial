@@ -2,11 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69eef0f6-9c9a-4e66-8c37-16ea8491ec64" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.cfignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staticfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-grid-10.1.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icons-react-0.0.1-beta.5.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-import-once-10.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-layout-10.1.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/@types-zen-observable-0.8.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-boost-0.3.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-cache-1.2.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-cache-inmemory-1.5.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-client-2.5.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-link-1.2.11.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-link-dedup-1.0.18.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-link-error-1.1.10.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-link-http-1.5.14.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-link-http-common-0.2.13.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/apollo-utilities-1.2.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/graphql-14.3.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/graphql-tag-2.10.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/immutable-tuple-0.4.10.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/iterall-1.2.2.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/optimism-0.6.9.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/react-apollo-2.5.5.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/ts-invariant-0.2.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/ts-invariant-0.3.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/ts-invariant-0.4.2.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/zen-observable-0.8.14.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn-offline-mirror/zen-observable-ts-0.8.18.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTableWrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/repo-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+            <state relative-caret-position="270">
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -60,6 +87,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Staticfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -69,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.cfignore">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
@@ -109,6 +148,7 @@
         <option value="$PROJECT_DIR$/Staticfile" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.cfignore" />
+        <option value="$PROJECT_DIR$/src/App.js" />
       </list>
     </option>
   </component>
@@ -168,10 +208,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6974000" />
+    <option name="totallyTimeSpent" value="7515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="947" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24954791" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -185,9 +226,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32982457" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4996986" weight="0.32982457" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4996986" visible="true" weight="0.32982457" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50030136" side_tool="true" weight="0.32982457" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4996986" visible="true" weight="0.32982457" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4996986" weight="0.32982457" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32982457" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -302,8 +343,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="71" selection-start-line="17" selection-start-column="71" selection-end-line="17" selection-end-column="71" />
+        <state relative-caret-position="270">
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -330,6 +371,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.cfignore">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
