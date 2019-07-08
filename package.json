@@ -4,6 +4,7 @@
   "private": true,
   "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
+  "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
