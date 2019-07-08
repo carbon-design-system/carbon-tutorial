@@ -1,4 +1,5 @@
 ---
 applications:
-  - name: carbon-tutorial
+  - name: carbon-tutorial-cragun47
+    memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
