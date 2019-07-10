@@ -1,7 +1,8 @@
-@import 'carbon-components/scss/globals/scss/styles.scss';
 $feature-flags: (
   ui-shell: true,
 );
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
 
 main {
   display: block;
