@@ -64,6 +64,26 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
+            <Tab {...props.tab} label="Design">
+              <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+                <div className="bx--row landing-page__tab-content">
+                  <div className="bx--col-lg-16">
+                    Rapidly build beautiful and accessible experiences. The
+                    Carbon kit contains all resources you need to get started.
+                  </div>
+                </div>
+              </div>
+            </Tab>
+            <Tab {...props.tab} label="Develop">
+              <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+                <div className="bx--row landing-page__tab-content">
+                  <div className="bx--col-lg-16">
+                    Carbon provides styles and components in Vanilla, React,
+                    Angular, and Vue for anyone building on the web.
+                  </div>
+                </div>
+              </div>
+            </Tab>
           </Tabs>
         </div>
       </div>
