@@ -5,8 +5,8 @@
   max-width: 100%;
 }
 .landing-page__banner {
-  padding-top: 16px;
-  padding-bottom: 128px;
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
   @include landing-page-background;
 }
 .landing-page__heading {
