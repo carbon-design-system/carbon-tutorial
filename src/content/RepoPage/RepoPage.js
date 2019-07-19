@@ -7,7 +7,6 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <RepoTable headers={headers} rows={rows} />
-          <RepoTable headers={headers} rows={rows} />
         </div>
       </div>
     </div>
