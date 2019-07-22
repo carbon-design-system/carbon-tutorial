@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-blechner
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
