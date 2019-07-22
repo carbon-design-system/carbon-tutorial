@@ -114,6 +114,7 @@ const RepoPage = () => {
 
               // If we're here, we've got our data!
               const { repositories } = organization;
+              setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
 
               return (
