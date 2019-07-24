@@ -95,6 +95,9 @@ const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
   return (
+     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+      <div className="bx--row repo-page__r1">
+        <div className="bx--col-lg-16">
     <Query query={REPO_QUERY}>
       {({ loading, error, data: { organization } }) => {
         // Wait for the request to complete
@@ -139,6 +142,9 @@ const RepoPage = () => {
         );
       }}
     </Query>
+   </div>
+     </div>
+      </div>
   );
 };
 
