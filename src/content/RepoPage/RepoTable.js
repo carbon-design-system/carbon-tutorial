@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   DataTable,
   TableContainer,
@@ -14,15 +15,25 @@ import {
 } from 'carbon-components-react';
 
 const RepoTable = ({ rows, headers }) => {
+  const getRowDescription = rowId => {
+    const row = rows.find(({ id }) => id === rowId);
+
+    return row ? row.description : '';
+  };
+
   return (
     <DataTable
       rows={rows}
       headers={headers}
       render={({
         rows,
+
         headers,
+
         getHeaderProps,
+
         getRowProps,
+
         getTableProps,
       }) => (
         <TableContainer
@@ -32,6 +43,7 @@ const RepoTable = ({ rows, headers }) => {
             <TableHead>
               <TableRow>
                 <TableExpandHeader />
+
                 {headers.map(header => (
                   <TableHeader {...getHeaderProps({ header })}>
                     {header.header}
@@ -39,6 +51,7 @@ const RepoTable = ({ rows, headers }) => {
                 ))}
               </TableRow>
             </TableHead>
+
             <TableBody>
               {rows.map(row => (
                 <React.Fragment key={row.id}>
@@ -47,8 +60,9 @@ const RepoTable = ({ rows, headers }) => {
                       <TableCell key={cell.id}>{cell.value}</TableCell>
                     ))}
                   </TableExpandRow>
+
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
