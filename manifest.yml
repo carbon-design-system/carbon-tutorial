@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-meghaaddanki
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 29941505e98c86475dd44619a3bb1a99b1b00f4a
