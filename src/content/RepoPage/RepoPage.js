@@ -121,13 +121,29 @@ const RepoPage = () => {
               const rows = getRowItems(repositories.nodes);
 
               return (
-                <RepoTable
-                  headers={headers}
-                  rows={rows.slice(
-                    firstRowIndex,
-                    firstRowIndex + currentPageSize
-                  )}
-                />
+                <>
+                  <RepoTable
+                    headers={headers}
+                    rows={rows.slice(
+                      firstRowIndex,
+                      firstRowIndex + currentPageSize
+                    )}
+                  />
+                  <Pagination
+                    totalItems={totalItems}
+                    backwardText="Previous page"
+                    forwardText="Next page"
+                    pageSize={currentPageSize}
+                    pageSizes={[5, 10, 15, 25]}
+                    itemsPerPageText="Items per page"
+                    onChange={({ page, pageSize }) => {
+                      if (pageSize !== currentPageSize) {
+                        setCurrentPageSize(pageSize);
+                      }
+                      setFirstRowIndex(pageSize * (page - 1));
+                    }}
+                  />
+                </>
               );
             }}
           </Query>
