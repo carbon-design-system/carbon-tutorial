@@ -21,6 +21,7 @@
 .landing-page__banner {
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
+  @include landing-page-background;
 }
 
 .landing-page__subheading {
