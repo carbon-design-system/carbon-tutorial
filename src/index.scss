@@ -12,3 +12,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+$feature-flags: (
+  ui-shell: true,
+);
