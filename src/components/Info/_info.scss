@@ -7,7 +7,7 @@
   flex-direction: column;
 }
 
-swg {
+svg {
   margin-top: $spacing-09;
 }
 // top border in only small breakpoints to prevent overrides
@@ -29,10 +29,10 @@ swg {
 @include carbon--breakpoint(lg) {
   margin-top: 0;
   border-left: 1px solid $ui-03;
+}
 
-  svg {
-    margin-top: $layout-06;
-  }
+svg {
+  margin-top: $layout-06;
 }
 
 .info-section__heading {
