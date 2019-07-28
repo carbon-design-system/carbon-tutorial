@@ -61,7 +61,6 @@ const rows = [
 const RepoPage = () => {
   return (
     <div>
-      REPO PAGE
       <RepoTable headers={headers} rows={rows} />
     </div>
   );
