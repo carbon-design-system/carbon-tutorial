@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-noah-eigenfeld
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    
