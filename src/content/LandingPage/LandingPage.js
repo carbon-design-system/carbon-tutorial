@@ -1,11 +1,11 @@
+import React from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
   Button,
-  Tab,
   Tabs,
+  Tab,
 } from 'carbon-components-react';
-import React from 'react';
 
 const props = {
   tabs: {
@@ -59,7 +59,7 @@ const LandingPage = () => {
                       className="landing-page__illo"
                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}
                       alt="Carbon illustration"
-                    />{' '}
+                    />
                   </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@ const LandingPage = () => {
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
-                    Rapidly build beautiful and accessible experiences.The
+                    Rapidly build beautiful and accessible experiences. The
                     Carbon kit contains all resources you need to get started.
                   </div>
                 </div>
