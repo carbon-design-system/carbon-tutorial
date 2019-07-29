@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { useState } from 'react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Pagination, Link, DataTableSkeleton } from 'carbon-components-react';
