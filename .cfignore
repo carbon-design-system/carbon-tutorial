@@ -1,0 +1,5 @@
+node_modules
+.yarn-offline-mirror
+src
+public
+*.sketch
