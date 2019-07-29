@@ -139,7 +139,6 @@ const RepoPage = () => {
                     headers={headers}
                   />
                 );
-
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
 
