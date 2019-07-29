@@ -15,3 +15,7 @@ The React <Content /> component uses the `main` element which IE11 doesn't recog
 main {
   display: block;
 }
+
+.bx--content {
+  padding: 0;
+}
