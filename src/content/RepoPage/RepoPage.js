@@ -93,7 +93,7 @@ const getRowItems = rows =>
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(7);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
 
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -106,7 +106,7 @@ const RepoPage = () => {
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
-                    rowCount={7}
+                    rowCount={10}
                     headers={headers}
                   />
                 );
