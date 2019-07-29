@@ -13,7 +13,7 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-const RepoTable = ({ rows = [], headers }) => {
+const RepoTable = ({ rows, headers }) => {
   const getRowDescription = rowId => {
     const row = rows.find(({ id }) => id === rowId);
     return row ? row.description : '';
@@ -32,7 +32,7 @@ const RepoTable = ({ rows = [], headers }) => {
       }) => (
         <TableContainer
           title="Carbon Repositories"
-          description="A collection of all of the public Carbon repositories.">
+          description="A collection of public Carbon repositories.">
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
