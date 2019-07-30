@@ -24,7 +24,6 @@ const LandingPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
-        <div className="bx--row landing-page__banner">
           <div className="bx--col-lg-16">
             <Breadcrumb noTrailingSlash aria-label="Page navigation">
               <BreadcrumbItem>
