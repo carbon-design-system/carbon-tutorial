@@ -14,6 +14,10 @@ import {
 } from 'carbon-components-react';
 
 const RepoTable = ({ rows, headers }) => {
+  const getRowDescription = rowId => {
+    const row = rows.find(({ id }) => id === rowId);
+    return row ? <p>{getRowDescription(row.id)}</p> : '';
+  };
   return (
     <DataTable
       rows={rows}
