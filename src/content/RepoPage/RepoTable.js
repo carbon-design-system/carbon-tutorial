@@ -14,6 +14,11 @@ import {
 } from 'carbon-components-react';
 
 const RepoTable = ({ rows, headers }) => {
+  const getRowDescription = rowId => {
+    const row = rows.find(({ id }) => id === rowId);
+    return row ? row.description : '';
+  };
+
   return (
     <DataTable
       rows={rows}
@@ -31,29 +36,38 @@ const RepoTable = ({ rows, headers }) => {
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
-                <TableExpandHeader />
+                <TableExpandHeader />{' '}
                 {headers.map(header => (
-                  <TableHeader {...getHeaderProps({ header })}>
-                    {header.header}
+                  <TableHeader
+                    {...getHeaderProps({
+                      header,
+                    })}>
+                    {' '}
+                    {header.header}{' '}
                   </TableHeader>
-                ))}
-              </TableRow>
-            </TableHead>
+                ))}{' '}
+              </TableRow>{' '}
+            </TableHead>{' '}
             <TableBody>
+              {' '}
               {rows.map(row => (
                 <React.Fragment key={row.id}>
-                  <TableExpandRow {...getRowProps({ row })}>
+                  <TableExpandRow
+                    {...getRowProps({
+                      row,
+                    })}>
+                    {' '}
                     {row.cells.map(cell => (
-                      <TableCell key={cell.id}>{cell.value}</TableCell>
-                    ))}
-                  </TableExpandRow>
+                      <TableCell key={cell.id}> {cell.value} </TableCell>
+                    ))}{' '}
+                  </TableExpandRow>{' '}
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
-                  </TableExpandedRow>
+                    <p> {getRowDescription(row.id)} </p>{' '}
+                  </TableExpandedRow>{' '}
                 </React.Fragment>
-              ))}
-            </TableBody>
-          </Table>
+              ))}{' '}
+            </TableBody>{' '}
+          </Table>{' '}
         </TableContainer>
       )}
     />
