@@ -1,0 +1,27 @@
+diff a/src/content/LandingPage/_mixins.scss b/src/content/LandingPage/_mixins.scss	(rejected hunks)
+@@ -2,2 +2,2 @@
+-    background: $ui-01;
+-    position: relative;
++  background: $ui-01;
++  position: relative;
+@@ -5,10 +5,10 @@
+-    &::before {
+-        background: $ui-01;
+-        content: "";
+-        position: absolute;
+-        top: 0;
+-        right: -$spacing-05;
+-        bottom: 0;
+-        left: -$spacing-05;
+-        z-index: -1;
+-    }
++  &::before {
++    background: $ui-01;
++    content: '';
++    position: absolute;
++    top: 0;
++    right: -$spacing-05;
++    bottom: 0;
++    left: -$spacing-05;
++    z-index: -1;
++  }

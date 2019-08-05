@@ -1,0 +1,68 @@
+diff a/src/content/LandingPage/_landing-page.scss b/src/content/LandingPage/_landing-page.scss	(rejected hunks)
+@@ -1 +1 @@
+-@import "./mixins";
++@import './mixins';
+@@ -4,7 +4,2 @@
+-    padding: $spacing-05 0 $spacing-07 * 4;
+-    @include landing-page-background;
+-    
+-    .landing-page__heading {
+-        @include carbon--type-style("productive-heading-05");
+-    }
+-}
++  padding: $spacing-05 0 $spacing-07 * 4;
++  @include landing-page-background;
+@@ -14,4 +13,21 @@
+-    margin-top: rem(-40px);
+-    
+-    .bx--tabs__nav {
+-        right: 0;
++  margin-top: rem(-40px);
++
++  .bx--tabs__nav {
++    right: 0;
++  }
++
++  .landing-page__tab-content {
++    padding: $layout-05 0;
++
++    .landing-page__subheading {
++      @include carbon--type-style('productive-heading-03');
++      @include carbon--font-weight('semibold');
++    }
++
++    .landing-page__p {
++      @include carbon--type-style('productive-heading-03');
++      margin: $spacing-06 0 $spacing-08;
++
++      @include carbon--breakpoint-between((320px + 1), md) {
++        max-width: 75%;
++      }
+@@ -20,20 +36,2 @@
+-    .landing-page__tab-content {
+-        padding: $layout-05 0;
+-    
+-        .landing-page__subheading {
+-            @include carbon--type-style("productive-heading-03");
+-            @include carbon--font-weight("semibold");
+-        }
+-
+-        .landing-page__p {
+-            @include carbon--type-style("productive-heading-03");
+-            margin: $spacing-06 0 $spacing-08;
+-        
+-            @include carbon--breakpoint-between((320px + 1), md) {
+-                max-width: 75%;
+-            }
+-        }
+-        
+-        .landing-page__illo {
+-            max-width: 100%;
+-        }
++    .landing-page__illo {
++      max-width: 100%;
+@@ -44,2 +43,2 @@
+-    padding: $spacing-09 0;
+-    @include landing-page-background;
++  padding: $spacing-09 0;
++  @include landing-page-background;
