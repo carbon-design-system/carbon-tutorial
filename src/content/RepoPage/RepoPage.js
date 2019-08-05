@@ -1,34 +1,8 @@
+import React, { useState } from 'react';
+import RepoTable from './RepoTable';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
-
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -90,6 +64,31 @@ const headers = [
     header: 'Links',
   },
 ];
+
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
 
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
