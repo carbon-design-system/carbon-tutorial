@@ -12,6 +12,7 @@ import {
   TableCell,
   TableExpandedRow,
 } from 'carbon-components-react';
+import { Link, DataTableSkeleton } from 'carbon-components-react';
 
 const RepoTable = ({ rows, headers }) => {
   return (
@@ -48,7 +49,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
@@ -58,6 +59,11 @@ const RepoTable = ({ rows, headers }) => {
       )}
     />
   );
+};
+
+const getRowDescription = rowId => {
+  const row = rows.find(({ id }) => id === rowId);
+  return row ? row.description : '';
 };
 
 export default RepoTable;
