@@ -47,3 +47,7 @@
     max-width: 75%;
   }
 }
+
+.info-card__heading {
+  @include carbon--type-style('productive-heading-03');
+}
