@@ -1,4 +1,5 @@
 @import './mixins';
+@import './overrides';
 
 .landing-page__banner {
   padding: $spacing-05 0 $spacing-07 * 4;
@@ -11,10 +12,6 @@
 
 .landing-page__r2 {
   margin-top: rem(-40px);
-
-  .bx--tabs__nav {
-    right: 0;
-  }
 
   .landing-page__tab-content {
     padding: $layout-05 0;
