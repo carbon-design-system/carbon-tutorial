@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="304f8f68-1e1c-4660-ba5e-31dc87d9e2a3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/_overrides.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="304f8f68-1e1c-4660-ba5e-31dc87d9e2a3" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/src/index.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-294">
-              <caret line="2" column="23" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="23" />
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -315,12 +301,12 @@
       <workItem from="1565190407556" duration="727000" />
       <workItem from="1565204581688" duration="655000" />
       <workItem from="1565322021059" duration="527000" />
-      <workItem from="1565646003592" duration="2925000" />
+      <workItem from="1565646003592" duration="3405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19162000" />
+    <option name="totallyTimeSpent" value="19642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -342,7 +328,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2100927" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.43563336" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -421,7 +407,7 @@
     <entry file="file://$PROJECT_DIR$/src/index.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-294">
-          <caret line="2" column="23" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="23" />
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
