@@ -5,6 +5,7 @@ import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
+import HallOfFamePage from './content/HallOFFamePage';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/repos" component={RepoPage} />
+            <Route path="/hof" component={HallOfFamePage} />
           </Switch>
         </Content>
       </>
