@@ -18,7 +18,7 @@ const HallOfFamePage = () => {
           </div>
         </div>
         <div className="bx--row">
-          <Tile className="bx--col-lg-4">
+          <Tile className="bx--col-lg-4 hof-page__banner-tile">
             <p class="hof-page__banner-text">These folks got one of these...</p>
             <img
               className="hof-page__image"
@@ -26,7 +26,7 @@ const HallOfFamePage = () => {
               alt="Carbon developer essentials react badge"
             />
           </Tile>
-          <Tile className="bx--col-lg-4">
+          <Tile className="bx--col-lg-4 hof-page__banner-tile">
             <img
               className="hof-page__image"
               src={`${process.env.PUBLIC_URL}/carbon-tee.png`}
