@@ -52,10 +52,7 @@ const HallOfFameList = props => {
                   {search.edges.map((edge, index) => {
                     return (
                       <li key={index} className="hof-page__list-item">
-                        <Tile
-                          className="hof-page__tile"
-                          kind="clickable"
-                          href={edge.node.url}>
+                        <Tile className="hof-page__tile" href={edge.node.url}>
                           <h2>{edge.node.author.login}</h2>
                           <p>{edge.node.closedAt}</p>
                           <img
