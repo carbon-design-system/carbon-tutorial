@@ -12,10 +12,12 @@ class App extends Component {
     return (
       <>
         <TutorialHeader />
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/repos" component={RepoPage} />
-        </Switch>
+        <Content>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/repos" component={RepoPage} />
+          </Switch>
+        </Content>
       </>
     );
   }
