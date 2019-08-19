@@ -19,7 +19,9 @@ const HallOfFamePage = () => {
         </div>
         <div className="bx--row">
           <Tile className="bx--col-lg-4 hof-page__banner-tile">
-            <p class="hof-page__banner-text">These folks got one of these...</p>
+            <p className="hof-page__banner-text">
+              These folks got one of these...
+            </p>
             <img
               className="hof-page__image"
               src={`${process.env.PUBLIC_URL}/carbon-badge.png`}
@@ -32,7 +34,7 @@ const HallOfFamePage = () => {
               src={`${process.env.PUBLIC_URL}/carbon-tee.png`}
               alt="Carbon t-shirt"
             />
-            <p class="hof-page__banner-text hof-page__right">
+            <p className="hof-page__banner-text hof-page__right">
               ...and one of these.
             </p>
           </Tile>
