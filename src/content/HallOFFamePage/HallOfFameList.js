@@ -53,14 +53,22 @@ const HallOfFameList = props => {
                   {search.edges.map((edge, index) => {
                     return (
                       <li key={index} className="hof-page__list-item">
-                        <Tile className="hof-page__tile" href={edge.node.url}>
+                        <Tile className="hof-page__tile">
                           <div className="hof-page__tile-left">
-                            <h2 className="hof-page__tile=title">
-                              {edge.node.author.login}
-                            </h2>
-                            <p className="hof-page__tile-sub">
-                              {edge.node.closedAt}
-                            </p>
+                            <a
+                              href={edge.node.url}
+                              title={edge.node.author.login}>
+                              <h2 className="hof-page__tile=title">
+                                {edge.node.author.login}
+                              </h2>
+                            </a>
+                            <a
+                              href={edge.node.url}
+                              title={`Completed on: ${edge.node.closedAt}`}>
+                              <p className="hof-page__tile-sub">
+                                Completed on: {edge.node.closedAt}
+                              </p>
+                            </a>
                           </div>
                           <img
                             src={edge.node.author.avatarUrl}
