@@ -1,6 +1,6 @@
 {
   "name": "carbon-tutorial",
-  "version": "0.0.0",
+  "version": "0.15.1",
   "private": true,
   "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
@@ -17,8 +17,9 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@carbon/icons-react": "^10.3.0",
-    "carbon-components": "^10.3.0",
+    "@carbon/grid": "^10.5.0",
+    "@carbon/icons-react": "^10.5.0",
+    "carbon-components": "^10.5.1",
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
