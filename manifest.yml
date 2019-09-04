@@ -1,0 +1,4 @@
+applications:
+  - name: carbon-tutorial-qrdean
+    memory: 64M
+    buildpacks: [https://github.com/cloudfoundry/staticfile-buildpack.git]
