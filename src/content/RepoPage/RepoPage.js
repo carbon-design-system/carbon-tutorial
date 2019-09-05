@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+import React, { useState } from 'react';
+import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -94,7 +94,6 @@ const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
-
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
       <div className="bx--row repo-page__r1">
@@ -110,7 +109,6 @@ const RepoPage = () => {
                     headers={headers}
                   />
                 );
-
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
 
@@ -118,7 +116,6 @@ const RepoPage = () => {
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-
               return (
                 <>
                   <RepoTable
