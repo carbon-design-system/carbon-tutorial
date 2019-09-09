@@ -1,6 +1,10 @@
 $feature-flags: (
   ui-shell: true,
 );
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
 
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
