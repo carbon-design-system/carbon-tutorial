@@ -1,6 +1,9 @@
 .info-card__heading {
   @include carbon--type-style('heading-01');
 }
+.info-section__heading {
+  @include carbon--type-style('heading-01');
+}
 .info-card {
   margin-top: $spacing-09;
   display: flex;
