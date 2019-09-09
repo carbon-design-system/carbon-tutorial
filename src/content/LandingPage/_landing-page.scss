@@ -15,6 +15,10 @@
   @include carbon--type-style('productive-heading-05');
 }
 
+.landing-page__r2 {
+  margin-top: rem(-40px);
+}
+
 .landing-page__tab-content {
   padding-top: $layout-05;
   padding-bottom: $layout-05;
