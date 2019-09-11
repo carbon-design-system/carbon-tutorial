@@ -1,5 +1,5 @@
-import React from 'react';
 import RepoTable from './RepoTable';
+import React from 'react';
 
 const RepoPage = () => {
   return (

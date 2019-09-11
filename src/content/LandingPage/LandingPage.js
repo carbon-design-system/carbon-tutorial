@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -6,6 +5,7 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
+import React from 'react';
 
 const props = {
   tabs: {
