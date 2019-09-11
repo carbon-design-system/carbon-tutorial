@@ -161,23 +161,19 @@ function renderRepoTable(count, nodes, pagination) {
   return result;
 }
 
-function processQueryResults(
-  pagination,
-  { loading, error, data: { organization } }
-) {
+function processQueryResults(pagination, { loading, error, data }) {
   let result;
 
   if (loading) {
     result = <RepoTableSkeleton />;
   } else if (error) {
     result = `Error! ${error.message}`;
-  } else {
-    result = renderRepoTable(
-      organization.repositories.totalCount,
-      organization.repositories.nodes,
-      pagination
-    );
+  } else if (data) {
+    const { totalCount, nodes } = data.organization.repositories;
+
+    result = renderRepoTable(totalCount, nodes, pagination);
   }
+
   return result;
 }
 
