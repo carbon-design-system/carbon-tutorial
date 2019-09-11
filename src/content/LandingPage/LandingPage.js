@@ -22,7 +22,7 @@ const props = {
 
 const LandingPage = () => {
   return (
-    <div>
+    <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
         <div className="bx--col-lg-16">
           <Breadcrumb noTrailingSlash aria-label="Page navigation">
@@ -35,7 +35,6 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
-
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
@@ -88,7 +87,6 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-
       <div className="bx--row landing-page__r3">
         <div className="bx--col-md-4 bx--col-lg-4">
           <h3 className="landing-page__label">The Principles</h3>
