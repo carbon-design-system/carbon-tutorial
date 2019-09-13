@@ -100,7 +100,7 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
-            {({ loading, error, data: { organization } }) => {
+            {({ loading, error, data }) => {
               // Wait for the request to complete
               if (loading)
                 return (
@@ -109,12 +109,10 @@ const RepoPage = () => {
                     rowCount={10}
                     headers={headers}
                   />
-                );
-
-              // Something went wrong with the data fetching
+                ); // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
-
               // If we're here, we've got our data!
+              const { organization } = data;
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
