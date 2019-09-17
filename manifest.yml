@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-christian-zuniga
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: <REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN>
