@@ -1,4 +1,20 @@
 // Feature flags
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
+
+.bx--content {
+  padding: 0;
+}
+
+@media (min-width: 42rem) {
+  .bx--grid--no-gutter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 $css--font-face: true;
 $css--plex: true;
 
