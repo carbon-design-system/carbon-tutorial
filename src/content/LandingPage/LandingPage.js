@@ -26,7 +26,6 @@ const LandingPage = () => {
       <div className="bx--row landing-page__banner">
         <div className="bx--col-lg-16">
           <Breadcrumb noTrailingSlash aria-label="Page navigation">
-            >
             <BreadcrumbItem>
               <a href="/">Getting started</a>
             </BreadcrumbItem>
