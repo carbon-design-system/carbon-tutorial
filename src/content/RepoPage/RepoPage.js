@@ -101,12 +101,12 @@ const RepoPage = () => {
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
             {({ loading, error, data: { organization } }) => {
-              // Wait for the request to complete
+              // Waiting for the request to complete
               if (loading)
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
-                    rowCount={10}
+                    rowCount={12}
                     headers={headers}
                   />
                 );
@@ -118,7 +118,6 @@ const RepoPage = () => {
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-
               return (
                 <>
                   <RepoTable
