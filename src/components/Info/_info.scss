@@ -32,7 +32,7 @@
   }
 }
 
-info-card__body {
+.info-card__body {
   margin-top: $spacing-06;
   flex-grow: 1; // fill space so icons are bottom aligned
   @include type-style('body-long-01');
