@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
+import React, { useState } from 'react';
+import RepoTable from './RepoTable';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
 const REPO_QUERY = gql`
@@ -68,7 +68,7 @@ const headers = [
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
-      <link href={url}>GitHub</link>
+      <Link href={url}>GitHub</Link>
     </li>
     {homepageUrl && (
       <li>
