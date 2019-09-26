@@ -19,7 +19,10 @@
   "dependencies": {
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
+<<<<<<< HEAD
     "apollo-boost": "^0.4.4",
+=======
+>>>>>>> 2260d77203947a766c9f52a9086b70e9e3cb6057
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
