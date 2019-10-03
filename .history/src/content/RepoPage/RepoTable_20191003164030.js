@@ -13,12 +13,12 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-const RepoTable = ({ rows, headers }) => {
-  const getRowDescription = rowId => {
-    const row = rows.find(({ id }) => id === rowId);
-    return row ? row.description : '';
-  };
+const getRowDescription = rowId => {
+  const row = rows.find(({ id }) => id === rowId);
+  return row ? row.description : '';
+};
 
+const RepoTable = ({ rows, headers }) => {
   return (
     <DataTable
       rows={rows}
