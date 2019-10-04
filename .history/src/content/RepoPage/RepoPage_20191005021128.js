@@ -99,7 +99,7 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
-            {({ loading, error, data: { organization } }) => {
+            {({ loading, error, data: organization }) => {
               // Wait for the request to complete
               if (loading)
                 return (

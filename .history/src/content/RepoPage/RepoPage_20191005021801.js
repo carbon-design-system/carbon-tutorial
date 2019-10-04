@@ -99,7 +99,7 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
-            {({ loading, error, data: { organization } }) => {
+            {({ loading, error, data: organization }) => {
               // Wait for the request to complete
               if (loading)
                 return (
@@ -112,10 +112,11 @@ const RepoPage = () => {
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
               // If we're here, we've got our data!
-              console.log(organization);
+              console.log(organization.repositories);
               // If we're here, we've got our data!
-              const { repositories } = organization;
+              const repositories = organization.repositories;
               setTotalItems(repositories.totalCount);
+              console.log('**** ' + repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
               return (
                 <>

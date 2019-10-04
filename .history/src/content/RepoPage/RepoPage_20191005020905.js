@@ -1,8 +1,8 @@
+import React, { useState } from 'react';
+import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -113,7 +113,6 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
               // If we're here, we've got our data!
               console.log(organization);
-              // If we're here, we've got our data!
               const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);

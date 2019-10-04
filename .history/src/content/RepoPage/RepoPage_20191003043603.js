@@ -126,20 +126,6 @@ const RepoPage = () => {
                       firstRowIndex + currentPageSize
                     )}
                   />
-                  <Pagination
-                    totalItems={totalItems}
-                    backwardText="Previous page"
-                    forwardText="Next page"
-                    pageSize={currentPageSize}
-                    pageSizes={[5, 10, 15, 25]}
-                    itemsPerPageText="Items per page"
-                    onChange={({ page, pageSize }) => {
-                      if (pageSize !== currentPageSize) {
-                        setCurrentPageSize(pageSize);
-                      }
-                      setFirstRowIndex(pageSize * (page - 1));
-                    }}
-                  />
                 </>
               );
             }}
