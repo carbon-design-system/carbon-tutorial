@@ -1,3 +1,9 @@
+// Set experimental UI-shell feature to true - not recommended for production
+$feature-flags: (
+  ui-shell: true,
+);
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
