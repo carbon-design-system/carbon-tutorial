@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-RalphSimon
+    org: ralph.simon2012@icloud.com
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: dbe07f84a94667d9f3a1f980b3afe7f2197ccc78
