@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-bronolrr
+    memory: 64M
+    buildpacks: https://github.com/cloudfoundry/staticfile-buildpack.git
