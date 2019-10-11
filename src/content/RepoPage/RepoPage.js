@@ -1,20 +1,69 @@
 import React from 'react';
+import RepoTable from './RepoTable';
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+    header: 'Links',
+  },
+];
+
+const rows = [
+  {
+    id: '1',
+    name: 'Repo 1',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '2',
+    name: 'Repo 2',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '3',
+    name: 'Repo 3',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+];
 
 const RepoPage = () => {
   return (
-    <div className="bx--grid bx--grid--full-width landing-page">
-      <div className="bx--row landing-page__banner">
-        <div className="bx--col-lg-16">1</div>
-      </div>
-      <div className="bx--row landing-page__r2">
-        <div className="bx--col-md-4 bx--col-lg-7">7/16</div>
-        <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">8/16</div>
-      </div>
-      <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
-        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
-        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
-        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+      <div className="bx--row repo-page__r1">
+        <div className="bx--col-lg-16">
+          <RepoTable headers={headers} rows={rows} />
+        </div>
       </div>
     </div>
   );
