@@ -100,6 +100,7 @@ const RepoPage = () => {
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
             {({ loading, error, data: { organization } }) => {
+              // Make sure env.local is in its right place
               // Wait for the request to complete
               if (loading)
                 return (
