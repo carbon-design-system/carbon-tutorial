@@ -17,7 +17,9 @@ import { ApolloProvider } from 'react-apollo';
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
-    authorization: `Bearer bc329c083865cf555dbcbb18ba6e1b55738db0ea`,
+    authorization: `Bearer ${
+      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+    }`,
   },
 });
 
