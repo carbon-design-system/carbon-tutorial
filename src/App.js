@@ -17,10 +17,6 @@ class App extends Component {
             <Route exact path="/" component={LandingPage} />
             <Route path="/repos" component={RepoPage} />
           </Switch>
-          <div>
-            Hello Carbon! Well, not quite yet. This is the starting point for
-            the Carbon tutorial. <Button>Button</Button>
-          </div>
         </Content>
       </>
     );
