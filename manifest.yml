@@ -1,0 +1,8 @@
+---
+applications:
+  - name: carbon-tutorial-YoussefMoumni
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 32f1e2edc958d2338a49d82c60f141522ffe5597
+
