@@ -59,4 +59,5 @@ const RepoTable = ({ rows, headers }) => {
     />
   );
 };
+
 export default RepoTable;
