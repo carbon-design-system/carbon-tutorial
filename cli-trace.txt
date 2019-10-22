@@ -1,0 +1,200 @@
+
+[1mREQUEST:[0m [2019-10-22T09:38:26-04:00]
+GET /identity/.well-known/openid-configuration HTTP/1.1
+Host: iam.test.cloud.ibm.com
+Accept: application/json
+Accept-Language: en-US
+Accept-Language: en
+Content-Type: application/json
+User-Agent: IBM Cloud CLI 0.19.0 / darwin
+
+
+
+[1mRESPONSE:[0m [2019-10-22T09:38:27-04:00] [1mElapsed:[0m 839ms
+HTTP/1.1 200 OK
+Content-Length: 1273
+Connection: keep-alive
+Content-Language: en-US
+Content-Type: application/json
+Date: Tue, 22 Oct 2019 13:38:27 GMT
+Set-Cookie: sessioncookie=90c5266ccc5d05f25e8ee7eef69cf668; Path=/; Secure; HttpOnly
+Transaction-Id: aff0bc3a29ec4eee8cadef6529ef70be
+X-Powered-By: Servlet/3.1
+
+{"issuer":"https://iam.test.cloud.ibm.com/identity","authorization_endpoint":"https://identity-1.us-south.iam.test.cloud.ibm.com/identity/authorize","token_endpoint":"https://identity-1.us-south.iam.test.cloud.ibm.com/identity/token","passcode_endpoint":"https://identity-1.us-south.iam.test.cloud.ibm.com/identity/passcode","userinfo_endpoint":"https://identity-1.us-south.iam.test.cloud.ibm.com/identity/userinfo","jwks_uri":"https://identity-1.us-south.iam.test.cloud.ibm.com/identity/keys","response_types_supported":["code","id_token","token id_token"],"grant_types_supported":["implicit","authorization_code","password","refresh_token","urn:ibm:params:oauth:grant-type:apikey","urn:ibm:params:oauth:grant-type:identity-cookie","urn:ibm:params:oauth:grant-type:iam-cookie","urn:ibm:params:oauth:grant-type:delegated-refresh-token","urn:ibm:params:oauth:grant-type:ims-portal","urn:ibm:params:oauth:grant-type:iam-authz","urn:ibm:params:oauth:grant-type:derive"],"subject_types_supported":["public"],"token_endpoint_auth_methods_supported":["client_secret_basic","client_secret_post"],"id_token_signing_alg_values_supported":["RS256"],"scopes_supported":["openid","email","profile","ibm","roles","containers-kubernetes"],"claims_supported":["iam_id","sub","aud","iss"]}
+
+[1mREQUEST:[0m [2019-10-22T09:39:10-04:00]
+POST /identity/token HTTP/1.1
+Host: identity-1.us-south.iam.test.cloud.ibm.com
+Accept: application/json
+Accept-Language: en-US
+Accept-Language: en
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/x-www-form-urlencoded
+User-Agent: IBM Cloud CLI 0.19.0 / darwin
+
+grant_type=urn%3Aibm%3Aparams%3Aoauth%3Agrant-type%3Apasscode&passcode=[PRIVATE DATA HIDDEN]&response_type=cloud_iam
+
+[1mRESPONSE:[0m [2019-10-22T09:39:10-04:00] [1mElapsed:[0m 231ms
+HTTP/1.1 200 OK
+Content-Length: 2072
+Cache-Control: max-age=0, no-cache, no-store
+Connection: keep-alive
+Content-Language: en-US
+Content-Type: application/json
+Date: Tue, 22 Oct 2019 13:39:10 GMT
+Expires: Tue, 22 Oct 2019 13:39:10 GMT
+Pragma: no-cache
+Set-Cookie: sessioncookie=83e60b447056d86364efb0e19568b878; Path=/; Secure; HttpOnly
+Transaction-Id: 9743c2072928486f99c497da98ab13a6
+X-Powered-By: Servlet/3.1
+
+{"access_token":"[PRIVATE DATA HIDDEN]","refresh_token":"[PRIVATE DATA HIDDEN]","token_type":"Bearer","expires_in":3600,"expiration":1571755147,"scope":"ibm openid"}
+
+[1mREQUEST:[0m [2019-10-22T09:39:10-04:00]
+GET /v1/accounts HTTP/1.1
+Host: accounts.test.cloud.ibm.com
+Accept: application/json
+Accept-Language: en-US
+Accept-Language: en
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: IBM Cloud CLI 0.19.0 / darwin
+
+
+
+[1mRESPONSE:[0m [2019-10-22T09:39:12-04:00] [1mElapsed:[0m 1233ms
+HTTP/1.1 200 OK
+Content-Length: 19625
+Access-Control-Allow-Headers: Content-Type
+Access-Control-Allow-Methods: GET,OPTIONS,POST,DELETE,PUT,PATCH
+Access-Control-Allow-Origin: undefined
+Cache-Control: max-age=0, no-cache, no-store
+Connection: keep-alive
+Content-Type: application/json; charset=utf-8
+Date: Tue, 22 Oct 2019 13:39:12 GMT
+Etag: W/"4ca9-NMmpCrGPjKsw6clu/SjsXF7HQZQ"
+Expires: Tue, 22 Oct 2019 13:39:12 GMT
+Pragma: no-cache
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Transaction-Id: 64890730403
+X-Powered-By: Express
+X-Request-Id: 64890730403
+X-Response-Time: 698.676ms
+_request_id: 64890730403
+
+{"total_results":28,"total_pages":1,"prev_url":null,"next_url":null,"resources":[{"metadata":{"guid":"9d67f37fdf745e1b3cbef0ee4e6f2eda","url":"/v1/accounts/9d67f37fdf745e1b3cbef0ee4e6f2eda","created_at":"2016-10-06T20:11:00.942Z","updated_at":"2018-08-16T23:34:27.398Z","origin":"BSS"},"entity":{"name":"Christopher Mitchell's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"chrism1@us.ibm.com","url":""},"owner_unique_id":"1100006SAA","owner_iam_id":"IBMid-1100006SAA","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/9d67f37fdf745e1b3cbef0ee4e6f2eda/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/9d67f37fdf745e1b3cbef0ee4e6f2eda/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"e5ed08b9203bad3e4b6f57f0d1675a88","url":"/v1/accounts/e5ed08b9203bad3e4b6f57f0d1675a88","created_at":"2016-10-07T14:05:23.386Z","updated_at":"2018-08-16T22:34:28.387Z","origin":"BSS"},"entity":{"name":"Brian Martin's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"bkmartin@us.ibm.com","url":""},"owner_unique_id":"120000K389","owner_iam_id":"IBMid-120000K389","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/e5ed08b9203bad3e4b6f57f0d1675a88/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/e5ed08b9203bad3e4b6f57f0d1675a88/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"31b816f0038405fa9fe1eaba2ab2f2fa","url":"/v1/accounts/31b816f0038405fa9fe1eaba2ab2f2fa","created_at":"2016-10-11T14:52:39.933Z","updated_at":"2016-10-22T21:14:40.805Z","origin":"BSS"},"entity":{"name":"Ginni Rometty's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"ccmitchellusa+2@gmail.com","url":""},"country_code":"GBR","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/31b816f0038405fa9fe1eaba2ab2f2fa/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/31b816f0038405fa9fe1eaba2ab2f2fa/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"b0b27b96dba900449c1e22686c3e3177","url":"/v1/accounts/b0b27b96dba900449c1e22686c3e3177","created_at":"2016-10-08T00:11:44.556Z","updated_at":"2018-08-17T03:45:40.549Z","origin":"BSS"},"entity":{"name":"EMMANUEL TISSANDIER's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"Emmanuel.Tissandier@fr.ibm.com","url":""},"owner_unique_id":"270002HRW9","owner_iam_id":"IBMid-270002HRW9","country_code":"FRA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/b0b27b96dba900449c1e22686c3e3177/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/b0b27b96dba900449c1e22686c3e3177/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"bef71ea83f3d0c18eb701256cf445eb3","url":"/v1/accounts/bef71ea83f3d0c18eb701256cf445eb3","created_at":"2016-10-12T22:57:24.581Z","updated_at":"2018-08-17T07:10:25.975Z","origin":"BSS"},"entity":{"name":"Mobile Build's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"mobileb@us.ibm.com","url":""},"owner_unique_id":"270006SVEW","owner_iam_id":"IBMid-270006SVEW","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/bef71ea83f3d0c18eb701256cf445eb3/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/bef71ea83f3d0c18eb701256cf445eb3/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"afaf163b83a1ff38392e1a4a57d3f4b2","url":"/v1/accounts/afaf163b83a1ff38392e1a4a57d3f4b2","created_at":"2016-10-13T17:56:23.051Z","updated_at":"2018-08-17T16:37:50.302Z","origin":"BSS"},"entity":{"name":"NORMAN SETO's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"seto@ca.ibm.com","url":""},"owner_unique_id":"060001KGEX","owner_iam_id":"IBMid-060001KGEX","country_code":"CAN","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/afaf163b83a1ff38392e1a4a57d3f4b2/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/afaf163b83a1ff38392e1a4a57d3f4b2/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"d4b3d15f6d559f93df72a02909239284","url":"/v1/accounts/d4b3d15f6d559f93df72a02909239284","created_at":"2016-10-12T22:57:35.986Z","updated_at":"2018-08-17T16:22:54.517Z","origin":"BSS"},"entity":{"name":"Ramakrishna Boggarapu's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"ramab@us.ibm.com","url":""},"owner_unique_id":"270006SWBD","owner_iam_id":"IBMid-270006SWBD","country_code":"NCL","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/d4b3d15f6d559f93df72a02909239284/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/d4b3d15f6d559f93df72a02909239284/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"c94e00a5ff9c6151080234cd1eb8fd8f","url":"/v1/accounts/c94e00a5ff9c6151080234cd1eb8fd8f","created_at":"2016-10-08T05:19:09.586Z","updated_at":"2018-08-17T06:52:42.018Z","origin":"BSS"},"entity":{"name":"Robert Sloan's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"ksloan@us.ibm.com","url":""},"owner_unique_id":"110000EC4C","owner_iam_id":"IBMid-110000EC4C","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/c94e00a5ff9c6151080234cd1eb8fd8f/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/c94e00a5ff9c6151080234cd1eb8fd8f/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"d058a45cb9df1adfd8dafcf45ced9478","url":"/v1/accounts/d058a45cb9df1adfd8dafcf45ced9478","created_at":"2015-11-05T06:50:56.821Z","updated_at":"2018-08-17T03:54:09.463Z","origin":"BSS"},"entity":{"name":"Gayathri Raghavendra's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"graghav@us.ibm.com","url":""},"owner_unique_id":"3100005PNB","owner_iam_id":"IBMid-3100005PNB","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/d058a45cb9df1adfd8dafcf45ced9478/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/d058a45cb9df1adfd8dafcf45ced9478/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"46352c35e1285f168db33969022cd841","url":"/v1/accounts/46352c35e1285f168db33969022cd841","created_at":"2016-10-15T09:19:33.755Z","updated_at":"2018-08-17T16:44:41.100Z","origin":"BSS"},"entity":{"name":"Skeleton Key's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"skelkey@us.ibm.com","url":""},"owner_unique_id":"310000WFMD","owner_iam_id":"IBMid-310000WFMD","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/46352c35e1285f168db33969022cd841/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/46352c35e1285f168db33969022cd841/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"d013941e0c5cd10f10ded334e73ea624","url":"/v1/accounts/d013941e0c5cd10f10ded334e73ea624","created_at":"2016-10-15T08:41:13.033Z","updated_at":"2018-08-16T22:36:48.027Z","origin":"BSS"},"entity":{"name":"Kevin Sloan's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"bmaceid@us.ibm.com","url":""},"owner_unique_id":"310000JWPQ","owner_iam_id":"IBMid-310000JWPQ","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/d013941e0c5cd10f10ded334e73ea624/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/d013941e0c5cd10f10ded334e73ea624/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"bf29cd6b28c15ffd02a68a1a61f331c6","url":"/v1/accounts/bf29cd6b28c15ffd02a68a1a61f331c6","created_at":"2016-05-03T17:26:17.088Z","updated_at":"2019-03-07T17:00:14.001Z","origin":"BSS"},"entity":{"name":"Gili Mendel's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"gmendel@us.ibm.com","url":""},"owner_unique_id":"120000HAPG","owner_iam_id":"IBMid-120000HAPG","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/bf29cd6b28c15ffd02a68a1a61f331c6/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/bf29cd6b28c15ffd02a68a1a61f331c6/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"d192a2b7715a762b1d8b2d51a6379e0b","url":"/v1/accounts/d192a2b7715a762b1d8b2d51a6379e0b","created_at":"2016-10-15T09:26:31.548Z","updated_at":"2018-08-14T23:35:04.737Z","origin":"BSS"},"entity":{"name":"Amy Blea's Account","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"amyn@us.ibm.com","url":""},"owner_unique_id":"120000DH2W","owner_iam_id":"IBMid-120000DH2W","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/d192a2b7715a762b1d8b2d51a6379e0b/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/d192a2b7715a762b1d8b2d51a6379e0b/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"823bd195e9fd4f0db40ac2e1bffef3e0","url":"/v1/accounts/823bd195e9fd4f0db40ac2e1bffef3e0","created_at":"2018-08-07T21:35:05.160Z","updated_at":"2018-12-22T03:14:36.214Z","origin":"BSS"},"entity":{"name":"VPC Staging 02","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"bluemix_ui_rias_stg02@mailinator.com","url":""},"owner_unique_id":"550000KDH8","owner_iam_id":"IBMid-550000KDH8","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/823bd195e9fd4f0db40ac2e1bffef3e0/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/823bd195e9fd4f0db40ac2e1bffef3e0/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"78d00cc88d254fba849cdd8a8e4f1618","url":"/v1/accounts/78d00cc88d254fba849cdd8a8e4f1618","created_at":"2018-08-07T21:28:06.734Z","updated_at":"2019-02-20T22:23:30.888Z","origin":"BSS"},"entity":{"name":"VPC INT 01","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"bluemix_ui_rias_int01@mailinator.com","url":""},"owner_unique_id":"550000KDFX","owner_iam_id":"IBMid-550000KDFX","country_code":"USA","team_directory_enabled":true,"subscriptions":{"total":1,"url":"/v1/accounts/78d00cc88d254fba849cdd8a8e4f1618/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/78d00cc88d254fba849cdd8a8e4f1618/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":"6db93b88e93d4a92b8651a7d2093a91f","url":"/v1/accounts/6db93b88e93d4a92b8651a7d2093a91f","created_at":"2019-03-21T13:13:44.409Z","updated_at":"2019-03-21T13:13:52.155Z","origin":"BSS"},"entity":{"name":"Customer 7119075","state":"ACTIVE","sub_state":"NONE","primary_owner":{"ibmid":"riaasbot@us.ibm.com","url":""},"owner_unique_id":"505YCU6VY9","owner_iam_id":"IBMid-505YCU6VY9","country_code":"","team_directory_enabled":false,"subscriptions":{"total":1,"url":"/v1/accounts/6db93b88e93d4a92b8651a7d2093a91f/subscriptions"},"traits":{"total":0,"url":"/v1/accounts/6db93b88e93d4a92b8651a7d2093a91f/traits","mfa":"","eu_supported":false,"poc":false,"enable_tags":true,"hippa_accepted":false,"hipaa_accepted":false,"allow_inactive_credit_card":false,"anonymous_order_account_flag":false,"delay_recurring_invoice":false,"do_not_charge_during_batch":false,"suppress_order_emails":false,"suppress_payment_past_due_email":false,"bap_supported":false,"team_directory_enabled":true}}},{"metadata":{"guid":1859809,"url":"/v1/accounts/IMS/1859809","created_at":"2019-03-06T12:13:46-06:00","updated_at":"2019-03-06T12:13:50-06:00","origin":"IMS"},"entity":{"name":"Customer 1859809","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1662073,"url":"/v1/accounts/IMS/1662073","created_at":"2018-05-29T15:13:41-05:00","updated_at":"2018-05-29T15:13:43-05:00","origin":"IMS"},"entity":{"name":"Customer 1662073","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1746423,"url":"/v1/accounts/IMS/1746423","created_at":"2018-10-04T14:40:24-05:00","updated_at":"2018-10-04T14:40:26-05:00","origin":"IMS"},"entity":{"name":"Customer 1746423","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1647675,"url":"/v1/accounts/IMS/1647675","created_at":"2018-05-11T15:50:13-05:00","updated_at":"2018-05-11T15:50:15-05:00","origin":"IMS"},"entity":{"name":"Customer 1647675","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1188569,"url":"/v1/accounts/IMS/1188569","created_at":"2017-01-13T16:23:36-06:00","updated_at":"2017-01-13T16:23:39-06:00","origin":"IMS"},"entity":{"name":"Customer 1188569","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1537881,"url":"/v1/accounts/IMS/1537881","created_at":"2017-12-15T11:32:49-06:00","updated_at":"2017-12-15T11:32:51-06:00","origin":"IMS"},"entity":{"name":"Customer 1537881","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"CA"}},{"metadata":{"guid":1707955,"url":"/v1/accounts/IMS/1707955","created_at":"2018-08-09T15:40:19-05:00","updated_at":"2018-08-09T15:40:21-05:00","origin":"IMS"},"entity":{"name":"Customer 1707955","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1707957,"url":"/v1/accounts/IMS/1707957","created_at":"2018-08-09T15:40:29-05:00","updated_at":"2018-08-09T15:40:31-05:00","origin":"IMS"},"entity":{"name":"Customer 1707957","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1876923,"url":"/v1/accounts/IMS/1876923","created_at":"2019-03-28T19:37:43-05:00","updated_at":"2019-03-28T19:37:46-05:00","origin":"IMS"},"entity":{"name":"Customer 1876923","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1633823,"url":"/v1/accounts/IMS/1633823","created_at":"2018-04-18T11:19:38-05:00","updated_at":"2018-04-18T11:19:42-05:00","origin":"IMS"},"entity":{"name":"Customer 1633823","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1809673,"url":"/v1/accounts/IMS/1809673","created_at":"2018-12-14T08:45:17-06:00","updated_at":"2018-12-14T08:45:20-06:00","origin":"IMS"},"entity":{"name":"Customer 1809673","state":"ACTIVE","master_user":false,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}},{"metadata":{"guid":1779875,"url":"/v1/accounts/IMS/1779875","created_at":"2018-11-04T05:26:53-06:00","updated_at":"2018-11-04T05:26:56-06:00","origin":"IMS"},"entity":{"name":"Customer 1779875","state":"ACTIVE","master_user":true,"primary_owner":{"ibmid":"","url":""},"country_code":"USA"}}]}
+
+[1mREQUEST:[0m [2019-10-22T09:39:24-04:00]
+POST /identity/token HTTP/1.1
+Host: iam.test.cloud.ibm.com
+Accept: application/json
+Accept-Language: en-US
+Accept-Language: en
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/x-www-form-urlencoded
+User-Agent: IBM Cloud CLI 0.19.0 / darwin
+
+account=9d67f37fdf745e1b3cbef0ee4e6f2eda&grant_type=refresh_token&refresh_token=[PRIVATE DATA HIDDEN]&response_type=cloud_iam
+
+[1mRESPONSE:[0m [2019-10-22T09:39:27-04:00] [1mElapsed:[0m 3043ms
+HTTP/1.1 200 OK
+Content-Length: 2224
+Connection: keep-alive
+Content-Language: en-US
+Content-Type: application/json
+Date: Tue, 22 Oct 2019 13:39:27 GMT
+Set-Cookie: sessioncookie=6f868211fbb7f1b75790f2ba9041c5fa; Path=/; Secure; HttpOnly
+Transaction-Id: c64857eff8094eeeb0e5c544d447cb1f
+X-Powered-By: Servlet/3.1
+
+{"access_token":"[PRIVATE DATA HIDDEN]","refresh_token":"[PRIVATE DATA HIDDEN]","token_type":"Bearer","expires_in":3600,"expiration":1571755164,"scope":"ibm openid"}
+
+[1mREQUEST:[0m [2019-10-22T09:39:27-04:00]
+GET /info HTTP/1.1
+Host: clis.cloud.ibm.com
+Accept: application/json
+Accept-Language: en-US
+Accept-Language: en
+Content-Type: application/json
+User-Agent: IBM Cloud CLI 0.19.0 / darwin
+
+
+
+[1mRESPONSE:[0m [2019-10-22T09:39:27-04:00] [1mElapsed:[0m 483ms
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Type: application/json
+Date: Tue, 22 Oct 2019 13:39:27 GMT
+X-Backside-Transport: OK OK
+X-Global-Transaction-Id: 2a9437b75daf068fc96fef57
+
+b8
+{
+  "download_page": "https://clis.cloud.ibm.com",
+  "downloadPage": "https://clis.cloud.ibm.com",
+  "latest_version": "0.19.0",
+  "latestVersion": "0.19.0",
+  "min_versions": {
+  }
+}
+
+0
+
+
+
+[1mREQUEST:[0m [2019-10-22T09:39:27-04:00]
+GET /versions/latest HTTP/1.1
+Host: clis.cloud.ibm.com
+Accept: application/json
+Content-Type: application/json
+
+
+
+[1mRESPONSE:[0m [2019-10-22T09:39:28-04:00] [1mElapsed:[0m 293ms
+HTTP/1.1 200 OK
+Transfer-Encoding: chunked
+Connection: Keep-Alive
+Content-Type: application/json
+Date: Tue, 22 Oct 2019 13:39:28 GMT
+X-Backside-Transport: OK OK
+X-Global-Transaction-Id: 2a9437b75daf0690c96ff2b7
+
+83f
+{"version":"0.19.0","date":"2019-09-23","binaries":{"linux32":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/linux32","checksum":"b527cdd855b41f6a91b8653e677111754c39f730"},"linux64":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/linux64","checksum":"fa17296f1a9927b8f2a5cdc45532908a2b5b0bf0"},"osx":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/osx","checksum":"5fd41196aef76b9584be75fac65935d155092188"},"ppc64le":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/ppc64le","checksum":"a94b0caab78bc8700cffe2a9ec31ac3f8fe524a3"},"s390x":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/s390x","checksum":"b4aac1348d9c2bb5da3139c3e5425fa30950f584"},"win32":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/win32","checksum":"4c44bb3691850c4bc65b568400e79b8b8548768d"},"win64":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/win64","checksum":"8969307cf7f9ca7728c152575e5aeb43b3c7d9d5"}},"archives":{"linux32":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/linux32/archive","checksum":"522c71ea031b95bbff96c5dc8d98880c530654fc"},"linux64":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/linux64/archive","checksum":"2dc26d75166da73e2f29a6825cbe74e769daab49"},"osx":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/osx/archive","checksum":"d3434641c2d7e04dbb267e9e4999daf49e3aa9b5"},"ppc64le":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/ppc64le/archive","checksum":"2622f378b54cf766a17c1df1001b53390955d0a1"},"s390x":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/s390x/archive","checksum":"29ccc036c515d78c27de7d3f9f3f108db5986099"},"win32":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/win32/archive","checksum":"f6adc81ed6b73888e4e7e18c61a619caf0f65507"},"win64":{"url":"https://clis.cloud.ibm.com/download/bluemix-cli/latest/win64/archive","checksum":"49d135c5e8f8f58d21b09e86b86189cb10ba1171"}},"changeLogs":null,"releaseNotesLink":"https://github.com/IBM-Cloud/ibm-cloud-cli-release/releases/tag/v0.19.0"}
+0
+
+
+
+[1mREQUEST:[0m [2019-10-22T09:39:45-04:00]
+GET /v1/resource_groups?account_id=9d67f37fdf745e1b3cbef0ee4e6f2eda HTTP/1.1
+Host: resource-controller.test.cloud.ibm.com
+Accept: application/json
+Accept-Language: en-US
+Accept-Language: en
+Authorization: [PRIVATE DATA HIDDEN]
+Content-Type: application/json
+User-Agent: IBM Cloud CLI 0.19.0 / darwin
+
+
+
+[1mRESPONSE:[0m [2019-10-22T09:39:46-04:00] [1mElapsed:[0m 1363ms
+HTTP/1.1 200 OK
+Content-Length: 700
+Cache-Control: max-age=0, no-cache, no-store
+Connection: keep-alive
+Content-Type: application/json; charset=utf-8
+Date: Tue, 22 Oct 2019 13:39:46 GMT
+Etag: W/"2bc-JxlqANUtuEHGoU37Sdlb1ZveRw4"
+Expires: Tue, 22 Oct 2019 13:39:46 GMT
+Pragma: no-cache
+Strict-Transport-Security: max-age=15552000; includeSubDomains
+Transaction-Id: 8012612645
+Vary: Accept-Encoding
+X-Powered-By: Express
+X-Request-Id: 8012612645
+X-Response-Time: 542.969ms
+_request_id: 8012612645
+
+{"resources":[{"id":"3cb2684384adc94cf0f70468badeda31","crn":"crn:v1:staging:public:resource-controller::a/9d67f37fdf745e1b3cbef0ee4e6f2eda::resource-group:3cb2684384adc94cf0f70468badeda31","account_id":"9d67f37fdf745e1b3cbef0ee4e6f2eda","name":"Default","state":"ACTIVE","default":true,"enable_reclamation":false,"quota_id":"a3d7b8d01e261c24677937c29ab33f3c","quota_url":"/v1/quota_definitions/a3d7b8d01e261c24677937c29ab33f3c","payment_methods_url":"/v1/resource_groups/3cb2684384adc94cf0f70468badeda31/payment_methods","resource_linkages":[],"teams_url":"/v1/resource_groups/3cb2684384adc94cf0f70468badeda31/teams","created_at":"2016-10-06T20:11:00.942Z","updated_at":"2016-10-06T20:11:00.942Z"}]}
