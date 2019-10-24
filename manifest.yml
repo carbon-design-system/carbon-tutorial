@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-bresnahr
+    memory: 64M
+    buildpack: htpps://github.com/cloudfoundry/staticfile-buildpack.git
