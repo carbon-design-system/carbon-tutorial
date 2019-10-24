@@ -8,9 +8,9 @@ import {
   TableExpandHeader,
   TableHeader,
   TableBody,
-  TableExpandedRow,
-  TableCell,
   TableExpandRow,
+  TableCell,
+  TableExpandedRow,
 } from 'carbon-components-react';
 
 const RepoTable = ({ rows, headers }) => {
@@ -47,9 +47,9 @@ const RepoTable = ({ rows, headers }) => {
                       <TableCell key={cell.id}>{cell.value}</TableCell>
                     ))}
                   </TableExpandRow>
-                  <TableExpandRow colSpan={headers.length + 1}>
+                  <TableExpandedRow colSpan={headers.length + 1}>
                     <p>Row description</p>
-                  </TableExpandRow>
+                  </TableExpandedRow>
                 </Fragment>
               ))}
             </TableBody>
