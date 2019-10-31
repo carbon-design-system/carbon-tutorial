@@ -35,13 +35,14 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
+
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
-            <Tab {...props.tab} aria-label="Tab navigation" label="About">
+            <Tab {...props.tab} label="About">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
-                  <div className="bx--col-md-4 bx--col-lg-7">
+                  <div className="bx--col-md-2 bx--col-lg-5">
                     <h2 className="landing-page__subheading">
                       What is Carbon?
                     </h2>
@@ -54,7 +55,7 @@ const LandingPage = () => {
                     </p>
                     <Button>Learn more</Button>
                   </div>
-                  <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
+                  <div className="bx--col-md-2 bx--offset-lg-1 bx--col-lg-6">
                     <img
                       className="landing-page__illo"
                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}
@@ -64,7 +65,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} aria-label="Tab navigation" label="Design">
+            <Tab {...props.tab} label="Design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
@@ -74,7 +75,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} aria-label="Tab navigation" label="Develop">
+            <Tab {...props.tab} label="Develop">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
@@ -87,6 +88,7 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
+
       <div className="bx--row landing-page__r3">
         <div className="bx--col-md-4 bx--col-lg-4">
           <h3 className="landing-page__label">The Principles</h3>
