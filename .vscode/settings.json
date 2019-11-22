@@ -1,0 +1,11 @@
+{
+  "cSpell.words": [
+    "browserslist",
+    "buildpacks",
+    "commitlint",
+    "repos"
+  ],
+  "search.exclude": {
+    ".yarn-offline-mirror": true // set this to false to include "out" folder in search results
+  }
+}
