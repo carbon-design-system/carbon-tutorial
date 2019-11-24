@@ -873,7 +873,7 @@
   dependencies:
     "@carbon/icon-helpers" "10.4.0"
 
-"@carbon/icons-react@^10.6.1":
+"@carbon/icons-react@^10.3.0":
   version "10.6.1"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.6.1.tgz#2fdc14947c874875b96a0c58fd438a1ed38d599e"
   integrity sha512-VeCMLGekMIpLoutyCMk4U1zXUkmzIWZFZbDAGpFbT+OgZuCI1ba5YfiwUV16ldXaSZH7zWmwUQs72t6Kx4fofg==
@@ -2446,7 +2446,7 @@ capture-exit@^1.2.0:
   dependencies:
     rsvp "^3.3.3"
 
-carbon-components-react@^7.7.4:
+carbon-components-react@^7.3.0:
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.7.4.tgz#3ef38e80d5b490adc4581a5db96523ef06b9bde8"
   integrity sha512-+iSD+zmxc6XyUY9s6nkK7dKNXn99XlpyHOjGP0HF8FksUdN4KoV/IjwKSRd19HADmyOsUdoI5sLr85cuMxGnrw==
@@ -2464,7 +2464,7 @@ carbon-components-react@^7.7.4:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.7.4:
+carbon-components@^10.3.0:
   version "10.7.4"
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.7.4.tgz#e8c734ee2dd736117f6dba160260760c4e795614"
   integrity sha512-eiAfSQQVa1BTv2y/hzgv7l4rpd/SksFBenxezXEXc6684duleBLj5Jz1wyMqLGVp5ZEjJuAIbAyf9zs89AT9ig==
