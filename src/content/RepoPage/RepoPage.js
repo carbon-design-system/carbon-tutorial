@@ -78,7 +78,7 @@ const LinkList = ({ url, homepageUrl }) => (
     )}
   </ul>
 );
-
+//Get Row Items
 const getRowItems = rows =>
   rows.map(row => ({
     ...row,
