@@ -1218,8 +1218,8 @@
 
 "@types/node@>=6":
   version "12.12.14"
-  resolved "https://eu.artifactory.swg-devops.com:443/artifactory/api/npm/sec-rp-npm-virtual/@types/node/-/node-12.12.14.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fnode%2F-%2Fnode-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
-  integrity sha1-HB1uPHXbpGbgMmlI1W6L1yoZA9I=
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.12.14.tgz#1c1d6e3c75dba466e0326948d56e8bd72a1903d2"
+  integrity sha512-u/SJDyXwuihpwjXy7hOOghagLEV1KdAST6syfnOk6QZAMzZuWZqXy5aYYZbh8Jdpd4escVFP0MvftHNDb9pruA==
 
 "@types/q@^1.5.1":
   version "1.5.1"
@@ -1255,8 +1255,8 @@
 
 "@types/zen-observable@^0.8.0":
   version "0.8.0"
-  resolved "https://eu.artifactory.swg-devops.com:443/artifactory/api/npm/sec-rp-npm-virtual/@types/zen-observable/-/zen-observable-0.8.0.tgz?dl=https%3A%2F%2Fregistry.npmjs.org%2F%40types%2Fzen-observable%2F-%2Fzen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
-  integrity sha1-i2OrfxqlMhJIqtWsiQpIVlbc6k0=
+  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.0.tgz#8b63ab7f1aa5321248aad5ac890a485656dcea4d"
+  integrity sha512-te5lMAWii1uEJ4FwLjzdlbw3+n0FZNOvFXHxQDKeT0dilh7HOzdMzV2TrJVUzq8ep7J4Na8OUYPRLSQkJHAlrg==
 
 "@webassemblyjs/ast@1.7.11":
   version "1.7.11"
