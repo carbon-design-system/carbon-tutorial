@@ -79,8 +79,8 @@ const LinkList = ({ url, homepageUrl }) => (
   </ul>
 );
 
-const getRowItems = rows => {
-  return rows.map(row => ({
+const getRowItems = rows =>
+  rows.map(row => ({
     ...row,
     key: row.id,
     stars: row.stargazers.totalCount,
@@ -89,7 +89,6 @@ const getRowItems = rows => {
     updatedAt: new Date(row.updatedAt).toLocaleDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
-};
 
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
