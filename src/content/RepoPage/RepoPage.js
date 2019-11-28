@@ -3,32 +3,6 @@ import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
-const headers = [
-  {
-    key: 'name',
-    header: 'Name',
-  },
-  {
-    key: 'createdAt',
-    header: 'Created',
-  },
-  {
-    key: 'updatedAt',
-    header: 'Updated',
-  },
-  {
-    key: 'issueCount',
-    header: 'Open Issues',
-  },
-  {
-    key: 'stars',
-    header: 'Stars',
-  },
-  {
-    key: 'links',
-    header: 'Links',
-  },
-];
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -64,6 +38,33 @@ const REPO_QUERY = gql`
   }
 `;
 
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+    header: 'Links',
+  },
+];
+
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -93,6 +94,7 @@ const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
+
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
       <div className="bx--row repo-page__r1">
@@ -115,7 +117,6 @@ const RepoPage = () => {
               // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
-
               const rows = getRowItems(repositories.nodes);
 
               return (
