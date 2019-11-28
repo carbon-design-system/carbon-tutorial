@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@carbon/icons-react": "^10.3.0",
+    "babel-plugin-dynamic-import-node": "^2.3.0",
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
