@@ -1,9 +1,42 @@
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
-
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+
+const REPO_QUERY = gql`
+  query REPO_QUERY {
+    # Let's use carbon as our organization
+    organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
+      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
+        totalCount
+        nodes {
+          url
+          homepageUrl
+          issues(filterBy: { states: OPEN }) {
+            totalCount
+          }
+          stargazers {
+            totalCount
+          }
+          releases(first: 1) {
+            totalCount
+            nodes {
+              name
+            }
+          }
+          name
+          updatedAt
+          createdAt
+          description
+          id
+        }
+      }
+    }
+  }
+`;
 
 const headers = [
   {
@@ -32,37 +65,6 @@ const headers = [
   },
 ];
 
-const REPO_QUERY = gql(`
-  query REPO_QUERY {
-    organization(login: "carbon-design-system") {
-      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
-        totalCount
-        nodes {
-          url
-          homepageUrl
-          issues(filterBy: { states: OPEN }) {
-            totalCount
-          }
-          stargazers {
-            totalCount
-          }
-          releases(first: 1) {
-            totalCount
-            nodes {
-              name
-            }
-          }
-          name
-          updatedAt
-          createdAt
-          description
-          id
-        }
-      }
-    }
-  }
-`);
-
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -76,7 +78,7 @@ const LinkList = ({ url, homepageUrl }) => (
     )}
   </ul>
 );
-
+//Get Row Items
 const getRowItems = rows =>
   rows.map(row => ({
     ...row,
@@ -99,6 +101,7 @@ const RepoPage = () => {
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
             {({ loading, error, data }) => {
+              // Wait for the request to complete
               if (loading)
                 return (
                   <DataTableSkeleton
@@ -107,9 +110,11 @@ const RepoPage = () => {
                     headers={headers}
                   />
                 );
-              if (error) return `Error! ${error.message}`;
-              // console.log(data.organization);
 
+              // Something went wrong with the data fetching
+              if (error) return `Error! ${error.message}`;
+
+              // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
