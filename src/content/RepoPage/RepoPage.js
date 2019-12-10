@@ -27,7 +27,6 @@ const headers = [
     header: 'Links',
   },
 ];
-
 const rows = [
   {
     id: '1',
