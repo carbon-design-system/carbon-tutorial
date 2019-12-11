@@ -17,6 +17,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.7.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.7.4",
     "@carbon/icons-react": "^10.6.1",
     "carbon-components": "^10.7.4",
     "carbon-components-react": "^7.7.4",
@@ -80,5 +82,4 @@
       "@babel/plugin-proposal-class-properties"
     ]
   }
-  
 }
