@@ -74,5 +74,11 @@
     "printWidth": 80,
     "singleQuote": true,
     "trailingComma": "es5"
+  },
+  "babel": {
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
   }
+  
 }
