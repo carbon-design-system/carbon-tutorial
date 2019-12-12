@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a02da55-01f9-420a-8964-e86bd1e22cdd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.cfignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Staticfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1576153091716</updated>
       <workItem from="1576153095371" duration="1903000" />
-      <workItem from="1576155011150" duration="813000" />
+      <workItem from="1576155011150" duration="1071000" />
     </task>
     <servers />
   </component>
