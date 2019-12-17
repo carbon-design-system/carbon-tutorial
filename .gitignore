@@ -7,7 +7,7 @@
 
 # testing
 /coverage
-
+.yarn-offline-mirror
 # production
 /build
 
