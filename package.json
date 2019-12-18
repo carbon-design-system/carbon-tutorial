@@ -73,8 +73,8 @@
   },
   "prettier": {
     "jsxBracketSameLine": true,
-    "printWidth": 80,
     "singleQuote": true,
+    "printWidth": 80,
     "trailingComma": "es5"
   }
 }
