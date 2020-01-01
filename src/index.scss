@@ -1,3 +1,6 @@
+$feature-flags: (
+  ui-shell: true,
+);
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
@@ -9,6 +12,3 @@ main {
   display: block;
 }
 @import 'carbon-components/scss/globals/scss/styles.scss';
-$feature-flags: (
-  ui-shell: true,
-);
