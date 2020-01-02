@@ -1,3 +1,7 @@
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
 // Feature flags
 $css--font-face: true;
 $css--plex: true;
@@ -7,6 +11,7 @@ $css--plex: true;
 @import 'carbon-components/scss/globals/grid/grid';
 
 // Carbon components
+@import 'carbon-components/scss/globals/scss/styles.scss';
 @import 'carbon-components/scss/components/breadcrumb/breadcrumb';
 @import 'carbon-components/scss/components/button/button';
 @import 'carbon-components/scss/components/data-table/data-table';
