@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e7e2ccc2-892c-43fd-9eda-9e89cd92359e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.cfignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Staticfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manifest.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fg dfs" />
+    <option name="LAST_COMMIT_MESSAGE" value="fg dfs" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1216" y="353" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578068420318">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="-1216" y="353" key="#com.intellij.fileTypes.FileTypeChooser/-1920.23.1920.1057/0.23.1680.980@-1920.23.1920.1057" timestamp="1578068420318" />
+  </component>
+</project>
