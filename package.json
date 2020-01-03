@@ -31,6 +31,7 @@
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
   },
+  "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
