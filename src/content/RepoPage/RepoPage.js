@@ -102,6 +102,7 @@ const RepoPage = () => {
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
             {({ loading, error, data }) => {
+              // Wait for the request to complete
               if (loading)
                 return (
                   <DataTableSkeleton
@@ -109,8 +110,9 @@ const RepoPage = () => {
                     rowCount={10}
                     headers={headers}
                   />
-                );
+                ); // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
+              // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
