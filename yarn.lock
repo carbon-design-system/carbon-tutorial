@@ -868,6 +868,14 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@carbon/grid@^10.8.2":
+  version "10.8.2"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.8.2.tgz#254de8c8cb2e080eb2bee5e136da3290fa21c1d2"
+  integrity sha512-KJEaC/3NeLNEAJKTtWmP5m4aZWd/06pkGyC39L0ajv2y85Eue0DEAncpitr1d+TSDp5beYC9itnIcBIh2nH8Eg==
+  dependencies:
+    "@carbon/import-once" "^10.3.0"
+    "@carbon/layout" "^10.7.2"
+
 "@carbon/icon-helpers@^10.5.1":
   version "10.5.1"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.5.1.tgz#a13426cf137eb6080cfe46405a567bd470b597a3"
@@ -879,6 +887,16 @@
   integrity sha512-ETONJsiTHxGIuPk7G8aDm0tzJQjOsaobni32e0b/rSQLgOOsLalgf56Y47ascgWutKiTWg9lE0PK7G9SQHYthg==
   dependencies:
     "@carbon/icon-helpers" "^10.5.1"
+
+"@carbon/import-once@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
+  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
+
+"@carbon/layout@^10.7.2":
+  version "10.7.2"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.7.2.tgz#17e34c76410f4a6aa40ba4bb38df204b674de2d5"
+  integrity sha512-109PqRWg6goF3uteeMKc1KRKvhhyqg5QHxE/FH8s9qpKx8+uE5caOEuOkC26C6nQwrxQtnQwjHFv8A+ObpumHg==
 
 "@commitlint/cli@^7.5.2":
   version "7.5.2"
