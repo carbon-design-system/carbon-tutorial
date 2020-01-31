@@ -5,6 +5,7 @@ import 'core-js/modules/es6.string.trim';
 import 'core-js/modules/es7.object.values';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
