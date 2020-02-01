@@ -26,7 +26,7 @@ ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
       <App />
-    </Router>
+    </Router>{' '}
   </ApolloProvider>,
   document.getElementById('root')
 );
