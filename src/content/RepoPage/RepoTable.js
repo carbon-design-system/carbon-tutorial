@@ -13,8 +13,6 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-import { Link, DataTableSkeleton } from 'carbon-components-react';
-
 const RepoTable = ({ rows, headers }) => {
   const getRowDescription = rowId => {
     const row = rows.find(({ id }) => id === rowId);
