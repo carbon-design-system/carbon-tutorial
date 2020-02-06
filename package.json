@@ -69,6 +69,9 @@
       "git add"
     ]
   },
+  "resolutions": {
+    "**/@babel/runtime": "7.5.0"
+  },
   "prettier": {
     "jsxBracketSameLine": true,
     "printWidth": 80,
