@@ -70,7 +70,7 @@
     ]
   },
   "resolutions": {
-    "**/@babel/runtime": "7.5.0"
+    "**/@babel/runtime": "7.3.1"
   },
   "prettier": {
     "jsxBracketSameLine": true,
