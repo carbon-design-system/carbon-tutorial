@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="61472482-102f-4d05-b60c-e40eefdf9a98" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EditorConfigPreviewManager">
+    <editorConfig file="$PROJECT_DIR$/.editorconfig" previewFile="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1XdAuYZsEd0XNYvTSq6HsLrVYSs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="13.8.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="61472482-102f-4d05-b60c-e40eefdf9a98" name="Default Changelist" comment="" />
+      <created>1581365820374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581365820374</updated>
+      <workItem from="1581365823461" duration="30000" />
+      <workItem from="1581365864470" duration="3696000" />
+      <workItem from="1581370410325" duration="3288000" />
+      <workItem from="1581375621222" duration="1839000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="577" y="323" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper" timestamp="1581369207261">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="577" y="323" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.23.1680.1027@0.23.1680.1027" timestamp="1581369207261" />
+    <state x="32" y="322" key="EditFileWatcherDialog" timestamp="1581370004884">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="32" y="322" key="EditFileWatcherDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1581370004884" />
+    <state width="898" height="161" key="GridCell.Tab.0.bottom" timestamp="1581377596283">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="898" height="161" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1581377596283" />
+    <state width="898" height="161" key="GridCell.Tab.0.center" timestamp="1581377596282">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="898" height="161" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1581377596282" />
+    <state width="898" height="161" key="GridCell.Tab.0.left" timestamp="1581377596281">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="898" height="161" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1581377596281" />
+    <state width="898" height="161" key="GridCell.Tab.0.right" timestamp="1581377596282">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state width="898" height="161" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1581377596282" />
+    <state x="341" y="175" key="SettingsEditor" timestamp="1581375230727">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1581375230727" />
+    <state x="603" y="388" key="cloudConfig.SelfSettingsDialog" timestamp="1581365888074">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="603" y="388" key="cloudConfig.SelfSettingsDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1581365888074" />
+  </component>
+</project>
