@@ -4940,18 +4940,6 @@ gaze@^1.0.0:
   dependencies:
     globule "^1.0.0"
 
-gen-sync@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/gen-sync/-/gen-sync-2.0.0.tgz#a3dfb26b318c4410640685a9ae1bc31bcae243d6"
-  integrity sha512-/ReKp2QhZKGxJfzYtr879hQEANy5g1A4/c6TD8xNaQWwshGnplzlp16besnGzS5rUJ1M0JQVHHGTdn2iDXfzpA==
-  dependencies:
-    stack-trace "0.0.9"
-
-gensync@^1.0.0-beta.1:
-  version "1.0.0-beta.1"
-  resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
-  integrity sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
-
 get-caller-file@^1.0.1:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
@@ -10531,11 +10519,6 @@ stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/stable/-/stable-0.1.8.tgz#836eb3c8382fe2936feaf544631017ce7d47a3cf"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
-
-stack-trace@0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/stack-trace/-/stack-trace-0.0.9.tgz#a8f6eaeca90674c333e7c43953f275b451510695"
-  integrity sha1-qPbq7KkGdMMz58Q5U/J1tFFRBpU=
 
 stack-utils@^1.0.1:
   version "1.0.2"
