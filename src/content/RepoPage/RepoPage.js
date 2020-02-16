@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -84,7 +84,7 @@ const getRowItems = rows =>
     ...row,
     key: row.id,
     stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
+    issuedCount: row.issues.totalCount,
     createdAt: new Date(row.createdAt).toLocaleDateString(),
     updatedAt: new Date(row.updatedAt).toLocaleDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
@@ -100,22 +100,22 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
-            {({ loading, error, data: { organization } }) => {
-              // Wait for the request to complete
+            {({ loading, error, data }) => {
+              //Wait for the requet to complete
               if (loading)
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
                     rowCount={10}
-                    headers={headers}
+                    header={headers}
                   />
                 );
 
-              // Something went wrong with the data fetching
+              //Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
 
-              // If we're here, we've got our data!
-              const { repositories } = organization;
+              //If we're here, we've got our data!
+              const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
 
@@ -130,8 +130,8 @@ const RepoPage = () => {
                   />
                   <Pagination
                     totalItems={totalItems}
-                    backwardText="Previous page"
-                    forwardText="Next page"
+                    backwardText="Previous Page"
+                    forwardText="Next Page"
                     pageSize={currentPageSize}
                     pageSizes={[5, 10, 15, 25]}
                     itemsPerPageText="Items per page"
@@ -139,7 +139,7 @@ const RepoPage = () => {
                       if (pageSize !== currentPageSize) {
                         setCurrentPageSize(pageSize);
                       }
-                      setFirstRowIndex(pageSize * (page - 1));
+                      setFirstRowIndex(pageSize + (page - 1));
                     }}
                   />
                 </>
