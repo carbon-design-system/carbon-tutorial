@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Content } from 'carbon-components-react/lib/components/UIShell/Content';
+import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 import { Router, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
