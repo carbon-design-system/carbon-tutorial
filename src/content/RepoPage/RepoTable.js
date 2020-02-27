@@ -7,7 +7,7 @@ import {
   TableRow,
   TableExpandHeader,
   TableHeader,
-  Tablebody,
+  TableBody,
   TableExpandRow,
   TableCell,
   TableExpandedRow,
