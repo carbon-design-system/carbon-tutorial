@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-aim-akonya
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
