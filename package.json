@@ -17,6 +17,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.8.3",
+    "gensync": "^1.0.0-beta.1",
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
     "apollo-boost": "^0.4.7",
