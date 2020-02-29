@@ -1,8 +1,8 @@
-@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
-@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
-@import 'carbon-components/scss/globals/scss/typography.scss';
-@import 'carbon-components/scss/globals/scss/vars.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint';
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
 
-@import './components/TutorialHeader/tutorial-header.scss';
-@import './content/LandingPage/landing-page.scss';
-@import './content/RepoPage/repo-page.scss';
+@import './components/TutorialHeader/tutorial-header';
+@import './content/LandingPage/landing-page';
+@import './content/RepoPage/repo-page';

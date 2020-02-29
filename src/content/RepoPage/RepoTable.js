@@ -13,11 +13,12 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-const RepoTable = ({ rows, headers }) => {
+const RepoTable = React.forwardRef((props, ref) => {
   return (
     <DataTable
-      rows={rows}
-      headers={headers}
+      ref={ref}
+      rows={props.rows}
+      headers={props.headers}
       render={({
         rows,
         headers,
@@ -58,6 +59,6 @@ const RepoTable = ({ rows, headers }) => {
       )}
     />
   );
-};
+});
 
 export default RepoTable;
