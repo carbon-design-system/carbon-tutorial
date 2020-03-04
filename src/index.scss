@@ -26,3 +26,9 @@ main {
 .bx--content {
   padding: 0;
 }
+
+// configure to use 16-column grid
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
