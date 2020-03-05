@@ -23,14 +23,17 @@
   padding-top: $layout-05;
   padding-bottom: $layout-05;
 }
+
 .landing-page__subheading {
   @include carbon--type-style('productive-heading-03');
   @include carbon--font-weight('semibold');
 }
+
 .landing-page__p {
   @include carbon--type-style('productive-heading-03');
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
+
   @include carbon--breakpoint-between((320px + 1), md) {
     max-width: 75%;
   }
@@ -41,6 +44,7 @@
   padding-bottom: $spacing-09;
   @include landing-page-background;
 }
+
 .landing-page__label {
   @include carbon--type-style('heading-01');
 }
