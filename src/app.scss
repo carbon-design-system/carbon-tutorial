@@ -1,0 +1,4 @@
+//By modifying index.scss as little as possible and storing all app-specific styling in app.scss we will make compile times much quicker
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './content/LandingPage/landing-page.scss';
+@import './content/RepoPage/repo-page.scss';
