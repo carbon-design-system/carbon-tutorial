@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
-import { Router, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
 import './app.scss';
@@ -13,8 +13,8 @@ class App extends Component {
         <TutorialHeader />
         <Content>
           <Switch>
-            <Router exact path="/" component={LandingPage} />
-            <Router path="/repos" component={RepoPage} />
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/repos" component={RepoPage} />
           </Switch>
         </Content>
       </>
