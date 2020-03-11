@@ -1,7 +1,3 @@
-$feature-flags: (
-  ui-shell: true,
-);
-
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 // Remove overrides once Carbon bugs are fixed upstream.
@@ -26,3 +22,8 @@ main {
 .bx--content {
   padding: 0;
 }
+
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
