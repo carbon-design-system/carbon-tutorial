@@ -16,12 +16,18 @@ import { Link } from 'react-router-dom';
 const TutorialHeader = () => (
   <Header aria-label="Carbon Tutorial">
     <SkipToContent />
-    <HeaderName element={Link} to="/" prefix="IBM">
-      Carbon Tutorial
+    <HeaderName element={Link} to="/" prefix="Floyds">
+      Insurance
     </HeaderName>
     <HeaderNavigation aria-label="Carbon Tutorial">
+      <HeaderMenuItem element={Link} to="/">
+        Settlement Scheme
+      </HeaderMenuItem>
+      <HeaderMenuItem element={Link} to="/">
+        Claims Processing
+      </HeaderMenuItem>
       <HeaderMenuItem element={Link} to="/repos">
-        Repositories
+        Claims Coverage Report
       </HeaderMenuItem>
     </HeaderNavigation>
     <HeaderGlobalBar>
