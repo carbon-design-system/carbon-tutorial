@@ -17,7 +17,7 @@ const props = {
     href: '#',
     role: 'presentation',
     tabIndex: 0,
-  },
+  }
 };
 
 const LandingPage = () => {
