@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './app.scss';
+import './components/Info/_info.scss';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
