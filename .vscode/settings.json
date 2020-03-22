@@ -1,0 +1,9 @@
+{
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorStyle": "block",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.autoIndent": "none",
+    "editor.wrappingIndent": "none",
+    "editor.find.addExtraSpaceOnTop": false,
+    "workbench.settings.editor": "json"
+}
