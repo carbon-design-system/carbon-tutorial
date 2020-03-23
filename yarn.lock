@@ -861,6 +861,14 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@carbon/grid@^10.9.2":
+  version "10.9.2"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.9.2.tgz#5ec850bae19a273e92eb8f4d9cb9b63c01f17012"
+  integrity sha512-ubApaJb3K2WB69dk40OgFHC63wtmKkrK/+6TIwcLQd13Hx79GUFnvRNvqLmrR8f/8r8jExIV+OFo/77X1LuctA==
+  dependencies:
+    "@carbon/import-once" "^10.3.0"
+    "@carbon/layout" "^10.8.2"
+
 "@carbon/icon-helpers@10.2.0":
   version "10.2.0"
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.2.0.tgz#f58ab1d14b8b63d485d31e7d785d25057eac5409"
@@ -873,6 +881,16 @@
   dependencies:
     "@carbon/icon-helpers" "10.2.0"
     prop-types "^15.6.2"
+
+"@carbon/import-once@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
+  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
+
+"@carbon/layout@^10.8.2":
+  version "10.8.2"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.8.2.tgz#7a2c781892dc062f3d6913291be7cfd8b210d266"
+  integrity sha512-ak78dHILgmWGgRZfIWhCRQRrP/tfJWY1iIjnlq2+cfD18gMUCtR0F8TSZLGTrH3h7jxQzLj0LoaRLe1u6o1iyA==
 
 "@commitlint/cli@^7.5.2":
   version "7.5.2"
@@ -4737,6 +4755,11 @@ gaze@^1.0.0:
   integrity sha512-BRdNm8hbWzFzWHERTrejLqwHDfS4GibPoq5wjTPIoJHoBtKGPg3xAFfxmM+9ztbXelxcf2hwQcaz1PtmFeue8g==
   dependencies:
     globule "^1.0.0"
+
+gensync@^1.0.0-beta.1:
+  version "1.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
+  integrity sha512-r8EC6NO1sngH/zdD9fiRDLdcgnbayXah+mLgManTaIZJqEC1MZstmnox8KpnI2/fxQwrp5OpCOYWLp4rBl4Jcg==
 
 get-caller-file@^1.0.1:
   version "1.0.3"
