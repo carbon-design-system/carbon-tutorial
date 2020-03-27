@@ -3,5 +3,3 @@ applications:
   - name: carbon-tutorial-epaul
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-    env:
-      REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: b042a6c34880c2c0fdb802632d113cdee8a336bc
