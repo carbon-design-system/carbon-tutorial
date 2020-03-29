@@ -37,5 +37,4 @@ const TutorialHeader = () => (
     </HeaderGlobalBar>
   </Header>
 );
-
 export default TutorialHeader;
