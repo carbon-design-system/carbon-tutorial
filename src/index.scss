@@ -1,3 +1,8 @@
+$feature-flags: (
+  ui-shell: true,
+);
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
@@ -5,6 +10,7 @@ The React <Content /> component uses the `main` element which IE11 doesn't recog
 
 @link https://github.com/carbon-design-system/carbon/issues/2789
 */
+
 main {
   display: block;
 }
