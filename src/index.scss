@@ -10,9 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@link https://github.com/carbon-design-system/carbon/issues/2789
+*/
+main {
+  display: block;
 }
 
 $feature-flags: (
