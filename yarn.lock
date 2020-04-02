@@ -866,10 +866,10 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.6.0.tgz#72a5bbd1edbee3728e47fa6d17c2aca67dbb101c"
   integrity sha512-4Nh6l+B8SRNyw1RpgNT4Z83Aa5UwRFmKJ2mx5m7mE5TqxPkfIZjyyLHyv5gl3gPtaVwq78ZGz80wG0NRQzRM7g==
 
-"@carbon/icons-react@^10.9.2":
-  version "10.9.2"
-  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.9.2.tgz#8f4e81e78c8750a1dd3ccb4bb9c8cfa7642bccb7"
-  integrity sha512-Dm3ouT2ZEC3sY1ndOxUsHYUJhkwT7OLFqCwGr6zx2VhH27WQu4S63WBvm6N9g5UJkxKAbEH5v2kD7OUH9wV+4A==
+"@carbon/icons-react@^10.9.3":
+  version "10.9.3"
+  resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.9.3.tgz#45eccb733b6c36edfab9513e32dc2a2bd8c9e24a"
+  integrity sha512-B+BiOioUSkpiDJB68vLOQ3spjL74o5DAPPkLPwEd3UXggiypjKLaNhCN4hBxESorc+os0mG0zbV7czNatAKYrQ==
   dependencies:
     "@carbon/icon-helpers" "^10.6.0"
 
@@ -2439,12 +2439,12 @@ capture-exit@^1.2.0:
   dependencies:
     rsvp "^3.3.3"
 
-carbon-components-react@^7.10.2:
-  version "7.10.2"
-  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.10.2.tgz#90e00155623a62728428cd15f31bcafe48aa9511"
-  integrity sha512-kgV2xe3PlDBVo8hAMX7AqeESSYOFa4sOU8k5uFVIBABDZW7gCgIeqL1hUKXAcg0AZ4ZfaTRJMlRIii6XT+uElA==
+carbon-components-react@^7.10.3:
+  version "7.10.3"
+  resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.10.3.tgz#667c5e1bce597123ccd6574204ab2b3dc721e4fc"
+  integrity sha512-L583T2qN5tFiYXHBv/iumw5vAE9T5OJ2l7LdEjY8/WUjzUdgA1iJD5tpYKL4U1ciO12zfWITlJBK8g39IupI/Q==
   dependencies:
-    "@carbon/icons-react" "^10.9.2"
+    "@carbon/icons-react" "^10.9.3"
     classnames "2.2.6"
     downshift "^1.31.14"
     flatpickr "4.6.1"
@@ -2458,10 +2458,10 @@ carbon-components-react@^7.10.2:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.10.2:
-  version "10.10.2"
-  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.10.2.tgz#509279b9f541e5c50532088e5bcfe67e77884cfe"
-  integrity sha512-gfuH+64gIHdg8jqyYcdhGTf8utzCE85+J6jc04zG2CocHBL4UMBahoiTk2H8nj2X0T8KrMjexGY4f8RS+iHVFA==
+carbon-components@^10.10.3:
+  version "10.10.3"
+  resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.10.3.tgz#c3076be78fa2df8c430b329615a9ef1f1d2509c8"
+  integrity sha512-uOHcMvQNtqazCqBxXlIaAU6Jmsb1/wE6fhJ3r6wt69MfW42xjCOVAegXDXylCAk1k6F+DR6cx4WsbYMUjOXR3A==
   dependencies:
     flatpickr "4.6.1"
     lodash.debounce "^4.0.8"
