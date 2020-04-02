@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-MarcosPaesLeme
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 7dd7d234ca0e664ab81101bc6a9e4c8ab87f2ba9
