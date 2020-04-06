@@ -22,6 +22,7 @@
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
+    "gensync": "^1.0.0-beta.1",
     "enzyme-adapter-react-16": "^1.12.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
