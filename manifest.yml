@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-agabe-novichok
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 523e37a233cb6c92f1f0f46360e18ff15dcc3160
