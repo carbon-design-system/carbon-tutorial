@@ -1,0 +1,13 @@
+node_modules/
+*.DS_Store
+README.md
+.github/
+.git/
+.gitignore
+logs
+*.log
+
+*
+
+!Staticfile
+!build

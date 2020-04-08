@@ -14,7 +14,7 @@ import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
-  <Header aria-label="Carbon Tutorial">
+  <Header aria-label="Carbon Tutorial React">
     <SkipToContent />
     <HeaderName element={Link} to="/" prefix="IBM">
       Carbon Tutorial
