@@ -14,9 +14,11 @@
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
   },
   "dependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.8.8",
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
     "apollo-boost": "^0.4.2",
@@ -24,6 +26,7 @@
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "gensync": "^1.0.0-beta.1",
     "graphql": "^14.3.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.6",
