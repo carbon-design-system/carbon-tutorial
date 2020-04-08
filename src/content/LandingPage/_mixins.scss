@@ -1,0 +1,10 @@
+@mixin landing-page-background() {
+  background-color: $ui-01;
+  position: relative;
+  &::before {
+    content: ' ';
+    position: absolute;
+    left: -$spacing-05;
+    top: 0;
+  }
+}
