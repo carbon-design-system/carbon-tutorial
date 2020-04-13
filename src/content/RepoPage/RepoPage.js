@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
