@@ -43,7 +43,7 @@ const LandingPage = () => {
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-md-4 bx--col-lg-7">
                     <h2 className="landing-page__subheading">
-                      What is Carbon?
+                      What is Carbon??
                     </h2>
                     <p className="landing-page__p">
                       Carbon is IBM’s open-source design system for digital
