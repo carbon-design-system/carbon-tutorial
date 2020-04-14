@@ -17,6 +17,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@babel/runtime": "^7.9.2",
     "@carbon/icons-react": "^10.9.3",
     "carbon-components": "^10.10.3",
     "carbon-components-react": "^7.10.3",
