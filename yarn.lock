@@ -861,7 +861,7 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@carbon/grid@^10.3.0":
+"@carbon/grid@10.3.0":
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.3.0.tgz#327e21b2a3d9277efd4196af284ea6249bb43121"
   integrity sha512-O7r4Lu/lyqy75DdHqH1mfhkI2NayyVqySinrJ/NXjShvL0slH+e0Uy0lvSrxCylCCQeMb6xk7fupMYCycNO/cg==
@@ -874,7 +874,7 @@
   resolved "https://registry.yarnpkg.com/@carbon/icon-helpers/-/icon-helpers-10.2.0.tgz#f58ab1d14b8b63d485d31e7d785d25057eac5409"
   integrity sha512-PAxu8KMuSrifF4VCW7N7bgu/QKG/Q4T9ojWUEqI0zKjTCkJnzEZTYgK1FrWAdE1uAdAwLlbPIjzIS/QzP15Uvw==
 
-"@carbon/icons-react@10.3.0", "@carbon/icons-react@^10.3.0":
+"@carbon/icons-react@10.3.0":
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.3.0.tgz#6df5e0b593cdea7ccabe9c80ae0b0cb42083db10"
   integrity sha512-WQ21vCprPQACafCAGKCUByPToKJJLGBFfccEI4WpPfTN2ftl4w8/dNHCHltw1g0JrLgSVjenBvneJweXVybiBg==
@@ -2596,7 +2596,7 @@ carbon-components-react@^7.3.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.3.0:
+carbon-components@10.3.0:
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.3.0.tgz#a2a77b97d1afb8ac5379bbf3584e2643c3f09b7e"
   integrity sha512-Azs+jaxDKsRmI+zmrWwahDkcfZLD1/rPSqek03UeDkhQsd/i/dOeeE4DnjMwhLGuDj/lvfeKC3eLks/cqyUKwg==
