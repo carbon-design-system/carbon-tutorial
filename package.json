@@ -18,6 +18,7 @@
     "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
   },
   "dependencies": {
+    "@babel/helper-builder-react-jsx-experimental": "^7.9.5",
     "@babel/helper-create-regexp-features-plugin": "^7.8.8",
     "@carbon/grid": "^10.9.2",
     "@carbon/icons-react": "^10.3.0",
