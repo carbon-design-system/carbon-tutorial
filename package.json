@@ -7,6 +7,7 @@
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml", 
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
     "eject": "react-scripts eject",
