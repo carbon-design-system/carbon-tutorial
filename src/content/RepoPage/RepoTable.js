@@ -13,7 +13,6 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-// fix
 const RepoTable = ({ rows, headers }) => {
   return (
     <DataTable
