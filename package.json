@@ -14,12 +14,14 @@
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
   },
   "dependencies": {
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
     "apollo-boost": "^0.4.2",
+    "babel-preset-react-app": "^9.1.2",
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
