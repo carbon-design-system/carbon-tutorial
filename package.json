@@ -17,6 +17,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.9.4",
+    "@babel/plugin-transform-react-jsx-self": "^7.9.0",
     "@carbon/grid": "^10.10.2",
     "@carbon/icons-react": "^10.3.0",
     "carbon-components": "^10.3.0",
