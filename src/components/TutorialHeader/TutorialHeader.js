@@ -15,14 +15,10 @@ import {
 const TutorialHeader = () => (
   <Header aria-label="Carbon Tutorial">
     <SkipToContent />
-    {/* <HeaderName href="/" prefix="IBM">
-      Carbon Tutorial
-    </HeaderName> */}
     <HeaderName element={Link} to="/" prefix="IBM">
       Carbon Tutorial
     </HeaderName>
     <HeaderNavigation aria-label="Carbon Tutorial">
-      {/* <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem> */}
       <HeaderMenuItem element={Link} to="/repos">
         Repositories
       </HeaderMenuItem>
