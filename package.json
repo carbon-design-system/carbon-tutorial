@@ -19,9 +19,10 @@
   "dependencies": {
     "@babel/runtime": "^7.9.2",
     "@carbon/grid": "^10.10.2",
-    "@carbon/icons-react": "^10.3.0",
-    "carbon-components": "^10.3.0",
-    "carbon-components-react": "^7.3.0",
+    "@carbon/icons-react": "^10.10.2",
+    "carbon-components": "^10.11.2",
+    "carbon-components-react": "^7.11.3",
+    "carbon-icons": "^7.0.7",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "react": "^16.8.6",
