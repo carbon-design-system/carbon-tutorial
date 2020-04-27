@@ -31,6 +31,7 @@
     "react-scripts": "2.1.8"
   },
   "devDependencies": {
+    "@babel/helper-create-regexp-features-plugin": "^7.8.8",
     "@commitlint/cli": "^7.5.2",
     "@commitlint/config-conventional": "^7.5.0",
     "husky": "^1.3.1",
