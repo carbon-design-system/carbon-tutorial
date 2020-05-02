@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@babel/helper-builder-react-jsx-experimental": "^7.9.5",
+    "@babel/helper-create-regexp-features-plugin": "^7.8.8",
     "@carbon/icons-react": "^10.10.2",
     "carbon-components": "^10.11.2",
     "carbon-components-react": "^7.11.3",
