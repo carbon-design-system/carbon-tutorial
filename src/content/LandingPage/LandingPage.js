@@ -95,7 +95,6 @@ const LandingPage = () => {
         <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
         <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
       </div>
-      LANDING PAGE
     </div>
   );
 };
