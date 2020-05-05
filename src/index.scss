@@ -6,11 +6,9 @@ $feature-flags: (
 // Feature flags
 $css--font-face: true;
 $css--plex: true;
-
 // Global styles
 @import 'carbon-components/scss/globals/scss/css--font-face';
 @import 'carbon-components/scss/globals/grid/grid';
-
 // Carbon components
 @import 'carbon-components/scss/components/breadcrumb/breadcrumb';
 @import 'carbon-components/scss/components/button/button';
