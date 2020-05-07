@@ -19,11 +19,14 @@
   "dependencies": {
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
+    "apollo-boost": "^0.4.7",
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "graphql": "^15.0.0",
     "react": "^16.8.6",
+    "react-apollo": "^3.1.5",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "react-scripts": "2.1.8"
