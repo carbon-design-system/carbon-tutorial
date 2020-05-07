@@ -1,0 +1,4 @@
+diff a/src/index.scss b/src/index.scss	(rejected hunks)
+@@ -5 +5 @@ $feature-flags: (
+-@import "carbon-components/scss/globals/scss/styles.scss";
++@import 'carbon-components/scss/globals/scss/styles.scss';

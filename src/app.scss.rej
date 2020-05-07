@@ -1,0 +1,5 @@
+diff a/src/app.scss b/src/app.scss	(rejected hunks)
+@@ -1 +1 @@
+-@import "./components/TutorialHeader/tutorial-header.scss";
+\ No newline at end of file
++@import './components/TutorialHeader/tutorial-header.scss';
