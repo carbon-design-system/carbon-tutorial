@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-santosj13
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
