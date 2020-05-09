@@ -13,10 +13,16 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-const RepoTable = ({ rows, headers }) => {
+const RepoTable = ({
+  rows,
+  headers,
+  getRowDescription,
+  firstRowIndex,
+  currentPageSize,
+}) => {
   return (
     <DataTable
-      rows={rows}
+      rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
       headers={headers}
       render={({
         rows,
@@ -48,7 +54,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
