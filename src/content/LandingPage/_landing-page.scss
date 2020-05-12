@@ -1,6 +1,11 @@
 @import './mixins.scss';
 @import './overrides.scss';
 
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+
 .landing-page__illo {
   max-width: 100%;
 }
@@ -8,7 +13,6 @@
 .landing-page__banner {
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
-  @include landing-page-background;
 }
 
 .landing-page__heading {
