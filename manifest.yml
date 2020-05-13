@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-sawant-siddhant
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 0adb2bf6f30c0168a5c7d43851c66bd2fc5e1dfb
