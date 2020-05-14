@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'carbon-components-react';
 import { Content } from 'carbon-components-react/es/components/UIShell';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
