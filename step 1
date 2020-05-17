@@ -1,0 +1,3 @@
+$ git clone [your fork SSH/HTTPS]
+$ cd carbon-tutorial
+$ git remote add upstream https://github.com/carbon-design-system/carbon-tutorial.git
