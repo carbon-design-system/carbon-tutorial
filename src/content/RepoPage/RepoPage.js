@@ -1,5 +1,6 @@
 import React from 'react';
 import RepoTable from './RepoTable';
+
 const headers = [
   {
     key: 'name',
@@ -56,6 +57,7 @@ const rows = [
     links: 'Links',
   },
 ];
+
 const RepoPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -67,4 +69,5 @@ const RepoPage = () => {
     </div>
   );
 };
+
 export default RepoPage;
