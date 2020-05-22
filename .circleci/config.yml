@@ -15,6 +15,9 @@ jobs:
       - run:
           name: Run ci checks
           command: yarn ci-check
+      - run:
+          name: Run tests
+          command: yarn test
 
 workflows:
   version: 2
