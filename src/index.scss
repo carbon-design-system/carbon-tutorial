@@ -1,8 +1,9 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
 $feature-flags: (
   ui-shell: true,
+  grid-columns-16: true,
 );
-
-@import 'carbon-components/scss/globals/scss/styles.scss';
 
 // Remove overrides once Carbon bugs are fixed upstream.
 
