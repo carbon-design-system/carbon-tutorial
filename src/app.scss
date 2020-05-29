@@ -1,0 +1,6 @@
+/*
+Custom app.css to speed up compiles rather than doing index.scss all the time.
+*/
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './content/LandingPage/landing-page.scss';
+@import './content/RepoPage/repo-page.scss';
