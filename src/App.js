@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './index.scss';
+import { Button } from 'carbon-components-react';
 
 class App extends Component {
   render() {
@@ -6,6 +8,7 @@ class App extends Component {
       <div>
         Hello Carbon! Well, not quite yet. This is the starting point for the
         Carbon tutorial.
+        <Button>Button</Button>
       </div>
     );
   }
