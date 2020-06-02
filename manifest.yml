@@ -3,3 +3,4 @@ applications:
   - name: carbon-tutorial-mikeorth
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env: REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN=a2fcf6a25825a630f06cd9471ac52b4bd138d066
