@@ -2,8 +2,8 @@
   "name": "carbon-tutorial",
   "version": "0.0.0",
   "private": true,
-  "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
-  "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
+  "repository": "git@github.com:babel-mine/carbon-tutorial.git",
+  "bugs": "https://github.com/babel-mine/carbon-tutorial/issues",
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
@@ -14,7 +14,8 @@
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
   },
   "dependencies": {
     "@carbon/grid": "^10.3.0",
