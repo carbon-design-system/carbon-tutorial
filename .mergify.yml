@@ -74,7 +74,7 @@ pull_request_rules:
       close:
         message: "👍 Congratulations! You've completed the Carbon tutorial for React! Feel free to stop this running application on IBM Cloud to avoid the possibility of incurring any charges 💵 Please see the wrapping up step to apply for your badge! https://www.carbondesignsystem.com/tutorial/react/wrapping-up"
       label:
-        add: ['status: approved']
+        add: ['status: approved', 'status: complete']
         remove: ['status: needs correction']
   - name: Comment when CI fails Step 5
     conditions:
