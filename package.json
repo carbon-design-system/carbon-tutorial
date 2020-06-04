@@ -15,9 +15,11 @@
     "format:staged": "prettier --write",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml" 
   },
   "dependencies": {
+    "@babel/helper-builder-react-jsx-experimental": "^7.10.1",
+    "@babel/helper-create-regexp-features-plugin": "^7.10.1",
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
     "apollo-boost": "^0.4.2",
