@@ -1,0 +1,5 @@
+// ignore everything but Staticfile and build folder to speed up deploy
+*
+
+!Staticfile
+!build
