@@ -109,10 +109,8 @@ const RepoPage = () => {
                     headers={headers}
                   />
                 );
-
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
-
               // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
