@@ -113,9 +113,9 @@ const RepoPage = () => {
                 );
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
-              // If we're here, we've got our data!
+              /// If we're here, we've got our data!
               const { repositories } = data.organization;
-
+              setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
               return (
                 <>
@@ -126,7 +126,6 @@ const RepoPage = () => {
                       firstRowIndex + currentPageSize
                     )}
                   />
-
                   <Pagination
                     totalItems={totalItems}
                     backwardText="Previous page"
