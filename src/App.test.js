@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import LandingPage from './content/LandingPage';
+import { shallow } from 'enzyme';
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+describe('React Step 4 Tests', () => {
+  it('renders without crashing', () => {
+    shallow(<LandingPage />);
+  });
+
+  const wrapper = shallow(<LandingPage />);
+  it('contains an InfoSection component', () => {
+    expect(wrapper.find('InfoSection').length).toBe(1);
+  });
 });
