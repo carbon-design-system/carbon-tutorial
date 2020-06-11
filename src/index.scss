@@ -1,3 +1,10 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+// UI Shell is in experimental mode and the styles need to be manually imported
+$feature-flags: (
+  ui-shell: true,
+);
+
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
