@@ -17,6 +17,9 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/icons-react": "^10.10.2",
+    "babel-preset-react-app": "^9.1.2",
+    "gensync": "^1.0.0-beta.1",
     "carbon-components": "^10.13.0",
     "carbon-components-react": "^7.13.0",
     "carbon-icons": "^7.0.7",
@@ -26,6 +29,7 @@
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8"
+    
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
