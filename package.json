@@ -25,12 +25,14 @@
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "global": "^4.4.0",
     "graphql": "^14.3.1",
     "react": "^16.8.6",
     "react-apollo": "^2.5.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "serve": "^11.3.2"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",

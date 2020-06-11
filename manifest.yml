@@ -1,4 +1,3 @@
----
 applications:
   - name: carbon-tutorial-nderise
     memory: 64M
