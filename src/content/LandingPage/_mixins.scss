@@ -1,0 +1,15 @@
+@mixin landing-page-background() {
+  background-color: $ui-01; // Gray color https://www.carbondesignsystem.com/guidelines/color/usage
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: -$spacing-05;
+    top: 0;
+    right: -$spacing-05;
+    bottom: 0;
+    background: $ui-01;
+    z-index: -1;
+  }
+}
