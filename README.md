@@ -4,6 +4,12 @@ This tutorial will guide you in creating a React app with the [Carbon Design Sys
 
 Get started by visiting the [tutorial instructions](https://www.carbondesignsystem.com/tutorial/react/overview/).
 
+## Dependencies
+
+**Node**: The node version is set in `.nvmrc` and `package.json`. It's
+recommended that you install a node version manager, such as
+[fnm](https://github.com/Schniz/fnm) with the `--use-with-cd` option.
+
 ## Available Scripts
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
