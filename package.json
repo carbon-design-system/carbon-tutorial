@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
+  "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
   "license": "Apache-2.0",
   "scripts": {
