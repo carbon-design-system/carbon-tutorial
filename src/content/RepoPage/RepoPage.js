@@ -7,7 +7,10 @@ import { Query } from 'react-apollo';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
-    organizaiton(login: "carbon-design-system") {
+    # Let's use carbon as our organization
+    organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
@@ -27,7 +30,7 @@ const REPO_QUERY = gql`
           }
           name
           updatedAt
-          CreatedAt
+          createdAt
           description
           id
         }
@@ -35,7 +38,6 @@ const REPO_QUERY = gql`
     }
   }
 `;
-
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
