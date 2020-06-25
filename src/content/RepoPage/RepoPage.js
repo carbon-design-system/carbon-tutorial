@@ -36,7 +36,7 @@ const REPO_QUERY = gql`
 `;
 
 const LinkList = ({ url, homepageUrl }) => (
-  <ul stype={{ display: 'flex' }}>
+  <ul style={{ display: 'flex' }}>
     <li>
       <Link href={url}>GitHub</Link>
     </li>
