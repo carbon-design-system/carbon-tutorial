@@ -1,3 +1,13 @@
+.info-card__body {
+  margin-top: $spacing-06;
+  flex-grow: 1; // fill space so icons are bottom aligned
+  @include type-style('body-long-01');
+  // prevent large line lengths between small and medium viewports
+  @include carbon--breakpoint-between(321px, md) {
+    max-width: 75%;
+  }
+}
+
 .info-card {
   margin-top: $spacing-09;
   display: flex;
