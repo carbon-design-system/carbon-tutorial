@@ -1,7 +1,19 @@
-@import './components/TutorialHeader/tutorial-header.scss';
-@import './content/LandingPage/landing-page.scss';
-@import './content/RepoPage/repo-page.scss';
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
 @import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
 @import 'carbon-components/scss/globals/scss/typography.scss';
 @import 'carbon-components/scss/globals/scss/vars.scss';
+
+@mixin landing-page-background() {
+  background-color: $ui-01;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    left: -$spacing-05;
+    top: 0;
+    right: -$spacing-05;
+    bottom: 0;
+    background: $ui-01;
+    z-index: -1;
+  }
+}

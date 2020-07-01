@@ -1,0 +1,9 @@
+.landing-page__r2 .bx--tabs__nav {
+  right: 0;
+}
+
+//we’ll need to add a styling override to move the tabs to the right on large viewports
+
+// Note: We don’t have to include this in a separate file, but it’s nice to keep overrides separate from your
+// application’s styling so when migrating to future Carbon versions and if there are breaking changes via different
+// class names, you have a consolidated list of styling declaration blocks to review.
