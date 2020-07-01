@@ -3,6 +3,8 @@ import 'core-js/modules/es6.array.fill';
 import 'core-js/modules/es6.string.includes';
 import 'core-js/modules/es6.string.trim';
 import 'core-js/modules/es7.object.values';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -11,10 +13,25 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 
+// making the client by providing a URI for the GitHub GraphQL API as well as an authorization header using the
+// environmental variable you just added to .env.local
+
+const client = new ApolloClient({
+  uri: 'https://api.github.com/graphql',
+  headers: {
+    authorization: `Bearer ${
+      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+    }`,
+  },
+});
+
+// wrap our application with ApolloProvider. Also pass in the client we just made as a prop to the ApolloProvider component
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ApolloProvider client={client}>
+    <Router>
+      <App />
+    </Router>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
