@@ -3,6 +3,10 @@
 /*
 The React <Content /> component uses the `main` element which IE11 doesn't recognize
 
+$feature-flags: (
+  ui-shell: true,
+);
+@import "carbon-components/scss/globals/scss/styles.scss";
 @link https://github.com/carbon-design-system/carbon/issues/2789
 */
 main {
