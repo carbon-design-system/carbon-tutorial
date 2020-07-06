@@ -128,6 +128,7 @@ const RepoPage = () => {
                     )}
                   />
                   <Pagination
+                    totalItems={totalItems}
                     backwardText="Previous page"
                     forwardText="Next page"
                     pageSize={currentPageSize}
