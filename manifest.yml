@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-XiangWHZhang
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 5e5e42a6060ca2bdceb24ccacd16ecb6666236bf
