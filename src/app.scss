@@ -1,3 +1,7 @@
 @import './components/TutorialHeader/tutorial-header.scss';
 @import './content/LandingPage/landing-page.scss';
 @import './content/RepoPage/repo-page.scss';
+
+.bx--content {
+  padding: 0;
+}
