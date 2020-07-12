@@ -6,11 +6,11 @@ import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 import ApolloClient from "apollo-boost";
 import { ApolloProvider } from "react-apollo";
-/*import 'core-js/modules/es7.array.includes';
+import 'core-js/modules/es7.array.includes';
 import 'core-js/modules/es6.array.fill';
 import 'core-js/modules/es6.string.includes';
 import 'core-js/modules/es6.string.trim';
-import 'core-js/modules/es7.object.values';*/
+import 'core-js/modules/es7.object.values';
 const client = new ApolloClient({
   uri: "https://api.github.com/graphql",
   headers: {
