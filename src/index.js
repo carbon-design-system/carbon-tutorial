@@ -1,29 +1,34 @@
-$feature-flags: (
-  ui-shell: true,
-  grid-columns-16: true,
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.scss';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+import { HashRouter as Router } from 'react-router-dom';
+import ApolloClient from "apollo-boost";
+import { ApolloProvider } from "react-apollo";
+/*import 'core-js/modules/es7.array.includes';
+import 'core-js/modules/es6.array.fill';
+import 'core-js/modules/es6.string.includes';
+import 'core-js/modules/es6.string.trim';
+import 'core-js/modules/es7.object.values';*/
+const client = new ApolloClient({
+  uri: "https://api.github.com/graphql",
+  headers: {
+    authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
+  },
+});
+
+ReactDOM.render(
+  <ApolloProvider client={client}>
+  <Router>
+    <App />
+  </Router>
+</ApolloProvider>
+,
+  document.getElementById('root')
 );
 
-@import 'carbon-components/scss/globals/scss/styles.scss';
-
-// Remove overrides once Carbon bugs are fixed upstream.
-
-/// The React <Content /> component uses the `main` element which IE11 doesn't recognize
-/// @link https://github.com/carbon-design-system/carbon/issues/2789
-main {
-  display: block;
-}
-
-/// Need grid option to not add page gutters at large viewports, to also use when nesting grids
-/// @link https://github.com/carbon-design-system/carbon/issues/2792
-@media (min-width: 42rem) {
-  .bx--grid--no-gutter {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-/// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter
-/// @link https://github.com/carbon-design-system/carbon/issues/3010
-.bx--content {
-  padding: 0;
-}
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
