@@ -8,6 +8,6 @@ applications:
     memory: 1024M
     instance: 1
     domain: mybluemix.net
-    name: carbon-tutorial-marekdano
-    host: carbon-tutorial-marekdano
+    name: carbon-tutorial-marekdanoibm
+    host: carbon-tutorial-marekdanoibm
     disk_quota: 1024M
