@@ -34,7 +34,10 @@ const headers = [
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
+    # Let's use carbon as our organization
     organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
@@ -84,7 +87,7 @@ const getRowItems = rows =>
     stars: row.stargazers.totalCount,
     issueCount: row.issues.totalCount,
     createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatetedAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
 
@@ -129,7 +132,8 @@ const RepoPage = () => {
                     totalItems={totalItems}
                     backwardText="Previous page"
                     forwardText="Next page"
-                    pageSizes={currentPageSize}
+                    pageSize={currentPageSize}
+                    pageSizes={[5, 10, 15, 25]}
                     itemsPerPageText="Items per page"
                     onChange={({ page, pageSize }) => {
                       if (pageSize !== currentPageSize) {
