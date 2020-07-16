@@ -35,7 +35,7 @@ const LandingPage = () => {
             </BreadcrumbItem>
           </Breadcrumb>
           <h1 className="landing-page__heading">
-            Design &amp; build with Carbon
+            Design &amp; build with Carbon - SJH Version
           </h1>
         </div>
       </div>
@@ -56,7 +56,11 @@ const LandingPage = () => {
                       design tools and resources, human interface guidelines,
                       and a vibrant community of contributors.
                     </p>
-                    <Button>Learn more</Button>
+                    <Button
+                      href="http://carbondesignsystem.com/"
+                      target="_blank">
+                      Learn more
+                    </Button>
                   </div>
                   <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
                     <img
