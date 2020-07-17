@@ -30,7 +30,6 @@
   @include carbon--breakpoint(lg) {
     margin-top: 0;
     border-left: 1px solid $ui-03;
-
     svg {
       margin-top: $layout-06;
     }
