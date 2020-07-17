@@ -6,7 +6,7 @@
   "bugs": "https://github.com/babel-mine/carbon-tutorial/issues",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
     "eject": "react-scripts eject",
