@@ -2,17 +2,6 @@
   @include carbon--type-style('heading-01');
 }
 
-.info-card__body {
-  margin-top: $spacing-06;
-  flex-grow: 1; // fill space so icons are bottom aligned
-  @include type-style('body-long-01');
-
-  // prevent large line lengths between small and medium viewports
-  @include carbon--breakpoint-between(321px, md) {
-    max-width: 75%;
-  }
-}
-
 .info-card {
   margin-top: $spacing-09;
   display: flex;
@@ -20,10 +9,6 @@
 
   svg {
     margin-top: $spacing-09;
-  }
-
-  .info-card__heading {
-    @include carbon--type-style('productive-heading-03');
   }
 
   // top border in only small breakpoints to prevent overrides
@@ -49,5 +34,19 @@
     svg {
       margin-top: $layout-06;
     }
+  }
+}
+
+.info-card__heading {
+  @include carbon--type-style('productive-heading-03');
+}
+
+.info-card__body {
+  margin-top: $spacing-06;
+  flex-grow: 1; // fill space so icons are bottom aligned
+  @include type-style('body-long-01');
+  // prevent large line lengths between small and medium viewports
+  @include carbon--breakpoint-between(321px, md) {
+    max-width: 75%;
   }
 }
