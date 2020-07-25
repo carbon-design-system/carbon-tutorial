@@ -6,7 +6,7 @@
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
   "license": "Apache-2.0",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
     "eject": "react-scripts eject",
@@ -23,6 +23,7 @@
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "gensync": "^1.0.0-beta.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
