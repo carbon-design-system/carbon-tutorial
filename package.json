@@ -17,6 +17,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@babel/helper-builder-react-jsx-experimental": "^7.10.5",
+    "@babel/helper-create-regexp-features-plugin": "^7.10.4",
     "@carbon/grid": "^10.3.0",
     "@carbon/icons-react": "^10.3.0",
     "apollo-boost": "0.4.2",
@@ -24,6 +26,7 @@
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "gensync": "^1.0.0-beta.1",
     "graphql": "14.3.1",
     "react": "^16.8.6",
     "react-apollo": "2.5.6",
