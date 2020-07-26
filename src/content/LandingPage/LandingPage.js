@@ -6,25 +6,26 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
+
 import { InfoSection, InfoCard } from '../../components/Info';
 import Globe32 from '@carbon/icons-react/lib/globe/32';
 import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
 import Application32 from '@carbon/icons-react/lib/application/32';
 
-const props = {
-  tabs: {
-    selected: 0,
-    triggerHref: '#',
-    role: 'navigation',
-  },
-  tab: {
-    href: '#',
-    role: 'presentation',
-    tabIndex: 0,
-  },
-};
-
 const LandingPage = () => {
+  const props = {
+    tabs: {
+      selected: 0,
+      triggerHref: '#',
+      role: 'navigation',
+    },
+    tab: {
+      href: '#',
+      role: 'presentation',
+      tabIndex: 0,
+    },
+  };
+
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
@@ -39,6 +40,7 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
+
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
@@ -91,6 +93,7 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
+
       <InfoSection heading="The Principles" className="landing-page__r3">
         <InfoCard
           heading="Carbon is Open"
