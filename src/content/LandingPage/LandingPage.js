@@ -11,20 +11,20 @@ import {
 } from 'carbon-components-react';
 import { InfoSection, InfoCard } from '../../components/Info';
 
-const props = {
-  tabs: {
-    selected: 0,
-    triggerHref: '#',
-    role: 'navigation',
-  },
-  tab: {
-    href: '#',
-    role: 'presentation',
-    tabIndex: 0,
-  },
-};
-
 const LandingPage = () => {
+  const props = {
+    tabs: {
+      selected: 0,
+      triggerHref: '#',
+      role: 'navigation',
+    },
+    tab: {
+      href: '#',
+      role: 'presentation',
+      tabIndex: 0,
+    },
+  };
+
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
