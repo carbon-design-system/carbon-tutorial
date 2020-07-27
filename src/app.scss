@@ -1,5 +1,7 @@
 /* Remove overrides once Carbon bugs are fixed upstream. */
-
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './content/LandingPage/landing-page.scss';
+@import './content/RepoPage/repo-page.scss';
 /*
 The React <Content /> component uses the `main` element which IE11 doesn't recognize
 
