@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:upstream" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33502e61-a7e5-4977-9b42-f2bc0a76ab8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/Info/Info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Info/_info.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Info/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fGtjMlHDTysEJuF6tdIf0R1M3y" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\norbert_korczyk\JS Tutorials\Carbon tutorial\carbon-tutorial\node_modules\prettier" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.prettier" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RunManager">
+    <configuration name="ci-check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ci-check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.ci-check" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33502e61-a7e5-4977-9b42-f2bc0a76ab8f" name="Default Changelist" comment="" />
+      <created>1595856390145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595856390145</updated>
+      <workItem from="1595856392610" duration="3461000" />
+      <workItem from="1595860780473" duration="2735000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1877" height="633" key="GridCell.Tab.0.bottom" timestamp="1595859593287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="633" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1595859593287" />
+    <state width="1877" height="633" key="GridCell.Tab.0.center" timestamp="1595859593287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="633" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1595859593287" />
+    <state width="1877" height="633" key="GridCell.Tab.0.left" timestamp="1595859593287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="633" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1595859593287" />
+    <state width="1877" height="633" key="GridCell.Tab.0.right" timestamp="1595859593287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="633" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1595859593287" />
+    <state x="679" y="222" key="RollbackChangesDialog" timestamp="1595868949392">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="679" y="222" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1595868949392" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1595857501524">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/-1920.0.1280.680@0.0.1920.1040" timestamp="1595857501524" />
+  </component>
+</project>
