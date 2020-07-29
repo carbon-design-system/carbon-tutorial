@@ -2843,7 +2843,7 @@ capture-exit@^1.2.0:
   dependencies:
     rsvp "^3.3.3"
 
-carbon-components-react@^7.3.0:
+carbon-components-react@^7.16.0:
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/carbon-components-react/-/carbon-components-react-7.16.0.tgz#e9af926f24abcb0c1d8b7e684ab1527e3172baac"
   integrity sha512-eNQRrUzdfULSy7hP+5/z39HzQdITsqqySEYTeVQcqcIr2uFn6Yiz91gnQiJRudB+I/xTZHW72EfkY6q1aA35cQ==
@@ -2863,7 +2863,7 @@ carbon-components-react@^7.3.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.3.0:
+carbon-components@^10.16.0:
   version "10.16.0"
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.16.0.tgz#1f631788ea16485041729c5a6b65d1d79063eb86"
   integrity sha512-7MltjxNKEjjJ+TOJv3qexE2wBiXQ5qNtMb+in2OJqAWEfixeDHLB+ZtkShAQmKzNw5jIX7w8jfsp2JC4CkApiw==
@@ -2871,6 +2871,11 @@ carbon-components@^10.3.0:
     flatpickr "4.6.1"
     lodash.debounce "^4.0.8"
     warning "^3.0.0"
+
+carbon-icons@^7.0.7:
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/carbon-icons/-/carbon-icons-7.0.7.tgz#ebafe3e9fa25df973796a8eca06d8a7c501cc610"
+  integrity sha512-3vgkdXJRgCViCrH3fLUdyAXo0I8wmohO6QETv7vWFx6yc7s+SirWFBSFL38zUx4MHtR8iTxIlLEzkeU6FlFtXg==
 
 case-sensitive-paths-webpack-plugin@2.2.0:
   version "2.2.0"
