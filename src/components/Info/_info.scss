@@ -1,3 +1,6 @@
+.info-section__heading {
+  @include carbon--type-style('heading-01');
+}
 .info-card__heading {
   @include carbon--type-style('productive-heading-03');
 }
