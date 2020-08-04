@@ -76,7 +76,7 @@ const LandingPage = () => {
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
-                    Carbon provides styles and components in Vanilla, React,
+                    Carbon proides styles and components in Vanilla, React,
                     Angular, and Vue for anyone building on the web.
                   </div>
                 </div>
@@ -86,12 +86,10 @@ const LandingPage = () => {
         </div>
       </div>
       <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">
-          <h3 className="landings-page__label">The Principles</h3>
-        </div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
+        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
+        <div className="bx--col-md-4 bx--col-lg-4">1/4</div>
       </div>
     </div>
   );
