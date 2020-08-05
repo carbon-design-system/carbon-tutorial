@@ -1,11 +1,3 @@
-/* Remove overrides once Carbon bugs are fixed upstream. */
-
-/*
-The React <Content /> component uses the `main` element which IE11 doesn't recognize
-
-@link https://github.com/carbon-design-system/carbon/issues/2789
-*/
-
 $feature-flags: (
   ui-shell: true,
   grid-columns-16: true,
@@ -27,7 +19,3 @@ $css--plex: true;
 @import 'carbon-components/scss/components/pagination/pagination';
 @import 'carbon-components/scss/components/tabs/tabs';
 @import 'carbon-components/scss/components/ui-shell/ui-shell';
-
-main {
-  display: block;
-}
