@@ -22,6 +22,7 @@
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
+    "node-sass": "^4.14.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
@@ -32,7 +33,6 @@
     "@commitlint/config-conventional": "^7.5.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
-    "node-sass": "^4.12.0",
     "prettier": "^1.17.0"
   },
   "eslintConfig": {
