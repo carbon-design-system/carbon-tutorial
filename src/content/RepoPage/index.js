@@ -1,2 +1,2 @@
-import RepoPage from './RepoPage';
+import RepoPage from '../RepoPage';
 export default RepoPage;
