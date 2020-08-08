@@ -1,3 +1,12 @@
+// these imports are to be added to the top of the file so that
+// we can use Carbin breakpoints, tokens, and typography SASS
+// mixins and functions (in the following SASS files).
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+// these are the imports of the specific components
+// which can use the mixins above.
 @import './components/TutorialHeader/tutorial-header.scss';
 @import './content/LandingPage/landing-page.scss';
 @import './content/RepoPage/repo-page.scss';
