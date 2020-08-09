@@ -13,7 +13,20 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-const RepoTable = ({ rows, headers, descriptions }) => {
+const RepoTable = ({ rows, headers }) => {
+  // The DataTable component filters the data accessible to its subcomponents
+  // in the render method, by the attributes that are specified in the headers
+  // of the column. This prevents us from accessing the description that
+  // instead should be placed in the expanded section of the table. We then
+  // define this function in the scope of the containing component which still
+  // has access to the unfiltered data and we implement the capability to search
+  // for the description.
+  //
+  const getRowDescription = rowId => {
+    const row = rows.find(({ id }) => id === rowId);
+    return row ? row.description : '';
+  };
+
   return (
     <DataTable
       rows={rows}
@@ -51,7 +64,7 @@ const RepoTable = ({ rows, headers, descriptions }) => {
                         ))}
                       </TableExpandRow>
                       <TableExpandedRow colSpan={headers.length + 1}>
-                        <p>{descriptions[row.id]}</p>
+                        <p>{getRowDescription(row.id)}</p>
                       </TableExpandedRow>
                     </React.Fragment>
                   );

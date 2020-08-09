@@ -92,12 +92,6 @@ const getRowItems = rows =>
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
 
-const getDescriptions = rows =>
-  rows.reduce((map, row) => {
-    map[row.key] = row.description;
-    return map;
-  });
-
 const RepoPage = () => {
   // this block allows us to implement pagination
   // useState retains information across rendering
@@ -128,7 +122,6 @@ const RepoPage = () => {
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-              const descriptions = getDescriptions(rows);
               return (
                 <>
                   <RepoTable
@@ -137,7 +130,6 @@ const RepoPage = () => {
                       firstRowIndex,
                       firstRowIndex + currentPageSize
                     )}
-                    descriptions={descriptions}
                   />
                   <Pagination
                     totalItems={totalItems}
