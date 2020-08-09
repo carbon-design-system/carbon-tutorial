@@ -33,6 +33,15 @@
   @include carbon--font-weight('semibold');
 }
 
+.landing-page__p {
+  @include carbon--type-style('productive-heading-03');
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-08;
+  @include carbon--breakpoint-between((320px + 1), md) {
+    max-width: 75%;
+  }
+}
+
 .landing-page__r3 {
   padding-top: $spacing-09;
   padding-bottom: $spacing-09;
