@@ -13,6 +13,7 @@
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
     "start": "react-scripts start",
     "test": "react-scripts test"
   },
