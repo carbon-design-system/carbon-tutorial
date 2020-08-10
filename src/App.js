@@ -1,7 +1,6 @@
 //
 import { Route, Switch } from 'react-router-dom';
 import React, { Component } from 'react';
-import { Button } from 'carbon-components-react';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import Header from './components/TutorialHeader/TutorialHeader';
 //
