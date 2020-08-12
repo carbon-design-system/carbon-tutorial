@@ -1,0 +1,618 @@
+[1mdiff --cc .circleci/config.yml[m
+[1mindex 2b58e1b,6de6f8a..0000000[m
+[1m--- a/.circleci/config.yml[m
+[1m+++ b/.circleci/config.yml[m
+[36m@@@ -1,6 -1,6 +1,10 @@@[m
+  version: 2[m
+  jobs:[m
+[32m++<<<<<<< HEAD[m
+[32m +  step-two:[m
+[32m++=======[m
+[32m+   step-three:[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+      docker:[m
+        - image: circleci/node:10[m
+      working_directory: ~/repo[m
+[36m@@@ -23,4 -23,4 +27,8 @@@[m [mworkflows[m
+    version: 2[m
+    main:[m
+      jobs:[m
+[32m++<<<<<<< HEAD[m
+[32m +      - step-two[m
+[32m++=======[m
+[32m+       - step-three[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+[1mdiff --cc .env[m
+[1mindex f4b4a90,aebb869..0000000[m
+[1m--- a/.env[m
+[1m+++ b/.env[m
+[36m@@@ -1,1 -1,1 +1,5 @@@[m
+[31m- SASS_PATH=./node_modules[m
+[32m++<<<<<<< HEAD[m
+[32m++SASS_PATH=./node_modules[m
+[32m++=======[m
+[32m+ SASS_PATH="node_modules"[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+[1mdiff --cc design.sketch[m
+[1mindex 7e8ff69,945a053..0000000[m
+Binary files differ
+[1mdiff --cc package.json[m
+[1mindex 9e83072,4d36aaf..0000000[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@@ -17,9 -17,8 +17,14 @@@[m
+      "test": "react-scripts test"[m
+    },[m
+    "dependencies": {[m
+[32m++<<<<<<< HEAD[m
+[32m +    "@carbon/grid": "^10.14.0",[m
+[32m +    "@carbon/icons-react": "^10.3.0",[m
+[32m +    "apollo-boost": "0.4.2",[m
+[32m++=======[m
+[32m+     "@carbon/grid": "^10.3.0",[m
+[32m+     "@carbon/icons-react": "^10.3.0",[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+      "carbon-components": "^10.3.0",[m
+      "carbon-components-react": "^7.3.0",[m
+      "enzyme": "^3.9.0",[m
+[1mdiff --cc src/App.test.js[m
+[1mindex 323d8ba,910d9c4..0000000[m
+[1m--- a/src/App.test.js[m
+[1m+++ b/src/App.test.js[m
+[36m@@@ -1,14 -1,90 +1,103 @@@[m
+  import React from 'react';[m
+  import RepoPage from './content/RepoPage';[m
+[32m++<<<<<<< HEAD[m
+[32m +import { shallow } from 'enzyme';[m
+[32m +[m
+[32m +describe('React Step 2 Tests', () => {[m
+[32m +  it('renders without crashing', () => {[m
+[32m +    shallow(<RepoPage />);[m
+[32m +  });[m
+[32m +[m
+[32m +  const wrapper = shallow(<RepoPage />);[m
+[32m +  it('contains a RepoTable', () => {[m
+[32m +    expect(wrapper.find('RepoTable').length).toBe(1);[m
+[32m++=======[m
+[32m+ import { mount } from 'enzyme';[m
+[32m+ import { MockedProvider } from 'react-apollo/test-utils';[m
+[32m+ import { gql } from 'apollo-boost';[m
+[32m+ import waitForExpect from 'wait-for-expect';[m
+[32m+ [m
+[32m+ const REPO_QUERY = gql`[m
+[32m+   query REPO_QUERY {[m
+[32m+     organization(login: "carbon-design-system") {[m
+[32m+       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {[m
+[32m+         totalCount[m
+[32m+         nodes {[m
+[32m+           url[m
+[32m+           homepageUrl[m
+[32m+           issues(filterBy: { states: OPEN }) {[m
+[32m+             totalCount[m
+[32m+           }[m
+[32m+           stargazers {[m
+[32m+             totalCount[m
+[32m+           }[m
+[32m+           releases(first: 1) {[m
+[32m+             totalCount[m
+[32m+             nodes {[m
+[32m+               name[m
+[32m+             }[m
+[32m+           }[m
+[32m+           name[m
+[32m+           updatedAt[m
+[32m+           createdAt[m
+[32m+           description[m
+[32m+           id[m
+[32m+         }[m
+[32m+       }[m
+[32m+     }[m
+[32m+   }[m
+[32m+ `;[m
+[32m+ [m
+[32m+ const mocks = [[m
+[32m+   {[m
+[32m+     request: {[m
+[32m+       query: REPO_QUERY,[m
+[32m+     },[m
+[32m+     result: {[m
+[32m+       data: {[m
+[32m+         organization: {[m
+[32m+           repositories: {[m
+[32m+             totalCount: 1,[m
+[32m+             nodes: [[m
+[32m+               {[m
+[32m+                 url: 'https://github.com/carbon-design-system/carbon',[m
+[32m+                 homepageUrl: 'https://www.carbondesignsystem.com',[m
+[32m+                 issues: { totalCount: 357, __typename: 'IssueConnection' },[m
+[32m+                 stargazers: {[m
+[32m+                   totalCount: 3054,[m
+[32m+                   __typename: 'StargazerConnection',[m
+[32m+                 },[m
+[32m+                 releases: {[m
+[32m+                   totalCount: 640,[m
+[32m+                   nodes: [{ name: '7.0.0-rc.1', __typename: 'Release' }],[m
+[32m+                   __typename: 'ReleaseConnection',[m
+[32m+                 },[m
+[32m+                 name: 'carbon',[m
+[32m+                 updatedAt: '2020-05-27T18:55:53Z',[m
+[32m+                 createdAt: '2017-03-13T14:23:59Z',[m
+[32m+                 description: 'A design system built by IBM',[m
+[32m+                 id: 'MDEwOlJlcG9zaXRvcnk4NDgzNTUzNQ==',[m
+[32m+                 __typename: 'Repository',[m
+[32m+               },[m
+[32m+             ],[m
+[32m+           },[m
+[32m+         },[m
+[32m+       },[m
+[32m+     },[m
+[32m+   },[m
+[32m+ ];[m
+[32m+ [m
+[32m+ it('renders a table with data and pagination', async () => {[m
+[32m+   const wrapper = mount([m
+[32m+     <MockedProvider mocks={mocks} addTypename={false}>[m
+[32m+       <RepoPage />[m
+[32m+     </MockedProvider>[m
+[32m+   );[m
+[32m+ [m
+[32m+   expect(wrapper.find('Pagination').length).toBe(0);[m
+[32m+   await waitForExpect(() => {[m
+[32m+     wrapper.update();[m
+[32m+     expect(wrapper.find('Pagination').length).toBe(1);[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+    });[m
+  });[m
+[1mdiff --cc src/app.scss[m
+[1mindex da00f50,2d7ffa2..0000000[m
+[1m--- a/src/app.scss[m
+[1m+++ b/src/app.scss[m
+[36m@@@ -1,7 -1,5 +1,11 @@@[m
+  @import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';[m
+[32m++<<<<<<< HEAD[m
+[32m +[m
+[32m +@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';[m
+[32m +[m
+[32m++=======[m
+[32m+ @import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+  @import 'carbon-components/scss/globals/scss/typography.scss';[m
+  @import 'carbon-components/scss/globals/scss/vars.scss';[m
+  [m
+[1mdiff --cc src/content/LandingPage/LandingPage.js[m
+[1mindex 125cb2e,34a662a..0000000[m
+[1m--- a/src/content/LandingPage/LandingPage.js[m
+[1m+++ b/src/content/LandingPage/LandingPage.js[m
+[36m@@@ -36,48 -36,46 +36,78 @@@[m [mconst LandingPage = () => [m
+          </div>[m
+        </div>[m
+        <div className="bx--row landing-page__r2">[m
+[32m++<<<<<<< HEAD[m
+[32m +        <div className="bx-col bx--no-gutter">[m
+[32m +          <Tabs {...props.tabs} aria-label="Tab navigation">[m
+[32m +            <Tab {...props.tab} label="About">[m
+[32m +              <div className="bx--grix bx--grid--no--gutter bx--grid--full-width">[m
+[32m++=======[m
+[32m+         <div className="bx--col bx--no-gutter">[m
+[32m+           <Tabs {...props.tabs} aria-label="Tab navigation">[m
+[32m+             <Tab {...props.tab} label="About">[m
+[32m+               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+                  <div className="bx--row landing-page__tab-content">[m
+                    <div className="bx--col-md-4 bx--col-lg-7">[m
+                      <h2 className="landing-page__subheading">[m
+                        What is Carbon?[m
+                      </h2>[m
+                      <p className="landing-page__p">[m
+[32m++<<<<<<< HEAD[m
+[32m +                      Carbon is IBM's open-source design system for digital[m
+[32m +                      products and experiences. With the IBM Design Language as[m
+[32m +                      its foundation, the system consists of working code,[m
+[32m +                      design tools and resources, human interface guidelines and[m
+[32m +                      a vibrant community of contributors.[m
+[32m++=======[m
+[32m+                       Carbon is IBM’s open-source design system for digital[m
+[32m+                       products and experiences. With the IBM Design Language as[m
+[32m+                       its foundation, the system consists of working code,[m
+[32m+                       design tools and resources, human interface guidelines,[m
+[32m+                       and a vibrant community of contributors.[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+                      </p>[m
+                      <Button>Learn more</Button>[m
+                    </div>[m
+                    <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">[m
+                      <img[m
+                        className="landing-page__illo"[m
+[32m++<<<<<<< HEAD[m
+[32m +                      src="{`${process.env.PUBLIC_URL}/tab-illo.png`}"[m
+[32m++=======[m
+[32m+                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+                        alt="Carbon illustration"[m
+                      />[m
+                    </div>[m
+                  </div>[m
+                </div>[m
+              </Tab>[m
+[32m +[m
+              <Tab {...props.tab} label="Design">[m
+[32m++<<<<<<< HEAD[m
+[32m +              <div className="bx--grix bx--grid--no--gutter bx--grid--full-width">[m
+[32m +                <div className="bx--row landing-page__tab-content">[m
+[32m +                  <div className="bx--col-lg-16">[m
+[32m +                    Rapidly build beautiful and accesible experiences. The[m
+[32m++=======[m
+[32m+               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">[m
+[32m+                 <div className="bx--row landing-page__tab-content">[m
+[32m+                   <div className="bx--col-lg-16">[m
+[32m+                     Rapidly build beautiful and accessible experiences. The[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+                      Carbon kit contains all resources you need to get started.[m
+                    </div>[m
+                  </div>[m
+                </div>[m
+              </Tab>[m
+[32m +[m
+              <Tab {...props.tab} label="Develop">[m
+[32m++<<<<<<< HEAD[m
+[32m +              <div className="bx--grix bx--grid--no--gutter bx--grid--full-width">[m
+[32m++=======[m
+[32m+               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+                  <div className="bx--row landing-page__tab-content">[m
+                    <div className="bx--col-lg-16">[m
+                      Carbon provides styles and components in Vanilla, React,[m
+[1mdiff --cc src/content/LandingPage/_landing-page.scss[m
+[1mindex ebfb722,22bf3f3..0000000[m
+[1m--- a/src/content/LandingPage/_landing-page.scss[m
+[1m+++ b/src/content/LandingPage/_landing-page.scss[m
+[36m@@@ -1,5 -1,5 +1,10 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +@import './mixins';[m
+[32m +@import './overrides';[m
+[32m++=======[m
+[32m+ @import './mixins.scss';[m
+[32m+ @import './overrides.scss';[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+  [m
+  .landing-page__illo {[m
+    max-width: 100%;[m
+[36m@@@ -19,12 -19,6 +24,15 @@@[m
+    margin-top: rem(-40px);[m
+  }[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +.landing-page__r2 {[m
+[32m +  padding-top: $spacing-09;[m
+[32m +  padding-bottom: $spacing-09;[m
+[32m +  @include landing-page-background;[m
+[32m +}[m
+[32m +[m
+[32m++=======[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+  .landing-page__tab-content {[m
+    padding-top: $layout-05;[m
+    padding-bottom: $layout-05;[m
+[36m@@@ -45,6 -39,12 +53,15 @@@[m
+    }[m
+  }[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m++=======[m
+[32m+ .landing-page__r3 {[m
+[32m+   padding-top: $spacing-09;[m
+[32m+   padding-bottom: $spacing-09;[m
+[32m+   @include landing-page-background;[m
+[32m+ }[m
+[32m+ [m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+  .landing-page__label {[m
+    @include carbon--type-style('heading-01');[m
+  }[m
+[1mdiff --cc src/content/RepoPage/RepoPage.js[m
+[1mindex b17d137,9b58d6d..0000000[m
+[1m--- a/src/content/RepoPage/RepoPage.js[m
+[1m+++ b/src/content/RepoPage/RepoPage.js[m
+[36m@@@ -1,151 -1,69 +1,219 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';[m
+[32m +import { gql } from 'apollo-boost';[m
+[32m +import { Query } from 'react-apollo';[m
+[32m +import React, { useState } from 'react';[m
+[32m +import RepoTable from './RepoTable';[m
+[32m +[m
+[32m +const LinkList = ({ url, homepageUrl }) => ([m
+[32m +  <ul style={{ display: 'flex' }}>[m
+[32m +    <li>[m
+[32m +      <Link href={url}>GitHub</Link>[m
+[32m +    </li>[m
+[32m +    {homepageUrl && ([m
+[32m +      <li>[m
+[32m +        <span>&nbsp;|&nbsp;</span>[m
+[32m +        <Link href={homepageUrl}>Homepage</Link>[m
+[32m +      </li>[m
+[32m +    )}[m
+[32m +  </ul>[m
+[32m +);[m
+[32m +[m
+[32m +const getRowItems = rows =>[m
+[32m +  rows.map(row => ({[m
+[32m +    ...row,[m
+[32m +    key: row.id,[m
+[32m +    stars: row.stargazers.totalCount,[m
+[32m +    issueCount: row.issues.totalCount,[m
+[32m +    createdAt: new Date(row.createdAt).toLocaleDateString(),[m
+[32m +    updatesAt: new Date(row.updatedAt).toLocaleDateString(),[m
+[32m +    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,[m
+[32m +  }));[m
+[32m +[m
+[32m +const REPO_QUERY = gql`[m
+[32m +  query REPO_QUERY {[m
+[32m +    #Let's use carbon as our organization[m
+[32m +    organization(login: "carbon-design-system") {[m
+[32m +      # We'll grab all the repositories in one go. To load more resources[m
+[32m +      # continously, see the advanced topics.[m
+[32m +      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {[m
+[32m +        totalCount[m
+[32m +        nodes {[m
+[32m +          url[m
+[32m +          homepageUrl[m
+[32m +          issues(filterBy: { states: OPEN }) {[m
+[32m +            totalCount[m
+[32m +          }[m
+[32m +          stargazers {[m
+[32m +            totalCount[m
+[32m +          }[m
+[32m +          releases(first: 1) {[m
+[32m +            totalCount[m
+[32m +            nodes {[m
+[32m +              name[m
+[32m +            }[m
+[32m +          }[m
+[32m +          name[m
+[32m +          updatedAt[m
+[32m +          createdAt[m
+[32m +          description[m
+[32m +          id[m
+[32m +        }[m
+[32m +      }[m
+[32m +    }[m
+[32m +  }[m
+[32m +`;[m
+[32m +[m
+[32m +const headers = [[m
+[32m +  {[m
+[32m +    key: 'name',[m
+[32m +    header: 'Name',[m
+[32m +  },[m
+[32m +  {[m
+[32m +    key: 'createdAt',[m
+[32m +    header: 'Created',[m
+[32m +  },[m
+[32m +  {[m
+[32m +    key: 'updatedAt',[m
+[32m +    header: 'Updated',[m
+[32m +  },[m
+[32m +  {[m
+[32m +    key: 'issueCount',[m
+[32m +    header: 'Open Issues',[m
+[32m +  },[m
+[32m +  {[m
+[32m +    key: 'stars',[m
+[32m +    header: 'Stars',[m
+[32m +  },[m
+[32m +  {[m
+[32m +    key: 'links',[m
+[32m +    header: 'Links',[m
+[32m +  },[m
+[32m +];[m
+[32m +[m
+[32m +const RepoPage = () => {[m
+[32m +  const [totalItems, setTotalItems] = useState(0);[m
+[32m +  const [firstRowIndex, setFirstRowIndex] = useState(0);[m
+[32m +  const [currentPageSize, setCurrentPageSize] = useState(10);[m
+[32m +[m
+[32m++=======[m
+[32m+ import React from 'react';[m
+[32m+ import RepoTable from './RepoTable';[m
+[32m+ [m
+[32m+ const headers = [[m
+[32m+   {[m
+[32m+     key: 'name',[m
+[32m+     header: 'Name',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     key: 'createdAt',[m
+[32m+     header: 'Created',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     key: 'updatedAt',[m
+[32m+     header: 'Updated',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     key: 'issueCount',[m
+[32m+     header: 'Open Issues',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     key: 'stars',[m
+[32m+     header: 'Stars',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     key: 'links',[m
+[32m+     header: 'Links',[m
+[32m+   },[m
+[32m+ ];[m
+[32m+ [m
+[32m+ const rows = [[m
+[32m+   {[m
+[32m+     id: '1',[m
+[32m+     name: 'Repo 1',[m
+[32m+     createdAt: 'Date',[m
+[32m+     updatedAt: 'Date',[m
+[32m+     issueCount: '123',[m
+[32m+     stars: '456',[m
+[32m+     links: 'Links',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     id: '2',[m
+[32m+     name: 'Repo 2',[m
+[32m+     createdAt: 'Date',[m
+[32m+     updatedAt: 'Date',[m
+[32m+     issueCount: '123',[m
+[32m+     stars: '456',[m
+[32m+     links: 'Links',[m
+[32m+   },[m
+[32m+   {[m
+[32m+     id: '3',[m
+[32m+     name: 'Repo 3',[m
+[32m+     createdAt: 'Date',[m
+[32m+     updatedAt: 'Date',[m
+[32m+     issueCount: '123',[m
+[32m+     stars: '456',[m
+[32m+     links: 'Links',[m
+[32m+   },[m
+[32m+ ];[m
+[32m+ [m
+[32m+ const RepoPage = () => {[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+    return ([m
+      <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">[m
+        <div className="bx--row repo-page__r1">[m
+          <div className="bx--col-lg-16">[m
+[32m++<<<<<<< HEAD[m
+[32m +          <Query query={REPO_QUERY}>[m
+[32m +            {({ loading, error, data }) => {[m
+[32m +              // Wait for the request to complete[m
+[32m +              if (loading)[m
+[32m +                return ([m
+[32m +                  <DataTableSkeleton[m
+[32m +                    columnCount={headers.length + 1}[m
+[32m +                    rowCount={10}[m
+[32m +                    headers={headers}[m
+[32m +                  />[m
+[32m +                );[m
+[32m +[m
+[32m +              // Something went wrong with the data fetching[m
+[32m +              if (error) return `Error! ${error.message}`;[m
+[32m +[m
+[32m +              // If we're here, we've got our data![m
+[32m +              const { repositories } = data.organization;[m
+[32m +              setTotalItems(repositories.totalCount);[m
+[32m +              const rows = getRowItems(repositories.nodes);[m
+[32m +[m
+[32m +              return ([m
+[32m +                <>[m
+[32m +                  <RepoTable[m
+[32m +                    headers={headers}[m
+[32m +                    rows={rows.slice([m
+[32m +                      firstRowIndex,[m
+[32m +                      firstRowIndex + currentPageSize[m
+[32m +                    )}[m
+[32m +                  />[m
+[32m +                  <Pagination[m
+[32m +                    totalItems={totalItems}[m
+[32m +                    backwardText="Previous page"[m
+[32m +                    forwardText="Next page"[m
+[32m +                    pageSize={currentPageSize}[m
+[32m +                    pageSizes={[5, 10, 15, 25]}[m
+[32m +                    itemsPerPageText="Items per page"[m
+[32m +                    onChange={({ page, pageSize }) => {[m
+[32m +                      if (pageSize !== currentPageSize) {[m
+[32m +                        setCurrentPageSize(pageSize);[m
+[32m +                      }[m
+[32m +                      setFirstRowIndex(pageSize * (page - 1));[m
+[32m +                    }}[m
+[32m +                  />[m
+[32m +                </>[m
+[32m +              );[m
+[32m +            }}[m
+[32m +          </Query>[m
+[32m++=======[m
+[32m+           <RepoTable headers={headers} rows={rows} />[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+          </div>[m
+        </div>[m
+      </div>[m
+[1mdiff --cc src/content/RepoPage/RepoTable.js[m
+[1mindex 7fb4342,8700999..0000000[m
+[1m--- a/src/content/RepoPage/RepoTable.js[m
+[1m+++ b/src/content/RepoPage/RepoTable.js[m
+[36m@@@ -14,10 -14,6 +14,13 @@@[m [mimport [m
+  } from 'carbon-components-react';[m
+  [m
+  const RepoTable = ({ rows, headers }) => {[m
+[32m++<<<<<<< HEAD[m
+[32m +  const getRowDescription = rowId => {[m
+[32m +    const row = rows.find(({ id }) => id === rowId);[m
+[32m +    return row ? row.description : '';[m
+[32m +  };[m
+[32m++=======[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+    return ([m
+      <DataTable[m
+        rows={rows}[m
+[36m@@@ -30,7 -26,7 +33,11 @@@[m
+          getTableProps,[m
+        }) => ([m
+          <TableContainer[m
+[32m++<<<<<<< HEAD[m
+[32m +          title="Carbon Repositiories"[m
+[32m++=======[m
+[32m+           title="Carbon Repositories"[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+            description="A collection of public Carbon repositories.">[m
+            <Table {...getTableProps()}>[m
+              <TableHead>[m
+[36m@@@ -52,7 -48,7 +59,11 @@@[m
+                      ))}[m
+                    </TableExpandRow>[m
+                    <TableExpandedRow colSpan={headers.length + 1}>[m
+[32m++<<<<<<< HEAD[m
+[32m +                    <p>{getRowDescription(row.id)}</p>[m
+[32m++=======[m
+[32m+                     <p>Row description</p>[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+                    </TableExpandedRow>[m
+                  </React.Fragment>[m
+                ))}[m
+[1mdiff --cc src/content/RepoPage/_repo-page.scss[m
+[1mindex f401fc0,a41e047..0000000[m
+[1m--- a/src/content/RepoPage/_repo-page.scss[m
+[1m+++ b/src/content/RepoPage/_repo-page.scss[m
+[36m@@@ -1,4 -1,4 +1,8 @@@[m
+[32m++<<<<<<< HEAD[m
+[32m +.repo-page .bx--row {[m
+[32m++=======[m
+[32m+ .repo-page__r1 {[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+    padding-top: $spacing-05;[m
+    padding-bottom: $spacing-05;[m
+  }[m
+[1mdiff --cc yarn.lock[m
+[1mindex 8b58c33,2170c6f..0000000[m
+[1m--- a/yarn.lock[m
+[1m+++ b/yarn.lock[m
+[36m@@@ -861,13 -861,13 +861,23 @@@[m
+      lodash "^4.17.11"[m
+      to-fast-properties "^2.0.0"[m
+  [m
+[32m++<<<<<<< HEAD[m
+[32m +"@carbon/grid@^10.14.0":[m
+[32m +  version "10.14.0"[m
+[32m +  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.14.0.tgz#5643303b8e6821306b20ac943ce327068bbbc34e"[m
+[32m +  integrity sha512-V/XuB013ilbQyNV/Mhc24ZBWT0aoF+ZgUw9Rq5NlALgQf08BvTJjQl0C/5GxnAzFHaeYZh9jdVhXa0kCvY9nTg==[m
+[32m +  dependencies:[m
+[32m +    "@carbon/import-once" "^10.3.0"[m
+[32m +    "@carbon/layout" "^10.12.0"[m
+[32m++=======[m
+[32m+ "@carbon/grid@^10.3.0":[m
+[32m+   version "10.3.0"[m
+[32m+   resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.3.0.tgz#327e21b2a3d9277efd4196af284ea6249bb43121"[m
+[32m+   integrity sha512-O7r4Lu/lyqy75DdHqH1mfhkI2NayyVqySinrJ/NXjShvL0slH+e0Uy0lvSrxCylCCQeMb6xk7fupMYCycNO/cg==[m
+[32m+   dependencies:[m
+[32m+     "@carbon/import-once" "10.2.0"[m
+[32m+     "@carbon/layout" "10.2.0"[m
+[32m++>>>>>>> b41b51cc8b7eba209733079b34e1ee541e75bec4[m
+  [m
+  "@carbon/icon-helpers@10.2.0":[m
+    version "10.2.0"[m
