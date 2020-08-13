@@ -27,3 +27,20 @@ main {
 .bx--content {
   padding: 0;
 }
+
+// Feature flags
+$css--font-face: true;
+$css--plex: true;
+
+// Global styles
+@import 'carbon-components/scss/globals/scss/css--font-face';
+@import 'carbon-components/scss/globals/grid/grid';
+
+// Carbon components
+@import 'carbon-components/scss/components/breadcrumb/breadcrumb';
+@import 'carbon-components/scss/components/button/button';
+@import 'carbon-components/scss/components/data-table/data-table';
+@import 'carbon-components/scss/components/link/link';
+@import 'carbon-components/scss/components/pagination/pagination';
+@import 'carbon-components/scss/components/tabs/tabs';
+@import 'carbon-components/scss/components/ui-shell/ui-shell';
