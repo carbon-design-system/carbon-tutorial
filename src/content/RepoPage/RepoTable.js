@@ -12,6 +12,10 @@ import {
   TableCell,
   TableExpandedRow,
 } from 'carbon-components-react';
+const getRowDescription = rowId => {
+  //const rows = row.find(({ id }) => id === rowId);
+  // return row ? row.description : '';
+};
 
 const RepoTable = ({ rows, headers }) => {
   return (
@@ -48,7 +52,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
