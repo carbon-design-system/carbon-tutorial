@@ -33,7 +33,7 @@ const headers = [
   },
 ];
 
-const rows = [
+/* const rows = [
   {
     id: '1',
     name: 'Repo 1',
@@ -61,7 +61,7 @@ const rows = [
     stars: '456',
     links: 'Links',
   },
-];
+]; */
 
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
