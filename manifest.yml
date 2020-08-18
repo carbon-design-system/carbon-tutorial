@@ -1,0 +1,7 @@
+---
+REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN=61cf54c78f44314307845df995cac34d6bdd12b6
+applications:
+  - name: carbon-tutorial-lornakelly
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    
