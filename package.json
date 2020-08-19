@@ -1,3 +1,4 @@
+
 {
   "name": "carbon-tutorial",
   "version": "0.0.0",
@@ -75,8 +76,5 @@
     "printWidth": 80,
     "singleQuote": true,
     "trailingComma": "es5"
-  },
-  "resolutions": {
-    "**/fsevents": "^1.2.9"
   }
 }
