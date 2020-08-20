@@ -2721,7 +2721,11 @@ commander@^2.11.0:
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 commander@^2.14.1, commander@^2.9.0, commander@~2.20.0:
+=======
+commander@^2.14.1, commander@^2.19.0, commander@^2.9.0:
+>>>>>>> 4400c08b776e0ad4f6407d2bf79472ba95d0a427
 =======
 commander@^2.14.1, commander@^2.19.0, commander@^2.9.0:
 >>>>>>> 4400c08b776e0ad4f6407d2bf79472ba95d0a427
