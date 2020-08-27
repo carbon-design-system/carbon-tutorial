@@ -106,7 +106,7 @@ const LandingPage = () => {
         />
         <InfoCard
           heading="Carbon is Consistent"
-          body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+          body="based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
           icon={<Globe32 />}
         />
       </InfoSection>
