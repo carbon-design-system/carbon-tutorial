@@ -1,0 +1,8 @@
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  domain: null
+  host: null
+  memory: 64M
+  name: carbon-tutorial-jarhay
+  routes:
+  - route: carbon-tutorial.au-syd.cf.appdomain.cloud
