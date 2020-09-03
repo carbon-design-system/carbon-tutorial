@@ -50,18 +50,18 @@ const mocks = [
               {
                 url: 'https://github.com/carbon-design-system/carbon',
                 homepageUrl: 'https://www.carbondesignsystem.com',
-                issues: { totalCount: 357, __typename: 'IssueConnection' },
+                issues: { totalCount: 398, __typename: 'IssueConnection' },
                 stargazers: {
                   totalCount: 3054,
                   __typename: 'StargazerConnection',
                 },
                 releases: {
-                  totalCount: 640,
-                  nodes: [{ name: '7.0.0-rc.1', __typename: 'Release' }],
+                  totalCount: 688,
+                  nodes: [{ name: 'v10.19.0-rc.0', __typename: 'Release' }],
                   __typename: 'ReleaseConnection',
                 },
                 name: 'carbon',
-                updatedAt: '2020-05-27T18:55:53Z',
+                updatedAt: '2020-09-03T08:06:44.617Z',
                 createdAt: '2017-03-13T14:23:59Z',
                 description: 'A design system built by IBM',
                 id: 'MDEwOlJlcG9zaXRvcnk4NDgzNTUzNQ==',
