@@ -33,7 +33,10 @@ const headers = [
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
+    # Let's use carbon as our organization
     organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
@@ -99,7 +102,7 @@ const RepoPage = () => {
           <Query query={REPO_QUERY}>
             {({ loading, error, data }) => {
               // Wait for the request to complete
-              if (loading) {
+              if (loading)
                 return (
                   <DataTableSkeleton
                     columnCount={headers.length + 1}
@@ -107,13 +110,13 @@ const RepoPage = () => {
                     headers={headers}
                   />
                 );
-              }
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
               // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
+
               return (
                 <>
                   <RepoTable
