@@ -27,11 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="448401fb-350a-4f7a-8ff3-1aa9c06173b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Info/Info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Info/_info.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Info/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599208069234</updated>
       <workItem from="1599208070320" duration="2849000" />
-      <workItem from="1599211051367" duration="759000" />
+      <workItem from="1599211051367" duration="1014000" />
     </task>
     <servers />
   </component>
