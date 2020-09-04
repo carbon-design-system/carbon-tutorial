@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './app.scss';
+
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
@@ -9,7 +10,7 @@ import RepoPage from './content/RepoPage';
 class App extends Component {
   render() {
     return (
-      <>
+      <div>
         <TutorialHeader />
         <Content>
           <Switch>
@@ -17,7 +18,7 @@ class App extends Component {
             <Route path="/repos" component={RepoPage} />
           </Switch>
         </Content>
-      </>
+      </div>
     );
   }
 }
