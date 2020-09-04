@@ -28,7 +28,6 @@
   <component name="ChangeListManager">
     <list default="true" id="448401fb-350a-4f7a-8ff3-1aa9c06173b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Info/Info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Info/Info.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599208069234</updated>
       <workItem from="1599208070320" duration="2849000" />
-      <workItem from="1599211051367" duration="1478000" />
+      <workItem from="1599211051367" duration="2118000" />
     </task>
     <servers />
   </component>
@@ -140,5 +139,13 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="688" y="349" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1080/-1680.-127.1680.1050@0.0.1920.1080" timestamp="1599208727369" />
+    <state x="100" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1599213367803">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="100" y="100" width="1720" height="880" key="DiffContextDialog/0.0.1920.1080/-1680.-127.1680.1050@0.0.1920.1080" timestamp="1599213367803" />
+    <state x="714" y="281" key="VcsDiffUtil.ChangesDialog" timestamp="1599213053015">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="714" y="281" key="VcsDiffUtil.ChangesDialog/0.0.1920.1080/-1680.-127.1680.1050@0.0.1920.1080" timestamp="1599213053015" />
   </component>
 </project>
