@@ -2,8 +2,21 @@ $feature-flags: (
   ui-shell: true,
   grid-columns-16: true,
 );
-
-@import 'carbon-components/scss/globals/scss/styles.scss';
+$Feature-flags: (
+  css--font-face: true,
+  css--plex: true,
+);
+// Global styles
+@import 'carbon-components/scss/globals/scss/_css--font-face.scss';
+@import 'carbon-components/scss/globals/grid/_grid.scss';
+// Carbon components
+@import 'carbon-components/scss/components/breadcrumb/_breadcrumb.scss';
+@import 'carbon-components/scss/components/button/_button.scss';
+@import 'carbon-components/scss/components/data-table/_data-table.scss';
+@import 'carbon-components/scss/components/link/_link.scss';
+@import 'carbon-components/scss/components/pagination/_pagination.scss';
+@import 'carbon-components/scss/components/tabs/_tabs.scss';
+@import 'carbon-components/scss/components/ui-shell/_ui-shell.scss';
 
 // Remove overrides once Carbon bugs are fixed upstream.
 
