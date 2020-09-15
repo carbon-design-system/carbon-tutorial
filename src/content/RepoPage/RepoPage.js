@@ -1,5 +1,5 @@
 import React from 'react';
-import RepoTable from '.RepoTable';
+import RepoTable from './RepoTable';
 
 const headers = [
   {
