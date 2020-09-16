@@ -1,0 +1,8 @@
+---
+applications:
+  - name: carbon-tutorial-edwinyachoui-ibm
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 6ef13a694bff5418da7c4ad1c5172c8e570c8733
+
