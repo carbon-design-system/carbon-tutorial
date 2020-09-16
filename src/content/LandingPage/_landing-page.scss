@@ -11,7 +11,7 @@
   @include landing-page-background;
 }
 .landing-page__heading {
-  //@include carbon--type-style('productive-heading-05');
+  @include carbon--type-style('productive-heading-05');
 }
 .landing-page__r2 {
   margin-top: rem(-40px);
@@ -27,18 +27,18 @@
 }
 
 .landing-page__subheading {
-  //@include carbon--type-style('productive-heading-03');
-  //@include carbon--font-weight('semibold');
+  @include carbon--type-style('productive-heading-03');
+  @include carbon--font-weight('semibold');
 }
 
 .landing-page__p {
-  //@include carbon--type-style('productive-heading-03');
+  @include carbon--type-style('productive-heading-03');
   margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 
-  //@include carbon--breakpoint-between((320px + 1), md) {
-  //  max-width: 75%;
-  //}
+  @include carbon--breakpoint-between((320px + 1), md) {
+    max-width: 75%;
+  }
 }
 
 .landing-page__r3 {
@@ -47,5 +47,5 @@
   @include landing-page-background;
 }
 .landing-page__label {
-  //@include carbon--type-style('heading-01');
+  @include carbon--type-style('heading-01');
 }
