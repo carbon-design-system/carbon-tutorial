@@ -23,8 +23,4 @@ workflows:
   version: 2
   main:
     jobs:
-<<<<<<< HEAD
       - step-four
-=======
-      - step-three
->>>>>>> react-step-3
