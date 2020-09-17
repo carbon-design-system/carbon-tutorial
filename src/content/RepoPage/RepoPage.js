@@ -79,8 +79,8 @@ const LinkList = ({ url, homepageUrl }) => (
   </ul>
 );
 
-const getRowItems = rows =>
-  rows.map(row => ({
+const getRowItems = (rows) =>
+  rows.map((row) => ({
     ...row,
     key: row.id,
     stars: row.stargazers.totalCount,
@@ -100,7 +100,7 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
-            {({ loading, error, data: { organization } }) => {
+            {({ loading, error, data }) => {
               // Wait for the request to complete
               if (loading)
                 return (
@@ -115,7 +115,7 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              const { repositories } = organization;
+              const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
 

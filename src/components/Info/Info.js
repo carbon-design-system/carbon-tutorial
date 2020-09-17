@@ -7,7 +7,7 @@ function createArrayFromPhrase(phrase) {
   return [splitPhrase.join(' '), thirdWord];
 }
 
-const InfoSection = props => (
+const InfoSection = (props) => (
   <section className={`bx--row ${props.className} info-section`}>
     <div className="bx--col-md-8 bx--col-lg-4 bx--col-xlg-3">
       <h3 className="info-section__heading">{props.heading}</h3>
@@ -16,7 +16,7 @@ const InfoSection = props => (
   </section>
 );
 
-const InfoCard = props => {
+const InfoCard = (props) => {
   const splitHeading = createArrayFromPhrase(props.heading);
 
   return (
