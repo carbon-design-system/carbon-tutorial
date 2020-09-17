@@ -1,9 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter as Router } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
+import LandingPage from './content/LandingPage';
+import RepoPage from './content/RepoPage';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import { HashRouter as Router } from 'react-router-dom';
+import 'core-js/modules/es7.array.includes';
+import 'core-js/modules/es6.array.fill';
+import 'core-js/modules/es6.string.includes';
+import 'core-js/modules/es6.string.trim';
+import 'core-js/modules/es7.object.values';
 
 ReactDOM.render(
   <Router>

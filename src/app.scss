@@ -1,3 +1,22 @@
+/* Remove overrides once Carbon bugs are fixed upstream. */
+
+/*
+The React <Content /> component uses the `main` element which IE11 doesn't recognize
+
+@link https://github.com/carbon-design-system/carbon/issues/2789
+*/
+$feature-flags: (
+  ui-shell: true,
+);
+@import 'carbon-components/scss/globals/scss/styles.scss';
 @import './components/TutorialHeader/tutorial-header.scss';
 @import './content/LandingPage/landing-page.scss';
 @import './content/RepoPage/repo-page.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+
+main {
+  display: block;
+}
