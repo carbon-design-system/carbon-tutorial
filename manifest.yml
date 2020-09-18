@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-lilianalistus
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 0d37bd89a44efc66f5b006c15b8703d23cec3cda
