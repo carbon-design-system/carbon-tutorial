@@ -8,12 +8,15 @@ import {
   HeaderGlobalAction,
   SkipToContent,
 } from 'carbon-components-react';
+
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+
 import { Link } from 'react-router-dom';
+
 const TutorialHeader = () => (
   <Header aria-label="Carbon Tutorial">
     <SkipToContent />
@@ -38,4 +41,5 @@ const TutorialHeader = () => (
     </HeaderGlobalBar>
   </Header>
 );
+
 export default TutorialHeader;
