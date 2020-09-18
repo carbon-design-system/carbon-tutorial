@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="add0cfff-f4ba-4a1f-9ae9-cde36dba5fc4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icon-helpers-10.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@carbon-icons-react-10.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/camelcase-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/carbon-components-10.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/carbon-components-react-7.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cliui-3.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/core-js-1.2.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/create-react-context-0.2.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/downshift-1.31.16.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/encoding-0.1.12.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fbjs-0.8.17.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/flatpickr-4.5.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/flatpickr-4.5.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/focus-trap-4.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/focus-trap-react-6.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/gud-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/isomorphic-fetch-2.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-fetch-1.7.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-sass-4.12.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/os-locale-1.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/promise-7.3.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-router-5.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-router-dom-5.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/sass-graph-2.2.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tabbable-3.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ua-parser-js-0.7.19.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/which-module-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yargs-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yargs-parser-5.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hfYsCQj5mPSy9r7ULvKECsmRbT" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="add0cfff-f4ba-4a1f-9ae9-cde36dba5fc4" name="Default Changelist" comment="" />
+      <created>1600403819079</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600403819079</updated>
+      <workItem from="1600403820410" duration="8141000" />
+      <workItem from="1600413705074" duration="3923000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1678" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600407552732">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1678" y="318" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1040/-1920.0.1920.1040@0.0.2560.1040" timestamp="1600407552732" />
+  </component>
+</project>
