@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@carbon/grid": "^10.3.0",
-    "@carbon/icons-react": "^10.3.0",
+    "@carbon/icons-react": "^10.18.0",
     "apollo-boost": "^0.4.2",
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
@@ -28,15 +28,15 @@
     "react": "^16.8.6",
     "react-apollo": "^2.5.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "react-scripts": "2.1.8"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
+    "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^7.5.0",
     "husky": "^1.3.1",
     "lint-staged": "^8.1.5",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.14.1",
     "prettier": "^1.17.0"
   },
   "eslintConfig": {
