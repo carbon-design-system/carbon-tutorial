@@ -27,7 +27,7 @@ const RepoTable = ({ rows, headers }) => {
       }) => (
         <TableContainer
           title={'Carbon Repositories'}
-          description={'A collection of public Caaarbon repositories.'}>
+          description={'A collection of public Carbon repositories.'}>
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
@@ -49,7 +49,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row descriptionssss</p>
+                    <p>Row descriptions</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
