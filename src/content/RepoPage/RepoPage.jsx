@@ -3,7 +3,7 @@ import React from 'react';
 const RepoPage = () => {
   return (
     <div>
-      Repo page
+      REPOSITORY PAGE
     </div>
   );
 };
