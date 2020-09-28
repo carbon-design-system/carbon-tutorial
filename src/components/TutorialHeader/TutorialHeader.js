@@ -6,9 +6,11 @@ import {
   HeaderNavigation,
   HeaderMenuItem,
   HeaderGlobalBar,
-  HeaderGlobalAction,
   SkipToContent,
 } from 'carbon-components-react';
+
+// Can't import it because it will be unused, since modules of this tag are returning error
+// import { HeaderGlobalAction } from 'carbon-components-react';
 
 import { Link } from 'react-router-dom';
 
