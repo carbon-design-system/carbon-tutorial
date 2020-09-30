@@ -24,7 +24,7 @@
     "carbon-components-react": "^7.3.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
-    "graphql": "^15.3.0",
+    "graphql": "^14.3.1",
     "react": "^16.8.6",
     "react-apollo": "^3.1.5",
     "react-dom": "^16.8.6",
