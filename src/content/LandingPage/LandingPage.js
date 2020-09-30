@@ -8,9 +8,11 @@ import {
 } from 'carbon-components-react';
 import InfoSection from '../../components/Info/InfoSection';
 import InfoCard from '../../components/Info/InfoCard';
-import PersonFavorite32 from '@carbon/icons-react/es/person--favorite/32';
-import Application32 from '@carbon/icons-react/es/application/32';
-import Globe32 from '@carbon/icons-react/es/globe/32';
+import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
+import Globe32 from '@carbon/icons-react/lib/globe/32';
+import Application32 from '@carbon/icons-react/lib/application/32';
+
+// import {PersonFavorite32, Globe32, Application32} from '@carbon/icons-react';
 
 const props = {
   tabs: {
