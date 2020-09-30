@@ -1,3 +1,9 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+//adding a UI Shell Sass
+$feature-flags: (
+  ui-shell: true,
+);
 /* Remove overrides once Carbon bugs are fixed upstream. */
 
 /*
