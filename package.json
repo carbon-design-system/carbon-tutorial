@@ -9,6 +9,7 @@
     "build": "react-scripts build",
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
+    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
     "eject": "react-scripts eject",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
@@ -18,7 +19,7 @@
   },
   "dependencies": {
     "@carbon/grid": "^10.3.0",
-    "@carbon/icons-react": "^10.3.0",
+    "@carbon/icons-react": "^10.18.0",
     "apollo-boost": "^0.4.2",
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
