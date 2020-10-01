@@ -162,7 +162,7 @@ const RepoPage = () => {
                     forwardText="Next page"
                     pageSize={currentPageSize}
                     pageSizes={[5, 10, 15, 25]}
-                    itemsPerPageText="Items per page"
+                    itemsPerPageText="Item per page"
                     onChange={({ page, pageSize }) => {
                       if (pageSize !== currentPageSize) {
                         setCurrentPageSize(pageSize);
