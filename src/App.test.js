@@ -1,7 +1,7 @@
 import React from 'react';
 import RepoPage from './content/RepoPage';
 import { mount } from 'enzyme';
-import { MockedProvider } from 'react-apollo/test-utils';
+import { MockedProvider } from '@apollo/client/testing';
 import { gql } from 'apollo-boost';
 import waitForExpect from 'wait-for-expect';
 
