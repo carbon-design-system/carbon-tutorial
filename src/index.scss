@@ -12,3 +12,15 @@ $feature-flags: (
 main {
   display: block;
 }
+@media (min-width: 42rem) {
+  .bx--grid--no-gutter {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter
+/// @link https://github.com/carbon-design-system/carbon/issues/3010
+.bx--content {
+  padding: 0;
+}

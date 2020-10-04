@@ -5,10 +5,3 @@ const RepoPage = () => {
 };
 
 export default RepoPage;
-import React from 'react';
-
-export const RepoPage = () => {
-  return <div>REPO PAGE</div>;
-};
-
-//export default RepoPage;
