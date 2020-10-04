@@ -1152,6 +1152,11 @@
     "@types/react" "*"
     flatpickr "4.6.1"
 
+"@types/carbon__icons-react@^10.17.1":
+  version "10.17.1"
+  resolved "https://registry.yarnpkg.com/@types/carbon__icons-react/-/carbon__icons-react-10.17.1.tgz#858973244e0de2c2471d3e85a6a781feb6b4bca5"
+  integrity sha512-I18TtuZGhS3Q9TBc6DI5O0p9TZaUl20d2FBWpdLxr9fNQ0CJveekj/i9pmX3w4sGXpiYe4MIE+zy+yOAin3kBA==
+
 "@types/cheerio@*":
   version "0.22.22"
   resolved "https://registry.yarnpkg.com/@types/cheerio/-/cheerio-0.22.22.tgz#ae71cf4ca59b8bbaf34c99af7a5d6c8894988f5f"
