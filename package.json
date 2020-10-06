@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@carbon/grid": "^10.15.0",
-    "@carbon/icons-react": "^10.19.0",
+    "@carbon/icons-react": "10.3.0",
     "carbon-components": "10.3.0",
     "carbon-components-react": "7.3.0",
     "carbon-icons": "7.0.7",
