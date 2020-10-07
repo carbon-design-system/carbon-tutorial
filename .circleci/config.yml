@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  step-four:
+  step-five:
     docker:
       - image: circleci/node:10
     working_directory: ~/repo
@@ -23,4 +23,4 @@ workflows:
   version: 2
   main:
     jobs:
-      - step-four
+      - step-five
