@@ -1,14 +1,9 @@
 import React from 'react';
-import RepoPage from './content/RepoPage';
-import { shallow } from 'enzyme';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-describe('React Step 1 Tests', () => {
-  it('renders without crashing', () => {
-    shallow(<RepoPage />);
-  });
-
-  const wrapper = shallow(<RepoPage />);
-  it('contains a RepoTable', () => {
-    expect(wrapper.find('RepoTable').length).toBe(1);
-  });
+it('renders without crashing', () => {
+  const div = document.createElement('div');
+  ReactDOM.render(<App />, div);
+  ReactDOM.unmountComponentAtNode(div);
 });
