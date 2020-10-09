@@ -3,8 +3,8 @@ import './app.scss';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
-import LandingPage from './content/LandingPage';
-import RepoPage from './content/RepoPage';
+import LandingPage from './components/Content/LandingPage';
+import RepoPage from './components/Content/RepoPage';
 
 class App extends Component {
   render() {
