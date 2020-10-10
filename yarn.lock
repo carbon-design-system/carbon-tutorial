@@ -887,7 +887,11 @@
     "@carbon/icon-helpers" "10.2.0"
     prop-types "^15.6.2"
 
+<<<<<<< HEAD
 "@carbon/icons-react@^10.3.0":
+=======
+"@carbon/icons-react@^10.19.0":
+>>>>>>> 7e0e13c1bcb87646525ad28fde4c1e6bb32a9096
   version "10.19.0"
   resolved "https://registry.yarnpkg.com/@carbon/icons-react/-/icons-react-10.19.0.tgz#f5941db0673a669cdf4cf6602d30f006aa6192eb"
   integrity sha512-pbAegbVe5geqmz36W//y99W4DV+WRyBvL/3733AgZ4vPuXKLrK9exOUp7C1O/NPWrxIhOppMc3QZRWuicMU31g==
