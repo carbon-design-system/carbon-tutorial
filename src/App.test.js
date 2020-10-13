@@ -1,14 +1,14 @@
 import React from 'react';
-import App from './App';
+import LandingPage from './content/LandingPage';
 import { shallow } from 'enzyme';
 
-describe('React Step 1 Tests', () => {
+describe('React Step 4 Tests', () => {
   it('renders without crashing', () => {
-    shallow(<App />);
+    shallow(<LandingPage />);
   });
 
-  const wrapper = shallow(<App />);
-  it('contains a TutorialHeader', () => {
-    expect(wrapper.find('TutorialHeader').length).toBe(1);
+  const wrapper = shallow(<LandingPage />);
+  it('contains an InfoSection component', () => {
+    expect(wrapper.find('InfoSection').length).toBe(1);
   });
 });
