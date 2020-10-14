@@ -1,14 +1,14 @@
 import React from 'react';
-import RepoPage from './content/RepoPage';
+import LandingPage from './content/LandingPage';
 import { shallow } from 'enzyme';
 
-describe('React Step 2 Tests', () => {
+describe('React Step 4 Tests', () => {
   it('renders without crashing', () => {
-    shallow(<RepoPage />);
+    shallow(<LandingPage />);
   });
 
-  const wrapper = shallow(<RepoPage />);
-  it('contains a RepoTable', () => {
-    expect(wrapper.find('RepoTable').length).toBe(1);
+  const wrapper = shallow(<LandingPage />);
+  it('contains an InfoSection component', () => {
+    expect(wrapper.find('InfoSection').length).toBe(1);
   });
 });
