@@ -1,7 +1,9 @@
 .info-section__heading {
   @include carbon--type-style('heading-01');
 }
-
+.info-card__heading {
+  @include carbon--type-style('productive-heading-03');
+}
 .info-card {
   margin-top: $spacing-09;
   display: flex;
@@ -35,10 +37,6 @@
       margin-top: $layout-06;
     }
   }
-}
-
-.info-card__heading {
-  @include carbon--type-style('productive-heading-03');
 }
 
 .info-card__body {
