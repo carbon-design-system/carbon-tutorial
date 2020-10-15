@@ -8,7 +8,7 @@ import {
 } from 'carbon-components-react';
 import Application32 from '@carbon/icons-react/lib/application/32';
 import Globe32 from '@carbon/icons-react/lib/globe/32';
-import PersonFavorite32 from '@carbon/icons-react/lib/person/32';
+import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
 import { InfoSection, InfoCard } from '../../components/Info';
 
 const props = {
