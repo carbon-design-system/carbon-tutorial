@@ -1,4 +1,3 @@
-export * from './Info';
 import React from 'react';
 
 // Take in a phrase and separate the third word in an array
@@ -30,3 +29,5 @@ const InfoSection = props => (
     {props.children}
   </section>
 );
+
+export { InfoSection, InfoCard };
