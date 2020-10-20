@@ -28,7 +28,8 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3"
+    "react-scripts": "^3.4.3",
+    "yarn": "^1.22.10"
   },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
