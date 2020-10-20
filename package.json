@@ -32,7 +32,7 @@
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
-    "core-js": "^3.6.5",
+    "core-js": "^2.6.11",
     "eslint-config-react-app": "^5.2.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.2",
