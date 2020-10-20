@@ -21,6 +21,7 @@
     "@carbon/icons-react": "^10.19.0",
     "carbon-components": "^10.22.0",
     "carbon-components-react": "^7.22.0",
+    "carbon-icons": "^7.0.7",
     "ci-check": "^1.0.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
