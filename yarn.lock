@@ -2647,7 +2647,7 @@ carbon-components-react@^7.22.0:
     warning "^3.0.0"
     window-or-global "^1.0.1"
 
-carbon-components@^10.22.0:
+carbon-components@^10.3.0:
   version "10.22.0"
   resolved "https://registry.yarnpkg.com/carbon-components/-/carbon-components-10.22.0.tgz#866791ca8e3f651054543d63f6a898cff6bcacf9"
   integrity sha512-0cADWQf1e+6YsxXnjEz630Z7GZa3Z1ssO0UW/HnnJy03Dr+qdT3o6sIgSqObYLddJliAVcjeTlwJshZ9K4bWJQ==
