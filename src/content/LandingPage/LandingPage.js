@@ -1,6 +1,4 @@
 import React from 'react';
-<<<<<<< Updated upstream
-=======
 
 import { InfoSection, InfoCard } from '../../components/Info';
 
@@ -8,7 +6,6 @@ import Application32 from '@carbon/icons-react/lib/application/32';
 import Globe32 from '@carbon/icons-react/lib/globe/32';
 import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
 
->>>>>>> Stashed changes
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -97,16 +94,6 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-<<<<<<< Updated upstream
-      <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">
-          <h3 className="landing-page__label">The Principles</h3>
-        </div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
-      </div>
-=======
       <InfoSection heading="The Principles" className="landing-page__r3">
         <InfoCard
           heading="Carbon is Open"
@@ -124,7 +111,6 @@ const LandingPage = () => {
           icon={<Globe32 />}
         />
       </InfoSection>
->>>>>>> Stashed changes
     </div>
   );
 };
