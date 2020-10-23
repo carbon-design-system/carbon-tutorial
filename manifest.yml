@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-mkgallagher
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: cfe5ad06d5eda797951a5e5870302f0ffd9ace37
