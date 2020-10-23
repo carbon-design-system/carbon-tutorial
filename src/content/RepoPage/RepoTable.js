@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import {
   DataTable,
@@ -47,7 +48,7 @@ const RepoTable = ({ rows, headers }) => {
             <TableBody>
               {rows.map(row => (
                 <React.Fragment key={row.id}>
-                  <TableExpandRow {...getRowProps({ row })}>
+                  <TableExpandRow TableExpandRow {...getRowProps({ row })}>
                     {row.cells.map(cell => (
                       <TableCell key={cell.id}>{cell.value}</TableCell>
                     ))}

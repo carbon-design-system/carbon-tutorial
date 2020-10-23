@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
