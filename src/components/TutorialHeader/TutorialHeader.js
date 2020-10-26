@@ -1,10 +1,8 @@
 import React from 'react';
-
-import {
-  AppSwitcher20,
-  Notification20,
-  UserAvatar20,
-} from '@carbon/icons-react';
+import { Link } from 'react-router-dom';
+import Notification20 from '@carbon/icons-react/lib/notification/20';
+import UserAvatar20 from '@carbon/icons-react/lib/user--avatar/20';
+import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 
 import {
   Header,
