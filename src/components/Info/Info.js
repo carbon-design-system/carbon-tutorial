@@ -31,4 +31,4 @@ const InfoCard = props => {
   );
 };
 
-export default InfoSection;
+export { InfoSection, InfoCard };
