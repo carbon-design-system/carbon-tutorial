@@ -6,8 +6,8 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
-import InfoSection from '../../components/Info.js';
-import InfoCard from '../../components/Info.js';
+import InfoSection from '../../components/Info';
+import InfoCard from '../../components/Info';
 import Globe32 from '@carbon/icons-react/lib/globe/32';
 import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
 import Application32 from '@carbon/icons-react/lib/application/32';
