@@ -3,7 +3,6 @@ import './app.scss';
 import { Content } from 'carbon-components-react/lib/components/UIShell';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
-import { InfoSection, InfoCard } from './components/Info';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
 
