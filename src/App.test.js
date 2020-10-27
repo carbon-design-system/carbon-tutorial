@@ -1,5 +1,5 @@
 import React from 'react';
-import { InfoSection, InfoCard } from 'components/Info';
+import { InfoSection, InfoCard } from './components/Info';
 import LandingPage from './content/LandingPage';
 import { shallow } from 'enzyme';
 
