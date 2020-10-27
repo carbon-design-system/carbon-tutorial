@@ -1,2 +1,1 @@
-import { InfoSection, InfoCard } from './Info';
-export { InfoCard, InfoSection };
+export * from './Info';
