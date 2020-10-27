@@ -2,13 +2,14 @@ import React from 'react';
 import LandingPage from './content/LandingPage';
 import { shallow } from 'enzyme';
 
-describe('React Step 4 Tests', () => {
+describe('React Step 5 Tests', () => {
   it('renders without crashing', () => {
     shallow(<LandingPage />);
   });
 
-  const wrapper = shallow(<LandingPage />);
-  it('contains an InfoSection component', () => {
-    expect(wrapper.find('InfoSection').length).toBe(1);
+  const testForManifestFile = require('../manifest.yml');
+
+  it('app contains a manifest file', () => {
+    expect(testForManifestFile).toBe('manifest.yml');
   });
 });
