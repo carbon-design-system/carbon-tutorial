@@ -1,5 +1,4 @@
 import React from 'react';
-import LandingPage from './content/LandingPage';
 import { shallow } from 'enzyme';
 
 describe('React Step 5 Tests', () => {
