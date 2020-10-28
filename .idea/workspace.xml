@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="add1aa0b-d5b0-4c63-8460-473a8181e855" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TutorialHeader/TutorialHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TutorialHeader/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TutorialHeader/tutorial-header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-core-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-generator-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-annotate-as-pure-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-builder-binary-assignment-operator-visitor-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-builder-react-jsx-7.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-call-delegate-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-create-class-features-plugin-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-define-map-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-explode-assignable-expression-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-function-name-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-get-function-arity-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-hoist-variables-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-member-expression-to-functions-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-module-imports-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-module-transforms-7.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-optimise-call-expression-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-plugin-utils-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-regex-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-remap-async-to-generator-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-replace-supers-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-simple-access-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-split-export-declaration-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helper-wrap-function-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-helpers-7.3.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-highlight-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-parser-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-async-generator-functions-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-json-strings-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-object-rest-spread-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-optional-catch-binding-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-proposal-unicode-property-regex-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-async-generators-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-decorators-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-flow-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-json-strings-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-jsx-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-object-rest-spread-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-optional-catch-binding-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-syntax-typescript-7.3.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-arrow-functions-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-async-to-generator-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-block-scoped-functions-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-block-scoping-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-classes-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-computed-properties-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-dotall-regex-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-duplicate-keys-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-exponentiation-operator-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-for-of-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-function-name-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-literals-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-amd-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-commonjs-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-systemjs-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-modules-umd-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-named-capturing-groups-regex-7.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-new-target-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-object-super-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-parameters-7.3.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-jsx-7.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-jsx-self-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-react-jsx-source-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-regenerator-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-shorthand-properties-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-spread-7.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-sticky-regex-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-template-literals-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-typeof-symbol-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-typescript-7.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-plugin-transform-unicode-regex-7.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-preset-env-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-runtime-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-template-7.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-traverse-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@babel-types-7.3.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-cli-7.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-config-conventional-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-ensure-7.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-execute-rule-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-format-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-is-ignored-7.5.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-lint-7.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-load-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-message-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-parse-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-read-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-resolve-extends-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-rules-7.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-to-lines-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@commitlint-top-level-7.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@samverschueren-stream-to-observable-0.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-add-jsx-attribute-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-remove-jsx-attribute-4.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-remove-jsx-empty-expression-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-replace-jsx-attribute-value-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-svg-dynamic-title-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-svg-em-dimensions-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-transform-react-native-svg-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-plugin-transform-svg-component-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-babel-preset-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-core-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-hast-util-to-babel-ast-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-plugin-jsx-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@svgr-plugin-svgo-4.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-node-11.10.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-q-1.5.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-unist-2.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-vfile-3.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/@types-vfile-message-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/abab-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/accepts-1.3.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/acorn-5.7.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/acorn-6.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/acorn-globals-4.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/acorn-jsx-5.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/acorn-walk-6.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ajv-6.10.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ajv-keywords-3.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ansi-regex-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/array-includes-3.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/asn1.js-4.10.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/assert-1.4.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/async-1.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/async-2.6.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/async-each-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/async-limiter-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/autoprefixer-9.4.10.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/aws4-1.8.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/axobject-query-2.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/babel-plugin-named-asset-import-0.3.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/bail-1.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/base64-js-1.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/binary-extensions-1.13.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/bluebird-3.5.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/bn.js-4.11.8.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/body-parser-1.18.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/browser-process-hrtime-0.1.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/browserify-sign-4.0.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/browserslist-4.4.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/bser-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/buffer-4.9.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cacache-11.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/callsites-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/camelcase-5.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/caniuse-lite-1.0.30000941.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ccount-1.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/chokidar-2.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/chokidar-2.1.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/chownr-1.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/chrome-trace-event-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/clean-css-4.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cli-width-2.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/color-3.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/color-string-1.5.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/combined-stream-1.0.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/comma-separated-tokens-1.0.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/commander-2.20.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/compare-func-1.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/component-emitter-1.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/compressible-2.0.16.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/compression-1.7.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/confusing-browser-globals-1.0.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/console-browserify-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/content-disposition-0.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/convert-source-map-1.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cookie-0.3.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/core-js-2.6.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cosmiconfig-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cosmiconfig-5.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cosmiconfig-5.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/create-ecdh-4.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cross-spawn-5.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/css-select-2.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/css-selector-tokenizer-0.7.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/css-tree-1.0.0-alpha.28.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/css-tree-1.0.0-alpha.29.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/css-unit-converter-1.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/css-url-regex-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cssdb-4.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cssesc-0.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/csso-3.5.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cssom-0.3.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cssstyle-1.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/cyclist-0.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/damerau-levenshtein-1.0.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/date-now-0.1.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/debug-4.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/deep-equal-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/des.js-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/dom-serializer-0.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/dot-prop-4.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/duplexer-0.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/electron-to-chromium-1.3.113.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/elliptic-6.4.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/end-of-stream-1.4.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/enhanced-resolve-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/es-abstract-1.13.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/es-to-primitive-1.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/escodegen-1.11.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/eslint-import-resolver-node-0.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/eslint-module-utils-2.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/eslint-scope-4.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/eslint-utils-1.3.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/eslint-visitor-keys-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/esprima-3.1.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/esquery-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/esrecurse-4.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/estraverse-4.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/esutils-2.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/eventemitter3-3.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/events-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/execa-0.7.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/express-4.16.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/external-editor-3.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fast-deep-equal-2.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fast-glob-2.2.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fast-json-stable-stringify-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/faye-websocket-0.11.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fb-watchman-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/figgy-pudding-3.5.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/finalhandler-1.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/find-cache-dir-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/find-parent-dir-0.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/flatten-1.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/follow-redirects-1.7.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fs-minipass-1.2.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fsevents-1.2.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/fstream-1.0.11.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/get-own-enumerable-property-symbols-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/get-stdin-5.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/glob-7.1.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/globals-11.11.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/globule-1.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/graceful-fs-4.1.15.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/handle-thing-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/handlebars-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/har-validator-5.1.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/has-symbols-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/hash-base-3.0.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/hast-util-from-parse5-5.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/hast-util-parse-selector-2.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/hastscript-5.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/hosted-git-info-2.7.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/html-entities-1.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/http-parser-js-0.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/http-proxy-1.17.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/iconv-lite-0.4.23.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ieee754-1.1.12.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ignore-walk-3.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/import-fresh-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/in-publish-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/indexof-0.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/inquirer-6.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ipaddr.js-1.8.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ipaddr.js-1.9.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-buffer-2.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-callable-1.1.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-date-object-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-finite-1.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-glob-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-promise-2.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-regex-1.0.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/is-symbol-1.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/js-base64-2.5.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/js-yaml-3.12.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/js-yaml-3.13.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/json3-3.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/json5-2.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/jsx-ast-utils-2.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/kind-of-6.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lint-staged-8.1.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/loader-fs-cache-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lodash.assign-4.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lodash.clonedeep-4.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lodash.get-4.4.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lodash.mergewith-4.6.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lodash.template-4.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/lodash.templatesettings-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/loglevel-1.6.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/make-dir-1.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mdn-data-1.1.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mem-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mem-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/merge2-1.2.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mime-1.4.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mime-2.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mime-db-1.38.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mime-types-2.1.22.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/minimist-0.0.10.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/minimist-0.0.8.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/minimist-1.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/minipass-2.3.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/minizlib-1.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mixin-deep-1.3.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/mkdirp-0.5.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/nan-2.12.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/nan-2.13.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/needle-2.2.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/negotiator-0.6.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/neo-async-2.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-forge-0.7.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-libs-browser-2.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-notifier-5.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-releases-1.1.9.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/node-sass-4.11.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/nopt-4.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/npm-bundled-1.0.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/npm-packlist-1.4.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/nwsapi-2.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/object-keys-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/object.assign-4.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/object.fromentries-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/object.getownpropertydescriptors-2.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/object.values-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/optimist-0.6.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/optionator-0.8.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/os-locale-2.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/p-is-promise-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/p-limit-2.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/p-try-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/pako-1.0.10.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/parallel-transform-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/parent-module-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/parse-asn1-5.1.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/parse5-5.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/parseurl-1.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/path-browserify-0.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/pbkdf2-3.0.17.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/please-upgrade-node-3.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/portfinder-1.0.20.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-7.0.14.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-attribute-case-insensitive-4.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-calc-7.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-color-hex-alpha-5.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-custom-media-7.0.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-custom-properties-8.0.9.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-font-variant-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-initial-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-load-config-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-nesting-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/postcss-selector-parser-3.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/prettier-1.17.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/pretty-error-2.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/process-nextick-args-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/property-information-5.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/proxy-addr-2.0.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/psl-1.1.31.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/querystringify-2.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/range-parser-1.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/raw-body-2.3.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-16.8.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-dom-16.8.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-error-overlay-5.1.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/react-is-16.8.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/readable-stream-2.3.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/readable-stream-3.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regenerate-1.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regenerate-unicode-properties-8.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regenerator-transform-0.13.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regexp-tree-0.1.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regexpu-core-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regexpu-core-4.5.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regjsgen-0.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regjsgen-0.5.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regjsparser-0.1.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/regjsparser-0.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/rehype-parse-6.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/renderkid-2.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/replace-ext-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/request-2.88.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/request-promise-core-1.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/request-promise-native-1.0.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/require-from-string-2.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/resolve-global-0.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/run-async-2.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/rxjs-6.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/sass-graph-2.2.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/scheduler-0.13.6.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/selfsigned-1.10.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/semver-5.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/send-0.16.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/serialize-javascript-1.6.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/serve-static-1.13.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/set-value-0.4.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/set-value-2.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/signal-exit-3.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/simple-git-1.110.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/source-map-resolve-0.5.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/source-map-support-0.5.10.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/space-separated-tokens-1.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/spdx-correct-3.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/spdx-exceptions-2.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/spdx-expression-parse-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/spdx-license-ids-3.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/spdy-4.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/statuses-1.4.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/stream-shift-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/string-width-3.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/string_decoder-1.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/svgo-1.2.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/symbol-tree-3.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/synchronous-promise-2.0.7.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/table-5.2.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tapable-1.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tar-2.2.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tar-4.4.8.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/terser-3.16.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/terser-webpack-plugin-1.2.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/thunky-1.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/timers-browserify-2.0.10.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tough-cookie-2.4.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/trim-0.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/trough-1.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/ts-pnp-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/tslib-1.9.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/type-is-1.6.16.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/uglify-js-3.4.9.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/unicode-match-property-value-ecmascript-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/unicode-property-aliases-ecmascript-1.0.5.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/unified-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/union-value-1.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/unique-slug-2.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/unist-util-stringify-position-1.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/upath-1.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/upath-1.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/uri-js-4.2.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/url-parse-1.4.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/uuid-3.3.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/vendors-1.0.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/vfile-3.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/vfile-message-1.1.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/vm-browserify-0.0.4.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/w3c-hr-time-1.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/watchpack-1.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/web-namespaces-1.1.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/webpack-sources-1.3.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/websocket-driver-0.7.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/websocket-extensions-0.1.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/whatwg-url-7.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/wordwrap-0.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/worker-farm-1.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/write-file-atomic-2.4.2.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/x-is-string-0.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/xtend-4.0.1.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yallist-3.0.3.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yargs-11.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yargs-7.1.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yargs-parser-5.0.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn-offline-mirror/yup-0.26.10.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/App.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/TutorialHeader/tutorial-header.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Dockerfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="105">
+                <caret line="7" selection-start-line="7" selection-end-line="7" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/Dockerfile" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/carbon-tutorial-apenrose-fork.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
+        <option value="$PROJECT_DIR$/.idea/dictionaries/apenrose.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="79" />
+    <option name="y" value="39" />
+    <option name="width" value="1535" />
+    <option name="height" value="932" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="carbon-tutorial-apenrose-fork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carbon-tutorial-apenrose-fork" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="carbon-tutorial-apenrose-fork" type="b2602c69:ProjectViewProjectNode" />
+              <item name="carbon-tutorial-apenrose-fork" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3367662" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="add1aa0b-d5b0-4c63-8460-473a8181e855" name="Default Changelist" comment="" />
+      <created>1603453378823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603453378823</updated>
+      <workItem from="1603453381070" duration="5085000" />
+      <workItem from="1603883487365" duration="3807000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8892000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="982" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2904762" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49940476" visible="true" weight="0.5290889" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="9" sideWeight="0.5005952" side_tool="true" visible="true" weight="0.5290889" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="11" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="react step 1 pull request" />
+    <option name="LAST_COMMIT_MESSAGE" value="react step 1 pull request" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/TutorialHeader/tutorial-header.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" lean-forward="true" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="Copyright.UI">
+        <settings>
+          <last-edited>Copyright</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3367662" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Python 2.7.10 (/System/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7) interpreter library</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3367662" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3367662" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3367662" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>All</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.3367662" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
