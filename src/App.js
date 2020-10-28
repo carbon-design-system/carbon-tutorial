@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import './App.scss';
 import { Content } from 'carbon-components-react';
 import TutorialHeader from './components/TutorialHeader';
