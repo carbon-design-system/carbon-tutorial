@@ -3,5 +3,4 @@ applications:
   - name: carbon-tutorial-HIMAGIRISHH
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
-    env:
-    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: a5eabcaa7b2ccf1d4a5ab54dbb59f2eef7a61b29
+    env:  REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: a5eabcaa7b2ccf1d4a5ab54dbb59f2eef7a61b29
