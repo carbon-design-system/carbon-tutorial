@@ -1,6 +1,6 @@
 {
   "name": "carbon-tutorial",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
