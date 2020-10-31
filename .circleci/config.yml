@@ -1,0 +1,26 @@
+version: 2
+jobs:
+  step-five:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Install yarn
+          command: |
+            curl -o- -L https://yarnpkg.com/install.sh | bash -s -- --version 1.15.2
+            export PATH=$HOME/.yarn/bin:$PATH
+      - run: yarn install --offline --frozen-lockfile
+      - run:
+          name: Run ci checks
+          command: yarn ci-check
+      - run:
+          name: Run tests
+          command: yarn test
+
+workflows:
+  version: 2
+  main:
+    jobs:
+      - step-five
