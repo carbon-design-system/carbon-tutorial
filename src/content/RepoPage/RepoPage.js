@@ -51,7 +51,7 @@ const rows = [
     name: 'Repo 3',
     createdAt: 'Date',
     updatedAt: 'Date',
-    issueCount: '123',
+    issueCount: '1233',
     stars: '456',
     links: 'Links',
   },
