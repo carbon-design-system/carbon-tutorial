@@ -78,5 +78,7 @@
     "printWidth": 80,
     "singleQuote": true,
     "trailingComma": "es5"
-  }
+  },
+  "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
 }
+
