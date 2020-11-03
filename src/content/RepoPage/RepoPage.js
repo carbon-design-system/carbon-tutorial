@@ -89,13 +89,6 @@ const getRowItems = rows =>
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
 
-/*
-const getRowDescription = (rowId) => {
-  const row = rows.find(({ id }) => id === rowId);
-  return row ? row.description : '';
-};
-*/
-
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
