@@ -1,0 +1,6 @@
+---
+    applications:
+        - name: carbon-tutorial-billhong6981
+        memory:64
+        buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+        
