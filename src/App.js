@@ -4,9 +4,9 @@ import './app.scss';
 
 import { Button, Content } from 'carbon-components-react';
 
-import TutorialHeader from './components/TutorialHeader';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
+import TutorialHeader from './components/TutorialHeader';
 
 class App extends Component {
   render() {
