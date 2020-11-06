@@ -63,7 +63,6 @@ const REPO_QUERY = gql`
     }
   }
 `;
-
 const headers = [
   {
     key: 'name',
