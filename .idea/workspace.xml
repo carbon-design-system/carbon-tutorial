@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7acc4e0a-8a25-43da-a0df-4ca577a18506" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response13.json" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectId" id="1jFAJNudrx2AurXj8BUHECC7pKQ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://api.github.com" />
+          <option name="urlPath" value="/graphql" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer 3357bfb88ca79b3104da68dfc0095e41f72851c9" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://api.github.com" />
+          <option name="urlPath" value="/graphql" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer 814bc6b29ad750479bc42d78898059393e793c51" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://api.github.com" />
+          <option name="urlPath" value="/graphql" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="Bearer: 814bc6b29ad750479bc42d78898059393e793c51" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://api.github.com" />
+          <option name="urlPath" value="/graphql" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Authorization" />
+                <option name="value" value="814bc6b29ad750479bc42d78898059393e793c51" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7acc4e0a-8a25-43da-a0df-4ca577a18506" name="Default Changelist" comment="" />
+      <created>1603389394503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603389394503</updated>
+      <workItem from="1603389403691" duration="4742000" />
+      <workItem from="1603434111585" duration="6823000" />
+      <workItem from="1604172872454" duration="96000" />
+      <workItem from="1604680013623" duration="16546000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3880" y="111" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604959915480">
+      <screen x="1680" y="-367" width="3440" height="1417" />
+    </state>
+    <state x="3880" y="111" key="#com.intellij.fileTypes.FileTypeChooser/5120.-7.1920.1011/0.23.1680.1027/1680.-367.3440.1417@1680.-367.3440.1417" timestamp="1604959915480" />
+    <state x="3404" y="147" key="EditFileWatcherDialog" timestamp="1603394319334">
+      <screen x="1680" y="-367" width="3440" height="1371" />
+    </state>
+    <state x="3404" y="147" key="EditFileWatcherDialog/5120.-7.1920.1057/0.23.1680.1027/1680.-367.3440.1371@1680.-367.3440.1371" timestamp="1603394319334" />
+    <state width="2356" height="289" key="GridCell.Tab.0.bottom" timestamp="1603395558923">
+      <screen x="1680" y="-367" width="3440" height="1371" />
+    </state>
+    <state width="2356" height="289" key="GridCell.Tab.0.bottom/5120.-7.1920.1057/0.23.1680.1027/1680.-367.3440.1371@1680.-367.3440.1371" timestamp="1603395558923" />
+    <state width="2356" height="289" key="GridCell.Tab.0.center" timestamp="1603395558922">
+      <screen x="1680" y="-367" width="3440" height="1371" />
+    </state>
+    <state width="2356" height="289" key="GridCell.Tab.0.center/5120.-7.1920.1057/0.23.1680.1027/1680.-367.3440.1371@1680.-367.3440.1371" timestamp="1603395558922" />
+    <state width="2356" height="289" key="GridCell.Tab.0.left" timestamp="1603395558920">
+      <screen x="1680" y="-367" width="3440" height="1371" />
+    </state>
+    <state width="2356" height="289" key="GridCell.Tab.0.left/5120.-7.1920.1057/0.23.1680.1027/1680.-367.3440.1371@1680.-367.3440.1371" timestamp="1603395558920" />
+    <state width="2356" height="289" key="GridCell.Tab.0.right" timestamp="1603395558922">
+      <screen x="1680" y="-367" width="3440" height="1371" />
+    </state>
+    <state width="2356" height="289" key="GridCell.Tab.0.right/5120.-7.1920.1057/0.23.1680.1027/1680.-367.3440.1371@1680.-367.3440.1371" timestamp="1603395558922" />
+    <state x="3817" y="-6" width="724" height="646" key="find.popup" timestamp="1604960160393">
+      <screen x="1680" y="-367" width="3440" height="1417" />
+    </state>
+    <state x="3817" y="-6" width="724" height="646" key="find.popup/5120.-7.1920.1011/0.23.1680.1027/1680.-367.3440.1417@1680.-367.3440.1417" timestamp="1604960160393" />
+  </component>
+</project>
