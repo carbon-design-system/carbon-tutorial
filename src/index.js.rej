@@ -1,0 +1,6 @@
+diff a/src/index.js b/src/index.js	(rejected hunks)
+@@ -20 +20,3 @@ const client = new ApolloClient({
+-    authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
++    authorization: `Bearer ${
++      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
++    }`,

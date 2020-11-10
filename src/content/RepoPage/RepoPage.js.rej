@@ -1,0 +1,20 @@
+diff a/src/content/RepoPage/RepoPage.js b/src/content/RepoPage/RepoPage.js	(rejected hunks)
+@@ -22,2 +22,2 @@ const LinkList = ({ url, homepageUrl }) => (
+-const getRowItems = (rows) =>
+-  rows.map((row) => ({
++const getRowItems = rows =>
++  rows.map(row => ({
+@@ -126,2 +125,2 @@ const RepoPage = () => {
+-                    firstRowIndex,
+-                    firstRowIndex + currentPageSize
++                      firstRowIndex,
++                      firstRowIndex + currentPageSize
+@@ -138,4 +137,4 @@ const RepoPage = () => {
+-                    if (pageSize !== currentPageSize) {
+-                      setCurrentPageSize(pageSize);
+-                    }
+-                    setFirstRowIndex(pageSize * (page - 1));
++                      if (pageSize !== currentPageSize) {
++                        setCurrentPageSize(pageSize);
++                      }
++                      setFirstRowIndex(pageSize * (page - 1));

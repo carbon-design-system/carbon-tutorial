@@ -1,0 +1,4 @@
+diff a/src/content/RepoPage/RepoTable.js b/src/content/RepoPage/RepoTable.js	(rejected hunks)
+@@ -17 +17 @@ const RepoTable = ({ rows, headers }) => {
+-  const getRowDescription = (rowId) => {
++  const getRowDescription = rowId => {
