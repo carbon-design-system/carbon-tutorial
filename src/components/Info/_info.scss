@@ -1,6 +1,7 @@
 .info-section__heading {
   @include carbon--type-style('heading-01');
 }
+
 .info-card {
   margin-top: $spacing-09;
   display: flex;
@@ -35,9 +36,11 @@
     }
   }
 }
+
 .info-card__heading {
   @include carbon--type-style('productive-heading-03');
 }
+
 .info-card__body {
   margin-top: $spacing-06;
   flex-grow: 1; // fill space so icons are bottom aligned
