@@ -9,9 +9,11 @@ import {
   HeaderGlobalAction,
   SkipToContent,
 } from 'carbon-components-react';
-import AppSwitcher20 from '@carbon/icons-react/es/app-switcher/20';
-import Notification20 from '@carbon/icons-react/es/notification/20';
-import UserAvatar20 from '@carbon/icons-react/es/user--avatar/20';
+import {
+  AppSwitcher20,
+  Notification20,
+  UserAvatar20,
+} from '@carbon/icons-react';
 
 const TutorialHeader = () => (
   <Header aria-label="Carbon Tutorial">
