@@ -39,11 +39,11 @@ const rows = [
     links: 'Links',
   },
   {
+    id: '2',
     name: 'Repo 2',
     createdAt: 'Date',
     updatedAt: 'Date',
     issueCount: '123',
-    id: '2',
     stars: '456',
     links: 'Links',
   },
