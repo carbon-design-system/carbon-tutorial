@@ -8,6 +8,7 @@ import RepoPage from './content/RepoPage';
 
 class App extends Component {
   render() {
+    console.log(process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN);
     return (
       <>
         <TutorialHeader />
