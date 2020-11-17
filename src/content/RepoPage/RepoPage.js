@@ -1,7 +1,7 @@
 import React from 'react';
 
 const RepoPage = () => {
-  return <div>REPO PAGE</div>;
+  return <div>REPOPAGE</div>;
 };
 
 export default RepoPage;
