@@ -1,0 +1,37 @@
+diff a/src/content/RepoPage/RepoPage.js b/src/content/RepoPage/RepoPage.js	(rejected hunks)
+@@ -98,6 +98,3 @@ const RepoPage = () => {
+-            <Query query={REPO_QUERY}>
+-                {({ loading, error, data }) => {
+-                  console.log(error);
+-                  
+-                  const { repositories } = data.organization;
+-                  const rows = getRowItems(repositories.nodes);
++          <Query query={REPO_QUERY}>
++            {({ loading, error, data }) => {
++              console.log(error);
+@@ -105,11 +102,14 @@ const RepoPage = () => {
+-                  // Wait for the request to complete
+-                  if (loading) return 'Loading...';
+-                  // Something went wrong with the data fetching
+-                  if (error) return `Error! ${error.message}`;
+-                  return (
+-                    <>
+-                      <RepoTable headers={headers} rows={rows} />
+-                    </>
+-                  );
+-                }}
+-            </Query>
++              const { repositories } = data.organization;
++              const rows = getRowItems(repositories.nodes);
++
++              // Wait for the request to complete
++              if (loading) return 'Loading...';
++              // Something went wrong with the data fetching
++              if (error) return `Error! ${error.message}`;
++              return (
++                <>
++                  <RepoTable headers={headers} rows={rows} />
++                </>
++              );
++            }}
++          </Query>
