@@ -122,6 +122,7 @@ const RepoPage = () => {
                 <>
                   <RepoTable
                     headers={headers}
+                    q
                     rows={rows.slice(
                       firstRowIndex,
                       firstRowIndex + currentPageSize
