@@ -6,6 +6,7 @@
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
   "license": "Apache-2.0",
   "scripts": {
+	"deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
     "build": "react-scripts build",
     "ci-check": "yarn format:diff",
     "clean": "yarn cache clean && yarn install",
