@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+import { DataTableSkeleton, Link, Pagination } from 'carbon-components-react';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -38,7 +38,7 @@ const REPO_QUERY = gql`
   }
 `;
 
-const LinkList = ({ url, homepageUrl }) => (
+const LinkedList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
       <Link href={url}>GitHub</Link>
@@ -60,7 +60,7 @@ const getRowItems = rows =>
     issueCount: row.issues.totalCount,
     createdAt: new Date(row.createdAt).toLocaleDateString(),
     updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+    links: <LinkedList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
 
 const headers = [
