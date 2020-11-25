@@ -2,8 +2,13 @@
   "name": "carbon-tutorial",
   "version": "0.0.0",
   "private": true,
-  "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
-  "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/carbon-design-system/carbon-tutorial.git"
+  },
+  "bugs": {
+    "url": "https://github.com/carbon-design-system/carbon-tutorial/issues"
+  },
   "license": "Apache-2.0",
   "scripts": {
     "build": "react-scripts build",
@@ -17,10 +22,18 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/icons-react": "^10.21.0",
+    "browserslist": "^4.4.2",
+    "caniuse-lite": "^1.0.30000941",
+    "carbon-components": "^10.24.0",
+    "carbon-components-react": "^7.24.0",
+    "carbon-icons": "^7.0.7",
+    "ci-check": "^1.0.0",
     "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.12.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "2.1.8"
   },
   "devDependencies": {
@@ -70,5 +83,9 @@
     "printWidth": 80,
     "singleQuote": true,
     "trailingComma": "es5"
-  }
+  },
+  "description": "This tutorial will guide you in creating a React app with the [Carbon Design System](https://www.carbondesignsystem.com/). We’ll teach you the ins and outs of using Carbon components, while introducing web development best practices along the way.",
+  "homepage": "https://github.com/carbon-design-system/carbon-tutorial#readme",
+  "main": "index.js",
+  "author": ""
 }
