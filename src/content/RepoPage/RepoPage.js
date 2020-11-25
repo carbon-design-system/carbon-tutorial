@@ -4,10 +4,6 @@ import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
-// If we're here, we've got our data!
-const { repositories } = data.organization;
-const rows = getRowItems(repositories.nodes);
-
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
