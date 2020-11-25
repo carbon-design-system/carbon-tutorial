@@ -17,6 +17,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "^10.16.0",
     "@carbon/icons-react": "^10.3.0",
     "carbon-components": "^10.3.0",
     "carbon-components-react": "^7.3.0",
@@ -74,5 +75,9 @@
     "printWidth": 80,
     "singleQuote": true,
     "trailingComma": "es5"
-  }
+  },
+  "description": "This tutorial will guide you in creating a React app with the [Carbon Design System](https://www.carbondesignsystem.com/). We’ll teach you the ins and outs of using Carbon components, while introducing web development best practices along the way.",
+  "homepage": "https://github.com/carbon-design-system/carbon-tutorial#readme",
+  "main": "index.js",
+  "author": "Aadityaprasaad Singh"
 }
