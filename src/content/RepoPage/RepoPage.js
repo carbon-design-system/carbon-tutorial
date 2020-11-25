@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+import React, { useState } from 'react';
+import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -37,7 +37,6 @@ const REPO_QUERY = gql`
     }
   }
 `;
-
 const headers = [
   {
     key: 'name',
@@ -64,7 +63,6 @@ const headers = [
     header: 'Links',
   },
 ];
-
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -78,7 +76,6 @@ const LinkList = ({ url, homepageUrl }) => (
     )}
   </ul>
 );
-
 const getRowItems = rows =>
   rows.map(row => ({
     ...row,
@@ -89,7 +86,6 @@ const getRowItems = rows =>
     updatedAt: new Date(row.updatedAt).toLocaleDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
-
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
@@ -112,8 +108,6 @@ const RepoPage = () => {
                 );
               // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
-              // If we're here, we've got our data!
-              // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
