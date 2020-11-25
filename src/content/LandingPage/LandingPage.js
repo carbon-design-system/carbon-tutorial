@@ -94,12 +94,12 @@ const LandingPage = () => {
       <InfoSection heading="The Principles" className="landing-page__r3">
         <InfoCard
           heading="Carbon is Open"
-          body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+          body="It’s a distributed effort, guided by the principles of the open-source movement. Carbon’s users are also its makers, and everyone is encouraged to contribute."
           icon={<PersonFavorite32 />}
         />
         <InfoCard
           heading="Carbon is Modular"
-          body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+          body="Carbon’s modularity ensures maximum flexibility in execution. Its components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
           icon={<Application32 />}
         />
         <InfoCard
