@@ -10,7 +10,7 @@ class App extends Component {
     return (
       <>
         <TutorialHeader />
-        <Content style={{ padding: ` 0rem` }}>
+        <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
             <Route path="/repos" component={RepoPage} />
