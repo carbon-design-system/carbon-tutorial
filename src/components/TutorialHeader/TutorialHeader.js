@@ -25,7 +25,6 @@ const TutorialHeader = () => (
         Repositories
       </HeaderMenuItem>
     </HeaderNavigation>
-    <HeaderGlobalBar />
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">
         <Notification20 />
