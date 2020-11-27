@@ -1,0 +1,118 @@
+pull_request_rules:
+  - name: Close when CI Passes Step 1
+    conditions:
+      - 'status-success=ci/circleci: step-one'
+    actions:
+      close:
+        message:
+          'Looks good - You are one step closer to completion of the Carbon
+          React tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 1
+    conditions:
+      - 'status-failure=ci/circleci: step-one'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like you are missing something. Double check your code,
+          your preview URL should match the
+          [preview](https://www.carbondesignsystem.com/tutorial/react/step-1#preview)
+          in the tutorial.'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 2
+    conditions:
+      - 'status-success=ci/circleci: step-two'
+    actions:
+      close:
+        message:
+          'Looks good - You are one step closer to completion of the Carbon
+          React tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 2
+    conditions:
+      - 'status-failure=ci/circleci: step-two'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like you are missing something. Double check your code,
+          your preview URL should match the
+          [preview](https://www.carbondesignsystem.com/tutorial/react/step-2#preview)
+          in the tutorial.'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 3
+    conditions:
+      - 'status-success=ci/circleci: step-three'
+    actions:
+      close:
+        message:
+          'Looks good - You are one step closer to completion of the Carbon
+          React tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 3
+    conditions:
+      - 'status-failure=ci/circleci: step-three'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like you are missing something. Double check your code,
+          your preview URL should match the
+          [preview](https://www.carbondesignsystem.com/tutorial/react/step-3#preview)
+          in the tutorial.'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 4
+    conditions:
+      - 'status-success=ci/circleci: step-four'
+    actions:
+      close:
+        message:
+          'Looks good - You are one step closer to completion of the Carbon
+          React tutorial and earning the digital credential.'
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 4
+    conditions:
+      - 'status-failure=ci/circleci: step-four'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like you are missing something. Double check your code,
+          your preview URL should match the
+          [preview](https://www.carbondesignsystem.com/tutorial/react/step-4#preview)
+          in the tutorial.'
+      label:
+        add: ['status: needs correction']
+  - name: Close when CI Passes Step 5
+    conditions:
+      - 'status-success=ci/circleci: step-five'
+    actions:
+      close:
+        message:
+          "Congratulations! You've completed the Carbon tutorial for React! Feel
+          free to stop this running application on IBM Cloud to avoid the
+          possibility of incurring any charges. Please see the wrapping up step
+          to apply for your badge!
+          https://www.carbondesignsystem.com/tutorial/react/wrapping-up"
+      label:
+        add: ['status: approved']
+        remove: ['status: needs correction']
+  - name: Comment when CI fails Step 5
+    conditions:
+      - 'status-failure=ci/circleci: step-five'
+    actions:
+      comment:
+        message:
+          'Hi, it looks like you are missing something. Double check the
+          [instructions](https://www.carbondesignsystem.com/tutorial/react/step-5)
+          in step 5 of the tutorial.'
+      label:
+        add: ['status: needs correction']
