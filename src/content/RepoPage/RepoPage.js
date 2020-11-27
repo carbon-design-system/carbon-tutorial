@@ -150,6 +150,7 @@ const RepoPage = () => {
           </Query>
         </div>
       </div>
+      <RepoTable />
     </div>
   );
 };
