@@ -14,6 +14,7 @@
 # misc
 .DS_Store
 .env.local
+REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN=7f41252209149df179049b8fd5819718bbb900ae
 .env.development.local
 .env.test.local
 .env.production.local
