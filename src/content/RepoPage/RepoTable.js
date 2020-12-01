@@ -16,7 +16,7 @@ import {
 const RepoTable = ({ rows, headers }) => {
   return (
     <DataTable
-      row={rows}
+      rows={rows}
       headers={headers}
       render={({
         rows,
@@ -59,3 +59,4 @@ const RepoTable = ({ rows, headers }) => {
     />
   );
 };
+export default RepoTable;
