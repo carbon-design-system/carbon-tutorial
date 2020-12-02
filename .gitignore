@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/.yarn-offline-mirror
 /.pnp
 .pnp.js
 
