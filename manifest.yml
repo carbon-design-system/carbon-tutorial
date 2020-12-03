@@ -1,5 +1,5 @@
 ---
 applications:
-  - name: carbon-tutorial-USERNAME
+  - name: carbon-tutorial-dashpunk
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
