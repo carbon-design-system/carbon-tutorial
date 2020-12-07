@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   DataTable,
   TableContainer,
@@ -11,13 +11,13 @@ import {
   TableExpandRow,
   TableCell,
   TableExpandedRow,
-} from 'carbon-components-react';
+} from 'carbon-components-react'
 
 const RepoTable = ({ rows, headers }) => {
   const getRowDescription = rowId => {
-    const row = rows.find(({ id }) => id === rowId);
-    return row ? row.description : '';
-  };
+    const row = rows.find(({ id }) => id === rowId)
+    return row ? row.description : ''
+  }
 
   return (
     <DataTable
@@ -32,7 +32,8 @@ const RepoTable = ({ rows, headers }) => {
       }) => (
         <TableContainer
           title="Carbon Repositories"
-          description="A collection of public Carbon repositories.">
+          description="A collection of public Carbon repositories."
+        >
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
@@ -49,7 +50,9 @@ const RepoTable = ({ rows, headers }) => {
                 <React.Fragment key={row.id}>
                   <TableExpandRow {...getRowProps({ row })}>
                     {row.cells.map(cell => (
-                      <TableCell key={cell.id}>{cell.value}</TableCell>
+                      <TableCell key={cell.id}>
+                        {cell.value}
+                      </TableCell>
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
@@ -62,7 +65,7 @@ const RepoTable = ({ rows, headers }) => {
         </TableContainer>
       )}
     />
-  );
-};
+  )
+}
 
-export default RepoTable;
+export default RepoTable

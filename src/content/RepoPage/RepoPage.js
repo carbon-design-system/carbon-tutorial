@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
-import { gql } from 'apollo-boost';
-import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+import React, { useState } from 'react'
+import RepoTable from './RepoTable'
+import { gql } from 'apollo-boost'
+import { Query } from 'react-apollo'
+import {
+  Link,
+  DataTableSkeleton,
+  Pagination,
+} from 'carbon-components-react'
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -10,7 +14,10 @@ const REPO_QUERY = gql`
     organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
-      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
+      repositories(
+        first: 75
+        orderBy: { field: UPDATED_AT, direction: DESC }
+      ) {
         totalCount
         nodes {
           url
@@ -36,7 +43,7 @@ const REPO_QUERY = gql`
       }
     }
   }
-`;
+`
 
 const headers = [
   {
@@ -63,7 +70,7 @@ const headers = [
     key: 'links',
     header: 'Links',
   },
-];
+]
 
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
@@ -77,7 +84,7 @@ const LinkList = ({ url, homepageUrl }) => (
       </li>
     )}
   </ul>
-);
+)
 
 const getRowItems = rows =>
   rows.map(row => ({
@@ -88,12 +95,12 @@ const getRowItems = rows =>
     createdAt: new Date(row.createdAt).toLocaleDateString(),
     updatedAt: new Date(row.updatedAt).toLocaleDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
+  }))
 
 const RepoPage = () => {
-  const [totalItems, setTotalItems] = useState(0);
-  const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(10);
+  const [totalItems, setTotalItems] = useState(0)
+  const [firstRowIndex, setFirstRowIndex] = useState(0)
+  const [currentPageSize, setCurrentPageSize] = useState(10)
 
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -109,15 +116,15 @@ const RepoPage = () => {
                     rowCount={10}
                     headers={headers}
                   />
-                );
+                )
 
               // Something went wrong with the data fetching
-              if (error) return `Error! ${error.message}`;
+              if (error) return `Error! ${error.message}`
 
               // If we're here, we've got our data!
-              const { repositories } = organization;
-              setTotalItems(repositories.totalCount);
-              const rows = getRowItems(repositories.nodes);
+              const { repositories } = organization
+              setTotalItems(repositories.totalCount)
+              const rows = getRowItems(repositories.nodes)
 
               return (
                 <>
@@ -125,7 +132,7 @@ const RepoPage = () => {
                     headers={headers}
                     rows={rows.slice(
                       firstRowIndex,
-                      firstRowIndex + currentPageSize
+                      firstRowIndex + currentPageSize,
                     )}
                   />
                   <Pagination
@@ -137,19 +144,19 @@ const RepoPage = () => {
                     itemsPerPageText="Items per page"
                     onChange={({ page, pageSize }) => {
                       if (pageSize !== currentPageSize) {
-                        setCurrentPageSize(pageSize);
+                        setCurrentPageSize(pageSize)
                       }
-                      setFirstRowIndex(pageSize * (page - 1));
+                      setFirstRowIndex(pageSize * (page - 1))
                     }}
                   />
                 </>
-              );
+              )
             }}
           </Query>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RepoPage;
+export default RepoPage

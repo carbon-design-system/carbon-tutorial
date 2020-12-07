@@ -1,11 +1,15 @@
-import React from 'react';
+import React from 'react'
 import {
   Breadcrumb,
   BreadcrumbItem,
   Button,
   Tabs,
   Tab,
-} from 'carbon-components-react';
+} from 'carbon-components-react'
+import { InfoSection, InfoCard } from '../../components/Info'
+import Application32 from '@carbon/icons-react/lib/application/32'
+import Globe32 from '@carbon/icons-react/lib/globe/32'
+import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32'
 
 const props = {
   tabs: {
@@ -18,7 +22,7 @@ const props = {
     role: 'presentation',
     tabIndex: 0,
   },
-};
+}
 
 const LandingPage = () => {
   return (
@@ -46,11 +50,12 @@ const LandingPage = () => {
                       What is Carbon?
                     </h2>
                     <p className="landing-page__p">
-                      Carbon is IBM’s open-source design system for digital
-                      products and experiences. With the IBM Design Language as
-                      its foundation, the system consists of working code,
-                      design tools and resources, human interface guidelines,
-                      and a vibrant community of contributors.
+                      Carbon is IBM’s open-source design system for
+                      digital products and experiences. With the IBM
+                      Design Language as its foundation, the system
+                      consists of working code, design tools and
+                      resources, human interface guidelines, and a
+                      vibrant community of contributors.
                     </p>
                     <Button>Learn more</Button>
                   </div>
@@ -68,8 +73,9 @@ const LandingPage = () => {
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
-                    Rapidly build beautiful and accessible experiences. The
-                    Carbon kit contains all resources you need to get started.
+                    Rapidly build beautiful and accessible
+                    experiences. The Carbon kit contains all resources
+                    you need to get started.
                   </div>
                 </div>
               </div>
@@ -78,8 +84,9 @@ const LandingPage = () => {
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
-                    Carbon provides styles and components in Vanilla, React,
-                    Angular, and Vue for anyone building on the web.
+                    Carbon provides styles and components in Vanilla,
+                    React, Angular, and Vue for anyone building on the
+                    web.
                   </div>
                 </div>
               </div>
@@ -87,16 +94,38 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-      <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">
-          <h3 className="landing-page__label">The Principles</h3>
-        </div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
-      </div>
-    </div>
-  );
-};
 
-export default LandingPage;
+      <InfoSection
+        heading="The Principles"
+        className="landing-page__r3"
+      >
+        <InfoCard
+          heading="Carbon is Open"
+          body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+          icon={<PersonFavorite32 />}
+        />
+        <InfoCard
+          heading="Carbon is Modular"
+          body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+          icon={<Application32 />}
+        />
+        <InfoCard
+          heading="Carbon is Consistent"
+          // body="Based "
+          body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+          icon={<Globe32 />}
+        />
+      </InfoSection>
+      {/* <div className="bx--row landing-page__r3">
+          <div className="bx--col-md-4 bx--col-lg-4">
+            <h3 className="landing-page__label">The Principles</h3>
+          </div>
+          <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+          <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+          <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div> 
+			 </div> */}
+    </div>
+  )
+}
+
+export default LandingPage
