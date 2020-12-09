@@ -861,6 +861,7 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+<<<<<<< HEAD
 "@carbon/grid@^10.17.0":
   version "10.17.0"
   resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.17.0.tgz#dc220d9e2f4094255794281080058f9aa8a025ba"
@@ -868,6 +869,15 @@
   dependencies:
     "@carbon/import-once" "^10.4.0"
     "@carbon/layout" "^10.15.0"
+=======
+"@carbon/grid@^10.11.0":
+  version "10.11.0"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.11.0.tgz#c06936738f2110f73887924744e1225d2ed66581"
+  integrity sha512-QlHuMqTxuDoFLrTPhBq0K5uECaRCM68GU7Y64pzVv9kDPEBmEXshbdY7p6mV92nD/iXAkuALzsEU/vu5Z7q0Dw==
+  dependencies:
+    "@carbon/import-once" "^10.3.0"
+    "@carbon/layout" "^10.10.0"
+>>>>>>> 27f4ff1fdf0d440c54c5b7f75bd8cc130ca49040
 
 "@carbon/icon-helpers@10.2.0":
   version "10.2.0"
@@ -882,6 +892,7 @@
     "@carbon/icon-helpers" "10.2.0"
     prop-types "^15.6.2"
 
+<<<<<<< HEAD
 "@carbon/import-once@^10.4.0":
   version "10.4.0"
   resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.4.0.tgz#b166279d65626487184a73cf8aa08230a583687c"
@@ -891,6 +902,17 @@
   version "10.15.0"
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.15.0.tgz#6b52d49d2653c34a654aee7fe373260aa1565059"
   integrity sha512-fL3H1CuqJN67fPeVcs4Q/acMCRrOpRhww3TWVQBvsXxTrt9OcW3sWt4k7JoH9HFEeriF4tkHC7PsxOA15H1GNQ==
+=======
+"@carbon/import-once@^10.3.0":
+  version "10.3.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
+  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
+
+"@carbon/layout@^10.10.0":
+  version "10.10.0"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.10.0.tgz#a27cdf3586360fa3c456ed7a2691a4fa8237cd62"
+  integrity sha512-3XVl3w0wdRu7qMcgvNLPvW1JcvBwc9rtvvkaz5HFwbf9O5bRIMNP+HB+a8dt2tdngNXisfrbeGuhG4Cws5VbgA==
+>>>>>>> 27f4ff1fdf0d440c54c5b7f75bd8cc130ca49040
 
 "@commitlint/cli@^7.5.2":
   version "7.5.2"
