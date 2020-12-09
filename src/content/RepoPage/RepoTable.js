@@ -12,7 +12,6 @@ import {
   TableCell,
   TableExpandedRow,
 } from 'carbon-components-react';
-
 const RepoTable = ({ rows, headers }) => {
   return (
     <DataTable
