@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './app.scss';
+import { Content } from 'carbon-components-react';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
@@ -10,10 +11,12 @@ class App extends Component {
     return (
       <>
         <TutorialHeader />
-        <Switch>
-          <Route exact path="/" component={LandingPage} />
-          <Route path="/repos" component={RepoPage} />
-        </Switch>
+        <Content>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/repos" component={RepoPage} />
+          </Switch>
+        </Content>
       </>
     );
   }
