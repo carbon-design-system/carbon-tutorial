@@ -10,20 +10,20 @@ import {
 const props = {
   tabs: {
     selected: 0,
-    triggerHref: '#',
-    role: 'navegation',
+    role: 'navigation',
   },
   tab: {
-    href: '#',
     role: 'presentation',
+    tabIndex: 0,
   },
 };
+
 const LandingPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
         <div className="bx--col-lg-16">
-          <Breadcrumb noTrailingSlash arial-label="Page navegation">
+          <Breadcrumb noTrailingSlash aria-label="Page navigation">
             <BreadcrumbItem>
               <a href="/">Getting started</a>
             </BreadcrumbItem>
@@ -35,7 +35,7 @@ const LandingPage = () => {
       </div>
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
-          <Tabs {...props.tabs} arial-label="Tab navegation">
+          <Tabs {...props.tabs} aria-label="Tab navigation">
             <Tab {...props.tab} label="About">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
@@ -44,7 +44,6 @@ const LandingPage = () => {
                       What is Carbon?
                     </h2>
                     <p className="landing-page__p">
-                      {' '}
                       Carbon is IBM’s open-source design system for digital
                       products and experiences. With the IBM Design Language as
                       its foundation, the system consists of working code,
@@ -57,7 +56,7 @@ const LandingPage = () => {
                     <img
                       className="landing-page__illo"
                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-                      alt="Carbon Illustration"
+                      alt="Carbon illustration"
                     />
                   </div>
                 </div>
@@ -75,10 +74,10 @@ const LandingPage = () => {
             </Tab>
             <Tab {...props.tab} label="Develop">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
-                <div className="bx-row landing-page__tab-content">
+                <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
                     Carbon provides styles and components in Vanilla, React,
-                    Angular, and Vue for anyone building on the web
+                    Angular, and Vue for anyone building on the web.
                   </div>
                 </div>
               </div>

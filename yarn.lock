@@ -861,13 +861,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
-"@carbon/grid@^10.10.2":
-  version "10.10.2"
-  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.10.2.tgz#b3c4f3bd6771a7efa5e78a13144d336b624c2587"
-  integrity sha512-H6rq2QmarZdhW7g5LJADdVNd1k0xGe74mbgqatRpyVkom/XHlDXJ2cimzXz9L8q0QFrgm78MFI5YVvXBDhPQtQ==
+"@carbon/grid@10.17.0":
+  version "10.17.0"
+  resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.17.0.tgz#dc220d9e2f4094255794281080058f9aa8a025ba"
+  integrity sha512-kioI884OQeW1DKMKDolEeu38zTF7aClDB7dBWMKtofyQ/swJghzTRu0re5uIUEeyTUNTrDsW1zQhfRNqwCICyQ==
   dependencies:
-    "@carbon/import-once" "^10.3.0"
-    "@carbon/layout" "^10.9.2"
+    "@carbon/import-once" "^10.4.0"
+    "@carbon/layout" "^10.15.0"
 
 "@carbon/icon-helpers@10.2.0":
   version "10.2.0"
@@ -882,15 +882,15 @@
     "@carbon/icon-helpers" "10.2.0"
     prop-types "^15.6.2"
 
-"@carbon/import-once@^10.3.0":
-  version "10.3.0"
-  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
-  integrity sha512-PFk3FhMe3psihYtCg3JsyPHismqglnbUqIpz1DCG5Gn/kt0HdVKhGvHdEq7E305rGoBUCKzMn/4xoY9v9mcmlg==
+"@carbon/import-once@^10.4.0":
+  version "10.4.0"
+  resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.4.0.tgz#b166279d65626487184a73cf8aa08230a583687c"
+  integrity sha512-emmOJLjHZhc5/1pjkKwSOuiW949U4B1SsKa3vLj9Ehix1IZX5s4TrxRsUrN6sutOn9r3rKfgoaY8sYzJm2RaYg==
 
-"@carbon/layout@^10.9.2":
-  version "10.9.2"
-  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.9.2.tgz#8ca1c2d685738f2524dd8caa45100ae1d0059137"
-  integrity sha512-/dthurRdaMyc1rAWq8TZmBkBHds+pgbb0+NcPUqC7W9rytRZqu8qY+vaQdXPuso1BPgYN6LBJU7mXHwEEkM84Q==
+"@carbon/layout@^10.15.0":
+  version "10.15.0"
+  resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.15.0.tgz#6b52d49d2653c34a654aee7fe373260aa1565059"
+  integrity sha512-fL3H1CuqJN67fPeVcs4Q/acMCRrOpRhww3TWVQBvsXxTrt9OcW3sWt4k7JoH9HFEeriF4tkHC7PsxOA15H1GNQ==
 
 "@commitlint/cli@^7.5.2":
   version "7.5.2"
