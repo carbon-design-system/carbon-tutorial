@@ -29,6 +29,7 @@
     "react-scripts": "4.0.1"
   },
   "devDependencies": {
+    "@carbon/grid": "10.17.0",
     "@commitlint/cli": "7.5.2",
     "@commitlint/config-conventional": "7.5.0",
     "husky": "1.3.1",
