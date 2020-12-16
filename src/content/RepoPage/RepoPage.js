@@ -118,6 +118,7 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
               // If we're here, we've got our data!
               const { repositories } = data.organization;
+              setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
               return (
                 <>
