@@ -33,7 +33,6 @@ const TutorialHeader = () => (
         <HeaderName element={Link} to="/" prefix="IBM">
           Carbon Tutorial
         </HeaderName>
-
         <HeaderNavigation aria-label="Carbon Tutorial">
           <HeaderMenuItem element={Link} to="/repos">
             Repositories
