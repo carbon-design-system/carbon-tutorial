@@ -1,7 +1,7 @@
 import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton } from 'carbon-components-react';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import React, { useState } from 'react';
 
 const REPO_QUERY = gql`
@@ -128,6 +128,20 @@ const RepoPage = () => {
                       firstRowIndex,
                       firstRowIndex + currentPageSize
                     )}
+                  />
+                  <Pagination
+                    totalItems={totalItems}
+                    backwardText="Previous page"
+                    forwardText="Next page"
+                    pageSize={currentPageSize}
+                    pageSizes={[5, 10, 15, 25]}
+                    itemsPerPageText="Items per page"
+                    onChange={({ page, pageSize }) => {
+                      if (pageSize !== currentPageSize) {
+                        setCurrentPageSize(pageSize);
+                      }
+                      setFirstRowIndex(pageSize * (page - 1));
+                    }}
                   />
                 </>
               );
