@@ -1,8 +1,3 @@
-$feature-flags: (
-  grid-columns-16: true,
-  // instead of default 12 columns ,,,,,,,
-);
-
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 /// Remove overrides once Carbon bugs are fixed upstream.
