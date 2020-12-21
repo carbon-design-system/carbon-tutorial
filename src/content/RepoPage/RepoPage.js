@@ -119,7 +119,13 @@ const RepoPage = () => {
 
               return (
                 <>
-                  <RepoTable headers={headers} rows={rows} />
+                  <RepoTable
+                    headers={headers}
+                    rows={rows.slice(
+                      firstRowIndex,
+                      firstRowIndex + currentPageSize
+                    )}
+                  />
                   <Pagination
                     totalItems={totalItems}
                     backwardText="Previous page"
