@@ -15,7 +15,6 @@ class App extends Component {
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
-            <Route exact path="/profile" component={ProfilePage} />
             <Route path="/repos" component={RepoPage} />
           </Switch>
         </Content>
