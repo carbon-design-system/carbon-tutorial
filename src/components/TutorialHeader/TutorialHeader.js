@@ -4,7 +4,6 @@ import {
   Header,
   HeaderContainer,
   HeaderName,
-  HeaderNavigation,
   HeaderMenuButton,
   HeaderMenuItem,
   HeaderGlobalBar,
