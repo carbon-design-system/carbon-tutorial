@@ -1108,6 +1108,7 @@ __metadata:
   languageName: node
   linkType: hard
 
+
 "@babel/plugin-transform-react-jsx@npm:^7.12.1, @babel/plugin-transform-react-jsx@npm:^7.12.7":
   version: 7.12.7
   resolution: "@babel/plugin-transform-react-jsx@npm:7.12.7"
@@ -1222,6 +1223,7 @@ __metadata:
     "@babel/helper-plugin-utils": ^7.10.4
   peerDependencies:
     "@babel/core": ^7.0.0-0
+
   checksum: 73bb34cb448ae2e953b36c8d0283c73b7979577ca470fccae036a0b7b2a8e9b266a377878495f9a5dea1b42b5b33f6f234dc08675600f1ae5e557e73f64bdc48
   languageName: node
   linkType: hard
