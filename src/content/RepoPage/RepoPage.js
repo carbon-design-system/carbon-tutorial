@@ -57,6 +57,7 @@ const rows = [
     links: 'Links',
   },
 ];
+
 const RepoPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -66,5 +67,7 @@ const RepoPage = () => {
     </div>
   );
 };
+
 <RepoTable headers={headers} rows={rows} />
+
 export default RepoPage;
