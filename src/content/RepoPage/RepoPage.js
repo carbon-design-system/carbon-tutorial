@@ -68,6 +68,6 @@ const RepoPage = () => {
   );
 };
 
-<RepoTable headers={headers} rows={rows} />
+<RepoTable headers={headers} rows={rows} />;
 
 export default RepoPage;
