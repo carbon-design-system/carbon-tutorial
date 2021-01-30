@@ -68,6 +68,4 @@ const RepoPage = () => {
   );
 };
 
-
-
 export default RepoPage;
