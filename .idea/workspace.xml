@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7146778a-79c2-4012-a215-4584b110a56d" name="Default Changelist" comment="Config files">
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@types-node-npm-14.14.25-cd44243469-64c42730f4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@types-zen-observable-npm-0.8.2-a15378fb68-f48643c09a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@wry-context-npm-0.4.4-b9c85dcca7-b69f652326.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@wry-equality-npm-0.1.11-e3cf830190-3d1da57999.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-boost-npm-0.4.2-e7ec6fd0b9-d23f37ab04.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-cache-inmemory-npm-1.6.6-3edc52a35c-7e8c358b93.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-cache-npm-1.3.5-d48c3d0dc4-5d9fb080c3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-client-npm-2.6.10-4f8e3fe87e-83e78f7f5d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-link-error-npm-1.1.13-b68b0ca15d-351c1eb4c7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-link-http-common-npm-0.2.16-38c63491f3-7ab319747b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-link-http-npm-1.5.17-b00d38ad4c-c16c07aa11.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-link-npm-1.2.14-74f0ba01f9-5cc96cd6df.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/apollo-utilities-npm-1.3.4-2bafd621ff-5a046f8792.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/graphql-npm-14.3.1-13cd8eba21-519faf4aae.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/graphql-tag-npm-2.12.0-5c60c4fa67-5589000ba8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/iterall-npm-1.3.0-a2cb04809f-25ae2d07cf.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/optimism-npm-0.10.3-384fa7ea76-c3bab19cb9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/react-apollo-npm-2.5.6-b3d1c9ba5c-36621fabcd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ts-invariant-npm-0.4.4-9f97371ec3-0280fb0e85.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/zen-observable-npm-0.8.15-3bec99c19c-7d155f8a75.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/zen-observable-ts-npm-0.8.21-9c85e9f655-031ac9c244.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nzEEOA4qVpYTfKQqyiYseAvDIY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/content/RepoPage" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/content/RepoPage" />
+      <recent name="$PROJECT_DIR$/src/content/LandingPage" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7146778a-79c2-4012-a215-4584b110a56d" name="Default Changelist" comment="" />
+      <created>1612384406931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612384406931</updated>
+      <workItem from="1612384408681" duration="14649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Config file" />
+    <MESSAGE value="Config files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Config files" />
+  </component>
+</project>
