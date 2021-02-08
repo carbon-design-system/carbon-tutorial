@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
+import './app.scss';
+import { Button, Content } from 'carbon-components-react';
+import SiteHeader from './components/SiteHeader';
+import { Route, Switch } from 'react-router-dom';
+import LandingPage from './content/LandingPage';
+import CharactersPage from './content/CharactersPage';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        Hello Carbon! Well, not quite yet. This is the starting point for the
-        Carbon tutorial.
-      </div>
+      <>
+        <SiteHeader />
+        <Content>
+          <Switch>
+            <Route exact path="/" component={LandingPage} />
+            <Route path="/characters" component={CharactersPage} />
+          </Switch>
+        </Content>
+      </>
     );
   }
 }
