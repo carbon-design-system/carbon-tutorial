@@ -1,17 +1,19 @@
 @import 'carbon-components/scss/globals/scss/styles.scss';
-
-/// Remove overrides once Carbon bugs are fixed upstream.
-/// Need grid option to not add page gutters at large viewports, to also use when nesting grids
-/// @link https://github.com/carbon-design-system/carbon/issues/2792
-@media (min-width: 42rem) {
-  .bx--grid--no-gutter {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-
-/// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter
-/// @link https://github.com/carbon-design-system/carbon/issues/3010
-.bx--content {
+body {
+  margin: 0;
   padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+$feature-flags: (
+  grid-columns-16: true,
+);
