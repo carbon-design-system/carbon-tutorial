@@ -1594,7 +1594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/layout@npm:^10.17.0, @carbon/layout@npm:^10.18.0":
+"@carbon/layout@npm:^10.18.0":
   version: 10.18.0
   resolution: "@carbon/layout@npm:10.18.0"
   checksum: f3cbc27ed7f848bd158f877635366f18940c47e3a3686be8fe6bd1360c31b8eb972e001601c310a379162426541df1cabc4ce3ffdbe140dd7dc71d51984bb129
@@ -4414,7 +4414,6 @@ __metadata:
   dependencies:
     "@carbon/grid": ^10.20.0
     "@carbon/icons-react": 10.22.0
-    "@carbon/layout": ^10.17.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     carbon-components: 10.25.0
