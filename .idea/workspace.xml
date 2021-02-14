@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c105e04b-9566-47b7-b120-f054790ab4bd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +50,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1613311503641</updated>
-      <workItem from="1613311506662" duration="10872000" />
+      <workItem from="1613311506662" duration="11116000" />
     </task>
     <servers />
   </component>
