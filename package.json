@@ -17,6 +17,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "10.17.0",
     "@carbon/icons-react": "10.22.0",
     "carbon-components": "10.25.0",
     "carbon-components-react": "7.25.0",
