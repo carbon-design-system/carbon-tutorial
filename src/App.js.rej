@@ -1,0 +1,7 @@
+diff a/src/App.js b/src/App.js	(rejected hunks)
+@@ -3 +3 @@ import './app.scss';
+-import { Button, Content  } from 'carbon-components-react';
++import { Button, Content } from 'carbon-components-react';
+@@ -9,2 +8,0 @@ import RepoPage from './content/RepoPage';
+-
+-

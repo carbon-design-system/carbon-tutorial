@@ -1,0 +1,44 @@
+diff a/src/components/TutorialHeader/TutorialHeader.js b/src/components/TutorialHeader/TutorialHeader.js	(rejected hunks)
+@@ -17,3 +17,3 @@ import {
+-    AppSwitcher20,
+-    Notification20,
+-    UserAvatar20,
++  AppSwitcher20,
++  Notification20,
++  UserAvatar20,
+@@ -37 +37,3 @@ const TutorialHeader = () => (
+-          <HeaderMenuItem element={Link} to="/repos">Repositories</HeaderMenuItem>
++          <HeaderMenuItem element={Link} to="/repos">
++            Repositories
++          </HeaderMenuItem>
+@@ -45 +47,3 @@ const TutorialHeader = () => (
+-              <HeaderMenuItem element={Link} to="/repos">Repositories</HeaderMenuItem>
++              <HeaderMenuItem element={Link} to="/repos">
++                Repositories
++              </HeaderMenuItem>
+@@ -49 +53 @@ const TutorialHeader = () => (
+-        
++
+@@ -51,9 +55,9 @@ const TutorialHeader = () => (
+-            <HeaderGlobalAction aria-label="Notifications">
+-                <Notification20 />
+-            </HeaderGlobalAction>
+-            <HeaderGlobalAction aria-label="User Avatar">
+-                <UserAvatar20 />
+-            </HeaderGlobalAction>
+-            <HeaderGlobalAction aria-label="App Switcher">
+-                <AppSwitcher20 />
+-            </HeaderGlobalAction>
++          <HeaderGlobalAction aria-label="Notifications">
++            <Notification20 />
++          </HeaderGlobalAction>
++          <HeaderGlobalAction aria-label="User Avatar">
++            <UserAvatar20 />
++          </HeaderGlobalAction>
++          <HeaderGlobalAction aria-label="App Switcher">
++            <AppSwitcher20 />
++          </HeaderGlobalAction>
+@@ -61,3 +64,0 @@ const TutorialHeader = () => (
+-
+-
+-
