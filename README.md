@@ -2,7 +2,15 @@
 
 This tutorial will guide you in creating a React app with the [Carbon Design System](https://www.carbondesignsystem.com/). We’ll teach you the ins and outs of using Carbon components, while introducing web development best practices along the way.
 
+<<<<<<< Updated upstream
 Get started by visiting the [tutorial instructions](https://www.carbondesignsystem.com/tutorial/react/overview/).
+=======
+<<<<<<< HEAD
+Get started by visiting the [tutorial instructions](https://www.carbondesignsystem.com/tutorial/overview/).
+=======
+Get started by visiting the [tutorial instructions](https://www.carbondesignsystem.com/tutorial/react/overview/).
+>>>>>>> ec2255db179732394ef35afc779efffaaf38a3a8
+>>>>>>> Stashed changes
 
 ## Available Scripts
 
