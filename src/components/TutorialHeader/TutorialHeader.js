@@ -28,7 +28,7 @@ const TutorialHeader = () => (
       <Header aria-label="Carbon Tutorial">
         <SkipToContent />
         <HeaderMenuButton
-          aria-label="Open Menu"
+          aria-label="Open menu"
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
@@ -41,7 +41,7 @@ const TutorialHeader = () => (
           </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
-          aria-label="Side Navigation"
+          aria-label="Side navigation"
           expanded={isSideNavExpanded}
           isPersistent={false}>
           <SideNavItems>
