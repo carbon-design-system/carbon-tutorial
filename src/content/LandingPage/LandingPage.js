@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Breadcrumb, BreadcrumbItem } from 'carbon-components-react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -84,17 +83,15 @@ const LandingPage = () => {
               </div>
             </Tab>
           </Tabs>
-          <div className="bx--row landing-page__r3">
-            <div className="bx--col-md-4 bx--col-lg-4">
-              <h3 className="landing-page__label">The Principles</h3>
-            </div>
-            <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
-            <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
-            <div className="bx--col-md-4 bx--col-lg-4">
-              Carbon is Consistent
-            </div>
-          </div>
         </div>
+      </div>
+      <div className="bx--row landing-page__r3">
+        <div className="bx--col-md-4 bx--col-lg-4">
+          <h3 className="landing-page__label">The Principles</h3>
+        </div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
       </div>
     </div>
   );
