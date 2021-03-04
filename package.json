@@ -17,16 +17,22 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "10.17.0",
     "@carbon/icons-react": "10.22.0",
     "carbon-components": "10.25.0",
     "carbon-components-react": "7.25.0",
     "carbon-icons": "7.0.7",
+    "cheerio-select": "^1.2.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
-    "react": "16.10.0",
-    "react-dom": "16.10.0",
+    "fork-ts-checker-webpack-plugin": "^6.1.0",
+    "react": "^16.14.0",
+    "react-dev-utils": "^11.0.3",
+    "react-dom": "^16.10.1",
     "react-router-dom": "5.0.0",
-    "react-scripts": "4.0.1"
+    "react-scripts": "4.0.1",
+    "react-test-renderer": "^16.14.0",
+    "typescript": "^3.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
