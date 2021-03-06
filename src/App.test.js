@@ -1,14 +1,14 @@
 import React from 'react';
-import RepoPage from './content/RepoPage';
+import App from './App';
 import { shallow } from 'enzyme';
 
-describe('React Step 2 Tests', () => {
+describe('React Step 1 Tests', () => {
   it('renders without crashing', () => {
-    shallow(<RepoPage />);
+    shallow(<App />);
   });
 
-  const wrapper = shallow(<RepoPage />);
-  it('contains a RepoTable', () => {
-    expect(wrapper.find('RepoTable').length).toBe(1);
+  const wrapper = shallow(<App />);
+  it('contains a TutorialHeader', () => {
+    expect(wrapper.find('TutorialHeader').length).toBe(1);
   });
 });
