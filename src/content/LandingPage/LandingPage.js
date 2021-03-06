@@ -10,11 +10,9 @@ import {
 const props = {
   tabs: {
     selected: 0,
-    triggerHref: '#',
     role: 'navigation',
   },
   tab: {
-    href: '#',
     role: 'presentation',
     tabIndex: 0,
   },
