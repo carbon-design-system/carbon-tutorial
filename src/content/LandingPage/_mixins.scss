@@ -5,9 +5,9 @@
   &::before {
     content: '';
     position: absolute;
-    left: -$spacing-06;
+    left: -$spacing-05;
     top: 0;
-    right: -$spacing-06;
+    right: -$spacing-05;
     bottom: 0;
     background: $ui-01;
     z-index: -1;

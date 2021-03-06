@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-the-real-thisas
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: cc03a01f005b262c93b1c14fc31bc320ee32c6a6

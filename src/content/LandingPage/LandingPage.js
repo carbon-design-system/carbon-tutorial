@@ -14,9 +14,11 @@ import Application32 from '@carbon/icons-react/lib/application/32';
 const props = {
   tabs: {
     selected: 0,
+    triggerHref: '#',
     role: 'navigation',
   },
   tab: {
+    href: '#',
     role: 'presentation',
     tabIndex: 0,
   },
