@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-eltayeb2015
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
