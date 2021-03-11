@@ -13,7 +13,7 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
-const Repotable = ({ rows, headers }) => {
+const RepoTable = ({ rows, headers }) => {
   return (
     <DataTable
       rows={rows}
@@ -26,8 +26,8 @@ const Repotable = ({ rows, headers }) => {
         getTableProps,
       }) => (
         <TableContainer
-          title="Carbon Repos"
-          description="A Collection of public Carbon Repos.">
+          title="Carbon Repositories"
+          description="A collection of public Carbon repositories.">
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
@@ -60,4 +60,4 @@ const Repotable = ({ rows, headers }) => {
   );
 };
 
-export default Repotable;
+export default RepoTable;
