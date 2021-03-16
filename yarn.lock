@@ -1558,6 +1558,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/colors@npm:^10.21.0":
+  version: 10.21.0
+  resolution: "@carbon/colors@npm:10.21.0"
+  checksum: 6bba140a64692546d9153f8d917397ccc4eea1261de02d4191f35191e345ac2036591da2abc628564284f55af0fb17564b922ad1ea939586ae6c188439299bab
+  languageName: node
+  linkType: hard
+
+"@carbon/grid@npm:10.17.0":
+  version: 10.17.0
+  resolution: "@carbon/grid@npm:10.17.0"
+  dependencies:
+    "@carbon/import-once": ^10.4.0
+    "@carbon/layout": ^10.15.0
+  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+  languageName: node
+  linkType: hard
+
 "@carbon/icon-helpers@npm:^10.10.0":
   version: 10.10.0
   resolution: "@carbon/icon-helpers@npm:10.10.0"
@@ -1565,7 +1582,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:10.22.0, @carbon/icons-react@npm:^10.22.0":
+"@carbon/icon-helpers@npm:^10.14.0":
+  version: 10.14.0
+  resolution: "@carbon/icon-helpers@npm:10.14.0"
+  checksum: 7e6299a5c497e4cdfa4f55aaeaf0e5d82ff016cea6d68e347629cb0b6da48890cc9978e3e892f3a14039b449e08a5de766ce8108ccd0b86f64889b9173ecddac
+  languageName: node
+  linkType: hard
+
+"@carbon/icons-react@npm:^10.22.0":
   version: 10.22.0
   resolution: "@carbon/icons-react@npm:10.22.0"
   dependencies:
@@ -1574,6 +1598,42 @@ __metadata:
   peerDependencies:
     react: ">=16"
   checksum: b6fcedcc03d4683d56e9f09b9e1506de73fb31f14a39c179f75920382edff3d7091f55daa5123ddf170b3bf0834a8fb1a118c1336cf077127fa7ddda1e4a9ca2
+  languageName: node
+  linkType: hard
+
+"@carbon/icons-react@npm:^10.27.0":
+  version: 10.27.0
+  resolution: "@carbon/icons-react@npm:10.27.0"
+  dependencies:
+    "@carbon/icon-helpers": ^10.14.0
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16"
+  checksum: b00ba951e7a26f9638211de34885da4b57a9677c99c3a916866910da49ce16151e798d7cf7d0712f3342af669605432c864b65ed62f27e7183abe1fcdcde6065
+  languageName: node
+  linkType: hard
+
+"@carbon/import-once@npm:^10.4.0, @carbon/import-once@npm:^10.6.0":
+  version: 10.6.0
+  resolution: "@carbon/import-once@npm:10.6.0"
+  checksum: ebfd2a5b7d408be48e73733d260624f69be15cbfe59d52ab533326891c14ab4e952296f190089308ba389bc2556c4f7983ae9961c3b282ecdc9fbe77161c92f9
+  languageName: node
+  linkType: hard
+
+"@carbon/layout@npm:^10.15.0, @carbon/layout@npm:^10.20.0":
+  version: 10.20.0
+  resolution: "@carbon/layout@npm:10.20.0"
+  checksum: 535be4a7945f9feb552c968efc37d0276b2e8d4b47fca05e51ffc660fb4c21b5f178dbaccc1a93f827b17613703561b5176353f68146841eb61b35629de28b1a
+  languageName: node
+  linkType: hard
+
+"@carbon/type@npm:^10.23.0":
+  version: 10.23.0
+  resolution: "@carbon/type@npm:10.23.0"
+  dependencies:
+    "@carbon/import-once": ^10.6.0
+    "@carbon/layout": ^10.20.0
+  checksum: c7afc1c75c063989f2679c551dcd60ccc524d1c19022c1de06daaed23eb1d7b66e1ce9b2cc6ba10cd84c7d87ed93c22a72e80867bb1df581f8e8da0761599792
   languageName: node
   linkType: hard
 
@@ -4388,7 +4448,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
-    "@carbon/icons-react": 10.22.0
+    "@carbon/colors": ^10.21.0
+    "@carbon/grid": 10.17.0
+    "@carbon/icons-react": ^10.27.0
+    "@carbon/layout": ^10.20.0
+    "@carbon/type": ^10.23.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     carbon-components: 10.25.0
