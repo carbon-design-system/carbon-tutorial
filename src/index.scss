@@ -19,3 +19,8 @@ $feature-flags: (
 .bx--content {
   padding: 0;
 }
+$feature-flags: (
+  grid-columns-16: true,
+);
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
