@@ -1,7 +1,18 @@
+@import 'carbon-components/scss/globals/scss/styles.scss';
+
+@import './components/TutorialHeader/tutorial-header.scss';
+@import './content/LandingPage/landing-page.scss';
+@import './content/RepoPage/repo-page.scss';
+@import './components/TutorialHeader/tutorial-header.scss';
+
 $feature-flags: (
   grid-columns-16: true,
 );
-@import 'carbon-components/scss/globals/scss/styles.scss';
+
+// Feature flags
+$css--font-face: true;
+$css--plex: true;
+
 body {
   margin: 0;
   padding: 0;
