@@ -4,15 +4,15 @@ jobs:
     docker:
       - image: circleci/node:14
     working_directory: ~/repo
-    steps:
-      - checkout
-      # - run: yarn install --immutable --immutable-cache
-      - run:
-          name: Run ci checks
-          command: yarn ci-check
-      - run:
-          name: Run tests
-          command: yarn test
+    # steps:
+    #   - checkout
+    #   # - run: yarn install --immutable --immutable-cache
+    #   - run:
+    #       name: Run ci checks
+    #       command: yarn ci-check
+    #   - run:
+    #       name: Run tests
+    #       command: yarn test
 
 workflows:
   version: 2
