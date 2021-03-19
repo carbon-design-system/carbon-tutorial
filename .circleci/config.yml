@@ -6,7 +6,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      - run: yarn install --immutable --immutable-cache
+      # - run: yarn install --immutable --immutable-cache
       - run:
           name: Run ci checks
           command: yarn ci-check
