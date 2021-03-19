@@ -1575,7 +1575,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:10.22.0, @carbon/icons-react@npm:^10.22.0":
+"@carbon/icon-helpers@npm:^10.15.0":
+  version: 10.15.0
+  resolution: "@carbon/icon-helpers@npm:10.15.0"
+  checksum: f050f2b6deac52ec4bba17c85b43f1d7f99cd28038e049b0ba84223458d399812e77a50a37c29bb4056b2dfabc554bc51434553c188c51251ff12ef8032bab3a
+  languageName: node
+  linkType: hard
+
+"@carbon/icons-react@npm:^10.22.0":
   version: 10.22.0
   resolution: "@carbon/icons-react@npm:10.22.0"
   dependencies:
@@ -1584,6 +1591,18 @@ __metadata:
   peerDependencies:
     react: ">=16"
   checksum: b6fcedcc03d4683d56e9f09b9e1506de73fb31f14a39c179f75920382edff3d7091f55daa5123ddf170b3bf0834a8fb1a118c1336cf077127fa7ddda1e4a9ca2
+  languageName: node
+  linkType: hard
+
+"@carbon/icons-react@npm:^10.28.0":
+  version: 10.28.0
+  resolution: "@carbon/icons-react@npm:10.28.0"
+  dependencies:
+    "@carbon/icon-helpers": ^10.15.0
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16"
+  checksum: 9b7eccfb057655b0f54afc57bad436c9a04fad43876eaf53e376fce7595994cf5bc2d4c2ded5e34377003570eafd490debd958b155ad08d71ab40baf9935acdf
   languageName: node
   linkType: hard
 
@@ -4568,7 +4587,7 @@ __metadata:
   resolution: "carbon-tutorial@workspace:."
   dependencies:
     "@carbon/grid": 10.17.0
-    "@carbon/icons-react": 10.22.0
+    "@carbon/icons-react": ^10.28.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     apollo-boost: 0.4.2
