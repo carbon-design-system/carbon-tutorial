@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import {
   Header,
   HeaderContainer,
@@ -30,11 +32,14 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderName href="/" prefix="IBM">
-          Carbon Tutorial
+         <HeaderName element={Link} to="/" prefix="IBM">
+             Carbon Tutorial
         </HeaderName>
+  
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+             Repositories
+            </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
