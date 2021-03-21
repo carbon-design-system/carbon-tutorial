@@ -46,7 +46,17 @@ const TutorialHeader = () => (
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
-        <HeaderGlobalBar />
+        <HeaderGlobalBar>
+  <HeaderGlobalAction aria-label="Notifications">
+    <Notification20 />
+  </HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="User Avatar">
+    <UserAvatar20 />
+  </HeaderGlobalAction>
+  <HeaderGlobalAction aria-label="App Switcher">
+    <AppSwitcher20 />
+  </HeaderGlobalAction>
+</HeaderGlobalBar>
       </Header>
     )}
   />
