@@ -4,9 +4,6 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
-import { Route, Switch } from 'react-router-dom';
-import LandingPage from './content/LandingPage';
-import RepoPage from './content/RepoPage';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
