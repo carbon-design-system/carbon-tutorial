@@ -32,14 +32,14 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-         <HeaderName element={Link} to="/" prefix="IBM">
-             Carbon Tutorial
+        <HeaderName element={Link} to="/" prefix="IBM">
+          Carbon Tutorial
         </HeaderName>
-  
+
         <HeaderNavigation aria-label="Carbon Tutorial">
           <HeaderMenuItem element={Link} to="/repos">
-             Repositories
-            </HeaderMenuItem>
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -47,21 +47,23 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/repos">
+                Repositories
+              </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
-  <HeaderGlobalAction aria-label="Notifications">
-    <Notification20 />
-  </HeaderGlobalAction>
-  <HeaderGlobalAction aria-label="User Avatar">
-    <UserAvatar20 />
-  </HeaderGlobalAction>
-  <HeaderGlobalAction aria-label="App Switcher">
-    <AppSwitcher20 />
-  </HeaderGlobalAction>
-</HeaderGlobalBar>
+          <HeaderGlobalAction aria-label="Notifications">
+            <Notification20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="User Avatar">
+            <UserAvatar20 />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="App Switcher">
+            <AppSwitcher20 />
+          </HeaderGlobalAction>
+        </HeaderGlobalBar>
       </Header>
     )}
   />
