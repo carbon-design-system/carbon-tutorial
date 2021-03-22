@@ -21,6 +21,7 @@
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",
     "react-dom": "16.10.0",
+    "react-router-dom": "5.0.0",
     "react-scripts": "4.0.1"
   },
   "devDependencies": {
