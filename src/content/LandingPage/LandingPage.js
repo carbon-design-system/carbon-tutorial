@@ -17,6 +17,7 @@ const props = {
     tabIndex: 0,
   },
 };
+
 const LandingPage = () => {
   return (
     <div className="bx--grid bx--grid--full-width landing-page">
