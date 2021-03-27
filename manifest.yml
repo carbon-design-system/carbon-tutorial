@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-marciamoss
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    env:
+    REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN: 783e779fc86a63b57ad12e1ba95f220f6eef97f4
