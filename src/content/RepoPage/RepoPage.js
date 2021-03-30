@@ -93,7 +93,7 @@ const getRowItems = rows =>
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIdex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
 
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -118,7 +118,7 @@ const RepoPage = () => {
               const { repositories } = data.organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
-
+              console.log('rows', rows);
               return (
                 <>
                   <RepoTable
