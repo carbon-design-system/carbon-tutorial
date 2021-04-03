@@ -25,11 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0288cd81-5122-4a47-9643-fe777cdbc977" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +71,7 @@
       <workItem from="1617291307196" duration="2502000" />
       <workItem from="1617342003301" duration="4805000" />
       <workItem from="1617369763579" duration="655000" />
-      <workItem from="1617370439818" duration="6220000" />
+      <workItem from="1617370439818" duration="6549000" />
     </task>
     <servers />
   </component>
