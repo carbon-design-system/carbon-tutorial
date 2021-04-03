@@ -24,7 +24,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0288cd81-5122-4a47-9643-fe777cdbc977" name="Default Changelist" comment="" />
+    <list default="true" id="0288cd81-5122-4a47-9643-fe777cdbc977" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-grid-npm-10.17.0-2ba7fd3da3-b5502b7ccf.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +74,7 @@
       <workItem from="1617291307196" duration="2502000" />
       <workItem from="1617342003301" duration="4805000" />
       <workItem from="1617369763579" duration="655000" />
-      <workItem from="1617370439818" duration="3692000" />
+      <workItem from="1617370439818" duration="4293000" />
     </task>
     <servers />
   </component>

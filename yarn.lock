@@ -1558,13 +1558,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/grid@npm:10.17.0":
-  version: 10.17.0
-  resolution: "@carbon/grid@npm:10.17.0"
+"@carbon/grid@npm:^10.17.0":
+  version: 10.24.0
+  resolution: "@carbon/grid@npm:10.24.0"
   dependencies:
-    "@carbon/import-once": ^10.4.0
-    "@carbon/layout": ^10.15.0
-  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+    "@carbon/import-once": ^10.6.0
+    "@carbon/layout": ^10.22.0
+  checksum: ba0e232d5141cf1242aa2c9de14ce2157d67d010b9f8dbc4edbc3dec8804a2dbb3c60517559f7c05085346aa645b9a402631dbe12f7706bafdcb9781f87e4db8
   languageName: node
   linkType: hard
 
@@ -1587,17 +1587,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/import-once@npm:^10.4.0":
+"@carbon/import-once@npm:^10.6.0":
   version: 10.6.0
   resolution: "@carbon/import-once@npm:10.6.0"
   checksum: ebfd2a5b7d408be48e73733d260624f69be15cbfe59d52ab533326891c14ab4e952296f190089308ba389bc2556c4f7983ae9961c3b282ecdc9fbe77161c92f9
   languageName: node
   linkType: hard
 
-"@carbon/layout@npm:^10.15.0":
+"@carbon/layout@npm:^10.22.0":
   version: 10.22.0
   resolution: "@carbon/layout@npm:10.22.0"
   checksum: d3a8a6452707baf238a712d7fa0af59a780fa850a0cd3f98ab26cf2aac1352d0b1cf47cd49a793ff125fad3cc0b23c004f8c53d8a608eacc8ce5f7fd02ada66a
+  languageName: node
+  linkType: hard
+
+"@carbon/type@npm:^10.25.0":
+  version: 10.25.0
+  resolution: "@carbon/type@npm:10.25.0"
+  dependencies:
+    "@carbon/import-once": ^10.6.0
+    "@carbon/layout": ^10.22.0
+  checksum: d71ef10a1ff31a44e432f1a4b282cb14609ad8ffdd7e6c388638c3ad6cdcbf5bf23f9f306b35183f9427e932cc6aeb310edccb1809f941a7ffd8855de693ce82
   languageName: node
   linkType: hard
 
@@ -4412,8 +4422,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
-    "@carbon/grid": 10.17.0
+    "@carbon/grid": ^10.17.0
     "@carbon/icons-react": 10.22.0
+    "@carbon/type": ^10.25.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     carbon-components: 10.25.0
