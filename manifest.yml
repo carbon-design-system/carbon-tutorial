@@ -1,0 +1,6 @@
+---
+applications:
+  - name: carbon-tutorial-gianlucameloni1
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+
