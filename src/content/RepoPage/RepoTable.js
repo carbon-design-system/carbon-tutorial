@@ -13,6 +13,41 @@ import {
   TableExpandedRow,
 } from 'carbon-components-react';
 
+const rows = [
+  {
+    id: '1',
+    name: 'Repo 1',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '2',
+    name: 'Repo 2',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '3',
+    name: 'Repo 3',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+];
+
+const getRowDescription = rowId => {
+  const row = rows.find(({ id }) => id === rowId);
+  return row ? row.description : '';
+};
+
 const RepoTable = ({ rows, headers }) => {
   return (
     <DataTable
@@ -48,7 +83,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
