@@ -1,10 +1,8 @@
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import React, { useState } from 'react';
-
+import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-
-import RepoTable from './RepoTable';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -40,20 +38,6 @@ const REPO_QUERY = gql`
   }
 `;
 
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
 const headers = [
   {
     key: 'name',
@@ -80,6 +64,20 @@ const headers = [
     header: 'Links',
   },
 ];
+
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
 
 const getRowItems = rows =>
   rows.map(row => ({
