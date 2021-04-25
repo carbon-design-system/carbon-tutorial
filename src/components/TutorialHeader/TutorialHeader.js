@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Header,
   HeaderContainer,
@@ -32,12 +33,14 @@ const TutorialHeader = () => (
           isActive={isSideNavExpanded}
         />
 
-        <HeaderName href="/" prefix="IBM">
+        <HeaderName element={Link} to="/" prefix="IBM">
           Carbon Tutorial
         </HeaderName>
 
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
 
         <SideNav
@@ -46,7 +49,9 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/repos">
+                Repositories
+              </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
