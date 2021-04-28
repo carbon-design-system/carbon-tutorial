@@ -1,0 +1,6 @@
+// import style dependencies used in header in UI
+@import './components/TutorialHeader/tutorial-header.scss';
+
+// import our content UI pages
+@import './content/LandingPage/landing-page.scss';
+@import './content/RepoPage/repo-page.scss';
