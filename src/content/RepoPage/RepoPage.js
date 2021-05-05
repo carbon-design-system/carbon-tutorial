@@ -20,7 +20,10 @@ const LinkList = ({ url, homepageUrl }) => (
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
+    # Let's use carbon as our organization
     organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
@@ -53,12 +56,13 @@ const getRowItems = rows =>
   rows.map(row => ({
     ...row,
     key: row.id,
-    stars: row.stargazes.totalCount,
+    stars: row.stargazers.totalCount,
     issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocalDateStrinf(),
-    updatedAt: new Date(row.updatedAt).toLocalDateStrinf(),
+    createdAt: new Date(row.createdAt).toLocalDateString(),
+    updatedAt: new Date(row.updatedAt).toLocalDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
+
 const headers = [
   {
     key: 'name',
@@ -96,6 +100,7 @@ const RepoPage = () => {
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
             {({ loading, error, data }) => {
+              // Wait for the request to complete
               if (loading)
                 return (
                   <DataTableSkeleton
@@ -104,7 +109,10 @@ const RepoPage = () => {
                     headers={headers}
                   />
                 );
-              if (error) return 'Error! ${error.message}';
+              // Something went wrong with the data fetching
+              if (error) return `Error! ${error.message}`;
+
+              // If we're here, we've got our data!
               const { repositories } = data.organization;
               setTotalItems(repositories.TotalCount);
               const rows = getRowItems(repositories.nodes);
