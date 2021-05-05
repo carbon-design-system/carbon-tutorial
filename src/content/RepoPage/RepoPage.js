@@ -58,8 +58,8 @@ const getRowItems = rows =>
     key: row.id,
     stars: row.stargazers.totalCount,
     issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocalDateString(),
-    updatedAt: new Date(row.updatedAt).toLocalDateString(),
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
     links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
   }));
 
