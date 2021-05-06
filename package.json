@@ -17,10 +17,13 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@carbon/icons-react": "10.22.0",
-    "carbon-components": "10.25.0",
-    "carbon-components-react": "7.25.0",
-    "carbon-icons": "7.0.7",
+    "@carbon/colors": "^10.24.0",
+    "@carbon/grid": "10.17.0",
+    "@carbon/icons-react": "^10.31.0",
+    "@carbon/layout": "^10.23.0",
+    "carbon-components": "^10.34.0",
+    "carbon-components-react": "^7.34.0",
+    "carbon-icons": "^7.0.7",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",
