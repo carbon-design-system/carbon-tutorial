@@ -1,0 +1,5 @@
+---
+  applications:
+    - name: carbon-tutorial-SamuelGeorgeIBM
+      memory: 64M
+      buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
