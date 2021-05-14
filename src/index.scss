@@ -15,3 +15,8 @@
 .bx--content {
   padding: 0;
 }
+
+// override grid col from default 12 --> 16
+$feature-flags: (
+  grid-columns-16: true,
+);
