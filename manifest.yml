@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-roberto.popa@ibm.com
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
