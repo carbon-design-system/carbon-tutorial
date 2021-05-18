@@ -1,27 +1,30 @@
 import React from 'react';
 import {
   Header,
-  HeaderContainer,
   HeaderName,
   HeaderNavigation,
-  HeaderMenuButton,
   HeaderMenuItem,
   HeaderGlobalBar,
   HeaderGlobalAction,
   SkipToContent,
-  SideNav,
-  SideNavItems,
-  HeaderSideNavItems,
-} from 'carbon-components-react';
-import {
-  AppSwitcher20,
-  Notification20,
-  UserAvatar20,
-} from '@carbon/icons-react';
+} from 'carbon-components-react/lib/components/UIShell';
+import Notification20 from '@carbon/icons-react/lib/notification/20';
+import UserAvatar20 from '@carbon/icons-react/lib/user--avatar/20';
+import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
-  <>
+  <Header aria-label="Carbon Tutorial">
+    <SkipToContent />
+    <HeaderName element={Link} to="/" prefix="IBM">
+      Carbon Tutorial
+    </HeaderName>
+
+    <HeaderNavigation aria-label="Carbon Tutorial">
+      <HeaderMenuItem element={Link} to="/repos">
+        Repositories
+      </HeaderMenuItem>
+    </HeaderNavigation>
     <HeaderGlobalBar>
       <HeaderGlobalAction aria-label="Notifications">
         <Notification20 />
@@ -33,40 +36,7 @@ const TutorialHeader = () => (
         <AppSwitcher20 />
       </HeaderGlobalAction>
     </HeaderGlobalBar>
-
-    <HeaderContainer
-      render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-        <Header aria-label="Carbon Tutorial">
-          <SkipToContent />
-          <HeaderMenuButton
-            aria-label="Open menu"
-            onClick={onClickSideNavExpand}
-            isActive={isSideNavExpanded}
-          />
-          <HeaderName element={Link} to="/" prefix="IBM">
-            Carbon Tutorial
-          </HeaderName>
-
-          <HeaderNavigation aria-label="Carbon Tutorial">
-            <HeaderMenuItem element={Link} to="/repos">
-              Repositories
-            </HeaderMenuItem>
-          </HeaderNavigation>
-          <SideNav
-            aria-label="Side navigation"
-            expanded={isSideNavExpanded}
-            isPersistent={false}>
-            <SideNavItems>
-              <HeaderSideNavItems>
-                <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
-              </HeaderSideNavItems>
-            </SideNavItems>
-          </SideNav>
-          <HeaderGlobalBar />
-        </Header>
-      )}
-    />
-  </>
+  </Header>
 );
 
 export default TutorialHeader;
