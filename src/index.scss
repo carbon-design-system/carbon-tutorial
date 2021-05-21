@@ -15,3 +15,8 @@
 .bx--content {
   padding: 0;
 }
+
+//update grid columns
+$feature-flags: (
+  grid-columns-16: true,
+);
