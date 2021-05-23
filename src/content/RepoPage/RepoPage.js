@@ -3,7 +3,7 @@ import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 // If we're here, we've got our data!
 const { repositories } = data.organization;
 setTotalItems(repositories.totalCount);
