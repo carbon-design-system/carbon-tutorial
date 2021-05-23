@@ -4,10 +4,6 @@ import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { useState } from 'react';
-// If we're here, we've got our data!
-const { repositories } = data.organization;
-setTotalItems(repositories.totalCount);
-const rows = getRowItems(repositories.nodes);
 
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
@@ -116,7 +112,9 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              console.log(data.organization);
+              const { repositories } = data.organization;
+              setTotalItems(repositories.totalCount);
+              const rows = getRowItems(repositories.nodes);
 
               return (
                 <>
