@@ -3,6 +3,10 @@
 @import 'carbon-components/scss/globals/scss/typography.scss';
 @import 'carbon-components/scss/globals/scss/vars.scss';
 
+//components import
 @import './components/TutorialHeader/tutorial-header.scss';
+@import './components/Info/info.scss';
+
+// content pages import
 @import './content/LandingPage/landing-page.scss';
 @import './content/RepoPage/repo-page.scss';
