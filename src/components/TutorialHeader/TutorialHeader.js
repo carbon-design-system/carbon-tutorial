@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Header,
   HeaderContainer,
-  HeaderName,
   HeaderNavigation,
   HeaderMenuButton,
   HeaderMenuItem,
@@ -13,11 +12,13 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from 'carbon-components-react';
+
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
@@ -30,13 +31,11 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderName element={Link} to="/" prefix="IBM">
-          Carbon Tutorial
-        </HeaderName>
+        <HeaderMenuItem element={Link} to="/repos">
+          Repositories
+        </HeaderMenuItem>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem element={Link} to="/repos">
-            Repositories
-          </HeaderMenuItem>
+          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -44,9 +43,7 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem element={Link} to="/repos">
-                Repositories
-              </HeaderMenuItem>
+              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
@@ -54,9 +51,11 @@ const TutorialHeader = () => (
           <HeaderGlobalAction aria-label="Notifications">
             <Notification20 />
           </HeaderGlobalAction>
+
           <HeaderGlobalAction aria-label="User Avatar">
             <UserAvatar20 />
           </HeaderGlobalAction>
+
           <HeaderGlobalAction aria-label="App Switcher">
             <AppSwitcher20 />
           </HeaderGlobalAction>
