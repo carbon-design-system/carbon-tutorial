@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
-import { useQuery } from '@apollo/client';
+import { Query } from 'react-apollo';
 
 import RepoTable from './RepoTable';
 import { REPO_QUERY } from './query';
@@ -10,15 +10,18 @@ export default function RepoPage() {
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
-          <RepoData />
+          <Query query={REPO_QUERY}>
+            {props => {
+              return <RepoData {...props} />;
+            }}
+          </Query>
         </div>
       </div>
     </div>
   );
 }
 
-function RepoData() {
-  const { loading, error, data } = useQuery(REPO_QUERY);
+function RepoData({ loading, error, data }) {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
@@ -26,7 +29,7 @@ function RepoData() {
   console.log(data?.organization);
 
   useEffect(() => {
-    if (data) {
+    if (data.organization) {
       setTotalItems(data.organization.repositories.totalCount);
     }
   }, [data]);

@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from 'apollo-boost';
 
 export const REPO_QUERY = gql`
   query REPO_QUERY {

@@ -7,7 +7,8 @@ import 'core-js/modules/es7.object.values';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom';
-import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
 
 import './index.scss';
 import App from './App';
@@ -20,7 +21,6 @@ const client = new ApolloClient({
       process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
     }`,
   },
-  cache: new InMemoryCache(),
 });
 
 ReactDOM.render(
