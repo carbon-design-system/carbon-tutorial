@@ -31,8 +31,6 @@ const RepoTable = ({ rows, headers }) => {
         getRowProps,
         getTableProps,
       }) => {
-        // console.log('header', headers);
-        // console.log('rows', rows);
         return (
           <TableContainer
             title="Carbon Repositories"
