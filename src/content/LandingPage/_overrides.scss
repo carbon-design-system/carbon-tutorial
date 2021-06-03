@@ -1,0 +1,11 @@
+@import './mixins.scss';
+// @import './overrides.scss';
+
+.landing-page__r2 .bx--tabs--scrollable {
+  transform: translateZ(0);
+  justify-content: flex-end;
+}
+
+.landing-page__r2 .bx--tab-content {
+  padding: 0;
+}
