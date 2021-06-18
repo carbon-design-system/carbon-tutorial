@@ -19,7 +19,8 @@ ReactDOM.render(
     <Router>
       <App />
     </Router>
-  </ApolloProvider>
+  </ApolloProvider>,
+  document.getElementById('root')
 );
 
 const client = new ApolloClient({
