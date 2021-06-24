@@ -1,10 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link } from 'carbon-components-react';
-import { Link, DataTableSkeleton } from 'carbon-components-react';
-import React, { useState } from 'react';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
 const getRowItems = rows =>
@@ -90,36 +87,6 @@ const headers = [
   {
     key: 'links',
     header: 'Links',
-  },
-];
-
-const rows = [
-  {
-    id: '1',
-    name: 'Repo 1',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '2',
-    name: 'Repo 2',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '3',
-    name: 'Repo 3',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
   },
 ];
 
