@@ -16,11 +16,11 @@ import {
 } from 'carbon-components-react';
 
 import {
-    AppSwitcher20,
-    Notification20,
-    UserAvatar20,
-  } from '@carbon/icons-react';
-  
+  AppSwitcher20,
+  Notification20,
+  UserAvatar20,
+} from '@carbon/icons-react';
+
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
