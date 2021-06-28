@@ -369,11 +369,19 @@ __metadata:
   linkType: hard
 
 "@babel/parser@npm:^7.12.5":
+<<<<<<< HEAD
   version: 7.14.7
   resolution: "@babel/parser@npm:7.14.7"
   bin:
     parser: ./bin/babel-parser.js
   checksum: 8c7c7fd9735d9de2a0531fe54338d76972aeb9a414902f5edfc317c421a2da6a8772d04dce5444c89065ae2719c48433153f9cbaa14754b1bf8d6154915095ff
+=======
+  version: 7.14.4
+  resolution: "@babel/parser@npm:7.14.4"
+  bin:
+    parser: ./bin/babel-parser.js
+  checksum: 3bc067c1ee0e0178d365e1b2988ea1a0d6d37af37870ea1a7e80729b3bdc40acda083cac44ce72f63a5b31a489e35120f617bd41f312dec4c86cf814cff8e64a
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -1513,11 +1521,19 @@ __metadata:
   linkType: hard
 
 "@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.9.1":
+<<<<<<< HEAD
   version: 7.14.6
   resolution: "@babel/runtime@npm:7.14.6"
   dependencies:
     regenerator-runtime: ^0.13.4
   checksum: dd931f6ef1c8dab295c4a00c592db6352bf12a5c443f8222304d5c1d3e88d795fa949afcb6f053eec2e69e9827a17ff274524c1cd43813f56b61e3a540274d2f
+=======
+  version: 7.14.0
+  resolution: "@babel/runtime@npm:7.14.0"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: ab6653f2f8ecdaebf36674894cef458a9d4f881dc007fdcd50a8261f5c6d9731e03fda2c17e32ecf0e6c779d69eb6cf49d68a48c780aaf07d5b572e8b7ef0508
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -1576,10 +1592,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.19.0":
   version: 10.19.0
   resolution: "@carbon/icon-helpers@npm:10.19.0"
   checksum: d1ba9865437b6ec52e47b794cf1a808e7608a496f5f59d67bec6289f51e6c6083b623b1ca6b3d96a08b730fe3f25acec98b5c8f27887c697c63910165fb51210
+=======
+"@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.18.0":
+  version: 10.18.0
+  resolution: "@carbon/icon-helpers@npm:10.18.0"
+  checksum: 151d30cb4c423c1f750bcf9fe75ee0070888b282f4191d61e00d34b7741f3eab3a54d0167a492e24d8e8c465f5fe36279175d2a75781368c2c291d8f5b877f69
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -1596,15 +1619,26 @@ __metadata:
   linkType: hard
 
 "@carbon/icons-react@npm:^10.22.0":
+<<<<<<< HEAD
   version: 10.34.0
   resolution: "@carbon/icons-react@npm:10.34.0"
   dependencies:
     "@carbon/icon-helpers": ^10.19.0
+=======
+  version: 10.33.0
+  resolution: "@carbon/icons-react@npm:10.33.0"
+  dependencies:
+    "@carbon/icon-helpers": ^10.18.0
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
     "@carbon/telemetry": 0.0.0-alpha.6
     prop-types: ^15.7.2
   peerDependencies:
     react: ">=16"
+<<<<<<< HEAD
   checksum: a632d6ed7e003076dada188f0611cb5924cc15ecbae7f78c9946a7a941204d858858e04202063e2b0247c525874852f69d1af4e32c3cbffaa45f87bfd699441e
+=======
+  checksum: 4283037e97924923c3c774798a77aed88f3e69bc85ed402f00cec99cd52969adb312eebdeef07a9be7f2f4a5932ebe993c9bfc56e4c45181432e10d9884b9331
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -4357,17 +4391,28 @@ __metadata:
   linkType: hard
 
 "cacheable-request@npm:^7.0.1":
+<<<<<<< HEAD
   version: 7.0.2
   resolution: "cacheable-request@npm:7.0.2"
+=======
+  version: 7.0.1
+  resolution: "cacheable-request@npm:7.0.1"
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   dependencies:
     clone-response: ^1.0.2
     get-stream: ^5.1.0
     http-cache-semantics: ^4.0.0
     keyv: ^4.0.0
     lowercase-keys: ^2.0.0
+<<<<<<< HEAD
     normalize-url: ^6.0.1
     responselike: ^2.0.0
   checksum: 176a1fceb987f1fee8b512ee7908445854a0c75854a11710f0d8de104cf840fd92e3c94ecd1f9144e57a25e17f5d72056591e5b33aabb8775061f906b0696a50
+=======
+    normalize-url: ^4.1.0
+    responselike: ^2.0.0
+  checksum: fe0b6f3b8a145c98fecc00f0f1b13a9886cad9bf4537533c5568cba19db81c8ee09ace9c61967d5a4e72615e174d771b6b8080c3816f0b74fc6f9c69060c3ff0
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -7264,6 +7309,7 @@ __metadata:
   linkType: hard
 
 "fast-glob@npm:^3.2.4":
+<<<<<<< HEAD
   version: 3.2.6
   resolution: "fast-glob@npm:3.2.6"
   dependencies:
@@ -7273,6 +7319,18 @@ __metadata:
     merge2: ^1.3.0
     micromatch: ^4.0.4
   checksum: 0ba488ef503d250e1881bad5d01bc1393d6ca5b1243d354c9a2c8ec2b36771179b11f3e2d4e607a454aac8f9bb29682f0c0208f6cc87b6975bb82067a54960b2
+=======
+  version: 3.2.5
+  resolution: "fast-glob@npm:3.2.5"
+  dependencies:
+    "@nodelib/fs.stat": ^2.0.2
+    "@nodelib/fs.walk": ^1.2.3
+    glob-parent: ^5.1.0
+    merge2: ^1.3.0
+    micromatch: ^4.0.2
+    picomatch: ^2.2.1
+  checksum: 1a33c4a68d14cb2314c07a451689bc311bde87b09c525dd2064321165127a38a553457d121e2d3ecdd022374e3d53afb82cbb57f5694414d3406ce14ed6c0a1f
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -11485,10 +11543,17 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+<<<<<<< HEAD
 "normalize-url@npm:^6.0.1":
   version: 6.1.0
   resolution: "normalize-url@npm:6.1.0"
   checksum: 5fb69e98c149f4a54a7bb0f1904cc524627c0d23327a9feafacacf135d01d9595c65e80ced6f27c17c1959541ea732815b604ff8a6ec52ec3fe7a391b92cfba9
+=======
+"normalize-url@npm:^4.1.0":
+  version: 4.5.1
+  resolution: "normalize-url@npm:4.5.1"
+  checksum: 31dd05ad33cc649d5c1cd390f1e494d36bdcd3c0a440fd873290ffc5d4f838e2d0c1f4e9c29c9395d4907318cd8c0aaa759af336ac04ec0bd6fecb62ef1f4556
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
@@ -17325,9 +17390,15 @@ resolve@1.18.1:
   linkType: hard
 
 "yargs-parser@npm:^20.2.2":
+<<<<<<< HEAD
   version: 20.2.9
   resolution: "yargs-parser@npm:20.2.9"
   checksum: 3c58da6f6142f93c5207e309764bd90f723b9d7ed43f2e8aad0da1cefab83ee8ebf311dee2e81102646b74450c899e35b35053800b91fac23e6f433056f4c4cf
+=======
+  version: 20.2.7
+  resolution: "yargs-parser@npm:20.2.7"
+  checksum: 124e7f1c24c9609d5d1c343f14b83289634e19bb43770708ebb6a19852647aaa0f89edcbf0e5b18a21bee77f54513ab5051518b2950cda69eb607a7c6251aa4f
+>>>>>>> fea887c33a67a15dd0ecc984051177a8fc36a7b0
   languageName: node
   linkType: hard
 
