@@ -1,0 +1,7 @@
+---
+applications:
+  - name: carbon-tutorial-ThiboKay
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+
+
