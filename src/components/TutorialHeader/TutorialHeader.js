@@ -19,7 +19,9 @@ import {
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+
 import { Link } from 'react-router-dom';
+
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
@@ -60,7 +62,7 @@ const TutorialHeader = () => (
           <HeaderGlobalAction aria-label="App Switcher">
             <AppSwitcher20 />
           </HeaderGlobalAction>
-        </HeaderGlobalBar>{' '}
+        </HeaderGlobalBar>
       </Header>
     )}
   />
