@@ -45,7 +45,7 @@ const TutorialHeader = () => (
           <SideNavItems>
             <HeaderSideNavItems>
               <HeaderMenuItem element={Link} to="/repos">
-                Repositories 2
+                Repositories
               </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
