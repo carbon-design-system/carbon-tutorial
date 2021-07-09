@@ -1,0 +1,6 @@
+root: build
+
+*
+
+!Staticfile
+!build
