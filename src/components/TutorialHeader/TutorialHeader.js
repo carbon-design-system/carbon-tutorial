@@ -13,12 +13,13 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from 'carbon-components-react';
+import { Link } from 'react-router-dom';
+
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
-import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
   <HeaderContainer
@@ -34,9 +35,9 @@ const TutorialHeader = () => (
           Carbon Tutorial
         </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem element={Link} to="/repos">
-            Repositories
-          </HeaderMenuItem>
+          <HeaderName element={Link} to="/" prefix="IBM">
+            Carbon Tutorial
+          </HeaderName>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
