@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import {
   Header,
   HeaderContainer,
@@ -14,12 +13,12 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from 'carbon-components-react';
-
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
   <HeaderContainer
@@ -45,7 +44,9 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/repos">
+                Repositories
+              </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
