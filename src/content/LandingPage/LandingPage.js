@@ -10,10 +10,10 @@ import {
 const props = {
   tabs: {
     selected: 0,
-    // role: 'navigation',
+    role: 'navigation',
   },
   tab: {
-    // role: 'presentation',
+    role: 'presentation',
     tabIndex: 0,
   },
 };
