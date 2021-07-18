@@ -1,3 +1,8 @@
+// Note the feature flags needs to  come before the Carbon style.scss import.
+$feature-flags: (
+  grid-columns-16: true,
+);
+
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 /// Remove overrides once Carbon bugs are fixed upstream.
