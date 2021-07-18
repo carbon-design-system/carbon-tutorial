@@ -1,0 +1,18 @@
+diff a/src/App.js b/src/App.js	(rejected hunks)
+@@ -1,2 +1,2 @@
+-import './app.scss'; 
+-import React, { Component } from 'react';  
++import './app.scss';
++import React, { Component } from 'react';
+@@ -8 +8 @@ import RepoPage from './content/RepoPage';
+- 
++
+@@ -15,4 +15,4 @@ class App extends Component {
+-        <Switch>
+-          <Route exact path="/" component={LandingPage} />
+-          <Route path="/repos" component={RepoPage} />
+-        </Switch>
++          <Switch>
++            <Route exact path="/" component={LandingPage} />
++            <Route path="/repos" component={RepoPage} />
++          </Switch>

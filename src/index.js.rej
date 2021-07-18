@@ -1,0 +1,14 @@
+diff a/src/index.js b/src/index.js	(rejected hunks)
+@@ -8 +7,0 @@ import { HashRouter as Router } from 'react-router-dom';
+- 
+@@ -10,5 +9,5 @@ ReactDOM.render(
+-    <Router>
+-      <App />
+-    </Router>,
+-    document.getElementById('root')
+-  );
++  <Router>
++    <App />
++  </Router>,
++  document.getElementById('root')
++);
