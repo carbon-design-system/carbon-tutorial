@@ -369,11 +369,11 @@ __metadata:
   linkType: hard
 
 "@babel/parser@npm:^7.12.5":
-  version: 7.14.8
-  resolution: "@babel/parser@npm:7.14.8"
+  version: 7.14.7
+  resolution: "@babel/parser@npm:7.14.7"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: 1f900e92675bac6120dfb3e9ea86841fdaba11d338a220017dbcb9e95815a3854ea479da8027e80acaa7f0e618b96e59bbbf3a230a05aaa3407c9419eb742cfe
+  checksum: 8c7c7fd9735d9de2a0531fe54338d76972aeb9a414902f5edfc317c421a2da6a8772d04dce5444c89065ae2719c48433153f9cbaa14754b1bf8d6154915095ff
   languageName: node
   linkType: hard
 
@@ -1513,11 +1513,11 @@ __metadata:
   linkType: hard
 
 "@babel/runtime@npm:^7.1.2, @babel/runtime@npm:^7.9.1":
-  version: 7.14.8
-  resolution: "@babel/runtime@npm:7.14.8"
+  version: 7.14.6
+  resolution: "@babel/runtime@npm:7.14.6"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: ebadb3e013a26e0f62abea0da6f6f5d83c9566f0d900e65069885f93088066c64586076d15dcbe6e093c536f66cffc9e2e136ad5d8b3e66235af62f0051afa42
+  checksum: dd931f6ef1c8dab295c4a00c592db6352bf12a5c443f8222304d5c1d3e88d795fa949afcb6f053eec2e69e9827a17ff274524c1cd43813f56b61e3a540274d2f
   languageName: node
   linkType: hard
 
@@ -1576,10 +1576,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.20.0":
-  version: 10.20.0
-  resolution: "@carbon/icon-helpers@npm:10.20.0"
-  checksum: 6a2ab2f87c76037c77aace83579ee5b63b7829502679015dde7585d0a0c76e574c635e86bb4a729e2ab59adc63fbc3e85a496b9d3d5e9b01c01ca4e25dd94b08
+"@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.19.0":
+  version: 10.19.0
+  resolution: "@carbon/icon-helpers@npm:10.19.0"
+  checksum: d1ba9865437b6ec52e47b794cf1a808e7608a496f5f59d67bec6289f51e6c6083b623b1ca6b3d96a08b730fe3f25acec98b5c8f27887c697c63910165fb51210
   languageName: node
   linkType: hard
 
@@ -1596,15 +1596,15 @@ __metadata:
   linkType: hard
 
 "@carbon/icons-react@npm:^10.22.0":
-  version: 10.36.0
-  resolution: "@carbon/icons-react@npm:10.36.0"
+  version: 10.35.0
+  resolution: "@carbon/icons-react@npm:10.35.0"
   dependencies:
-    "@carbon/icon-helpers": ^10.20.0
+    "@carbon/icon-helpers": ^10.19.0
     "@carbon/telemetry": 0.0.0-alpha.6
     prop-types: ^15.7.2
   peerDependencies:
     react: ">=16"
-  checksum: dcd6c332feb51efeb0e034f3d550254b3867d7490edfcf9d785385b74264c3259789adbcce11d3050cab7905803ffd17dc17680a991358a07bdf554623909a01
+  checksum: 07246b615f6ac551569f08d2c3afdd8334a688a7c180c204c60c4cacb498c9bf67c14fe73b3155cedf7e62b168db1a1a0202038599ba4c9dcf92a9af16724b4c
   languageName: node
   linkType: hard
 
@@ -4910,12 +4910,12 @@ __metadata:
   linkType: hard
 
 "color-string@npm:^1.5.2":
-  version: 1.6.0
-  resolution: "color-string@npm:1.6.0"
+  version: 1.5.5
+  resolution: "color-string@npm:1.5.5"
   dependencies:
     color-name: ^1.0.0
     simple-swizzle: ^0.2.2
-  checksum: d48692037a6d38bd1deb91886a075d8af82e4e8269c5ab33eadf174d8aa5e82753a2f3edfe6749e24e48898ea2eb76df706b603c65a721e10ddc57c5d6a078cf
+  checksum: 3d7799f70d389214757c83bdc27380081dbeee18f90148b883ff7e86e9a599c68ccb8a956b7175e761dcd98d1061fdc58ca89ca4b1f6ca20f8ce05cc8c4e564a
   languageName: node
   linkType: hard
 
@@ -14139,9 +14139,9 @@ fsevents@~2.1.2:
   linkType: hard
 
 "resolve-alpn@npm:^1.0.0":
-  version: 1.2.0
-  resolution: "resolve-alpn@npm:1.2.0"
-  checksum: 9c1ba482c1ff3b0361602dfe600369d94c9650d49bf825b8d65732663d725f997638f293a74cfa04af88e1d79b723d1680a27d77be4fe10495df8b1ade71c352
+  version: 1.1.2
+  resolution: "resolve-alpn@npm:1.1.2"
+  checksum: 18a00b3423516f3955231a37c29a49aa8352f496ead288d5d434404037bcbf2c5704f5b79c294a0d76dd319fedda25821c8c3ff1dea27eeb9a2f473a00f1c0cf
   languageName: node
   linkType: hard
 
