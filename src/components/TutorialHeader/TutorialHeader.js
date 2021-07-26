@@ -1,23 +1,23 @@
-import React from 'react';
-import {
-  Header,
-  HeaderContainer,
-  HeaderName,
-  HeaderNavigation,
-  HeaderMenuButton,
-  HeaderMenuItem,
-  HeaderGlobalBar,
-  HeaderGlobalAction,
-  SkipToContent,
-  SideNav,
-  SideNavItems,
-  HeaderSideNavItems,
-} from 'carbon-components-react';
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+import {
+  Header,
+  HeaderContainer,
+  HeaderGlobalAction,
+  HeaderGlobalBar,
+  HeaderMenuButton,
+  HeaderMenuItem,
+  HeaderName,
+  HeaderNavigation,
+  HeaderSideNavItems,
+  SideNav,
+  SideNavItems,
+  SkipToContent,
+} from 'carbon-components-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
