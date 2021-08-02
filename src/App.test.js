@@ -6,13 +6,17 @@ import { gql } from 'apollo-boost';
 import waitForExpect from 'wait-for-expect';
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
+const cache = new InMemoryCache({
+  addTypename: true,
+});
+
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
     authorization: `Bearer ${
       process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
     }`,
-    cache: new InMemoryCache(options),
+    cache: new InMemoryCache(cache),
   },
 });
 
