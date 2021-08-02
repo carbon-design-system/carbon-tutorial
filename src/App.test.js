@@ -5,20 +5,15 @@ import { mount } from 'enzyme';
 import { MockedProvider } from '@apollo/react-testing';
 import { gql } from 'apollo-boost';
 import waitForExpect from 'wait-for-expect';
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  useQuery,
-} from '@apollo/client';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
+  cache: new InMemoryCache(),
   headers: {
     authorization: `Bearer ${
       process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
     }`,
-    cache: new InMemoryCache(),
   },
 });
 
