@@ -1,21 +1,9 @@
 import React from 'react';
 import RepoPage from './content/RepoPage';
 import { mount } from 'enzyme';
-// import { MockedProvider } from 'react-apollo/test-utils';
-import { MockedProvider } from '@apollo/react-testing';
+import { MockedProvider } from 'react-apollo/test-utils';
 import { gql } from 'apollo-boost';
 import waitForExpect from 'wait-for-expect';
-import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
-
-const client = new ApolloClient({
-  uri: 'https://api.github.com/graphql',
-  headers: {
-    authorization: `Bearer ${
-      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
-    }`,
-    cache: new InMemoryCache(),
-  },
-});
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -89,11 +77,9 @@ const mocks = [
 
 it('renders a table with data and pagination', async () => {
   const wrapper = mount(
-    <ApolloProvider client={client}>
-      <MockedProvider mocks={mocks} addTypename={false}>
-        <RepoPage />
-      </MockedProvider>
-    </ApolloProvider>
+    <MockedProvider mocks={mocks} addTypename={false}>
+      <RepoPage />
+    </MockedProvider>
   );
 
   expect(wrapper.find('Pagination').length).toBe(0);
