@@ -26,6 +26,7 @@
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",
+    "react-apollo": "^3.1.5",
     "react-dom": "16.10.0",
     "react-router-dom": "5.0.0",
     "react-scripts": "4.0.1"
