@@ -369,11 +369,11 @@ __metadata:
   linkType: hard
 
 "@babel/parser@npm:^7.12.5":
-  version: 7.14.9
-  resolution: "@babel/parser@npm:7.14.9"
+  version: 7.14.8
+  resolution: "@babel/parser@npm:7.14.8"
   bin:
     parser: ./bin/babel-parser.js
-  checksum: a6e95303dc93b8075f0f679d086c8ef127c658de8bd5baa3ec56da8e2da46e3004431b86477302c8ca7ed84e848189216a2b6394f2040f5930f4c6e108dff3b4
+  checksum: 1f900e92675bac6120dfb3e9ea86841fdaba11d338a220017dbcb9e95815a3854ea479da8027e80acaa7f0e618b96e59bbbf3a230a05aaa3407c9419eb742cfe
   languageName: node
   linkType: hard
 
