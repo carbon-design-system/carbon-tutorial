@@ -17,7 +17,9 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "10.17.0",
     "@carbon/icons-react": "10.22.0",
+    "@carbon/layout": "^10.28.0",
     "carbon-components": "10.25.0",
     "carbon-components-react": "7.25.0",
     "carbon-icons": "7.0.7",
@@ -36,6 +38,10 @@
     "prettier": "1.17.0",
     "sass": "1.29.0",
     "wait-for-expect": "3.0.2"
+  },
+  "resolutions": {
+    "node-gyp": "^6.1.0",
+    "node-pre-gyp": "^0.14.0"
   },
   "eslintConfig": {
     "extends": "react-app"
