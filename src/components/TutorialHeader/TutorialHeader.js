@@ -2,6 +2,7 @@ import React from 'react';
 import {
   Header,
   HeaderContainer,
+  HeaderName,
   HeaderNavigation,
   HeaderMenuButton,
   HeaderMenuItem,
@@ -29,11 +30,13 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderMenuItem element={Link} to="/repos">
-          Repositories
-        </HeaderMenuItem>
+        <HeaderName element={Link} to="/" prefix="IBM">
+          Carbon Tutorial
+        </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -41,7 +44,9 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/repos">
+                Repositories
+              </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
