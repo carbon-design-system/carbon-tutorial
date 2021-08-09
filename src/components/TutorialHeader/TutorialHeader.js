@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Header,
   HeaderContainer,
-  HeaderName,
   HeaderNavigation,
   HeaderMenuButton,
   HeaderMenuItem,
