@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -62,7 +61,6 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-
             <Tab {...props.tab} label="Design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
