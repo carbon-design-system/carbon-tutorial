@@ -110,8 +110,7 @@ pull_request_rules:
       - 'status-failure=ci/circleci: step-five'
     actions:
       comment:
-        message:
-          'Hi, it looks like you are missing something. Double check the
+        message: 'Hi, it looks like you are missing something. Double check the
           [instructions](https://www.carbondesignsystem.com/tutorial/react/step-5)
           in step 5 of the tutorial.'
       label:
