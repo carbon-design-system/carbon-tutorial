@@ -1,15 +1,7 @@
-@mixin landing-page-background() {
-  background-color: $ui-01;
-  position: relative;
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/theme' as *;
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: -$spacing-06;
-    top: 0;
-    right: -$spacing-06;
-    bottom: 0;
-    background: $ui-01;
-    z-index: -1;
-  }
+@mixin landing-page-background() {
+  background-color: $layer-01;
+  position: relative;
 }
