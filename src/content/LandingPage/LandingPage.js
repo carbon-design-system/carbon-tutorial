@@ -25,7 +25,7 @@ const props = {
 const LandingPage = () => {
   return (
     <Grid className="landing-page">
-      <Column lg={16} className="landing-page__banner">
+      <Column lg={16} md={8} sm={4} className="landing-page__banner">
         <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
             <a href="/">Getting started</a>
@@ -35,14 +35,18 @@ const LandingPage = () => {
           Design &amp; build with Carbon
         </h1>
       </Column>
-      <Column lg={16} className="landing-page__r2">
+      <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs
           {...props.tabs}
           aria-label="Tab navigation"
           className="tabs-group">
           <Tab {...props.tab} label="About">
             <Grid className="tabs-group-content">
-              <Column md={4} lg={7} className="landing-page__tab-content">
+              <Column
+                md={4}
+                lg={7}
+                sm={4}
+                className="landing-page__tab-content">
                 <h2 className="landing-page__subheading">What is Carbon?</h2>
                 <p className="landing-page__p">
                   Carbon is IBM’s open-source design system for digital products
@@ -53,7 +57,7 @@ const LandingPage = () => {
                 </p>
                 <Button>Learn more</Button>
               </Column>
-              <Column md={4} lg={{ span: 8, offset: 7 }}>
+              <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
                 <img
                   className="landing-page__illo"
                   src={`${process.env.PUBLIC_URL}/tab-illo.png`}
@@ -64,7 +68,11 @@ const LandingPage = () => {
           </Tab>
           <Tab {...props.tab} label="Design">
             <Grid className="tabs-group-content">
-              <Column lg={16} className="landing-page__tab-content">
+              <Column
+                lg={16}
+                md={8}
+                sm={4}
+                className="landing-page__tab-content">
                 Rapidly build beautiful and accessible experiences. The Carbon
                 kit contains all resources you need to get started.
               </Column>
@@ -80,7 +88,7 @@ const LandingPage = () => {
           </Tab>
         </Tabs>
       </Column>
-      <Column lg={16} className="landing-page__r3">
+      <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <Grid fullWidth>
           <Column md={4} lg={4}>
             <h3 className="landing-page__label">The Principles</h3>
