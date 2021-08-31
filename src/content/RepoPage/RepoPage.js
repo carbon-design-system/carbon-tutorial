@@ -104,7 +104,7 @@ const RepoPage = () => {
   if (loading) {
     return (
       <Grid className="repo-page">
-        <Column lg={16} className="repo-page__r1">
+        <Column lg={16} md={8} sm={4} className="repo-page__r1">
           <DataTableSkeleton
             columnCount={headers.length + 1}
             rowCount={10}
@@ -126,7 +126,7 @@ const RepoPage = () => {
 
     return (
       <Grid className="repo-page">
-        <Column lg={16} className="repo-page__r1">
+        <Column lg={16} md={8} sm={4} className="repo-page__r1">
           <RepoTable
             headers={headers}
             rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
