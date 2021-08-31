@@ -2,10 +2,10 @@
 
 Want to contribute to this repository? Please read below first:
 
-- [Issues and Bugs](#issues-and-bugs)
-- [Feature Requests](#feature-requests)
-- [Doc Fixes](#doc-fixes)
-- [Submission Guidelines](#submission-guidelines)
+-   [Issues and Bugs](#issues-and-bugs)
+-   [Feature Requests](#feature-requests)
+-   [Doc Fixes](#doc-fixes)
+-   [Submission Guidelines](#submission-guidelines)
 
 ## Issues and Bugs
 
@@ -34,19 +34,19 @@ If you want to help improve the docs, it's a good idea to let others know what y
 
 2. Navigate to your forked repository and copy the **SSH url**. Clone your fork by running the following in your terminal:
 
-   ```
-   $ git clone git@github.com:{ YOUR_USERNAME }/carbon-tutorial.git
-   $ cd carbon-tutorial
-   ```
+    ```
+    $ git clone git@github.com:{ YOUR_USERNAME }/carbon-tutorial.git
+    $ cd carbon-tutorial
+    ```
 
-   See [GitHub docs](https://help.github.com/articles/fork-a-repo/) for more details on forking a repository.
+    See [GitHub docs](https://help.github.com/articles/fork-a-repo/) for more details on forking a repository.
 
 3. Once cloned, you will see `origin` as your default remote, pointing to your personal forked repository. Add a remote named `upstream` pointing to the main `carbon-tutorial`:
 
-   ```
-   $ git remote add upstream git@github.com:carbon-design-system/carbon-tutorial.git
-   $ git remote -v
-   ```
+    ```
+    $ git remote add upstream git@github.com:carbon-design-system/carbon-tutorial.git
+    $ git remote -v
+    ```
 
 4. Switch to our version of Node. If you are using (nvm [Node Version Manager)](https://github.com/creationix/nvm), you can run `nvm use` to quicky switch Node versions. If you are aren't using nvm, you can still check the `.nvmrc` dotfile in the root of this project to find the major stable version of Node we are using, and then you can switch manually.
 
@@ -62,15 +62,15 @@ If your issue appears to be a bug, and hasn't been reported, open a new issue. H
 
 2. Pull the latest master branch from `upstream`:
 
-   ```
-   $ git pull upstream master
-   ```
+    ```
+    $ git pull upstream master
+    ```
 
 3. Always work and submit pull requests from a branch. _Do not submit pull requests from the `master` branch of your fork_.
 
-   ```
-   $ git checkout -b { YOUR_BRANCH_NAME } master
-   ```
+    ```
+    $ git checkout -b { YOUR_BRANCH_NAME } master
+    ```
 
 4. Create your patch or feature.
 
@@ -78,25 +78,25 @@ If your issue appears to be a bug, and hasn't been reported, open a new issue. H
 
 6. Commit your changes using a descriptive commit message.
 
-   ```
-   $ git commit -a -m "chore: Update header with newest designs, resolves #123"
-   ```
+    ```
+    $ git commit -a -m "chore: Update header with newest designs, resolves #123"
+    ```
 
-   **Note:** the optional commit -a command line option will automatically "add" and "rm" edited files. See [Close a commit via commit message](https://help.github.com/articles/closing-issues-via-commit-messages/) and [writing good commit messages](https://github.com/erlang/otp/wiki/Writing-good-commit-messages) for more details on commit messages.
+    **Note:** the optional commit -a command line option will automatically "add" and "rm" edited files. See [Close a commit via commit message](https://help.github.com/articles/closing-issues-via-commit-messages/) and [writing good commit messages](https://github.com/erlang/otp/wiki/Writing-good-commit-messages) for more details on commit messages.
 
-   Carbon Elements also uses a commit format called [Conventional Commits](https://www.conventionalcommits.org). This format is used to help automate details about our project and how it changes. When committing changes, there will be a tool that automatically looks at commits and will check to see if the commit matches the format defined by Conventional Commits.
+    Carbon Elements also uses a commit format called [Conventional Commits](https://www.conventionalcommits.org). This format is used to help automate details about our project and how it changes. When committing changes, there will be a tool that automatically looks at commits and will check to see if the commit matches the format defined by Conventional Commits.
 
 7. Once ready for feedback from other contributors and maintainers, **push your commits to your fork** (be sure to run `yarn ci-check` before pushing, to make sure your code passes linting and unit tests):
 
-   ```
-   $ git push origin { YOUR_BRANCH_NAME }
-   ```
+    ```
+    $ git push origin { YOUR_BRANCH_NAME }
+    ```
 
 8. In Github, navigate to [carbon-design-system/carbon-tutorial](https://github.com/carbon-design-system/carbon-tutorial) and click the button that reads "Compare & pull request".
 
 9. Write a title and description, the click "Create pull request".
 
-   See [how to write the perfect pull request](https://github.com/blog/1943-how-to-write-the-perfect-pull-request) for more details on writing good PRs.
+    See [how to write the perfect pull request](https://github.com/blog/1943-how-to-write-the-perfect-pull-request) for more details on writing good PRs.
 
 10. Stay up to date with the activity in your pull request. Maintainers will be reviewing your work and making comments, asking questions and suggesting changes to be made before they merge your code. When you need to make a change, add, commit and push to your branch normally.
 
