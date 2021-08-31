@@ -93,7 +93,7 @@ const LandingPage = () => {
         </Tabs>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
-        <Grid fullWidth>
+        <Grid>
           <Column md={4} lg={4} sm={4}>
             <h3 className="landing-page__label">The Principles</h3>
           </Column>
