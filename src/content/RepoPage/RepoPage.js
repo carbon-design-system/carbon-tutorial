@@ -120,7 +120,7 @@ const RepoPage = () => {
               const rows = getRowItems(repositories.nodes);
 
               return (
-                <>
+                <div>
                   <RepoTable
                     headers={headers}
                     rows={rows.slice(
@@ -142,7 +142,7 @@ const RepoPage = () => {
                       setFirstRowIndex(pageSize * (page - 1));
                     }}
                   />
-                </>
+                </div>
               );
             }}
           </Query>
