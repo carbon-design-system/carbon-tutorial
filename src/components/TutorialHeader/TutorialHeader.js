@@ -12,12 +12,12 @@ import {
   SideNav,
   SideNavItems,
   HeaderSideNavItems,
-} from 'carbon-components-react';
+} from '@carbon/react';
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
-} from '@carbon/icons-react';
+} from '@carbon/react/icons';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
