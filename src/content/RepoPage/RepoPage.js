@@ -68,4 +68,5 @@ const rows = [
   },
 ];
 
+export default RepoPage;
 <RepoTable headers={headers} rows={rows} />;
