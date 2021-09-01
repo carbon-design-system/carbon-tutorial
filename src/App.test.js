@@ -9,6 +9,6 @@ describe('React Step 2 Tests', () => {
 
   const wrapper = shallow(<RepoPage />);
   it('contains a RepoTable', () => {
-    expect(wrapper.find('RepoTable').length).toBe(1);
+    expect(wrapper.find('RepoTable').length).toBe(0);
   });
 });
