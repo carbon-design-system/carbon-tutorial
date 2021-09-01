@@ -6,7 +6,6 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
-
 const props = {
   tabs: {
     selected: 0,
@@ -23,9 +22,9 @@ const LandingPage = () => {
     <div className="bx--grid bx--grid--full-width landing-page">
       <div className="bx--row landing-page__banner">
         <div className="bx--col-lg-16">
-          <Breadcrumb noTrailingSlash aria-label="Page navigation">
+          <Breadcrumb noTrailingSlash aria-label="Page Navigation">
             <BreadcrumbItem>
-              <a href="/">Getting started</a>
+              <a href="/">Getting Started</a>
             </BreadcrumbItem>
           </Breadcrumb>
           <h1 className="landing-page__heading">
@@ -35,7 +34,7 @@ const LandingPage = () => {
       </div>
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
-          <Tabs {...props.tabs} aria-label="Tab navigation">
+          <Tabs {...props.tabs} aria-label="Tab  Navigation">
             <Tab {...props.tab} label="About">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">

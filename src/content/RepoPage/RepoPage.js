@@ -1,4 +1,5 @@
 import React from 'react';
+
 import RepoTable from './RepoTable';
 
 const headers = [
@@ -27,7 +28,6 @@ const headers = [
     header: 'Links',
   },
 ];
-
 const rows = [
   {
     id: '1',

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   DataTable,
   TableContainer,
@@ -27,7 +28,7 @@ const RepoTable = ({ rows, headers }) => {
       }) => (
         <TableContainer
           title="Carbon Repositories"
-          description="A collection of public Carbon repositories.">
+          description="A collection of public Carbon Repositories.">
           <Table {...getTableProps()}>
             <TableHead>
               <TableRow>
