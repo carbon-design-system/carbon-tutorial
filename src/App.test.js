@@ -76,6 +76,7 @@ const mocks = [
 ];
 
 it('renders a table with data and pagination', async () => {
+  jest.setTimeout(30000);
   const wrapper = mount(
     <MockedProvider mocks={mocks} addTypename={false}>
       <RepoPage />
@@ -85,6 +86,6 @@ it('renders a table with data and pagination', async () => {
   expect(wrapper.find('Pagination').length).toBe(0);
   await waitForExpect(() => {
     wrapper.update();
-    expect(wrapper.find('Pagination').length).toBe(0);
+    expect(wrapper.find('Pagination').length).toBe(1);
   });
 });
