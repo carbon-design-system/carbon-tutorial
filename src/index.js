@@ -13,7 +13,7 @@ import { HashRouter as Router } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 
-const token = `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`;
+const token = `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`;
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
