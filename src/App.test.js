@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 
 describe('React Step 4 Tests', () => {
   it('renders without crashing', () => {
+    jest.setTimeout(30000);
     shallow(<LandingPage />);
   });
 
