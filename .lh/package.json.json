@@ -1,0 +1,18 @@
+{
+    "sourceFile": "package.json",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631098032517,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631098032517,
+            "name": "Commit-0",
+            "content": "{\n  \"name\": \"carbon-tutorial\",\n  \"version\": \"0.0.0\",\n  \"private\": true,\n  \"repository\": \"git@github.com:carbon-design-system/carbon-tutorial.git\",\n  \"bugs\": \"https://github.com/carbon-design-system/carbon-tutorial/issues\",\n  \"license\": \"Apache-2.0\",\n  \"scripts\": {\n    \"build\": \"react-scripts build\",\n    \"ci-check\": \"yarn format:diff\",\n    \"clean\": \"yarn cache clean && yarn install\",\n    \"eject\": \"react-scripts eject\",\n    \"format\": \"prettier --write \\\"**/*.{js,md,scss}\\\"\",\n    \"format:diff\": \"prettier --list-different \\\"**/*.{js,md,scss}\\\"\",\n    \"format:staged\": \"prettier --write\",\n    \"start\": \"react-scripts start\",\n    \"test\": \"react-scripts test\",\n    \"deploy\": \"rm -rf ./build && yarn build && cf push -f manifest.yml\"\n  },\n  \"dependencies\": {\n    \"@carbon/grid\": \"10.17.0\",\n    \"@carbon/icons-react\": \"10.22.0\",\n    \"apollo-boost\": \"0.4.2\",\n    \"carbon-components\": \"10.25.0\",\n    \"carbon-components-react\": \"7.25.0\",\n    \"carbon-icons\": \"7.0.7\",\n    \"enzyme\": \"3.11.0\",\n    \"enzyme-adapter-react-16\": \"1.15.5\",\n    \"graphql\": \"14.3.1\",\n    \"react\": \"16.10.0\",\n    \"react-apollo\": \"2.5.6\",\n    \"react-dom\": \"16.10.0\",\n    \"react-router-dom\": \"5.0.0\",\n    \"react-scripts\": \"4.0.1\"\n  },\n  \"devDependencies\": {\n    \"@commitlint/cli\": \"7.5.2\",\n    \"@commitlint/config-conventional\": \"7.5.0\",\n    \"husky\": \"1.3.1\",\n    \"lint-staged\": \"8.1.5\",\n    \"prettier\": \"1.17.0\",\n    \"sass\": \"1.29.0\",\n    \"wait-for-expect\": \"3.0.2\"\n  },\n  \"eslintConfig\": {\n    \"extends\": \"react-app\"\n  },\n  \"browserslist\": [\n    \">0.2%\",\n    \"not dead\",\n    \"not ie <= 11\",\n    \"not op_mini all\"\n  ],\n  \"husky\": {\n    \"hooks\": {\n      \"commit-msg\": \"commitlint -e $HUSKY_GIT_PARAMS\",\n      \"pre-commit\": \"lint-staged\"\n    }\n  },\n  \"commitlint\": {\n    \"extends\": [\n      \"@commitlint/config-conventional\"\n    ]\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"yarn format:staged\",\n      \"git add\"\n    ],\n    \"*.{scss,css}\": [\n      \"yarn format:staged\",\n      \"git add\"\n    ],\n    \"*.md\": [\n      \"yarn format:staged\",\n      \"git add\"\n    ]\n  },\n  \"prettier\": {\n    \"jsxBracketSameLine\": true,\n    \"printWidth\": 80,\n    \"singleQuote\": true,\n    \"trailingComma\": \"es5\"\n  }\n}\n"
+        }
+    ]
+}
