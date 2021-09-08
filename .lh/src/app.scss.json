@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631083699888,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631083699888,
+            "name": "Commit-0",
+            "content": "@import 'carbon-components/scss/globals/scss/styles.scss';\n@import './components/TutorialHeader/tutorial-header.scss';\n@import './components/TutorialHeader/tutorial-header.scss';\n@import './content/LandingPage/landing-page.scss';\n@import './content/RepoPage/repo-page.scss';\n"
+        }
+    ]
+}

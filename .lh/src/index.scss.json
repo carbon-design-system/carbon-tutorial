@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/index.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1631083111355,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631083862582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $feature-flags: (\n-  grid-columns-16: true,\n+  grid-columns-16: false,\n );\n @import 'carbon-components/scss/globals/scss/styles.scss';\n \n /// Remove overrides once Carbon bugs are fixed upstream.\n"
+                },
+                {
+                    "date": 1631084064044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n $feature-flags: (\n-  grid-columns-16: false,\n+  grid-columns-16: true,\n );\n @import 'carbon-components/scss/globals/scss/styles.scss';\n \n /// Remove overrides once Carbon bugs are fixed upstream.\n"
+                }
+            ],
+            "date": 1631083111355,
+            "name": "Commit-0",
+            "content": "$feature-flags: (\n  grid-columns-16: true,\n);\n@import 'carbon-components/scss/globals/scss/styles.scss';\n\n/// Remove overrides once Carbon bugs are fixed upstream.\n/// Need grid option to not add page gutters at large viewports, to also use when nesting grids\n/// @link https://github.com/carbon-design-system/carbon/issues/2792\n@media (min-width: 42rem) {\n  .bx--grid--no-gutter {\n    padding-left: 1rem;\n    padding-right: 1rem;\n  }\n}\n\n/// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter\n/// @link https://github.com/carbon-design-system/carbon/issues/3010\n.bx--content {\n  padding: 0;\n}\n"
+        }
+    ]
+}
