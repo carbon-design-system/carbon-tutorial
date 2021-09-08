@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/App.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631081372184,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631081372184,
+            "name": "Commit-0",
+            "content": "import React, { Component } from 'react';\nimport './app.scss';\nimport { Content } from 'carbon-components-react';\nimport TutorialHeader from './components/TutorialHeader';\nimport { Route, Switch } from 'react-router-dom';\nimport LandingPage from './content/LandingPage';\nimport RepoPage from './content/RepoPage';\n\nclass App extends Component {\n  render() {\n    return (\n      <>\n        <TutorialHeader />\n        <Content>\n          <Switch>\n            <Route exact path=\"/\" component={LandingPage} />\n            <Route path=\"/repos\" component={RepoPage} />\n          </Switch>\n        </Content>\n      </>\n    );\n  }\n}\n\nexport default App;\n"
+        }
+    ]
+}
