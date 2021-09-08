@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/components/Info/Info.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1631092509798,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631095002858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,14 +9,24 @@\n   </section>\n );\n \n const InfoCard = props => {\n+  const splitHeading = createArrayFromPhrase(props.heading);\n   return (\n     <article className=\"info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1\">\n-      <h4 className=\"info-card__heading\">{props.heading}</h4>\n+      <h4 className=\"info-card__heading\">\n+        {`${splitHeading[0]} `}\n+        <strong>{splitHeading[1]}</strong>\n+      </h4>\n       <p className=\"info-card__body\">{props.body}</p>\n       {props.icon}\n     </article>\n   );\n };\n \n+function createArrayFromPhrase(phrase) {\n+  const splitPhrase = phrase.split(' ');\n+  const thirdWord = splitPhrase.pop();\n+  return [splitPhrase.join(' '), thirdWord];\n+}\n+\n export { InfoSection, InfoCard };\n"
+                }
+            ],
+            "date": 1631092509798,
+            "name": "Commit-0",
+            "content": "import React from 'react';\n\nconst InfoSection = props => (\n  <section className={`bx--row ${props.className} info-section`}>\n    <div className=\"bx--col-md-8 bx--col-lg-4 bx--col-xlg-3\">\n      <h3 className=\"info-section__heading\">{props.heading}</h3>\n    </div>\n    {props.children}\n  </section>\n);\n\nconst InfoCard = props => {\n  return (\n    <article className=\"info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1\">\n      <h4 className=\"info-card__heading\">{props.heading}</h4>\n      <p className=\"info-card__body\">{props.body}</p>\n      {props.icon}\n    </article>\n  );\n};\n\nexport { InfoSection, InfoCard };\n"
+        }
+    ]
+}

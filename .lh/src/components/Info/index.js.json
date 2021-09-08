@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/components/Info/index.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631091879522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631091879522,
+            "name": "Commit-0",
+            "content": "export * from './Info';\n"
+        }
+    ]
+}

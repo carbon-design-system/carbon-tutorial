@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/components/Info/_info.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1631092493504,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1631095005819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,4 +35,7 @@\n       margin-top: $layout-06;\n     }\n   }\n }\n+.info-card__heading {\n+  @include carbon--type-style('productive-heading-03');\n+}\n"
+                },
+                {
+                    "date": 1631095071452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,4 +38,15 @@\n }\n .info-card__heading {\n   @include carbon--type-style('productive-heading-03');\n }\n+\n+.info-card__body {\n+  margin-top: $spacing-06;\n+  flex-grow: 1; // fill space so icons are bottom aligned\n+  @include type-style('body-long-01');\n+\n+  // prevent large line lengths between small and medium viewports\n+  @include carbon--breakpoint-between(321px, md) {\n+    max-width: 75%;\n+  }\n+}\n"
+                }
+            ],
+            "date": 1631092493504,
+            "name": "Commit-0",
+            "content": ".info-section__heading {\n  @include carbon--type-style('heading-01');\n}\n\n.info-card {\n  margin-top: $spacing-09;\n  display: flex;\n  flex-direction: column;\n\n  svg {\n    margin-top: $spacing-09;\n  }\n\n  // top border in only small breakpoints to prevent overrides\n  @include carbon--breakpoint-down(md) {\n    &:not(:nth-child(2)) {\n      border-top: 1px solid $ui-03;\n      padding-top: $spacing-09;\n    }\n  }\n\n  // left border in just the 2nd column items\n  @include carbon--breakpoint(md) {\n    &:nth-child(odd) {\n      border-left: 1px solid $ui-03;\n    }\n  }\n\n  // left border in all items\n  @include carbon--breakpoint(lg) {\n    margin-top: 0;\n    border-left: 1px solid $ui-03;\n\n    svg {\n      margin-top: $layout-06;\n    }\n  }\n}\n"
+        }
+    ]
+}

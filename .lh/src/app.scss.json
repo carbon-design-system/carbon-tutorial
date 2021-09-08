@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631091882518,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631091882518,
+            "name": "Commit-0",
+            "content": "@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';\n@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';\n@import 'carbon-components/scss/globals/scss/typography.scss';\n@import 'carbon-components/scss/globals/scss/vars.scss';\n\n@import './components/TutorialHeader/tutorial-header.scss';\n@import './content/LandingPage/landing-page.scss';\n@import './content/RepoPage/repo-page.scss';\n@import './components/Info/info.scss';\n"
+        }
+    ]
+}
