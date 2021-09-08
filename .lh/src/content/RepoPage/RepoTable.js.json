@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/content/RepoPage/RepoTable.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1631091059408,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1631091059408,
+            "name": "Commit-0",
+            "content": "import React from 'react';\nimport {\n  DataTable,\n  TableContainer,\n  Table,\n  TableHead,\n  TableRow,\n  TableExpandHeader,\n  TableHeader,\n  TableBody,\n  TableExpandRow,\n  TableCell,\n  TableExpandedRow,\n} from 'carbon-components-react';\n\nconst RepoTable = ({ rows, headers }) => {\n  const getRowDescription = rowId => {\n    const row = rows.find(({ id }) => id === rowId);\n    return row ? row.description : '';\n  };\n\n  return (\n    <DataTable\n      rows={rows}\n      headers={headers}\n      render={({\n        rows,\n        headers,\n        getHeaderProps,\n        getRowProps,\n        getTableProps,\n      }) => (\n        <TableContainer\n          title=\"Carbon Repositories\"\n          description=\"A collection of public Carbon repositories.\">\n          <Table {...getTableProps()}>\n            <TableHead>\n              <TableRow>\n                <TableExpandHeader />\n                {headers.map(header => (\n                  <TableHeader {...getHeaderProps({ header })}>\n                    {header.header}\n                  </TableHeader>\n                ))}\n              </TableRow>\n            </TableHead>\n            <TableBody>\n              {rows.map(row => (\n                <React.Fragment key={row.id}>\n                  <TableExpandRow {...getRowProps({ row })}>\n                    {row.cells.map(cell => (\n                      <TableCell key={cell.id}>{cell.value}</TableCell>\n                    ))}\n                  </TableExpandRow>\n                  <TableExpandedRow colSpan={headers.length + 1}>\n                    <p>{getRowDescription(row.id)}</p>\n                  </TableExpandedRow>\n                </React.Fragment>\n              ))}\n            </TableBody>\n          </Table>\n        </TableContainer>\n      )}\n    />\n  );\n};\n\nexport default RepoTable;\n"
+        }
+    ]
+}
