@@ -4474,6 +4474,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"caniuse-lite@npm:^1.0.30001258":
+  version: 1.0.30001258
+  resolution: "caniuse-lite@npm:1.0.30001258"
+  checksum: ef97b5eb31cf99b4a8e895da133c918d4dc606acf55dec6d9bbde4f94e9b2b18bcfc3b105c2d59c68ea0f51dd11fd83ef7b42cb28489c48f486cc49b4dcb7bfb
+  languageName: node
+  linkType: hard
+
 "capture-exit@npm:^2.0.0":
   version: 2.0.0
   resolution: "capture-exit@npm:2.0.0"
@@ -4535,6 +4542,7 @@ __metadata:
     "@carbon/icons-react": 10.22.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
+    caniuse-lite: ^1.0.30001258
     carbon-components: 10.25.0
     carbon-components-react: 7.25.0
     carbon-icons: 7.0.7
