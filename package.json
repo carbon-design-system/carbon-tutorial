@@ -17,7 +17,12 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@carbon/grid": "10.17.0",
     "@carbon/icons-react": "10.22.0",
+    "@carbon/import-once": "^10.5.0",
+    "@carbon/layout": "npm:10.31.0",
+    "browserslist": "^4.17.0",
+    "caniuse-lite": "^1.0.30001258",
     "carbon-components": "10.25.0",
     "carbon-components-react": "7.25.0",
     "carbon-icons": "7.0.7",
