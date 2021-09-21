@@ -24,30 +24,30 @@
     &:nth-child(odd) {
       border-left: 1px solid $ui-03;
     }
-  }
 
-  // left border in all items
-  @include carbon--breakpoint(lg) {
-    margin-top: 0;
-    border-left: 1px solid $ui-03;
+    // left border in all items
+    @include carbon--breakpoint(lg) {
+      margin-top: 0;
+      border-left: 1px solid $ui-03;
 
-    svg {
-      margin-top: $layout-06;
+      svg {
+        margin-top: $layout-06;
+      }
     }
-  }
-}
 
-.info-card__heading {
-  @include carbon--type-style('productive-heading-03');
-}
+    .info-card__heading {
+      @include carbon--type-style('productive-heading-03');
+    }
 
-.info-card__body {
-  margin-top: $spacing-06;
-  flex-grow: 1; // fill space so icons are bottom aligned
-  @include type-style('body-long-01');
+    .info-card__body {
+      margin-top: $spacing-06;
+      flex-grow: 1; // fill space so icons are bottom aligned
+      @include type-style('body-long-01');
 
-  // prevent large line lengths between small and medium viewports
-  @include carbon--breakpoint-between(321px, md) {
-    max-width: 75%;
+      // prevent large line lengths between small and medium viewports
+      @include carbon--breakpoint-between(321px, md) {
+        max-width: 75%;
+      }
+    }
   }
 }
