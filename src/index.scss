@@ -15,3 +15,8 @@
 .bx--content {
   padding: 0;
 }
+
+/// Configure our grid to use 16 columns instead of the default 12 columns
+$feature-flags: (
+  grid-columns-16: true,
+);
