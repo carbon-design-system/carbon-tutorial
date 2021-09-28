@@ -1699,9 +1699,6 @@ __metadata:
   checksum: b6fcedcc03d4683d56e9f09b9e1506de73fb31f14a39c179f75920382edff3d7091f55daa5123ddf170b3bf0834a8fb1a118c1336cf077127fa7ddda1e4a9ca2
   languageName: node
   linkType: hard
-
-<<<<<<< HEAD
-=======
 "@carbon/icons-react@npm:^10.22.0":
   version: 10.38.0
   resolution: "@carbon/icons-react@npm:10.38.0"
@@ -1715,7 +1712,6 @@ __metadata:
   languageName: node
   linkType: hard
 
->>>>>>> ca4668b2fcf7cd7b785841c5bd89d1d7cfa8e708
 "@carbon/import-once@npm:^10.4.0":
   version: 10.6.0
   resolution: "@carbon/import-once@npm:10.6.0"
@@ -1724,11 +1720,6 @@ __metadata:
   linkType: hard
 
 "@carbon/layout@npm:^10.15.0":
-<<<<<<< HEAD
-  version: 10.32.0
-  resolution: "@carbon/layout@npm:10.32.0"
-  checksum: 559848339e05edda8d953d11b85f07884bf30c8347a81708d02a1760d58e81cd2720472eb2dacab01fb02e5085b5c87f68b149c8a5194a82f9fd1595a0e4a908
-=======
   version: 10.31.0
   resolution: "@carbon/layout@npm:10.31.0"
   checksum: bf53bb44376e5141e1177565334567163d13806fb78aa561c50ce415e123b704b1cc665c4c583fd5c219e6c3445ab80a79a940e12e16bc6c0ccc4099e4e6830d
@@ -1752,7 +1743,6 @@ __metadata:
   bin:
     carbon-telemetry: bin/carbon-telemetry.js
   checksum: 4d31a35b55b080cf703cab1df2c6bcbf97cd619dd43f1181280b7645e7f60a7f143c8fb128b1e406bd7daf1a0ca13d345b2ab9011273bbbbf3ecab5e74328b90
->>>>>>> ca4668b2fcf7cd7b785841c5bd89d1d7cfa8e708
   languageName: node
   linkType: hard
 
