@@ -1673,14 +1673,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icon-helpers@npm:^10.10.0":
-  version: 10.10.0
-  resolution: "@carbon/icon-helpers@npm:10.10.0"
-  checksum: fb418cb7d47a64142d670585011995a5f0db8f9b02dc79e522b963254bb176a63bd7188f60ecf18bc1760a6915386d28c15eda9b527e937cf0e3dde7234e24b9
-
-  languageName: node
-  linkType: hard
-
 "@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.22.0":
   version: 10.22.0
   resolution: "@carbon/icon-helpers@npm:10.22.0"
@@ -1699,6 +1691,7 @@ __metadata:
   checksum: b6fcedcc03d4683d56e9f09b9e1506de73fb31f14a39c179f75920382edff3d7091f55daa5123ddf170b3bf0834a8fb1a118c1336cf077127fa7ddda1e4a9ca2
   languageName: node
   linkType: hard
+
 "@carbon/icons-react@npm:^10.22.0":
   version: 10.38.0
   resolution: "@carbon/icons-react@npm:10.38.0"
