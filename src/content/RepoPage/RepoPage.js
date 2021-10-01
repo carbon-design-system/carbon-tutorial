@@ -42,10 +42,12 @@ const LinkList = ({ url, homepageUrl }) => (
     <li>
       <Link href={url}>GitHub</Link>
     </li>
-    <li>
-      <span>&nbsp;|&nbsp;</span>
-      <Link href={homepageUrl}>Homepage</Link>
-    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
   </ul>
 );
 
