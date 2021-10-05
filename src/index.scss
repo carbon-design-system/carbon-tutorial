@@ -1,3 +1,9 @@
+/// need to configure our grid to use 16 columns instead of the default 12 columns.
+/// and this needs to come before the styles.scss import.
+$feature-flags: (
+  grid-columns-16: true,
+);
+
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 /// Remove overrides once Carbon bugs are fixed upstream.
