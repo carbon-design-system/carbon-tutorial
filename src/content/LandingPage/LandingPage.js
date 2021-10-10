@@ -60,9 +60,7 @@ const LandingPage = () => {
                       alt="Carbon illustration"
                     />
                   </div>
-                  <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
-                    8/16
-                  </div>
+                  <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8" />
                 </div>
               </div>
             </Tab>
