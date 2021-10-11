@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './app.scss';
 import { Content } from 'carbon-components-react';
-import TutorialHeader from './components/TutorialHeader';
+import TutorialHeader from './components/TutorialHeader/index.js';
 import { Route, Switch } from 'react-router-dom';
-import LandingPage from './content/LandingPage';
-import RepoPage from './content/RepoPage';
+import LandingPage from './content/LandingPage/index.js';
+import RepoPage from './content/RepoPage/index.js';
 
 class App extends Component {
   render() {
