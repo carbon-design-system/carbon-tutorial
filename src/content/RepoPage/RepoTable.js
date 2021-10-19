@@ -18,6 +18,7 @@ const RepoTable = ({ rows, headers }) => {
     const row = rows.find(({ id }) => id === rowId);
     return row ? row.description : '';
   };
+
   return (
     <DataTable
       rows={rows}
