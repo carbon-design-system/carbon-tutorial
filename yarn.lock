@@ -5349,18 +5349,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"create-react-context@npm:^0.2.2":
-  version: 0.2.3
-  resolution: "create-react-context@npm:0.2.3"
-  dependencies:
-    fbjs: ^0.8.0
-    gud: ^1.0.0
-  peerDependencies:
-    prop-types: ^15.0.0
-    react: ^0.14.0 || ^15.0.0 || ^16.0.0
-  checksum: eb4146dfaea83687fa4b6cfa337006574821ebf38ddc22f329ebe09985f88cc0b1a44c0e259cd042f3d75efa3cde8fc936e3683f63943b317dac468322d59ef5
-  languageName: node
-  linkType: hard
+
   "cross-spawn@npm:7.0.3, cross-spawn@npm:^7.0.0, cross-spawn@npm:^7.0.2":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
