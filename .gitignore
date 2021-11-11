@@ -24,4 +24,3 @@ yarn-error.log*
 .eslintcache
 
 /.idea/
-/.yarn/cache/*
