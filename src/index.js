@@ -12,20 +12,22 @@ import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
-  
+
 ReactDOM.render(
   <ApolloProvider client={client}>
-  <Router>
-    <App />
-  </Router>
-</ApolloProvider>
+    <Router>
+      <App />
+    </Router>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
-    authorization: `Bearer ${process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN}`,
+    authorization: `Bearer ${
+      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+    }`,
   },
 });
 
