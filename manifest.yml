@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-GinaBiondo-aperto
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
