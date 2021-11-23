@@ -1,19 +1,16 @@
-@import 'carbon-components/scss/globals/scss/styles.scss';
+// Feature flags
+$css--font-face: true;
+$css--plex: true;
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+// Global styles
+@import 'carbon-components/scss/globals/scss/css--font-face';
+@import 'carbon-components/scss/globals/grid/grid';
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-$feature-flags: (
-  grid-columns-16: true,
-);
+// Carbon components
+@import 'carbon-components/scss/components/breadcrumb/breadcrumb';
+@import 'carbon-components/scss/components/button/button';
+@import 'carbon-components/scss/components/data-table/data-table';
+@import 'carbon-components/scss/components/link/link';
+@import 'carbon-components/scss/components/pagination/pagination';
+@import 'carbon-components/scss/components/tabs/tabs';
+@import 'carbon-components/scss/components/ui-shell/ui-shell';
