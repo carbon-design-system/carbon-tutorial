@@ -8,14 +8,8 @@ import {
 } from 'carbon-components-react';
 
 const props = {
-  tabs: {
-    selected: 0,
-    role: 'navigation',
-  },
-  tab: {
-    role: 'presentation',
-    tabIndex: 0,
-  },
+  tabs: { selected: 0, role: 'navigation' },
+  tab: { role: 'presentation', tabIndex: 0 },
 };
 
 const LandingPage = () => {
