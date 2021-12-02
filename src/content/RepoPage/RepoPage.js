@@ -1,5 +1,10 @@
 import React from 'react';
 import RepoTable from './RepoTable';
+import { gql } from 'apollo-boost';
+import { Link } from 'carbon-components-react';
+import { Query } from 'react-apollo';
+import React, { useState } from 'react';
+import { Link, DataTableSkeleton } from 'carbon-components-react';
 
 const headers = [
   {
@@ -59,15 +64,93 @@ const rows = [
 ];
 
 const RepoPage = () => {
-  return (
-    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
-      <div className="bx--row repo-page__r1">
-        <div className="bx--col-lg-16">
-          <RepoTable headers={headers} rows={rows} />
-        </div>
-      </div>
-    </div>
+  const getRowItems = rows =>
+    rows.map(row => ({
+      ...row,
+      key: row.id,
+      stars: row.stargazers.totalCount,
+      issueCount: row.issues.totalCount,
+      createdAt: new Date(row.createdAt).toLocaleDateString(),
+      updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+      links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+    }));
+  const LinkList = ({ url, homepageUrl }) => (
+    <ul style={{ display: 'flex' }}>
+      <li>
+        <Link href={url}>GitHub</Link>
+      </li>
+      {homepageUrl && (
+        <li>
+          <span>&nbsp;|&nbsp;</span>
+          <Link href={homepageUrl}>Homepage</Link>
+        </li>
+      )}
+    </ul>
   );
+  const REPO_QUERY = gql`
+    query REPO_QUERY {
+      # Let's use carbon as our organization
+      organization(login: "carbon-design-system") {
+        # We'll grab all the repositories in one go. To load more resources
+        # continuously, see the advanced topics.
+        repositories(
+          first: 75
+          orderBy: { field: UPDATED_AT, direction: DESC }
+        ) {
+          totalCount
+          nodes {
+            url
+            homepageUrl
+            issues(filterBy: { states: OPEN }) {
+              totalCount
+            }
+            stargazers {
+              totalCount
+            }
+            releases(first: 1) {
+              totalCount
+              nodes {
+                name
+              }
+            }
+            name
+            updatedAt
+            createdAt
+            description
+            id
+          }
+        }
+      }
+    }
+  `;
+  // If we're here, we've got our data!
+  const { repositories } = data.organization;
+  const rows = getRowItems(repositories.nodes);
+  <Query query={REPO_QUERY}>
+    {({ loading, error, data }) => {
+      // Wait for the request to complete
+      if (loading)
+        return (
+          <DataTableSkeleton
+            columnCount={headers.length + 1}
+            rowCount={10}
+            headers={headers}
+          />
+        );
+
+      // Something went wrong with the data fetching
+      if (error) return `Error! ${error.message}`;
+
+      // If we're here, we've got our data!
+      console.log(data.organization);
+
+      return (
+        <>
+          <RepoTable headers={headers} rows={rows} />
+        </>
+      );
+    }}
+  </Query>;
 };
 
 export default RepoPage;
