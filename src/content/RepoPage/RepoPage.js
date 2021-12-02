@@ -1,9 +1,42 @@
 import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
-import { Link } from 'carbon-components-react';
 import { Query } from 'react-apollo';
 import React, { useState } from 'react';
 import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
+
+const REPO_QUERY = gql`
+  query REPO_QUERY {
+    # Let's use carbon as our organization
+    organization(login: "carbon-design-system") {
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
+      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
+        totalCount
+        nodes {
+          url
+          homepageUrl
+          issues(filterBy: { states: OPEN }) {
+            totalCount
+          }
+          stargazers {
+            totalCount
+          }
+          releases(first: 1) {
+            totalCount
+            nodes {
+              name
+            }
+          }
+          name
+          updatedAt
+          createdAt
+          description
+          id
+        }
+      }
+    }
+  }
+`;
 
 const headers = [
   {
@@ -63,14 +96,6 @@ const rows = [
 ];
 
 const RepoPage = () => {
-  const [totalItems, setTotalItems] = useState(0);
-  const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(10);
-  // If we're here, we've got our data!
-  const { repositories } = data.organization;
-  setTotalItems(repositories.totalCount);
-  const rows = getRowItems(repositories.nodes);
-
   const getRowItems = rows =>
     rows.map(row => ({
       ...row,
@@ -94,45 +119,10 @@ const RepoPage = () => {
       )}
     </ul>
   );
-  const REPO_QUERY = gql`
-    query REPO_QUERY {
-      # Let's use carbon as our organization
-      organization(login: "carbon-design-system") {
-        # We'll grab all the repositories in one go. To load more resources
-        # continuously, see the advanced topics.
-        repositories(
-          first: 75
-          orderBy: { field: UPDATED_AT, direction: DESC }
-        ) {
-          totalCount
-          nodes {
-            url
-            homepageUrl
-            issues(filterBy: { states: OPEN }) {
-              totalCount
-            }
-            stargazers {
-              totalCount
-            }
-            releases(first: 1) {
-              totalCount
-              nodes {
-                name
-              }
-            }
-            name
-            updatedAt
-            createdAt
-            description
-            id
-          }
-        }
-      }
-    }
-  `;
-  // If we're here, we've got our data!
-  const { repositories } = data.organization;
-  const rows = getRowItems(repositories.nodes);
+  const [totalItems, setTotalItems] = useState(0);
+  const [firstRowIndex, setFirstRowIndex] = useState(0);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
+
   <Query query={REPO_QUERY}>
     {({ loading, error, data }) => {
       // Wait for the request to complete
@@ -149,7 +139,9 @@ const RepoPage = () => {
       if (error) return `Error! ${error.message}`;
 
       // If we're here, we've got our data!
-      console.log(data.organization);
+      const { repositories } = data.organization;
+      setTotalItems(repositories.totalCount);
+      const rows = getRowItems(repositories.nodes);
 
       return (
         <>
