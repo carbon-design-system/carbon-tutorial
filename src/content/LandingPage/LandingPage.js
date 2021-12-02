@@ -6,8 +6,9 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
-import { InfoSection, InfoCard } from '../../components/Info';
 import { Application32, Globe32, PersonFavorite32 } from '@carbon/icons-react';
+
+import { InfoSection, InfoCard } from '../../components/Info/Info';
 
 const props = {
   tabs: {
