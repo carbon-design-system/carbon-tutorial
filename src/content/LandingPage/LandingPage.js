@@ -9,7 +9,7 @@ import {
 
 const props = {
   tabs: {
-    selected: 2,
+    selected: 0,
     role: 'navigation',
   },
   tab: {
@@ -17,9 +17,22 @@ const props = {
     tabIndex: 0,
   },
 };
+
 const LandingPage = () => {
   return (
-    <>
+    <div className="bx--grid bx--grid--full-width landing-page">
+      <div className="bx--row landing-page__banner">
+        <div className="bx--col-lg-16">
+          <Breadcrumb noTrailingSlash aria-label="Page navigation">
+            <BreadcrumbItem>
+              <a href="/">Getting Started</a>
+            </BreadcrumbItem>
+          </Breadcrumb>
+          <h1 className="landing-page__heading">
+            Design &amp; build with Carbon
+          </h1>
+        </div>
+      </div>
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
@@ -28,7 +41,7 @@ const LandingPage = () => {
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-md-4 bx--col-lg-7">
                     <h2 className="landing-page__subheading">
-                      What is Carbon?
+                      What is Carbon ?
                     </h2>
                     <p className="landing-page__p">
                       Carbon is IBM’s open-source design system for digital
@@ -80,7 +93,7 @@ const LandingPage = () => {
         <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
         <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
       </div>
-    </>
+    </div>
   );
 };
 
