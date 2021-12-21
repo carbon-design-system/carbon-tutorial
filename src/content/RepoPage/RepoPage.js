@@ -94,9 +94,6 @@ const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
-  const { repositories } = REPO_QUERY.data.organization;
-  setTotalItems(repositories.totalCount);
-  const rows = getRowItems(repositories.nodes);
 
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -118,7 +115,9 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              console.log(data.organization);
+              const { repositories } = data.organization;
+              setTotalItems(repositories.totalCount);
+              const rows = getRowItems(repositories.nodes);
 
               return (
                 <>
