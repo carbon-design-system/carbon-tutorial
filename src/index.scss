@@ -17,3 +17,7 @@
   margin-top: 3rem;
   background: var(--bx-background);
 }
+
+$feature-flags: (
+  grid-columns-16: true,
+);
