@@ -15,3 +15,8 @@
 .bx--content {
   padding: 0;
 }
+
+/// In index.scss, we need to configure our grid to use 16 columns instead of the default 12 columns. We do this by adding grid-columns-16: true in our $feature-flags.
+$feature-flags: (
+  grid-columns-16: true,
+);
