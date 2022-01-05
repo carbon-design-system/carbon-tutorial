@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  app:
+    container_name: app-dev
+    image: app-dev
+    build:
+      context: .
+      target: development
+    volumes:
+      - ./src:/carbon-tutorial/src
+    ports:
+      - 3000:3000
+
