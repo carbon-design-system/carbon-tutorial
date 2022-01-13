@@ -8,7 +8,6 @@ const RepoPage = () => {
     </div>
   </div>;
 };
-
 const headers = [
   {
     key: 'name',
