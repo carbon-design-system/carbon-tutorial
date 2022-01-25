@@ -1,6 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
 import {
   Header,
   HeaderContainer,
@@ -22,6 +20,8 @@ import {
   UserAvatar20,
 } from '@carbon/icons-react';
 
+import { Link } from 'react-router-dom';
+
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
@@ -35,9 +35,10 @@ const TutorialHeader = () => (
         <HeaderName element={Link} to="/" prefix="IBM">
           Carbon Tutorial
         </HeaderName>
-
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
