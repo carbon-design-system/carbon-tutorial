@@ -2241,9 +2241,15 @@ __metadata:
   linkType: hard
 
 "@sindresorhus/is@npm:^4.0.0":
+<<<<<<< HEAD
   version: 4.4.0
   resolution: "@sindresorhus/is@npm:4.4.0"
   checksum: 83064d0d173cf6cdaeb0f0b8d8e1facf91a8f73c6323b090869a1361bfb11e07603f9ec896140528694460b0a32c470091af76caefe4b1e2433ff4f5299c8100
+=======
+  version: 4.3.0
+  resolution: "@sindresorhus/is@npm:4.3.0"
+  checksum: 86c08e2ecb6c2c8f5505238d70dc7b44e143874c4c530f49397ab675bdaf70c9122b9fed7e120b520d3960d99105dfd59e3561970534698aae619e7dcd0526a7
+>>>>>>> a7325f7663aa7fd7aea93c47e39c2da7da476527
   languageName: node
   linkType: hard
 
