@@ -4542,7 +4542,6 @@ __metadata:
     enzyme-adapter-react-16: 1.15.5
     husky: 1.3.1
     lint-staged: 8.1.5
-    node: ^16.10.0
     prettier: 1.17.0
     react: 16.10.0
     react-dom: 16.10.0
@@ -11311,13 +11310,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"node-bin-setup@npm:^1.0.0":
-  version: 1.1.0
-  resolution: "node-bin-setup@npm:1.1.0"
-  checksum: 2d588af4d54d4a983e9d55f1f0cfbd9f05ba88ac81ba38a26eafe9a89734d0a97e2febcfc57eb91cdb15def16ac046086801bb77e1114f181e308cd59e584b06
-  languageName: node
-  linkType: hard
-
 "node-fetch@npm:^1.0.1":
   version: 1.7.3
   resolution: "node-fetch@npm:1.7.3"
@@ -11418,17 +11410,6 @@ fsevents@~2.1.2:
   version: 1.1.67
   resolution: "node-releases@npm:1.1.67"
   checksum: 19a76af9498421b28bbc0123effc870a2ebe68a6364a4eb6547c5f871d6c2d8095fb66cc582a2378af8fbb6124ef8360207ef29d7a5a507e27691c53a85e9df4
-  languageName: node
-  linkType: hard
-
-"node@npm:^16.10.0":
-  version: 16.13.2
-  resolution: "node@npm:16.13.2"
-  dependencies:
-    node-bin-setup: ^1.0.0
-  bin:
-    node: bin/node
-  checksum: ec95543589d86dcf2a51abf067090696c4c471772988894afe7e5b2243d702f7fb383815cb805abd9f569b07ef302e035bacd7d151936470df397388788fc052
   languageName: node
   linkType: hard
 
