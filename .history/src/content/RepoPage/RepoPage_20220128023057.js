@@ -8,6 +8,7 @@ const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
+
   const REPO_QUERY = gql`
     query REPO_QUERY {
       # Let's use carbon as our organization
@@ -69,7 +70,6 @@ const RepoPage = () => {
       updatedAt: new Date(row.updatedAt).toLocaleDateString(),
       links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
     }));
-
   const headers = [
     {
       key: 'name',
@@ -117,9 +117,7 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              const { repositories } = data.organization;
-              setTotalItems(repositories.totalCount);
-              const rows = getRowItems(repositories.nodes);
+              console.log(data.organization);
 
               return (
                 <>

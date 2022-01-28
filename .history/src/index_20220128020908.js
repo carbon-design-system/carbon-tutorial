@@ -11,7 +11,6 @@ import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
-
 const client = new ApolloClient({
   uri: 'https://api.github.com/graphql',
   headers: {
@@ -20,13 +19,10 @@ const client = new ApolloClient({
     }`,
   },
 });
-
 ReactDOM.render(
-  <ApolloProvider client={client}>
-    <Router>
-      <App />
-    </Router>
-  </ApolloProvider>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById('root')
 );
 

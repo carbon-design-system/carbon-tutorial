@@ -97,6 +97,11 @@ const RepoPage = () => {
     },
   ];
 
+  // If we're here, we've got our data!
+  const { repositories } = data.organization;
+  setTotalItems(repositories.totalCount);
+  const rows = getRowItems(repositories.nodes);
+
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
       <div className="bx--row repo-page__r1">
