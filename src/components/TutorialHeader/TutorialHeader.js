@@ -18,7 +18,6 @@ import {
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
-
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
