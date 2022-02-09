@@ -12,7 +12,6 @@ class App extends Component {
       <>
         <TutorialHeader />
         <Content>
-          <Button>Button</Button>
           <Switch>
             {/* show component like below instead of <RepoPage/> */}
             <Route exact path="/" component={LandingPage} />
