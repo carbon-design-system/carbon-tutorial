@@ -1,7 +1,56 @@
 import React from 'react';
+import RepoTable from './RepoTable';
 
 const RepoPage = () => {
-  return <div>REPO PAGE</div>;
+  // headers data for Table component use
+  const headers = [
+    { key: 'name', header: 'Name' },
+    { key: 'createdAt', header: 'CreatedAt' },
+    { key: 'updatedAt', header: 'UpdatedAt' },
+    { key: 'issueCount', header: 'IssueCount' },
+    { key: 'stars', header: 'Stars' },
+    { key: 'links', header: 'Links' },
+  ];
+
+  // rows data for Table component use
+  const rows = [
+    {
+      id: '1',
+      name: 'Repo 1',
+      createdAt: 'Date',
+      updatedAt: 'Date',
+      issueCount: '123',
+      stars: '456',
+      links: 'Links',
+    },
+    {
+      id: '2',
+      name: 'Repo 2',
+      createdAt: 'Date',
+      updatedAt: 'Date',
+      issueCount: '123',
+      stars: '456',
+      links: 'Links',
+    },
+    {
+      id: '3',
+      name: 'Repo 3',
+      createdAt: 'Date',
+      updatedAt: 'Date',
+      issueCount: '123',
+      stars: '456',
+      links: 'Links',
+    },
+  ];
+  return (
+    <div className="bx-grid bx--grid--full-width bx--grid--no-gutter repo-page">
+      <div className="bx--row repo-page__r1">
+        <div className="bx--col-lg-16">
+          <RepoTable headers={headers} rows={rows} />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default RepoPage;
