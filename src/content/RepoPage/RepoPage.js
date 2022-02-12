@@ -10,10 +10,7 @@ const REPO_QUERY = gql`
     organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
-      repositories(
-        first: 100
-        orderBy: { field: UPDATED_AT, direction: DESC }
-      ) {
+      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
           url
