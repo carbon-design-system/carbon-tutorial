@@ -6,6 +6,8 @@ import {
   Tabs,
   Tab,
 } from 'carbon-components-react';
+import { InfoCard, InfoSection } from '../../components/Info';
+import { Application32, Globe32, PersonFavorite32 } from '@carbon/icons-react';
 
 const props = {
   tabs: {
@@ -85,14 +87,23 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-      <div className="bx--row landing-page__r3">
-        <div className="bx--col-md-4 bx--col-lg-4">
-          <h3 className="landing-page__label">The Principles</h3>
-        </div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
-        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
-      </div>
+      <InfoSection heading="The principles" className="landing-page__r3">
+        <InfoCard
+          heading="Carbon is Open"
+          icon={<PersonFavorite32 />}
+          body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+        />
+        <InfoCard
+          heading="Carbon is Modular"
+          icon={<Application32 />}
+          body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+        />
+        <InfoCard
+          heading="Carbon is Consistent"
+          icon={<Globe32 />}
+          body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+        />
+      </InfoSection>
     </div>
   );
 };
