@@ -93,7 +93,7 @@ const getRowItems = rows =>
 const RepoPage = () => {
   const [totalItems, setTotalItems] = useState(0);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(10);
+  const [currentPageSize, setCurrentPageSize] = useState(20);
 
   return (
     <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
@@ -133,7 +133,7 @@ const RepoPage = () => {
                     backwardText="Previous page"
                     forwardText="Next page"
                     pageSize={currentPageSize}
-                    pageSizes={[5, 10, 15, 25]}
+                    pageSizes={[10, 15, 20, 25, 50]}
                     itemsPerPageText="Items per page"
                     onChange={({ page, pageSize }) => {
                       if (pageSize !== currentPageSize) {
