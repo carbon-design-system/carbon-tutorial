@@ -38,7 +38,7 @@ const LandingPage = () => {
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
-            <Tab {...props.tab} label="About" id="about">
+            <Tab {...props.tab} label="About">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-md-4 bx--col-lg-7">
@@ -64,7 +64,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} label="Design" id="design">
+            <Tab {...props.tab} label="Design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
@@ -74,7 +74,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} label="Develop" id="develop">
+            <Tab {...props.tab} label="Develop">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
