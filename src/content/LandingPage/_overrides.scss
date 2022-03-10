@@ -1,0 +1,15 @@
+/*We don't have to include this in a separate file,but it's 
+    nice to keep overrides separate from your application's 
+    styling so when migrating to future Carbon versions and 
+    if there are breaking changes via different class names, 
+    you have a consolidated list of styling declaration 
+    blocks to review.*/
+
+.landing-page__r2 .bx--tabs--scrollable {
+  transform: translateZ(0);
+  justify-content: flex-end;
+}
+
+.landing-page__r2 .box--tab-content {
+  padding: 0;
+}
