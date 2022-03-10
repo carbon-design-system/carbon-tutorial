@@ -13,18 +13,22 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from 'carbon-components-react';
+// carbon icon
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+// router
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
       <Header aria-label="Carbon Tutorial">
+        {/* 無障礙 */}
         <SkipToContent />
+        {/* phone nav */}
         <HeaderMenuButton
           aria-label="Open menu"
           onClick={onClickSideNavExpand}
