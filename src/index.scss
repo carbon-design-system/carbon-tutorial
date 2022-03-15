@@ -1,1 +1,14 @@
-@import 'carbon-components/scss/globals/scss/styles.scss';
+@import "carbon-components/scss/globals/scss/styles.scss";
+
+/// @link https://github.com/carbon-design-system/carbon/issues/2792
+@media (min-width: 42rem) {
+    .bx--grid--no-gutter {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+/// @link https://github.com/carbon-design-system/carbon/issues/3010
+.bx--content {
+    padding: 0;
+}

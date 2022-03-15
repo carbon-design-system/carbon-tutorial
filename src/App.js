@@ -1,16 +1,4 @@
 import React, { Component } from 'react';
-<<<<<<< Updated upstream
-
-class App extends Component {
-  render() {
-    return (
-      <div>
-        Hello Carbon! Well, not quite yet. This is the starting point for the
-        Carbon tutorial.
-      </div>
-    );
-  }
-=======
 import './app.scss';
 import { Content } from 'carbon-components-react';
 import TutorialHeader from './components/TutorialHeader';
@@ -32,7 +20,6 @@ class App extends Component {
             </>
         );
     }
->>>>>>> Stashed changes
 }
 
 export default App;
