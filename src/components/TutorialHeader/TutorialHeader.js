@@ -33,7 +33,7 @@ const TutorialHeader = () => (
           isActive={isSideNavExpanded}
         />
         <HeaderName element={Link} to="/" prefix="IBM">
-          Carbon OJ Tutorial
+          Carbon Tutorial
         </HeaderName>
 
         <HeaderNavigation aria-label="Carbon Tutorial">
