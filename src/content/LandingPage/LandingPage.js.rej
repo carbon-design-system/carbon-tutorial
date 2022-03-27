@@ -1,0 +1,63 @@
+diff a/src/content/LandingPage/LandingPage.js b/src/content/LandingPage/LandingPage.js	(rejected hunks)
+@@ -32 +32,3 @@ const LandingPage = () => {
+-        <h1 className="landing-page__heading">Design &amp; build with Carbon</h1>
++        <h1 className="landing-page__heading">
++          Design &amp; build with Carbon
++        </h1>
+@@ -35,2 +37,2 @@ const LandingPage = () => {
+-        <Tabs 
+-          {...props.tabs} 
++        <Tabs
++          {...props.tabs}
+@@ -38,2 +40 @@ const LandingPage = () => {
+-          className="tabs-group"
+-        >
++          className="tabs-group">
+@@ -42,7 +43,6 @@ const LandingPage = () => {
+-              <Column 
+-                lg={7} md={4} sm={4} 
+-                className="landing-page__tab-content"
+-              >
+-                <h2 className="landing-page__subheading">
+-                  What is Carbon?
+-                </h2>
++              <Column
++                lg={7}
++                md={4}
++                sm={4}
++                className="landing-page__tab-content">
++                <h2 className="landing-page__subheading">What is Carbon?</h2>
+@@ -50,5 +50,5 @@ const LandingPage = () => {
+-                  Carbon is IBM’s open-source design system for digital
+-                  products and experiences. With the IBM Design Language
+-                  as its foundation, the system consists of working code,
+-                  design tools and resources, human interface guidelines,
+-                  and a vibrant community of contributors.
++                  Carbon is IBM’s open-source design system for digital products
++                  and experiences. With the IBM Design Language as its
++                  foundation, the system consists of working code, design tools
++                  and resources, human interface guidelines, and a vibrant
++                  community of contributors.
+@@ -58,3 +58 @@ const LandingPage = () => {
+-              <Column 
+-                lg={{ span: 8, offset: 7 }} md={4} sm={4}
+-              >
++              <Column lg={{ span: 8, offset: 7 }} md={4} sm={4}>
+@@ -72,3 +70,4 @@ const LandingPage = () => {
+-                lg={16} md={8} sm={4}
+-                className="landing-page__tab-content"
+-              >
++                lg={16}
++                md={8}
++                sm={4}
++                className="landing-page__tab-content">
+@@ -82,4 +81,5 @@ const LandingPage = () => {
+-              <Column 
+-                lg={16} md={8} sm={4} 
+-                className="landing-page__tab-content"
+-              >
++              <Column
++                lg={16}
++                md={8}
++                sm={4}
++                className="landing-page__tab-content">

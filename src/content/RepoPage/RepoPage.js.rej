@@ -1,0 +1,7 @@
+diff a/src/content/RepoPage/RepoPage.js b/src/content/RepoPage/RepoPage.js	(rejected hunks)
+@@ -2,4 +2 @@ import React from 'react';
+-import {
+-  Grid,
+-  Column,
+-} from '@carbon/react';
++import { Grid, Column } from '@carbon/react';
