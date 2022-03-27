@@ -2680,6 +2680,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/grid@npm:^10.43.1":
+  version: 10.43.1
+  resolution: "@carbon/grid@npm:10.43.1"
+  dependencies:
+    "@carbon/import-once": ^10.7.0
+    "@carbon/layout": ^10.37.1
+  checksum: 901f84cf0d90e637ea6f14f84a3f09e26e2cd87e51552612e73170e91747ec434df5e4d79532db9a3bb6cc2cb3b54daf1ae4d64d7b3d6ab3a8d74642ea340814
+  languageName: node
+  linkType: hard
+
 "@carbon/icon-helpers@npm:^10.21.0":
   version: 10.21.0
   resolution: "@carbon/icon-helpers@npm:10.21.0"
@@ -2727,6 +2737,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/import-once@npm:^10.7.0":
+  version: 10.7.0
+  resolution: "@carbon/import-once@npm:10.7.0"
+  checksum: 2c898bd192201825b7df21e33bd21ede31f6ba8a468dab20bcc79072a09b9cad565c4c986af59746659db201291d13cbca89425237c8bf2bcdf10f34f27ebc79
+  languageName: node
+  linkType: hard
+
 "@carbon/layout@npm:^10.29.0":
   version: 10.29.0
   resolution: "@carbon/layout@npm:10.29.0"
@@ -2738,6 +2755,13 @@ __metadata:
   version: 10.30.0-rc.0
   resolution: "@carbon/layout@npm:10.30.0-rc.0"
   checksum: 69fe2d11863ae54a5e86f35a35ff29b0b209994e0122dac57c92068b8dca209a1a3cc2c1b9b9385c9c113d2f1555cb3c69c9a797a71372c85ce62c975a212242
+  languageName: node
+  linkType: hard
+
+"@carbon/layout@npm:^10.37.1":
+  version: 10.37.1
+  resolution: "@carbon/layout@npm:10.37.1"
+  checksum: 0633550ce0cd6e254d719755d46d81e83273f82436da1088eb6deb954142e400339604424129d69190bf76c5a24c349cc9c2bfaeb848aaab525f9a72d842a900
   languageName: node
   linkType: hard
 
@@ -5856,6 +5880,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
+    "@carbon/grid": ^10.43.1
+    "@carbon/layout": ^10.37.1
     "@carbon/react": 0.3.0-rc.0
     "@carbon/themes": ^10.40.0
     "@commitlint/cli": 7.5.2
