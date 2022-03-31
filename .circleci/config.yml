@@ -9,7 +9,7 @@ jobs:
       - run: npm install --immutable --immutable-cache
       - run:
           name: Run ci checks
-          command: yarn ci-check
+          command: npm run ci-check
 
 workflows:
   version: 2
