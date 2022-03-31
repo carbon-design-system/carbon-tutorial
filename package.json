@@ -26,7 +26,8 @@
     "react": "16.10.0",
     "react-dom": "16.10.0",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "4.0.1"
+    "react-scripts": "4.0.1",
+    "yarn": "^1.22.18"
   },
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
