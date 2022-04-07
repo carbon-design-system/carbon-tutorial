@@ -15,3 +15,8 @@
 .bx--content {
   padding: 0;
 }
+
+/// Carbon grid
+$feature-flags: (
+  grid-columns-16: true,
+);
