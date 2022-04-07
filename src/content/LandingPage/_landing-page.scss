@@ -12,7 +12,7 @@
 }
 
 .landing-page__heading {
-  @include carbon--type-style('productive-heading-05');
+  @include type-style('productive-heading-05');
 }
 
 .landing-page__r2 {
@@ -30,7 +30,7 @@
 }
 
 .landing-page__p {
-  @include carbon--type-style('productive-heading-03');
+  @include type-style('productive-heading-03');
   margin-top: $spacing-06;
   margin-bottom: $spacing-08;
 
@@ -38,6 +38,7 @@
     max-width: 75%;
   }
 }
+
 .landing-page__r3 {
   padding-top: $spacing-09;
   padding-bottom: $spacing-09;
@@ -45,5 +46,5 @@
 }
 
 .landing-page__label {
-  @include type-style('heading-01');
+  @include carbon--type-style('heading-01');
 }

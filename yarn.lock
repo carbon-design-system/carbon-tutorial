@@ -1564,7 +1564,7 @@ __metadata:
   dependencies:
     "@carbon/import-once": ^10.4.0
     "@carbon/layout": ^10.15.0
-  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+  checksum: d67d0c50b8d2acbd8ce78453880d7e223f333653fcedc56e1c5e4cbb6415bf75202f34cc856fc5655e07af0306ec2fa4c73a7cc7a45a1736c5fb3b37705b2f46
   languageName: node
   linkType: hard
 
@@ -1597,7 +1597,7 @@ __metadata:
 "@carbon/layout@npm:^10.15.0":
   version: 10.37.1
   resolution: "@carbon/layout@npm:10.37.1"
-  checksum: 0633550ce0cd6e254d719755d46d81e83273f82436da1088eb6deb954142e400339604424129d69190bf76c5a24c349cc9c2bfaeb848aaab525f9a72d842a900
+  checksum: 62994a98c30a010d068ea4864b6d555dfc8351a0abeaded0f3a2a12887b8cb8bd408cd19ece617e1732d83dbbfd8771cdaf1196f25068e1e9bfb24af7a707584
   languageName: node
   linkType: hard
 

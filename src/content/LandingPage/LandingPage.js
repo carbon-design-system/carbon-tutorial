@@ -20,9 +20,9 @@ const props = {
 
 const LandingPage = () => {
   return (
-    <div className="cds--grid cds--grid--full-width landing-page">
-      <div className="cds--row landing-page__banner">
-        <div className="cds--col-lg-16">
+    <div className="bx--grid bx--grid--full-width landing-page">
+      <div className="bx--row landing-page__banner">
+        <div className="bx--col-lg-16">
           <Breadcrumb noTrailingSlash aria-label="Page navigation">
             <BreadcrumbItem>
               <a href="/">Getting started</a>
@@ -33,13 +33,13 @@ const LandingPage = () => {
           </h1>
         </div>
       </div>
-      <div className="cds--row landing-page__r2">
-        <div className="cds--col cds--no-gutter">
+      <div className="bx--row landing-page__r2">
+        <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
             <Tab {...props.tab} label="About">
-              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
-                <div className="cds--row landing-page__tab-content">
-                  <div className="cds--col-md-4 cds--col-lg-7">
+              <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+                <div className="bx--row landing-page__tab-content">
+                  <div className="bx--col-md-4 bx--col-lg-7">
                     <h2 className="landing-page__subheading">
                       What is Carbon?
                     </h2>
@@ -52,7 +52,7 @@ const LandingPage = () => {
                     </p>
                     <Button>Learn more</Button>
                   </div>
-                  <div className="cds--col-md-4 cds--offset-lg-1 cds--col-lg-8">
+                  <div className="bx--col-md-4 bx--offset-lg-1 bx--col-lg-8">
                     <img
                       className="landing-page__illo"
                       src={`${process.env.PUBLIC_URL}/tab-illo.png`}
@@ -63,9 +63,9 @@ const LandingPage = () => {
               </div>
             </Tab>
             <Tab {...props.tab} label="Design">
-              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
-                <div className="cds--row landing-page__tab-content">
-                  <div className="cds--col-lg-16">
+              <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+                <div className="bx--row landing-page__tab-content">
+                  <div className="bx--col-lg-16">
                     Rapidly build beautiful and accessible experiences. The
                     Carbon kit contains all resources you need to get started.
                   </div>
@@ -73,9 +73,9 @@ const LandingPage = () => {
               </div>
             </Tab>
             <Tab {...props.tab} label="Develop">
-              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
-                <div className="cds--row landing-page__tab-content">
-                  <div className="cds--col-lg-16">
+              <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
+                <div className="bx--row landing-page__tab-content">
+                  <div className="bx--col-lg-16">
                     Carbon provides styles and components in Vanilla, React,
                     Angular, and Vue for anyone building on the web.
                   </div>
@@ -85,13 +85,13 @@ const LandingPage = () => {
           </Tabs>
         </div>
       </div>
-      <div className="cds--row landing-page__r3">
-        <div className="cds--col-md-4 cds--col-lg-4">
+      <div className="bx--row landing-page__r3">
+        <div className="bx--col-md-4 bx--col-lg-4">
           <h3 className="landing-page__label">The Principles</h3>
         </div>
-        <div className="cds--col-md-4 cds--col-lg-4">Carbon is Open</div>
-        <div className="cds--col-md-4 cds--col-lg-4">Carbon is Modular</div>
-        <div className="cds--col-md-4 cds--col-lg-4">Carbon is Consistent</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Open</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Modular</div>
+        <div className="bx--col-md-4 bx--col-lg-4">Carbon is Consistent</div>
       </div>
     </div>
   );
