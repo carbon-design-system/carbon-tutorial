@@ -63,7 +63,7 @@ const RepoPage = () => {
     <div className="cds--grid cds--grid--full-width cds--grid--no-gutter repo-page">
       <div className="cds--row repo-page__r1">
         <div className="cds--col-lg-16">
-        <RepoTable headers={headers} rows={rows} />
+          <RepoTable headers={headers} rows={rows} />
         </div>
       </div>
     </div>
