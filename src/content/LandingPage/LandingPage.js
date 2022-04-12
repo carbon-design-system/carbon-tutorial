@@ -36,16 +36,32 @@ const LandingPage = () => {
       <div className="cds--row landing-page__r2">
         <div className="cds--col cds--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
-            <Tab {...props.tab} label="About">
-              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
-                <div className="cds--row landing-page__tab-content">
-                  <div className="cds--col-md-4 cds--col-lg-7">7/16</div>
-                  <div className="cds--col-md-4 cds--offset-lg-1 cds--col-lg-8">
-                    8/16
-                  </div>
-                </div>
-              </div>
-            </Tab>
+          <Tab {...props.tab} label="About">
+  <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
+    <div className="cds--row landing-page__tab-content">
+      <div className="cds--col-md-4 cds--col-lg-7">
+        <h2 className="landing-page__subheading">
+          What is Carbon?
+        </h2>
+        <p className="landing-page__p">
+          Carbon is IBM’s open-source design system for digital
+          products and experiences. With the IBM Design Language
+          as its foundation, the system consists of working code,
+          design tools and resources, human interface guidelines,
+          and a vibrant community of contributors.
+        </p>
+        <Button>Learn more</Button>
+      </div>
+      <div className="cds--col-md-4 cds--offset-lg-1 cds--col-lg-8">
+        <img
+          className="landing-page__illo"
+          src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+          alt="Carbon illustration"
+        />
+      </div>
+    </div>
+  </div>
+</Tab>
             <Tab {...props.tab} label="Design">
               <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
                 <div className="cds--row landing-page__tab-content">
