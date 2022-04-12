@@ -23,7 +23,7 @@ const LandingPage = () => {
     <div className="cds--grid cds--grid--full-width landing-page">
       <div className="cds--row landing-page__banner">
         <div className="cds--col-lg-16">
-          <Breadcrumb noTrailingSlash>
+          <Breadcrumb noTrailingSlash aria-label="Page navigation">
             <BreadcrumbItem>
               <a href="/">Getting started</a>
             </BreadcrumbItem>
@@ -35,7 +35,7 @@ const LandingPage = () => {
       </div>
       <div className="cds--row landing-page__r2">
         <div className="cds--col cds--no-gutter">
-          <Tabs {...props.tabs}>
+          <Tabs {...props.tabs} aria-label="Tab navigation">
             <Tab {...props.tab} label="About">
               <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
                 <div className="cds--row landing-page__tab-content">
