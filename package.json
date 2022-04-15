@@ -17,11 +17,7 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@carbon/react": "0.3.0-rc.0",
-    "@carbon/themes": "^10.40.0",
-    "carbon-components": "^10.41.0",
-    "carbon-components-react": "^7.41.0",
-    "carbon-icons": "^7.0.7",
+    "@carbon/react": "1.0.3",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",
