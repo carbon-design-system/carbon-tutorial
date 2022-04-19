@@ -14,7 +14,13 @@ import {
 } from 'carbon-components-react';
 
 const RepoTable = ({ rows, headers }) => {
+  const getRowDescription = rowId => {
+    const row = rows.find(({ id }) => id === rowId);
+    return row ? row.description : '';
+  };
   return (
+    // Render is a function and it is being used to tell the data table how headers and rows.
+    //  so Datatable is a wrapper function that calls the render method but contains common methods and obtains the DRY prrinciple. So It allows me to render the tablecontainer easily.
     <DataTable
       rows={rows}
       headers={headers}
@@ -48,7 +54,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
