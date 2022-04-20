@@ -1,0 +1,25 @@
+diff a/src/content/LandingPage/_landing-page.scss b/src/content/LandingPage/_landing-page.scss	(rejected hunks)
+@@ -5,2 +4,0 @@
+-
+-
+@@ -11,2 +9,2 @@
+-  $spacing-05 : 16px;
+-  $spacing-07 :32 px;
++  $spacing-05: 16px;
++  $spacing-07: 32 px;
+@@ -17,2 +15,2 @@
+-  $spacing-05 : 16px;
+-  $spacing-07 :32 px;
++  $spacing-05: 16px;
++  $spacing-07: 32 px;
+@@ -30 +28 @@
+-  $spacing-10 : 64px;
++  $spacing-10: 64px;
+@@ -42,2 +40,2 @@
+-  $spacing-06 : 24px;
+-  $spacing-08 :40px;
++  $spacing-06: 24px;
++  $spacing-08: 40px;
+@@ -52 +50 @@
+-  $spacing-09:48px;
++  $spacing-09: 48px;

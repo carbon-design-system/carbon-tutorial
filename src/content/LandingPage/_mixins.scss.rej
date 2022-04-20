@@ -1,0 +1,7 @@
+diff a/src/content/LandingPage/_mixins.scss b/src/content/LandingPage/_mixins.scss	(rejected hunks)
+@@ -2 +2 @@
+-  $ui-01:#f4f4f4;
++  $ui-01: #f4f4f4;
+@@ -8 +8 @@
+-    $spacing-06 : 24px;
++    $spacing-06: 24px;
