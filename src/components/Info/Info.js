@@ -18,3 +18,5 @@ const InfoCard = (props) => {
       </article>
     );
   };
+
+  export { InfoSection, InfoCard };
