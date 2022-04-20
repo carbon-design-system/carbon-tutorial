@@ -39,7 +39,7 @@ const LandingPage = () => {
       <div className="bx--row landing-page__r2">
         <div className="bx--col bx--no-gutter">
           <Tabs {...props.tabs} aria-label="Tab navigation">
-            <Tab {...props.tab} label="About">
+            <Tab {...props.tab} label="About" id="about">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-md-4 bx--col-lg-7">
@@ -65,7 +65,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} label="Design">
+            <Tab {...props.tab} label="Design" id="design">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
@@ -75,7 +75,7 @@ const LandingPage = () => {
                 </div>
               </div>
             </Tab>
-            <Tab {...props.tab} label="Develop">
+            <Tab {...props.tab} label="Develop" id="develop">
               <div className="bx--grid bx--grid--no-gutter bx--grid--full-width">
                 <div className="bx--row landing-page__tab-content">
                   <div className="bx--col-lg-16">
@@ -89,22 +89,22 @@ const LandingPage = () => {
         </div>
       </div>
       <InfoSection heading="The Principles" className="landing-page__r3">
-  <InfoCard
-    heading="Carbon is Open"
-    body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
-    icon={<PersonFavorite32/>}
-  />
-  <InfoCard
-    heading="Carbon is Modular"
-    body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
-    icon={<Application32/>}
-  />
-  <InfoCard
-    heading="Carbon is Consistent"
-    body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
-    icon={<Globe32/>}
-  />
-</InfoSection>
+        <InfoCard
+          heading="Carbon is Open"
+          body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
+          icon={<PersonFavorite32 />}
+        />
+        <InfoCard
+          heading="Carbon is Modular"
+          body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
+          icon={<Application32 />}
+        />
+        <InfoCard
+          heading="Carbon is Consistent"
+          body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
+          icon={<Globe32 />}
+        />
+      </InfoSection>
     </div>
   );
 };
