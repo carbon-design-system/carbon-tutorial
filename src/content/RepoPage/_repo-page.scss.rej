@@ -1,0 +1,4 @@
+diff a/src/content/RepoPage/_repo-page.scss b/src/content/RepoPage/_repo-page.scss	(rejected hunks)
+@@ -2 +2 @@
+-  $spacing-05 : 16px;
++  $spacing-05: 16px;
