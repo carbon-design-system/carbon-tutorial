@@ -67,35 +67,36 @@ const headers = [
   },
 ];
 
-const rows = [
-  {
-    id: '1',
-    name: 'Repo 1',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '2',
-    name: 'Repo 2',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '3',
-    name: 'Repo 3',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-];
+// const rows = [
+//   {
+//     id: '1',
+//     name: 'Repo 1',
+//     createdAt: 'Date',
+//     updatedAt: 'Date',
+//     issueCount: '123',
+//     stars: '456',
+//     links: 'Links',
+//   },
+//   {
+//     id: '2',
+//     name: 'Repo 2',
+//     createdAt: 'Date',
+//     updatedAt: 'Date',
+//     issueCount: '123',
+//     stars: '456',
+//     links: 'Links',
+//   },
+//   {
+//     id: '3',
+//     name: 'Repo 3',
+//     createdAt: 'Date',
+//     updatedAt: 'Date',
+//     issueCount: '123',
+//     stars: '456',
+//     links: 'Links',
+//   },
+// ];
+
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -134,7 +135,9 @@ const RepoPage = () => {
               if (error) return `Error! ${error.message}`;
 
               // If we're here, we've got our data!
-              console.log(data.organization);
+              // console.log(data.organization);
+              const { repositories } = data.organization;
+              const rows = getRowItems(repositories.nodes);
 
               return (
                 <>
