@@ -27,7 +27,7 @@ const InfoCard = props => {
         <strong>{splitHeading[1]}</strong>
       </h4>
       <p className="info-card__body">{props.body}</p>
-      {props.icon}
+      {props.icon()}
     </Column>
   );
 };

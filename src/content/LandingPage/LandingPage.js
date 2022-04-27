@@ -5,24 +5,14 @@ import {
   Button,
   Tabs,
   Tab,
+  TabList,
+  TabPanels,
+  TabPanel,
   Grid,
   Column,
 } from '@carbon/react';
 import { InfoSection, InfoCard } from '../../components/Info';
-import Globe32 from '@carbon/icons-react/lib/globe/32';
-import PersonFavorite32 from '@carbon/icons-react/lib/person--favorite/32';
-import Application32 from '@carbon/icons-react/lib/application/32';
-
-const props = {
-  tabs: {
-    selected: 0,
-    role: 'navigation',
-  },
-  tab: {
-    role: 'presentation',
-    tabIndex: 0,
-  },
-};
+import { Globe, Application, PersonFavorite } from '@carbon/react/icons';
 
 const LandingPage = () => {
   return (
@@ -38,60 +28,60 @@ const LandingPage = () => {
         </h1>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
-        <Tabs
-          {...props.tabs}
-          aria-label="Tab navigation"
-          className="tabs-group">
-          <Tab {...props.tab} label="About">
-            <Grid className="tabs-group-content">
-              <Column
-                md={4}
-                lg={7}
-                sm={4}
-                className="landing-page__tab-content">
-                <h2 className="landing-page__subheading">What is Carbon?</h2>
-                <p className="landing-page__p">
-                  Carbon is IBM’s open-source design system for digital products
-                  and experiences. With the IBM Design Language as its
-                  foundation, the system consists of working code, design tools
-                  and resources, human interface guidelines, and a vibrant
-                  community of contributors.
-                </p>
-                <Button>Learn more</Button>
-              </Column>
-              <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-                <img
-                  className="landing-page__illo"
-                  src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-                  alt="Carbon illustration"
-                />
-              </Column>
-            </Grid>
-          </Tab>
-          <Tab {...props.tab} label="Design">
-            <Grid className="tabs-group-content">
-              <Column
-                lg={16}
-                md={8}
-                sm={4}
-                className="landing-page__tab-content">
-                Rapidly build beautiful and accessible experiences. The Carbon
-                kit contains all resources you need to get started.
-              </Column>
-            </Grid>
-          </Tab>
-          <Tab {...props.tab} label="Develop">
-            <Grid className="tabs-group-content">
-              <Column
-                lg={16}
-                md={8}
-                sm={4}
-                className="landing-page__tab-content">
-                Carbon provides styles and components in Vanilla, React,
-                Angular, and Vue for anyone building on the web.
-              </Column>
-            </Grid>
-          </Tab>
+        <Tabs defaultSelectedIndex={0} aria-label="Tab navigation">
+          <TabList className="tabs-group">
+            <Tab>About</Tab>
+            <Tab>Design</Tab>
+            <Tab>Develop</Tab>
+          </TabList>
+          <TabPanels>
+            <TabPanel>
+              <Grid className="tabs-group-content">
+                <Column
+                  md={4}
+                  lg={7}
+                  sm={4}
+                  className="landing-page__tab-content">
+                  <h2 className="landing-page__subheading">What is Carbon?</h2>
+                  <p className="landing-page__p">
+                    Carbon is IBM’s open-source design system for digital
+                    products and experiences. With the IBM Design Language as
+                    its foundation, the system consists of working code, design
+                    tools and resources, human interface guidelines, and a
+                    vibrant community of contributors.
+                  </p>
+                  <Button>Learn more</Button>
+                </Column>
+                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
+                  <img
+                    className="landing-page__illo"
+                    src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+                    alt="Carbon illustration"
+                  />
+                </Column>
+              </Grid>
+            </TabPanel>
+            <TabPanel>
+              <Grid className="tabs-group-content">
+                <Column
+                  lg={16}
+                  md={8}
+                  sm={4}
+                  className="landing-page__tab-content">
+                  Rapidly build beautiful and accessible experiences. The Carbon
+                  kit contains all resources you need to get started.
+                </Column>
+              </Grid>
+            </TabPanel>
+            <TabPanel>
+              <Grid className="tabs-group-content">
+                <Column lg={16} className="landing-page__tab-content">
+                  Carbon provides styles and components in Vanilla, React,
+                  Angular, and Vue for anyone building on the web.
+                </Column>
+              </Grid>
+            </TabPanel>
+          </TabPanels>
         </Tabs>
       </Column>
       <Column lg={16} md={8} sm={4}>
@@ -99,17 +89,17 @@ const LandingPage = () => {
           <InfoCard
             heading="Carbon is Open"
             body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
-            icon={<PersonFavorite32 />}
+            icon={() => <PersonFavorite size={32} />}
           />
           <InfoCard
             heading="Carbon is Modular"
             body="Carbon's modularity ensures maximum flexibility in execution. It's components are designed to work seamlessly with each other, in whichever combination suits the needs of the user."
-            icon={<Application32 />}
+            icon={() => <Application size={32} />}
           />
           <InfoCard
             heading="Carbon is Consistent"
             body="Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences."
-            icon={<Globe32 />}
+            icon={() => <Globe size={32} />}
           />
         </InfoSection>
       </Column>
