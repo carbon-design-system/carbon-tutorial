@@ -1,36 +1,8 @@
-import React, { useState } from 'react';
-import RepoTable from './RepoTable';
-
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-
-import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
-
-const headers = [
-  {
-    key: 'name',
-    header: 'Name',
-  },
-  {
-    key: 'createdAt',
-    header: 'Created',
-  },
-  {
-    key: 'updatedAt',
-    header: 'Updated',
-  },
-  {
-    key: 'issueCount',
-    header: 'Open Issues',
-  },
-  {
-    key: 'stars',
-    header: 'Stars',
-  },
-  {
-    key: 'links',
-  },
-];
+import React, { useState } from 'react';
+import RepoTable from './RepoTable';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -66,6 +38,32 @@ const REPO_QUERY = gql`
   }
 `;
 
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+  },
+];
+
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -96,54 +94,52 @@ const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
 
-  <Query query={REPO_QUERY}>
-    {({ loading, error, data }) => {
-      // Wait for the request to complete
-      if (loading) {
+  return (
+    <Query query={REPO_QUERY}>
+      {({ loading, error, data }) => {
+        // Waiting request to complete
+        if (loading)
+          return (
+            <DataTableSkeleton
+              columnCount={headers.length + 1}
+              rowCount={10}
+              headers={headers}
+            />
+          );
+
+        // Error with the data fetching
+        if (error) return `Error! ${error.message}`;
+
+        // Got our data!
+        const { repositories } = data.organization;
+        setTotalItems(repositories.totalCount);
+        const rows = getRowItems(repositories.nodes);
+
         return (
-          <DataTableSkeleton
-            columnCount={headers.length + 1}
-            rowCount={10}
-            headers={headers}
-          />
+          <>
+            <RepoTable
+              headers={headers}
+              rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+            />
+            <Pagination
+              totalItems={totalItems}
+              backwardText="Previous page"
+              forwardText="Next page"
+              pageSize={currentPageSize}
+              pageSizes={[5, 10, 15, 25]}
+              itemsPerPageText="Items per page"
+              onChange={({ page, pageSize }) => {
+                if (pageSize !== currentPageSize) {
+                  setCurrentPageSize(pageSize);
+                }
+                setFirstRowIndex(pageSize * (page - 1));
+              }}
+            />
+          </>
         );
-      }
-
-      // Something went wrong with the data fetching
-      if (error) return `Error! ${error.message}`;
-
-      // If we're here, we've got our data!
-      console.log(data.organization);
-
-      // If we're here, we've got our data!
-      const { repositories } = data.organization;
-      setTotalItems(repositories.totalCount);
-      const rows = getRowItems(repositories.nodes);
-
-      return (
-        <>
-          <RepoTable
-            headers={headers}
-            rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-          />
-          <Pagination
-            totalItems={totalItems}
-            backwardText="Previous page"
-            forwardText="Next page"
-            pageSize={currentPageSize}
-            pageSizes={[5, 10, 15, 25]}
-            itemsPerPageText="Items per page"
-            onChange={({ page, pageSize }) => {
-              if (pageSize !== currentPageSize) {
-                setCurrentPageSize(pageSize);
-              }
-              setFirstRowIndex(pageSize * (page - 1));
-            }}
-          />
-        </>
-      );
-    }}
-  </Query>;
+      }}
+    </Query>
+  );
 };
 
 export default RepoPage;
