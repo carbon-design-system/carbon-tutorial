@@ -88,8 +88,8 @@ const LandingPage = () => {
           </TabPanels>
         </Tabs>
       </Column>
-      <Column lg={16} md={8} sm={4}>
-        <InfoSection heading="The Principles" className="landing-page__r3">
+      <Column lg={16} md={8} sm={4} className="landing-page__r3">
+        <InfoSection heading="The Principles">
           <InfoCard
             heading="Carbon is Open"
             body="It's a distributed effort, guided by the principles of the open-source movement. Carbon's users are also it's makers, and everyone is encouraged to contribute."
