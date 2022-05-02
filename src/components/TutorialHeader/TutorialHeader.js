@@ -59,7 +59,7 @@ const TutorialHeader = () => (
           </HeaderGlobalAction>
           <HeaderGlobalAction
             aria-label="App Switcher"
-            tooltipAlignment="center">
+            tooltipAlignment="end">
             <Switcher size={20} />
           </HeaderGlobalAction>
         </HeaderGlobalBar>
