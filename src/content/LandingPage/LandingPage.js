@@ -16,7 +16,7 @@ import { Globe, Application, PersonFavorite } from '@carbon/react/icons';
 
 const LandingPage = () => {
   return (
-    <Grid className="landing-page">
+    <Grid className="landing-page" fullWidth>
       <Column lg={16} md={8} sm={4} className="landing-page__banner">
         <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
@@ -42,13 +42,15 @@ const LandingPage = () => {
                   lg={7}
                   sm={4}
                   className="landing-page__tab-content">
-                  <h2 className="landing-page__subheading">What is Carbon?</h2>
+                  <h2 className="landing-page__subheading">
+                    What is Carbon?
+                  </h2>
                   <p className="landing-page__p">
                     Carbon is IBM’s open-source design system for digital
                     products and experiences. With the IBM Design Language as
-                    its foundation, the system consists of working code, design
-                    tools and resources, human interface guidelines, and a
-                    vibrant community of contributors.
+                    its foundation, the system consists of working code,
+                    design tools and resources, human interface guidelines,
+                    and a vibrant community of contributors.
                   </p>
                   <Button>Learn more</Button>
                 </Column>
@@ -68,14 +70,18 @@ const LandingPage = () => {
                   md={8}
                   sm={4}
                   className="landing-page__tab-content">
-                  Rapidly build beautiful and accessible experiences. The Carbon
-                  kit contains all resources you need to get started.
+                  Rapidly build beautiful and accessible experiences. The
+                  Carbon kit contains all resources you need to get started.
                 </Column>
               </Grid>
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content">
-                <Column lg={16} className="landing-page__tab-content">
+                <Column
+                  lg={16}
+                  md={8}
+                  sm={4}
+                  className="landing-page__tab-content">
                   Carbon provides styles and components in Vanilla, React,
                   Angular, and Vue for anyone building on the web.
                 </Column>
