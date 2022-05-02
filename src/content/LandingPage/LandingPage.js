@@ -14,7 +14,7 @@ import {
 
 const LandingPage = () => {
   return (
-    <Grid className="landing-page">
+    <Grid className="landing-page" fullWidth>
       <Column lg={16} md={8} sm={4} className="landing-page__banner">
         <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
@@ -73,7 +73,11 @@ const LandingPage = () => {
             </TabPanel>
             <TabPanel>
               <Grid className="tabs-group-content">
-                <Column lg={16} className="landing-page__tab-content">
+                <Column
+                  lg={16}
+                  md={8}
+                  sm={4}
+                  className="landing-page__tab-content">
                   Carbon provides styles and components in Vanilla, React,
                   Angular, and Vue for anyone building on the web.
                 </Column>
@@ -84,16 +88,16 @@ const LandingPage = () => {
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <Grid>
-          <Column md={4} lg={4}>
+          <Column md={4} lg={4} sm={4}>
             <h3 className="landing-page__label">The Principles</h3>
           </Column>
-          <Column md={4} lg={4}>
+          <Column md={4} lg={4} sm={4}>
             Carbon is Open
           </Column>
-          <Column md={4} lg={4}>
+          <Column md={4} lg={4} sm={4}>
             Carbon is Modular
           </Column>
-          <Column md={4} lg={4}>
+          <Column md={4} lg={4} sm={4}>
             Carbon is Consistent
           </Column>
         </Grid>
