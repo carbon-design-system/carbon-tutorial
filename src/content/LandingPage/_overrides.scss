@@ -9,4 +9,10 @@
 
 .cds--tab--list {
   justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.cds--subgrid--wide {
+  //fix needed to keep the subgrid from scrolling horizontally
+  margin-right: 1rem;
 }

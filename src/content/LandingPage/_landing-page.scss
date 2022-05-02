@@ -62,8 +62,8 @@
 .landing-page__banner,
 .landing-page__r2,
 .landing-page__r3 {
-  margin-left: -2rem;
-  margin-right: -2rem;
+  margin-left: -20px;
+  margin-right: -20px;
 
   @include breakpoint-down(md) {
     margin-left: 0;
