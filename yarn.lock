@@ -1558,13 +1558,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/grid@npm:10.17.0":
-  version: 10.17.0
-  resolution: "@carbon/grid@npm:10.17.0"
+"@carbon/grid@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@carbon/grid@npm:11.1.0"
   dependencies:
-    "@carbon/import-once": ^10.4.0
-    "@carbon/layout": ^10.15.0
-  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+    "@carbon/layout": ^11.1.0
+  checksum: dfb43ed257d61d63da379f493b430e7cf23e203f65f19d1b5ea9ce6c73c6bbad9b75d4b541eb7f87066f83be9f6a92eb6f32fb8439052b2007bf2d530e4eacb4
   languageName: node
   linkType: hard
 
@@ -1587,17 +1586,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/import-once@npm:^10.4.0":
-  version: 10.4.0
-  resolution: "@carbon/import-once@npm:10.4.0"
-  checksum: 66be62f6988f76f8efde4b35b4c86c806de2c1927e329011508b73c7d456330db19efd73850584d3ae093702b5ef031258dd5c5361c952a194ab73d443908926
-  languageName: node
-  linkType: hard
-
-"@carbon/layout@npm:^10.15.0":
-  version: 10.15.0
-  resolution: "@carbon/layout@npm:10.15.0"
-  checksum: ca52b73a73aa9f3fc7569c6ceef4269a09f92971e9f7f464ff3a4e16788c869f50a13bd4a1d0d5c292dbd118e409cd15aa8fde21f68c923ba6df2fd22cf69269
+"@carbon/layout@npm:^11.1.0":
+  version: 11.1.0
+  resolution: "@carbon/layout@npm:11.1.0"
+  checksum: a58b7c22ea825e83937ccce36e4136886893d5dd43ab36b9ab4a9ba2c757119033f4624bd9be2567aae4892e4d61e18b9be15276a82946132a2b9ed0f37764b4
   languageName: node
   linkType: hard
 
@@ -4567,7 +4559,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
-    "@carbon/grid": 10.17.0
+    "@carbon/grid": ^11.1.0
     "@carbon/icons-react": 10.22.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
@@ -4586,7 +4578,7 @@ __metadata:
     react-dom: 16.10.0
     react-router-dom: 5.0.0
     react-scripts: 4.0.1
-    sass: 1.29.0
+    sass: 1.32.7
     wait-for-expect: 3.0.2
   languageName: unknown
   linkType: soft
@@ -14351,14 +14343,14 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"sass@npm:1.29.0":
-  version: 1.29.0
-  resolution: "sass@npm:1.29.0"
+"sass@npm:1.32.7":
+  version: 1.32.7
+  resolution: "sass@npm:1.32.7"
   dependencies:
     chokidar: ">=2.0.0 <4.0.0"
   bin:
     sass: sass.js
-  checksum: 8114e0c4e73be695d25030f51bff8da0151f335b135869e926d39e21688cd81a6be0368a332caec40425e64df499bd34962aa4ca59926a6bd0e11aa43ac306d9
+  checksum: 92c785120b1e9c4a6e7591ca323876bb40dbade8ebfafac0c353ea665bb3c421585788bc6233e9efe649a20c3a607b84ee95f81f7cadfadf3a8cc005ec9c9653
   languageName: node
   linkType: hard
 
