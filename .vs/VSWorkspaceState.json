@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\components",
+    "\\src\\components\\TutorialHeader",
+    "\\src\\content",
+    "\\src\\content\\LandingPage",
+    "\\src\\content\\RepoPage"
+  ],
+  "SelectedNode": "\\src\\content\\LandingPage\\LandingPage.js",
+  "PreviewInSolutionExplorer": false
+}
