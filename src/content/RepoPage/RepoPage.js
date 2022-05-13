@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql } from 'apollo-boost';
 import { Query } from 'react-apollo';
-import { Link, DataTableSkeleton } from 'carbon-components-react';
-import { Pagination } from 'carbon-components';
+import { Link, DataTableSkeleton, Pagination } from 'carbon-components-react';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
-    #Let´s use carbon as our organization
+    # Let's use carbon as our organization
     organization(login: "carbon-design-system") {
-      #Well grab all repositories in one go. To load more
-      #resources continously, read advanzed topics.
+      # We'll grab all the repositories in one go. To load more resources
+      # continuously, see the advanced topics.
       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
@@ -66,36 +65,6 @@ const headers = [
   },
 ];
 
-/*const rows = [
-  {
-    id: '1',
-    name: 'Repo 1',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '2',
-    name: 'Repo 2',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '3',
-    name: 'Repo 3',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-];*/
-
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -131,8 +100,8 @@ const RepoPage = () => {
       <div className="bx--row repo-page__r1">
         <div className="bx--col-lg-16">
           <Query query={REPO_QUERY}>
-            {({ loading, error, data }) => {
-              //Wait for the request to complete
+            {({ loading, error, data: { organization } }) => {
+              // Wait for the request to complete
               if (loading)
                 return (
                   <DataTableSkeleton
@@ -142,11 +111,11 @@ const RepoPage = () => {
                   />
                 );
 
-              //Something went wrong with the data fetching
+              // Something went wrong with the data fetching
               if (error) return `Error! ${error.message}`;
 
-              //If we´re here, we got our data
-              const { repositories } = data.organization;
+              // If we're here, we've got our data!
+              const { repositories } = organization;
               setTotalItems(repositories.totalCount);
               const rows = getRowItems(repositories.nodes);
 
