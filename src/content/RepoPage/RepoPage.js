@@ -31,9 +31,6 @@ const headers = [
   },
 ];
 
-const { repositories } = data.organization;
-const rows = getRowItems(repositories.nodes);
-
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
