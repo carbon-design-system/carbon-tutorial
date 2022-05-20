@@ -1,8 +1,4 @@
-@use './components/TutorialHeader/tutorial-header.scss';
-@use './components/Info/info.scss';
-@use './content/LandingPage/landing-page.scss';
-@use './content/RepoPage/repo-page.scss';
-
-@use '@carbon/react/scss/themes';
-@use '@carbon/react/scss/theme';
-@use '@carbon/react/scss/zone';
+@use './components/TutorialHeader/tutorial-header';
+@use './components/Info/info';
+@use './content/LandingPage/landing-page';
+@use './content/RepoPage/repo-page';
