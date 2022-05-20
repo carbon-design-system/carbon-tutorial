@@ -1,7 +1,3 @@
-@use './components/TutorialHeader/tutorial-header.scss';
-@use './content/LandingPage/landing-page.scss';
-@use './content/RepoPage/repo-page.scss';
-
-@use '@carbon/react/scss/themes';
-@use '@carbon/react/scss/theme';
-@use '@carbon/react/scss/zone';
+@use './components/TutorialHeader/tutorial-header';
+@use './content/LandingPage/landing-page';
+@use './content/RepoPage/repo-page';
