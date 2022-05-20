@@ -28,8 +28,8 @@ const LandingPage = () => {
         </h1>
       </Column>
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
-        <Tabs defaultSelectedIndex={0} aria-label="Tab navigation">
-          <TabList className="tabs-group">
+        <Tabs defaultSelectedIndex={0}>
+          <TabList className="tabs-group" aria-label="Tab navigation">
             <Tab>About</Tab>
             <Tab>Design</Tab>
             <Tab>Develop</Tab>
