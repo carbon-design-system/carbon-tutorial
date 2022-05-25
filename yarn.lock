@@ -8515,7 +8515,9 @@
 "react-refresh@^0.8.3", "react-refresh@>=0.8.3 <0.10.0":
   "version" "0.8.3"
 
-"react-router-dom@5.0.0":
+"react-router-dom@^5.0.0":
+  "integrity" "sha512-wSpja5g9kh5dIteZT3tUoggjnsa+TPFHSMrpHXMpFsaHhQkm/JNVGh2jiF9Dkh4+duj4MKCkwO6H08u6inZYgQ=="
+  "resolved" "https://registry.npmjs.org/react-router-dom/-/react-router-dom-5.0.0.tgz"
   "version" "5.0.0"
   dependencies:
     "@babel/runtime" "^7.1.2"
