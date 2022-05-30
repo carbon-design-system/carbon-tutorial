@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="701eaccb-93c4-4ead-9f17-fe274bb683d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/carbon-tutorial.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-code-frame-npm-7.16.7-093eb9e124-79eb7c3207.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-compat-data-npm-7.17.10-78bb00a360-55ae86c0ba.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-generator-npm-7.18.2-0f6d05ed9c-56dcab2c11.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-annotate-as-pure-npm-7.16.7-75d26b1e4c-9932a420c2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-builder-binary-assignment-operator-visitor-npm-7.16.7-fa4a09f41d-3180e1a9d9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-compilation-targets-npm-7.18.2-dc0a980fcf-7a588a8c9c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-create-class-features-plugin-npm-7.18.0-014a2978be-a86ec00efb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-create-regexp-features-plugin-npm-7.17.12-a615eb0070-0235a4c1b2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-define-polyfill-provider-npm-0.3.1-7c6efdf410-78d377d9cf.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-environment-visitor-npm-7.18.2-ef86d22a2e-c5d4db67f4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-explode-assignable-expression-npm-7.16.7-29ba312670-1911e495db.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-function-name-npm-7.17.9-baf558fead-aa332a576a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-hoist-variables-npm-7.16.7-25cc3abba4-d9f544a8b9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-member-expression-to-functions-npm-7.17.7-b9e674a20e-2572059896.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-module-imports-npm-7.16.7-19c74fd92b-5248e9ccce.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-module-transforms-npm-7.18.0-7aab6847ad-0c9a25e96c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-optimise-call-expression-npm-7.16.7-27e4a63d42-e678628ff6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-plugin-utils-npm-7.17.12-49129e950f-300da74658.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-remap-async-to-generator-npm-7.16.8-9a3804d4f8-4a1d50cd11.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-replace-supers-npm-7.18.2-d6d77110b0-d10875d75a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-simple-access-npm-7.18.2-e317ecdcbd-d8ae466707.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-skip-transparent-expression-wrappers-npm-7.16.0-caad6e8361-34d9d028bf.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-split-export-declaration-npm-7.16.7-5b9ae90171-a259453a63.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-validator-identifier-npm-7.16.7-8599fb00fc-43b4b4b721.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-validator-option-npm-7.16.7-d13e9c1d9e-e446b2cab7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-helper-wrap-function-npm-7.16.8-6f134e6cd3-8ac9126812.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-highlight-npm-7.17.12-73223b881e-7f1ceaf419.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-parser-npm-7.18.3-dc71af72cd-7fa17dcdf4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-bugfix-safari-id-destructuring-collision-in-function-expression-npm-7.17.12-be0fb80319-cfa8bbbfb0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-bugfix-v8-spread-parameters-in-optional-chaining-npm-7.17.12-3b9097f27f-f0e9981081.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-async-generator-functions-npm-7.17.12-d40dff0630-7bff3bd219.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-class-properties-npm-7.17.12-f05345c9c2-9d38179615.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-class-static-block-npm-7.18.0-63904f3f14-bb83282f1b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-dynamic-import-npm-7.16.7-c8dcbf7085-be4022f6d2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-export-namespace-from-npm-7.17.12-590b8c9c2a-21e515c5f2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-json-strings-npm-7.17.12-4951358b71-39134f124d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-logical-assignment-operators-npm-7.17.12-6f46a088bb-05e54d0e9a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-nullish-coalescing-operator-npm-7.17.12-4cd59b391b-2d40729e6b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-numeric-separator-npm-7.16.7-e445f742d7-63cbbad59a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-object-rest-spread-npm-7.18.0-bd5ba90f45-eb403f4dda.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-optional-catch-binding-npm-7.16.7-8ab736f892-43fd5a02f2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-optional-chaining-npm-7.17.12-6037fe9352-e6ad7556a5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-private-methods-npm-7.17.12-8ced4a48ee-1acfa375c5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-private-property-in-object-npm-7.17.12-8f1c21a7d0-76bde414b9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-proposal-unicode-property-regex-npm-7.17.12-92805926f8-c368a45220.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-syntax-class-properties-npm-7.12.13-002ee9d930-3023dec8ac.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-syntax-class-static-block-npm-7.14.5-7bdd0ff1b3-43bef611dd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-syntax-import-assertions-npm-7.17.12-cd34146413-1307708a39.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-syntax-jsx-npm-7.17.12-40df96ba17-a5dde0b0fc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-syntax-private-property-in-object-npm-7.14.5-ee837fdbb2-1f987725a8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-syntax-top-level-await-npm-7.14.5-60a0a2e83b-642baff7c2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-arrow-functions-npm-7.17.12-1d55e965f7-796dd9544f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-async-to-generator-npm-7.17.12-0e13ebe28a-aff640be9d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-block-scoped-functions-npm-7.16.7-58a044cde8-b1cfb880e4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-block-scoping-npm-7.17.12-54ff324b0d-61b82892fc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-classes-npm-7.17.12-f8386cd86b-d7322a2c31.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-computed-properties-npm-7.17.12-68a3791927-56245497e1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-destructuring-npm-7.18.0-11bd760aa6-652c7a4e48.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-dotall-regex-npm-7.16.7-da8c5ea826-4e8eea5dd4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-duplicate-keys-npm-7.17.12-56608f29a3-57997e3368.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-exponentiation-operator-npm-7.16.7-909d4f03ef-f3b15d9257.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-for-of-npm-7.18.1-b6a28b7eb3-964297bd76.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-function-name-npm-7.16.7-e8980f9639-b33af4e85c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-literals-npm-7.17.12-09c49cee27-be01932a37.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-member-expression-literals-npm-7.16.7-bfa68e9eb4-1f49f51aab.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-modules-amd-npm-7.18.0-3ecd6201db-b5e4f91587.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-modules-commonjs-npm-7.18.2-2c06bc35c9-ae7c735efa.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-modules-systemjs-npm-7.18.0-8954e88849-f12913eaf8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-modules-umd-npm-7.18.0-b9c405f847-64ca74c9f9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-named-capturing-groups-regex-npm-7.17.12-d362a2bd05-f30a80740d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-new-target-npm-7.17.12-0ca5523bd4-c8955b8509.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-object-super-npm-7.16.7-6301890335-b680cb5bdb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-parameters-npm-7.17.12-27d8a22b7a-cf8e03e33c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-property-literals-npm-7.16.7-b47430aee0-2e2f2d528e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-react-constant-elements-npm-7.17.12-432ebb90cd-e273e7a87f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-react-display-name-npm-7.16.7-75f0517b97-5d24ca7323.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-react-jsx-development-npm-7.16.7-07827939b2-92450bb3c0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-react-jsx-npm-7.17.12-55a08fa1bd-65263e51a5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-react-pure-annotations-npm-7.18.0-df335ce6cb-367801de2c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-regenerator-npm-7.18.0-7c015c9d29-a8e04e3006.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-reserved-words-npm-7.17.12-d8642c3fd9-fe4fa1e50d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-shorthand-properties-npm-7.16.7-d800844ada-f376affe0e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-spread-npm-7.17.12-457e6ed1e8-82e5e13de6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-sticky-regex-npm-7.16.7-e3085022d7-a32b6cb769.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-template-literals-npm-7.18.2-84c4281b1c-5ff0e47912.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-typeof-symbol-npm-7.17.12-2c7d65a0df-790f9374ec.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-unicode-escapes-npm-7.16.7-c081a34acc-381b15c026.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-unicode-regex-npm-7.16.7-0a6888bf4d-73d6c04477.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-preset-env-npm-7.18.2-c0fe60d405-7431fe1522.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-preset-modules-npm-0.1.5-15ffcd64c2-5a9cdbfc77.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-preset-react-npm-7.17.12-831a31a026-5655aecda5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-runtime-npm-7.18.3-1883c70fa6-70aa471de7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-template-npm-7.16.7-a18e444be8-bfc9a53563.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-traverse-npm-7.18.2-e9768252e4-db25e75681.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@babel-types-npm-7.18.2-f9553a6ad0-7f6e3b5f5e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-colors-npm-11.2.0-e6a33d9100-6f51c4777c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-feature-flags-npm-0.7.0-7f192756d6-9f5721e18e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-grid-npm-11.2.0-85df2890e4-3695a727ea.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-icon-helpers-npm-10.30.0-41d48d6158-36d56b74fc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-layout-npm-11.2.0-f4aa94d16c-cae92b7b5c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-motion-npm-11.1.0-08e513ddba-ad013c97b4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-telemetry-npm-0.1.0-dda5a14121-0b2e4e906b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-themes-npm-11.3.0-ca1b3102eb-1cafefb46a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-type-npm-11.3.0-49e864391f-a3accf95eb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@ibm-plex-npm-6.0.0-next.6-9aee23c93c-9963073b3a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@jridgewell-gen-mapping-npm-0.3.1-945956db05-c77767785e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@jridgewell-resolve-uri-npm-3.0.7-5d7f391f4f-742a2baf8f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@jridgewell-set-array-npm-1.1.1-0d86b67787-e4bf820156.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@jridgewell-sourcemap-codec-npm-1.4.13-b0c90a5760-4681cec99a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@jridgewell-trace-mapping-npm-0.3.13-b1ff8985e7-7f8105125e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@svgr-webpack-npm-5.5.0-0d3ac09bc6-077a569a0e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@types-eslint-npm-7.29.0-46534a7300-d3cbf3971c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@types-json-schema-npm-7.0.11-79462ae5ca-5f32333a4f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/anymatch-npm-3.1.2-1d5471acfa-cd6c08eb8d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/babel-plugin-polyfill-corejs2-npm-0.3.1-43e6df66ff-ca3589ffe2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/babel-plugin-polyfill-corejs3-npm-0.5.2-b8b8ecbf76-9b84d8d1e7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/babel-plugin-polyfill-regenerator-npm-0.3.1-5ab9515a96-38928f57a9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/browserslist-npm-4.20.3-d7ff9d00b4-e276c68d71.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/caniuse-lite-npm-1.0.30001344-6316905cb5-788f740c53.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/chokidar-npm-3.5.3-c5f9b0a56a-ea6636f22d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/classnames-npm-2.3.1-f2ae0a8d3c-57d536eded.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/color-npm-3.2.1-568cf1014f-2cf9436cba.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/color-string-npm-1.9.1-dc020e56be-3d2141907f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/compute-scroll-into-view-npm-1.0.17-708f0ecc3d-15e88fe143.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/copy-to-clipboard-npm-3.3.1-18029bce99-9707f2e405.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/core-js-compat-npm-3.22.7-b3d0c47df0-e9c9fd9336.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/downshift-npm-5.2.1-21b424890b-2c616efc3e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/electron-to-chromium-npm-1.4.140-f36421c340-d030240be6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/eslint-webpack-plugin-npm-2.6.0-70b8412eef-79a4577faa.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/eventsource-npm-1.1.1-494f77bda5-0b52826bc9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/faye-websocket-npm-0.11.4-1f0de76de9-bf3a03e821.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/flatpickr-npm-4.6.9-9928816e33-ffcbe9ab04.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fsevents-npm-2.3.2-a881d6ac9f-a1883f4ca1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fsevents-patch-3bc6df0d9f-7b25d9251a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/glob-parent-npm-5.1.2-021ab32634-82fcaa4ce1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/history-npm-4.10.1-ee217563ae-3b302b54c0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/hoist-non-react-statics-npm-3.3.2-e7b709e6c1-d3e3791d6e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/immer-npm-8.0.1-e4136eda12-a8c8d531af.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/immutable-npm-4.1.0-f6635927b8-e2e1918255.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/invariant-npm-2.2.4-717fbdb119-96d8a2a4f0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/isarray-npm-0.0.1-92e37e0a70-daeda3c236.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/jest-worker-npm-27.5.1-1c110b5894-1930798552.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/klona-npm-2.0.5-5d403f2d77-0fa5dada3d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lodash.debounce-npm-4.0.8-f1d6e09799-b6042bd8c0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lodash.findlast-npm-4.6.0-1e52a8cabb-a537456e78.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lodash.omit-npm-4.5.0-786639f9a0-b0bca85eb1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lodash.throttle-npm-4.1.1-856641af92-d9107c7903.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/micromatch-npm-4.0.5-cfab5d7669-af3dc46b9d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/node-releases-npm-2.0.5-ddba717991-e782302666.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/path-to-regexp-npm-1.8.0-a1904f5c44-4c0d9aaf3f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/picocolors-npm-1.0.0-d81e0b1927-6616d34dd0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/picomatch-npm-2.3.1-c782cfd986-5e3bbbf6a7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/react-error-overlay-npm-6.0.11-021cdeaa92-97972b8cc9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/react-is-npm-17.0.2-091bbb8db6-3eff23f410.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/readdirp-npm-3.6.0-f950cc74ab-7da2fe8d5a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/regenerate-unicode-properties-npm-10.0.1-a750d23172-09cc1c4f59.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/regenerator-transform-npm-0.15.0-c03f3a30a0-067516d041.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/regexpu-core-npm-5.0.1-9ed459a634-da5aaaf599.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/regjsgen-npm-0.6.0-bae949467e-cc4da8ac06.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/regjsparser-npm-0.8.4-df84fdb4b8-aa551aa2e3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/resize-observer-polyfill-npm-1.5.1-603120e8a0-ba14bfaf58.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/resolve-pathname-npm-3.0.0-bab4d7e47c-88ed8b3dd2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-loader-npm-10.2.1-eb918cbb8a-f94f03e237.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/schema-utils-npm-3.1.1-8704647575-c4f4c4c511.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/selfsigned-npm-1.10.14-bfd3922dfd-bfd2717082.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/sockjs-client-npm-1.6.0-3961ecfb6e-1ddcbc07a7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/source-map-js-npm-1.0.2-ee4f9f9b30-3bb232796a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/supports-color-npm-8.1.1-289e937149-0219f5c917.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/tiny-invariant-npm-1.2.0-024338c59c-101ae6dd08.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/tiny-warning-npm-1.0.3-750b7a07c4-6cf9f66cb7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/toggle-selection-npm-1.0.6-c506b73005-c47702aad7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/unicode-canonical-property-names-ecmascript-npm-2.0.0-d2d8554a14-d5c02b4d5a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/unicode-match-property-ecmascript-npm-2.0.0-97a00fd52c-b765c34572.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/unicode-match-property-value-ecmascript-npm-2.0.0-b52f4f7ca4-0552699317.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/unicode-property-aliases-ecmascript-npm-2.0.0-1636cb7768-7e470e0355.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/url-parse-npm-1.5.10-64fa2bcd6d-ba195a17cc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/use-resize-observer-npm-6.1.0-5ee3475eb2-244082c119.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/value-equal-npm-1.0.1-7811e93c9b-ae8cc7bbb2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/webpack-dev-server-npm-3.11.1-9edb45f7e5-ddd2212abe.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/wicg-inert-npm-3.1.1-27dfbc6ece-7299c896dd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/window-or-global-npm-1.0.1-16f37eb542-7bb01361ba.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TutorialHeader/TutorialHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TutorialHeader/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/LandingPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/content/RepoPage/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@babel-plugin-transform-react-constant-elements-npm-7.12.1-19ed032971-f8d2925846.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@babel-preset-react-npm-7.12.7-eeac7dfd68-78ba8ef318.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@babel-runtime-npm-7.0.0-086a213326-7e2b1de084.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@commitlint-cli-npm-7.5.2-58b648e086-c013ba9624.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@commitlint-config-conventional-npm-7.5.0-de538d13fd-bc62083f37.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@pmmmwh-react-refresh-webpack-plugin-npm-0.4.2-4fbefb2e62-cd70f32552.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/cache/@pmmmwh-react-refresh-webpack-plugin-npm-0.4.3-5375cf6b6f-718853bf7b.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@svgr-webpack-npm-5.4.0-46bd676046-ebd4d6835d.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@types-eslint-npm-7.2.6-7623f517ce-3a89e63d02.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/clone-deep-npm-4.0.1-70adab92c8-b0146d66ca.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/enzyme-adapter-react-16-npm-1.15.5-46a45a6e17-40920ef232.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/enzyme-adapter-utils-npm-1.13.1-6ae1b81f5e-0c818df1fa.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/eslint-webpack-plugin-npm-2.4.1-bb25f42dfa-9fabe18e53.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/eventsource-npm-1.0.7-0d25273d38-0585067150.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/faye-websocket-npm-0.10.0-161b37cfdf-2a5823ddfb.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/faye-websocket-npm-0.11.3-314c7cf07f-94c48a5b4e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/find-parent-dir-npm-0.3.0-3a97e2df6d-312608087c.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/get-stdin-npm-5.0.1-6b29b9ed95-a355ad406d.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/immer-npm-7.0.9-83e7165eca-20fba3dabd.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/json3-npm-3.3.3-be4baec3f1-f79831247f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/lint-staged-npm-8.1.5-8c1eb8cb08-bef9c6e9aa.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/prettier-npm-1.17.0-68c3704dd0-e8a1a8c8bc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-dev-utils-npm-11.0.1-8117b78a6a-f9bfd513f5.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/cache/react-dev-utils-npm-11.0.4-3a3d727f29-8872312144.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-dom-npm-16.10.0-212a2a0a22-30ec3a03b2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-error-overlay-npm-6.0.8-1802fdd2b1-b839fdd91a.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-npm-16.10.0-65794c9c3e-e44386f525.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/react-scripts-npm-4.0.1-d59350ab1a-1d37d97d1b.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/cache/react-scripts-npm-4.0.3-119b1229eb-ee13d6fa1e.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/regenerator-runtime-npm-0.12.1-47f5e68857-a6fd2b5809.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/resolve-global-npm-0.1.0-cb02e415f6-30916dd775.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-loader-npm-8.0.2-f0d209ad64-e23d9b308f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.29.0-9787eb1c3f-8114e0c4e7.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/scheduler-npm-0.16.2-ebc3ac2e6d-ed49c53788.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/selfsigned-npm-1.10.8-c48e1ebfb2-a382ec2af9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/shallow-clone-npm-3.0.1-dab5873d0d-e329e054c2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sockjs-client-npm-1.4.0-deb308a9b4-efe7e7bcf2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sockjs-npm-0.3.20-a457543ecd-9a8596f800.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/cache/sockjs-npm-0.3.24-ecb3909016-2b7bf6748a.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/webpack-dev-server-npm-3.11.0-42b1303dbc-1d34457456.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/websocket-driver-npm-0.6.5-53177fb7ee-1169a0eccc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/yup-npm-0.26.10-a8d0c906d4-e3af818d09.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TutorialHeader/_tutorial-header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29jiHhApsIZw1hh3wo2uPd53O5H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/work/workspace/allianz/carbon-tutorial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/TutorialHeader" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="701eaccb-93c4-4ead-9f17-fe274bb683d3" name="Changes" comment="" />
+      <created>1653632809422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653632809422</updated>
+      <workItem from="1653632811219" duration="843000" />
+      <workItem from="1653891707716" duration="4875000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
