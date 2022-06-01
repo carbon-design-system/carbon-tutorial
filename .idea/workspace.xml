@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="701eaccb-93c4-4ead-9f17-fe274bb683d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-colors-npm-11.1.0-037454a597-cb2234708f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-grid-npm-11.1.0-b54a97420a-dfb43ed257.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-icon-helpers-npm-10.29.0-b13a7b1e3c-84e5efb8a0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-icons-react-npm-11.1.0-3eb623238d-2a6060cddf.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-motion-npm-11.0.0-82163f79c1-93b5bb4165.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-react-npm-1.0.3-9d69f66379-b9c1a285e9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-styles-npm-1.1.0-249de90506-4dc48426e0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-themes-npm-11.1.0-74c8536988-e45ff9c6b7.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-type-npm-11.1.0-8b11dbe7a9-2e84065a7e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.38.0-de62158a65-ce6da83497.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/LandingPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/LandingPage/_landing-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/_repo-page.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="29jiHhApsIZw1hh3wo2uPd53O5H" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/work/workspace/allianz/carbon-tutorial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/TutorialHeader" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="701eaccb-93c4-4ead-9f17-fe274bb683d3" name="Changes" comment="" />
+      <created>1653632809422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653632809422</updated>
+      <workItem from="1653632811219" duration="843000" />
+      <workItem from="1653891707716" duration="4875000" />
+      <workItem from="1654074973024" duration="1694000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
