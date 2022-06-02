@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import './app.scss';
 import { Content, Theme } from '@carbon/react';
 import { Route, Switch } from 'react-router-dom';
 import TutorialHeader from './components/TutorialHeader';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage/RepoPage';
-import './app.scss';
 class App extends Component {
   render() {
     return (

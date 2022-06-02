@@ -5737,7 +5737,7 @@ __metadata:
     husky: 1.3.1
     lint-staged: 8.1.5
     prettier: 1.17.0
-    react: 16.10.0
+    react: ^18.1.0
     react-dom: 16.10.0
     react-router-dom: 5.0.0
     react-scripts: 4.0.3
@@ -14768,14 +14768,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react@npm:16.10.0":
-  version: 16.10.0
-  resolution: "react@npm:16.10.0"
+"react@npm:^18.1.0":
+  version: 18.1.0
+  resolution: "react@npm:18.1.0"
   dependencies:
     loose-envify: ^1.1.0
-    object-assign: ^4.1.1
-    prop-types: ^15.6.2
-  checksum: e44386f52566e12c29e776be5291fd8bf90208a8d038184f4806afc3ed1c1c889a66930137aebb66dbffe9cafbce3412683dab900db7f067fe11e9e8900ad029
+  checksum: c581a1b60cff0d1a09a476cd442b4f61fdf68f4c54b4a7b5af9687e5a2a34296d32f53d65c44610cdeab789359165364e275c82dd23cfd6ffe78c0021bbe74d0
   languageName: node
   linkType: hard
 
