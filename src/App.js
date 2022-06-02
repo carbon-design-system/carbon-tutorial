@@ -5,7 +5,7 @@ import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
-import { Content, Theme } from '@carbon/react';
+import { Theme } from '@carbon/react';
 
 class App extends Component {
   render() {
