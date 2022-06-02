@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
+import { gql, useQuery } from '@apollo/client';
+
 import {
   Link,
   DataTableSkeleton,
@@ -7,7 +9,6 @@ import {
   Grid,
   Column,
 } from '@carbon/react';
-import { gql, useQuery } from '@apollo/client';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
@@ -43,31 +44,6 @@ const REPO_QUERY = gql`
   }
 `;
 
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
-
 const headers = [
   {
     key: 'name',
@@ -94,6 +70,31 @@ const headers = [
     header: 'Links',
   },
 ];
+
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
 
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
