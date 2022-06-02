@@ -5743,6 +5743,7 @@ __metadata:
     react-scripts: 4.0.3
     sass: 1.51.0
     wait-for-expect: 3.0.2
+    yarn: ^1.22.18
   languageName: unknown
   linkType: soft
 
@@ -18394,6 +18395,16 @@ resolve@1.18.1:
     y18n: ^4.0.0
     yargs-parser: ^18.1.2
   checksum: dbf687d6b938f01bbf11e158dde6df906282b70cd9295af0217ee8cefbd83ad09d49fa9458d0d5325b0e66f03df954a38986db96f91e5b46ccdbbaf9a0157b23
+  languageName: node
+  linkType: hard
+
+"yarn@npm:^1.22.18":
+  version: 1.22.18
+  resolution: "yarn@npm:1.22.18"
+  bin:
+    yarn: bin/yarn.js
+    yarnpkg: bin/yarn.js
+  checksum: 9ecc28b149ddd94d0341f34496bf0c6c13e9150c20ce01c34746ef9110e8bf9e88a6dfbb862567fc91625a41f0422dbebd8fae987fb767dbfe8f29cad52baa41
   languageName: node
   linkType: hard
 
