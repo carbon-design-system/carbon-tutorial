@@ -1,6 +1,10 @@
 version: 2
 jobs:
+<<<<<<< HEAD
   step-five:
+=======
+  step-four:
+>>>>>>> 0218dba05130850e078ccfbeb733a15280345f5b
     docker:
       - image: circleci/node:14
     working_directory: ~/repo
@@ -18,4 +22,8 @@ workflows:
   version: 2
   main:
     jobs:
+<<<<<<< HEAD
       - step-five
+=======
+      - step-four
+>>>>>>> 0218dba05130850e078ccfbeb733a15280345f5b
