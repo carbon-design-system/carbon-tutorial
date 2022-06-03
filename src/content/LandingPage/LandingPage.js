@@ -11,8 +11,8 @@ import {
   Grid,
   Column,
 } from '@carbon/react';
-import { Globe, Application, PersonFavorite } from '@carbon/react/icons';
 import { InfoSection, InfoCard } from '../../components/Info';
+import { Globe, Application, PersonFavorite } from '@carbon/react/icons';
 
 const LandingPage = () => {
   return (
