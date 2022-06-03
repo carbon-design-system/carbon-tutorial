@@ -9,31 +9,6 @@ import {
   Column,
 } from '@carbon/react';
 
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
-
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
@@ -95,42 +70,11 @@ const headers = [
   },
 ];
 
-const rows = [
-  {
-    id: '1',
-    name: 'Repo 1',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '2',
-    name: 'Repo 2',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-  {
-    id: '3',
-    name: 'Repo 3',
-    createdAt: 'Date',
-    updatedAt: 'Date',
-    issueCount: '123',
-    stars: '456',
-    links: 'Links',
-  },
-];
-
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
 
   const { loading, error, data } = useQuery(REPO_QUERY);
-
   if (loading) {
     return (
       <Grid className="repo-page">
@@ -182,3 +126,28 @@ const RepoPage = () => {
 };
 
 export default RepoPage;
+
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
