@@ -65,4 +65,5 @@ const TutorialHeader = () => (
     )}
   />
 );
+
 export default TutorialHeader;
