@@ -1,6 +1,16 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem, Grid, Column } from '@carbon/react';
-import { Button, Tabs, Tab, TabList, TabPanels, TabPanel } from '@carbon/react';
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  Button,
+  Tabs,
+  Tab,
+  TabList,
+  TabPanels,
+  TabPanel,
+  Grid,
+  Column,
+} from '@carbon/react';
 
 const LandingPage = () => {
   return (
@@ -15,7 +25,6 @@ const LandingPage = () => {
           Design &amp; build with Carbon
         </h1>
       </Column>
-
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs defaultSelectedIndex={0}>
           <TabList className="tabs-group" aria-label="Tab navigation">
@@ -77,7 +86,6 @@ const LandingPage = () => {
           </TabPanels>
         </Tabs>
       </Column>
-
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <Grid>
           <Column md={4} lg={4} sm={4}>
