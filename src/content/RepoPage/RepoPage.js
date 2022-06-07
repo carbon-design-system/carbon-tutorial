@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import RepoTable from './RepoTable';
 import { gql, useQuery } from '@apollo/client';
 
+import RepoTable from './RepoTable';
 import {
   Link,
-  DataTableSkeleton,
   Pagination,
+  DataTableSkeleton,
   Grid,
   Column,
 } from '@carbon/react';
@@ -44,6 +44,31 @@ const REPO_QUERY = gql`
   }
 `;
 
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
+
 const headers = [
   {
     key: 'name',
@@ -71,36 +96,10 @@ const headers = [
   },
 ];
 
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
-
 const RepoPage = () => {
+  const { loading, error, data } = useQuery(REPO_QUERY);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
-
-  const { loading, error, data } = useQuery(REPO_QUERY);
 
   if (loading) {
     return (
@@ -124,10 +123,9 @@ const RepoPage = () => {
     // If we're here, we've got our data!
     const { repositories } = data.organization;
     const rows = getRowItems(repositories.nodes);
-
     return (
       <Grid className="repo-page">
-        <Column lg={16} md={8} sm={4} className="repo-page__r1">
+        <Column lg={16} className="repo-page__r1">
           <RepoTable
             headers={headers}
             rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
