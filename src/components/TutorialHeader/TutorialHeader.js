@@ -29,7 +29,7 @@ const TutorialHeader = () => (
         <HeaderName element={Link} to="/" prefix="IBM">
           Carbon Tutorial
         </HeaderName>
-        <HeaderNavigation aria-label="Carbon Tutorial">
+        <HeaderNavigation aria-label="My Carbon Tutorial">
           <HeaderMenuItem element={Link} to="/repos">
             Repositories
           </HeaderMenuItem>
