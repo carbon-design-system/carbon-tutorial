@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afb8c331-a1c1-46fb-bf94-b5f9f423e3d8" name="Changes" comment="" />
+    <list default="true" id="afb8c331-a1c1-46fb-bf94-b5f9f423e3d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-colors-npm-11.3.0-aa55412b59-12e22dc693.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-feature-flags-npm-0.8.0-40540dcf8d-4b32539b87.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-grid-npm-11.3.0-598126f7ff-a5178f9694.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-icon-helpers-npm-10.31.0-d802f6eeb0-a525e850f7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-icons-react-npm-11.5.0-7f5f3f20da-5239037440.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-layout-npm-11.3.0-3745db9525-9b862d1461.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-motion-npm-11.2.0-fd97fe61a8-98d6c2963e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-react-npm-1.1.0-1854f2fa66-8dd6a0b8e3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-styles-npm-1.5.0-790bed368d-82fb1cd95f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-themes-npm-11.4.0-1fc1637c98-d66c5bbeac.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@carbon-type-npm-11.4.0-57b7fc20b2-8722ab3dfe.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/immutable-npm-4.1.0-f6635927b8-e2e1918255.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.51.0-fa78a45677-ae2d310f61.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/source-map-js-npm-1.0.2-ee4f9f9b30-3bb232796a.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-colors-npm-11.1.0-037454a597-cb2234708f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-grid-npm-11.1.0-b54a97420a-dfb43ed257.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-icon-helpers-npm-10.29.0-b13a7b1e3c-84e5efb8a0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-icons-react-npm-11.1.0-3eb623238d-2a6060cddf.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-motion-npm-11.0.0-82163f79c1-93b5bb4165.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-react-npm-1.0.3-9d69f66379-b9c1a285e9.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-styles-npm-1.1.0-249de90506-4dc48426e0.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-themes-npm-11.1.0-74c8536988-e45ff9c6b7.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@carbon-type-npm-11.1.0-8b11dbe7a9-2e84065a7e.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.38.0-de62158a65-ce6da83497.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,11 +62,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.ci-check">
+    <configuration name="ci-check" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="ci-check" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -52,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.ci-check" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -65,6 +105,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654855615421</updated>
       <workItem from="1654855620065" duration="3758000" />
+      <workItem from="1654860931510" duration="2740000" />
     </task>
     <servers />
   </component>
