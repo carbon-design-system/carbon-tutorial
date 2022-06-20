@@ -1,4 +1,7 @@
 import React from 'react';
+import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
+import { Link } from 'react-router-dom';
+
 import {
   Header,
   HeaderContainer,
@@ -13,8 +16,6 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from '@carbon/react';
-import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
-import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
   <HeaderContainer
@@ -29,8 +30,11 @@ const TutorialHeader = () => (
         <HeaderName element={Link} to="/" prefix="IBM">
           Carbon Tutorial
         </HeaderName>
+
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+          <HeaderMenuItem element={Link} to="/repos">
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -38,30 +42,24 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem element={Link} to="/repos">
-                Repositories
-              </HeaderMenuItem>
+              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
-          <HeaderGlobalBar>
-            <HeaderGlobalAction
-              aria-label="Notifications"
-              tooltipAlignment="center">
-              <Notification size={20} />
-            </HeaderGlobalAction>
-            <HeaderGlobalAction
-              aria-label="User Avatar"
-              tooltipAlignment="center">
-              <UserAvatar size={20} />
-            </HeaderGlobalAction>
-            <HeaderGlobalAction
-              aria-label="App Switcher"
-              tooltipAlignment="end">
-              <Switcher size={20} />
-            </HeaderGlobalAction>
-          </HeaderGlobalBar>
+          <HeaderGlobalAction
+            aria-label="Notifications"
+            tooltipAlignment="center">
+            <Notification size={20} />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction
+            aria-label="User Avatar"
+            tooltipAlignment="center">
+            <UserAvatar size={20} />
+          </HeaderGlobalAction>
+          <HeaderGlobalAction aria-label="App Switcher" tooltipAlignment="end">
+            <Switcher size={20} />
+          </HeaderGlobalAction>
         </HeaderGlobalBar>
       </Header>
     )}
