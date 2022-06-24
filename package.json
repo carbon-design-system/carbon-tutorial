@@ -23,7 +23,8 @@
     "react": "16.10.0",
     "react-dom": "16.10.0",
     "react-router-dom": "5.0.0",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "sass-loader": "^13.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "7.5.2",

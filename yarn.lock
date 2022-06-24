@@ -5748,6 +5748,7 @@ __metadata:
     react-router-dom: 5.0.0
     react-scripts: 4.0.3
     sass: 1.51.0
+    sass-loader: ^13.0.1
     wait-for-expect: 3.0.2
   languageName: unknown
   linkType: soft
@@ -15634,6 +15635,31 @@ resolve@1.18.1:
     sass:
       optional: true
   checksum: f94f03e23740467ba5c899e07bcfbbecb53809821e693df5c8be6352f0c0758a7cbe8c0d04e6606215bd1294b92c13724fd5e16eeec1028fc159309a6689bacb
+  languageName: node
+  linkType: hard
+
+"sass-loader@npm:^13.0.1":
+  version: 13.0.1
+  resolution: "sass-loader@npm:13.0.1"
+  dependencies:
+    klona: ^2.0.4
+    neo-async: ^2.6.2
+  peerDependencies:
+    fibers: ">= 3.1.0"
+    node-sass: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0
+    sass: ^1.3.0
+    sass-embedded: "*"
+    webpack: ^5.0.0
+  peerDependenciesMeta:
+    fibers:
+      optional: true
+    node-sass:
+      optional: true
+    sass:
+      optional: true
+    sass-embedded:
+      optional: true
+  checksum: c1d6751852f617b422f9f4d56d37849837a09df229d41afa55dfbff1e9469d586fb3b3a9bcc167d0277e21c9395872d60689333a9780e7155bbb228582eedc71
   languageName: node
   linkType: hard
 
