@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql, useQuery } from '@apollo/client';
-
 import {
   Link,
   DataTableSkeleton,
@@ -43,7 +42,6 @@ const REPO_QUERY = gql`
     }
   }
 `;
-
 const headers = [
   {
     key: 'name',
@@ -71,6 +69,35 @@ const headers = [
   },
 ];
 
+const rows = [
+  {
+    id: '1',
+    name: 'Repo 1',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '2',
+    name: 'Repo 2',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '3',
+    name: 'Repo 3',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+];
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -84,7 +111,6 @@ const LinkList = ({ url, homepageUrl }) => (
     )}
   </ul>
 );
-
 const getRowItems = rows =>
   rows.map(row => ({
     ...row,
@@ -99,9 +125,7 @@ const getRowItems = rows =>
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
-
   const { loading, error, data } = useQuery(REPO_QUERY);
-
   if (loading) {
     return (
       <Grid className="repo-page">
@@ -122,34 +146,36 @@ const RepoPage = () => {
 
   if (data) {
     // If we're here, we've got our data!
-    const { repositories } = data.organization;
-    const rows = getRowItems(repositories.nodes);
-
-    return (
-      <Grid className="repo-page">
-        <Column lg={16} md={8} sm={4} className="repo-page__r1">
-          <RepoTable
-            headers={headers}
-            rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-          />
-          <Pagination
-            totalItems={rows.length}
-            backwardText="Previous page"
-            forwardText="Next page"
-            pageSize={currentPageSize}
-            pageSizes={[5, 10, 15, 25]}
-            itemsPerPageText="Items per page"
-            onChange={({ page, pageSize }) => {
-              if (pageSize !== currentPageSize) {
-                setCurrentPageSize(pageSize);
-              }
-              setFirstRowIndex(pageSize * (page - 1));
-            }}
-          />
-        </Column>
-      </Grid>
-    );
+    console.log(data.organization);
   }
+  // If we're here, we've got our data!
+  const { repositories } = data.organization;
+  const rows = getRowItems(repositories.nodes);
+
+  return (
+    <Grid className="repo-page">
+      <Column lg={16} md={8} sm={4} className="repo-page__r1">
+        <RepoTable
+          headers={headers}
+          rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+        />
+        <Pagination
+          totalItems={rows.length}
+          backwardText="Previous page"
+          forwardText="Next page"
+          pageSize={currentPageSize}
+          pageSizes={[5, 10, 15, 25]}
+          itemsPerPageText="Items per page"
+          onChange={({ page, pageSize }) => {
+            if (pageSize !== currentPageSize) {
+              setCurrentPageSize(pageSize);
+            }
+            setFirstRowIndex(pageSize * (page - 1));
+          }}
+        />
+      </Column>
+    </Grid>
+  );
 };
 
 export default RepoPage;
