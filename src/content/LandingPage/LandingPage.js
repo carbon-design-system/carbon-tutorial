@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,8 +11,6 @@ import {
   Grid,
   Column,
 } from '@carbon/react';
-
-import React from 'react';
 
 const LandingPage = () => {
   return (
