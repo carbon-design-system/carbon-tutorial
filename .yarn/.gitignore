@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> fdabf97caa5124fe5b3d50c9cbef16d0c64fab4c
 # https://yarnpkg.com/advanced/qa#which-files-should-be-gitignored
 build-state.yml
 install-state.gz
