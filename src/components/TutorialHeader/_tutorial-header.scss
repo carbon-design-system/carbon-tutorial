@@ -4,9 +4,9 @@
 // because the navigation is dark themed while the content is white
 // which means the dark theme tooltip bg blends into the white content bg
 .cds--header__global .cds--popover-content {
-  background-color: gray-20;
+  background-color: $carbon--gray-20;
 }
 
 .cds--header__global .cds--popover-caret {
-  background-color: gray-20;
+  background-color: $carbon--gray-20;
 }
