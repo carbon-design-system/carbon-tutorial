@@ -5,104 +5,96 @@ import {
   Button,
   Tabs,
   Tab,
-  TabList,
-  TabPanels,
-  TabPanel,
-  Grid,
-  Column,
-} from '@carbon/react';
+} from 'carbon-components-react';
+
+const props = {
+  tabs: {
+    selected: 0,
+    role: 'navigation',
+  },
+  tab: {
+    role: 'presentation',
+    tabIndex: 0,
+  },
+};
 
 const LandingPage = () => {
   return (
-    <Grid className="landing-page" fullWidth>
-      <Column lg={16} md={8} sm={4} className="landing-page__banner">
-        <Breadcrumb noTrailingSlash aria-label="Page navigation">
-          <BreadcrumbItem>
-            <a href="/">Getting started</a>
-          </BreadcrumbItem>
-        </Breadcrumb>
-        <h1 className="landing-page__heading">
-          Design &amp; build with Carbon
-        </h1>
-      </Column>
-      <Column lg={16} md={8} sm={4} className="landing-page__r2">
-        <Tabs defaultSelectedIndex={0}>
-          <TabList className="tabs-group" aria-label="Tab navigation">
-            <Tab>About</Tab>
-            <Tab>Design</Tab>
-            <Tab>Develop</Tab>
-          </TabList>
-          <TabPanels>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  md={4}
-                  lg={7}
-                  sm={4}
-                  className="landing-page__tab-content">
-                  <h2 className="landing-page__subheading">What is Carbon?</h2>
-                  <p className="landing-page__p">
-                    Carbon is IBM’s open-source design system for digital
-                    products and experiences. With the IBM Design Language as
-                    its foundation, the system consists of working code, design
-                    tools and resources, human interface guidelines, and a
-                    vibrant community of contributors.
-                  </p>
-                  <Button>Learn more</Button>
-                </Column>
-                <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-                  <img
-                    className="landing-page__illo"
-                    src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-                    alt="Carbon illustration"
-                  />
-                </Column>
-              </Grid>
-            </TabPanel>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  lg={16}
-                  md={8}
-                  sm={4}
-                  className="landing-page__tab-content">
-                  Rapidly build beautiful and accessible experiences. The Carbon
-                  kit contains all resources you need to get started.
-                </Column>
-              </Grid>
-            </TabPanel>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  lg={16}
-                  md={8}
-                  sm={4}
-                  className="landing-page__tab-content">
-                  Carbon provides styles and components in Vanilla, React,
-                  Angular, and Vue for anyone building on the web.
-                </Column>
-              </Grid>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Column>
-      <Column lg={16} md={8} sm={4} className="landing-page__r3">
-        <Grid>
-          <Column md={4} lg={4} sm={4}>
-            <h3 className="landing-page__label">The Principles</h3>
-          </Column>
-          <Column md={4} lg={4} sm={4}>
-            Carbon is Open
-          </Column>
-          <Column md={4} lg={4} sm={4}>
-            Carbon is Modular
-          </Column>
-          <Column md={4} lg={4} sm={4}>
-            Carbon is Consistent
-          </Column>
-        </Grid>
-      </Column>
-    </Grid>
+    <div className="cds--grid cds--grid--full--width landing-page">
+      <div className="cds--row landing-page__banner">
+        <div className="cds--col-lg-16">
+          <Breadcrumb noTrailingSlash>
+            <BreadcrumbItem>
+              <a href="/">Getting started</a>
+            </BreadcrumbItem>
+          </Breadcrumb>
+          <h1 className="landing-page__heading">
+            Design &amp; build with Carbon
+          </h1>
+        </div>
+      </div>
+      <div className="cds--row landing-page__r2">
+        <div className="cds--col cds--no-gutter">
+          <Tabs {...props.tabs}>
+            <Tab {...props.tab} label="About">
+              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
+                <div className="cds--row landing-page__tab-content">
+                  <div className="cds--col-md-4 cds--col-lg-7">
+                    <h2 className="landing-page__subheading">
+                      What is Carbon?
+                    </h2>
+                    <p className="landing-page__p">
+                      Carbon is IBM’s open-source design system for digital
+                      products and experiences. With the IBM Design Language as
+                      its foundation, the system consists of working code,
+                      design tools and resources, human interface guidelines,
+                      and a vibrant community of contributors.
+                    </p>
+                    <Button>Learn more</Button>
+                  </div>
+                  <div className="cds--col-md-4 cds--offset-lg-1 cds--col-lg-8">
+                    <img
+                      className="landing-page__illo"
+                      src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+                      alt="Carbon illustration"
+                    />
+                  </div>
+                </div>
+              </div>
+            </Tab>
+            <Tab {...props.tab} label="Design">
+              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
+                <div className="cds--row landing-page__tab-content">
+                  <div className="cds--col-lg-16">
+                    Rapidly build beautiful and accessible experiences. The
+                    Carbon kit contains all resources you need to get started.
+                  </div>
+                </div>
+              </div>
+            </Tab>
+            <Tab {...props.tab} label="Develop">
+              <div className="cds--grid cds--grid--no-gutter cds--grid--full-width">
+                <div className="cds--row landing-page__tab-content">
+                  <div className="cds--col-lg-16">
+                    Carbon provides styles and components in Vanilla, React,
+                    Angular, and Vue for anyone building on the web.
+                  </div>
+                </div>
+              </div>
+            </Tab>
+          </Tabs>
+        </div>
+      </div>
+
+      <div className="cds--row landing-page__r3">
+        <div className="cds--col-md-4 cds--col-lg-4">
+          <h3 className="landing-page__label">The Principles</h3>
+        </div>
+        <div className="cds--col-md-4 cds--col-lg-4">Carbon is Open</div>
+        <div className="cds--col-md-4 cds--col-lg-4">Carbon is Modular</div>
+        <div className="cds--col-md-4 cds--col-lg-4">Carbon is Consistent</div>
+      </div>
+    </div>
   );
 };
 

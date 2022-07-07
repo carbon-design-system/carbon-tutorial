@@ -1,6 +1,5 @@
 import React from 'react';
 import RepoTable from './RepoTable';
-import { Grid, Column } from '@carbon/react';
 
 const headers = [
   {
@@ -61,11 +60,13 @@ const rows = [
 
 const RepoPage = () => {
   return (
-    <Grid className="repo-page">
-      <Column lg={16} className="repo-page__r1">
-        <RepoTable headers={headers} rows={rows} />
-      </Column>
-    </Grid>
+    <div className="cds--grid cds--grid--full-width cds--grid--no-gutter repo-page">
+      <div className="cds--row repo-page__r1">
+        <div className="cds--col-lg-16">
+          <RepoTable rows={rows} headers={headers} />
+        </div>
+      </div>
+    </div>
   );
 };
 

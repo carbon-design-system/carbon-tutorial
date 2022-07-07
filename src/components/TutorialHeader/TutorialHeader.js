@@ -12,8 +12,12 @@ import {
   SideNav,
   SideNavItems,
   HeaderSideNavItems,
-} from '@carbon/react';
-import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
+} from 'carbon-components-react';
+import {
+  AppSwitcher20,
+  Notification20,
+  UserAvatar20,
+} from '@carbon/icons-react';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
@@ -47,18 +51,14 @@ const TutorialHeader = () => (
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
-          <HeaderGlobalAction
-            aria-label="Notifications"
-            tooltipAlignment="center">
-            <Notification size={20} />
+          <HeaderGlobalAction aria-label="Notifications">
+            <Notification20 />
           </HeaderGlobalAction>
-          <HeaderGlobalAction
-            aria-label="User Avatar"
-            tooltipAlignment="center">
-            <UserAvatar size={20} />
+          <HeaderGlobalAction aria-label="User Avatar">
+            <UserAvatar20 />
           </HeaderGlobalAction>
-          <HeaderGlobalAction aria-label="App Switcher" tooltipAlignment="end">
-            <Switcher size={20} />
+          <HeaderGlobalAction aria-label="App Switcher">
+            <AppSwitcher20 />
           </HeaderGlobalAction>
         </HeaderGlobalBar>
       </Header>
