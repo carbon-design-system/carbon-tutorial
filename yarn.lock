@@ -6171,7 +6171,7 @@ __metadata:
     lint-staged: 8.1.5
     prettier: 1.17.0
     react: 16.10.0
-    react-apollo: ^3.1.5
+    react-apollo: 3.1.5
     react-dom: 16.10.0
     react-router-dom: 5.0.0
     react-scripts: 4.0.3
@@ -15260,7 +15260,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"react-apollo@npm:^3.1.5":
+"react-apollo@npm:3.1.5":
   version: 3.1.5
   resolution: "react-apollo@npm:3.1.5"
   dependencies:
