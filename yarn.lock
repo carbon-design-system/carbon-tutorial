@@ -2720,6 +2720,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/grid@npm:10.17.0":
+  version: 10.17.0
+  resolution: "@carbon/grid@npm:10.17.0"
+  dependencies:
+    "@carbon/import-once": ^10.4.0
+    "@carbon/layout": ^10.15.0
+  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+  languageName: node
+  linkType: hard
+
 "@carbon/grid@npm:^10.34.0, @carbon/grid@npm:^10.43.0":
   version: 10.43.1
   resolution: "@carbon/grid@npm:10.43.1"
@@ -2737,7 +2747,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:^10.38.0-rc.0, @carbon/icons-react@npm:^10.49.0":
+"@carbon/icons-react@npm:^10.22.0, @carbon/icons-react@npm:^10.38.0-rc.0, @carbon/icons-react@npm:^10.49.0":
   version: 10.49.0
   resolution: "@carbon/icons-react@npm:10.49.0"
   dependencies:
@@ -2750,14 +2760,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/import-once@npm:^10.7.0":
+"@carbon/import-once@npm:^10.4.0, @carbon/import-once@npm:^10.7.0":
   version: 10.7.0
   resolution: "@carbon/import-once@npm:10.7.0"
   checksum: 2c898bd192201825b7df21e33bd21ede31f6ba8a468dab20bcc79072a09b9cad565c4c986af59746659db201291d13cbca89425237c8bf2bcdf10f34f27ebc79
   languageName: node
   linkType: hard
 
-"@carbon/layout@npm:^10.30.0, @carbon/layout@npm:^10.37.0, @carbon/layout@npm:^10.37.1":
+"@carbon/layout@npm:^10.15.0, @carbon/layout@npm:^10.30.0, @carbon/layout@npm:^10.37.0, @carbon/layout@npm:^10.37.1":
   version: 10.37.1
   resolution: "@carbon/layout@npm:10.37.1"
   checksum: 0633550ce0cd6e254d719755d46d81e83273f82436da1088eb6deb954142e400339604424129d69190bf76c5a24c349cc9c2bfaeb848aaab525f9a72d842a900
@@ -5835,6 +5845,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"carbon-components-react@npm:7.25.0":
+  version: 7.25.0
+  resolution: "carbon-components-react@npm:7.25.0"
+  dependencies:
+    "@carbon/icons-react": ^10.22.0
+    classnames: 2.2.6
+    downshift: 5.2.1
+    flatpickr: 4.6.1
+    invariant: ^2.2.3
+    lodash.debounce: ^4.0.8
+    lodash.findlast: ^4.5.0
+    lodash.isequal: ^4.5.0
+    lodash.omit: ^4.5.0
+    lodash.throttle: ^4.1.1
+    react-is: ^16.8.6
+    use-resize-observer: ^6.0.0
+    warning: ^3.0.0
+    window-or-global: ^1.0.1
+  peerDependencies:
+    carbon-components: ^10.9.0
+    carbon-icons: ^7.0.7
+    react: ^16.8.6 || ^17.0.1
+    react-dom: ^16.8.6 || ^17.0.1
+  checksum: 8a62ffa53d9d6be821e643c0e3c89a5ea4a547ed3b68a8a97c0dfe1ebc404d22c77782cb923ba4e57a9ebe0904e2b893dc9462fc43e0aee16c46d86ca2775efa
+  languageName: node
+  linkType: hard
+
 "carbon-components-react@npm:^7.42.0-rc.0":
   version: 7.57.2
   resolution: "carbon-components-react@npm:7.57.2"
@@ -5879,15 +5916,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"carbon-icons@npm:7.0.7":
+  version: 7.0.7
+  resolution: "carbon-icons@npm:7.0.7"
+  checksum: 144c1000195e4c3a472cdeae3d2cd9fdc5b9727f4cb89422fe9e621f8b8d9c1ebec2a9ab326fef816856e1fccb88e319ae90085dd93153a82a1e10f49c98ae8a
+  languageName: node
+  linkType: hard
+
 "carbon-tutorial@workspace:.":
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
     "@apollo/client": ^3.6.9
+    "@carbon/grid": 10.17.0
     "@carbon/react": 0.3.0-rc.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     carbon-components: 10.25.0
+    carbon-components-react: 7.25.0
+    carbon-icons: 7.0.7
     enzyme: 3.11.0
     enzyme-adapter-react-16: 1.15.5
     husky: 1.3.1
@@ -6106,6 +6153,13 @@ __metadata:
     isobject: ^3.0.0
     static-extend: ^0.1.1
   checksum: 6411679ad4d2bde81b62ad721d4771d108d5d8ef32805d10ebfa6f1d6bdcfd5cb6dfea5232b85221f079e42691c36cf2db05a5e76b87ba8f6deb37a2c23a4a41
+  languageName: node
+  linkType: hard
+
+"classnames@npm:2.2.6":
+  version: 2.2.6
+  resolution: "classnames@npm:2.2.6"
+  checksum: 490eaeca5931846737ffd33e472a701d268d5b8bc5717dd4cf108a127b06e86e05350e06799abbbe763a0e4c945b4217f6700b7ae00ddc703505682c370e5cf2
   languageName: node
   linkType: hard
 

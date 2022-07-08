@@ -18,8 +18,11 @@
   },
   "dependencies": {
     "@apollo/client": "^3.6.9",
+    "@carbon/grid": "10.17.0",
     "@carbon/react": "0.3.0-rc.0",
     "carbon-components": "10.25.0",
+    "carbon-components-react": "7.25.0",
+    "carbon-icons": "7.0.7",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",
