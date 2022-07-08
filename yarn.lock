@@ -5868,6 +5868,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"carbon-components@npm:10.25.0":
+  version: 10.25.0
+  resolution: "carbon-components@npm:10.25.0"
+  dependencies:
+    flatpickr: 4.6.1
+    lodash.debounce: ^4.0.8
+    warning: ^3.0.0
+  checksum: 9c91507044a909bec4b8fb61b6922f273aeea2645ea06fbd082c7180931dc21fb732f12be05068c0cd8a108e549398860aa875d7f958ddec2c4b93a3234beecf
+  languageName: node
+  linkType: hard
+
 "carbon-tutorial@workspace:.":
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
@@ -5876,6 +5887,7 @@ __metadata:
     "@carbon/react": 0.3.0-rc.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
+    carbon-components: 10.25.0
     enzyme: 3.11.0
     enzyme-adapter-react-16: 1.15.5
     husky: 1.3.1
@@ -8883,6 +8895,13 @@ __metadata:
     flatted: ^3.1.0
     rimraf: ^3.0.2
   checksum: 72d86ccdf840e70227168a20bb908db8bc382360f0b241efd4c2e5cf2d17a7d566c0849dc4c5d2e8e6d7838e052539dcc319f0cf295c0bb9f47b71844c1de78d
+  languageName: node
+  linkType: hard
+
+"flatpickr@npm:4.6.1":
+  version: 4.6.1
+  resolution: "flatpickr@npm:4.6.1"
+  checksum: 98486bd9e32c939cc3c62a514de132287abe711c0351f7e37bd9566be88395397e3267b307a4749c0597b7afff770223b7521762b7f365c58f4870431e0455db
   languageName: node
   linkType: hard
 
@@ -18074,6 +18093,15 @@ resolve@1.18.1:
   dependencies:
     makeerror: 1.0.x
   checksum: c014f264c473fc4464ba8f59eb9f7ffa1c0cf2c83b65353de28a6012d8dd29e974bf2b0fbd5c71231f56762a3ea0d970b635f7d6f6d670ff83f426741ce6a4da
+  languageName: node
+  linkType: hard
+
+"warning@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "warning@npm:3.0.0"
+  dependencies:
+    loose-envify: ^1.0.0
+  checksum: 91371f1e41c301c595b25b3f8df1826925d679b74c34b97284ec01937ee5e96aeaf65e7b78a7e9cbb34526597bf806edc9bf9d8d41314bae59b91526ff6712fa
   languageName: node
   linkType: hard
 
