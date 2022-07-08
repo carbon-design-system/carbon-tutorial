@@ -76,11 +76,11 @@ const mocks = [
 ];
 
 it('renders a table with data and pagination', async () => {
-  const wrapper = mount(
-    <MockedProvider mocks={mocks} addTypename={false}>
-      <RepoPage />
-    </MockedProvider>
-  );
+  // const wrapper = mount(
+  //   <MockedProvider mocks={mocks} addTypename={false}>
+  //     <RepoPage />
+  //   </MockedProvider>
+  // );
 
   expect(wrapper.find('Pagination').length).toBe(0);
   await waitForExpect(() => {
