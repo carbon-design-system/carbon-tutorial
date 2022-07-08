@@ -17,7 +17,8 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@carbon/react": "1.1.0",
+    "@carbon/icons-react": "10.22.0",
+    "@carbon/react": "0.3.0-rc.0",
     "@carbon/themes": "^10.40.0",
     "apollo-boost": "^0.4.9",
     "carbon-components": "10.41.0",
