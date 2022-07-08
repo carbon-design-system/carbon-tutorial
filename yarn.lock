@@ -2717,6 +2717,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@carbon/grid@npm:10.17.0":
+  version: 10.17.0
+  resolution: "@carbon/grid@npm:10.17.0"
+  dependencies:
+    "@carbon/import-once": ^10.4.0
+    "@carbon/layout": ^10.15.0
+  checksum: b5502b7ccfdc1e99d1c5ad782e9662a052f097d16dd80b1e70b59a93f958247e437a6e69f8e786d5013adc9949934490690b07a9fb2d8dd7e87089a445571276
+  languageName: node
+  linkType: hard
+
 "@carbon/grid@npm:^10.34.0, @carbon/grid@npm:^10.43.0":
   version: 10.43.1
   resolution: "@carbon/grid@npm:10.43.1"
@@ -2746,7 +2756,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:^10.38.0-rc.0, @carbon/icons-react@npm:^10.49.0":
+"@carbon/icons-react@npm:^10.22.0, @carbon/icons-react@npm:^10.38.0-rc.0, @carbon/icons-react@npm:^10.49.0":
   version: 10.49.0
   resolution: "@carbon/icons-react@npm:10.49.0"
   dependencies:
@@ -2759,14 +2769,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/import-once@npm:^10.7.0":
+"@carbon/import-once@npm:^10.4.0, @carbon/import-once@npm:^10.7.0":
   version: 10.7.0
   resolution: "@carbon/import-once@npm:10.7.0"
   checksum: 2c898bd192201825b7df21e33bd21ede31f6ba8a468dab20bcc79072a09b9cad565c4c986af59746659db201291d13cbca89425237c8bf2bcdf10f34f27ebc79
   languageName: node
   linkType: hard
 
-"@carbon/layout@npm:^10.30.0, @carbon/layout@npm:^10.37.0, @carbon/layout@npm:^10.37.1":
+"@carbon/layout@npm:^10.15.0, @carbon/layout@npm:^10.30.0, @carbon/layout@npm:^10.37.0, @carbon/layout@npm:^10.37.1":
   version: 10.37.1
   resolution: "@carbon/layout@npm:10.37.1"
   checksum: 0633550ce0cd6e254d719755d46d81e83273f82436da1088eb6deb954142e400339604424129d69190bf76c5a24c349cc9c2bfaeb848aaab525f9a72d842a900
@@ -5844,6 +5854,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"carbon-components-react@npm:7.25.0":
+  version: 7.25.0
+  resolution: "carbon-components-react@npm:7.25.0"
+  dependencies:
+    "@carbon/icons-react": ^10.22.0
+    classnames: 2.2.6
+    downshift: 5.2.1
+    flatpickr: 4.6.1
+    invariant: ^2.2.3
+    lodash.debounce: ^4.0.8
+    lodash.findlast: ^4.5.0
+    lodash.isequal: ^4.5.0
+    lodash.omit: ^4.5.0
+    lodash.throttle: ^4.1.1
+    react-is: ^16.8.6
+    use-resize-observer: ^6.0.0
+    warning: ^3.0.0
+    window-or-global: ^1.0.1
+  peerDependencies:
+    carbon-components: ^10.9.0
+    carbon-icons: ^7.0.7
+    react: ^16.8.6 || ^17.0.1
+    react-dom: ^16.8.6 || ^17.0.1
+  checksum: 8a62ffa53d9d6be821e643c0e3c89a5ea4a547ed3b68a8a97c0dfe1ebc404d22c77782cb923ba4e57a9ebe0904e2b893dc9462fc43e0aee16c46d86ca2775efa
+  languageName: node
+  linkType: hard
+
 "carbon-components-react@npm:^7.42.0-rc.0":
   version: 7.57.2
   resolution: "carbon-components-react@npm:7.57.2"
@@ -5900,11 +5937,13 @@ __metadata:
   resolution: "carbon-tutorial@workspace:."
   dependencies:
     "@apollo/client": ^3.4.10
+    "@carbon/grid": 10.17.0
     "@carbon/icons-react": 10.22.0
     "@carbon/react": 0.3.0-rc.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     carbon-components: 10.25.0
+    carbon-components-react: 7.25.0
     carbon-icons: 7.0.7
     enzyme: 3.11.0
     enzyme-adapter-react-16: 1.15.5
@@ -5916,7 +5955,7 @@ __metadata:
     react-dom: 16.10.0
     react-router-dom: 5.0.0
     react-scripts: 4.0.3
-    sass: 1.51.0
+    sass: 1.38.0
     wait-for-expect: 3.0.2
   languageName: unknown
   linkType: soft
@@ -6009,8 +6048,8 @@ __metadata:
   linkType: hard
 
 "chokidar@npm:>=3.0.0 <4.0.0":
-  version: 3.5.2
-  resolution: "chokidar@npm:3.5.2"
+  version: 3.5.3
+  resolution: "chokidar@npm:3.5.3"
   dependencies:
     anymatch: ~3.1.2
     braces: ~3.0.2
@@ -6023,7 +6062,7 @@ __metadata:
   dependenciesMeta:
     fsevents:
       optional: true
-  checksum: 52fbff3acebf06ec0125872110f6c8403e66cd3d613264c83405496e199554d99380342d9b3a7ffd7910c53c5865e242ed7dd72fcb2e883d8e3ad3f3883aee6c
+  checksum: ea6636f22ddc08555794d72435876dea95ff90d8f00e5d3755022d6c7613dc8947056c36f4d76be8e246e539994f71772d8c6cec339db3767f2d5523cd51a9c0
   languageName: node
   linkType: hard
 
@@ -6125,6 +6164,13 @@ __metadata:
     isobject: ^3.0.0
     static-extend: ^0.1.1
   checksum: 6411679ad4d2bde81b62ad721d4771d108d5d8ef32805d10ebfa6f1d6bdcfd5cb6dfea5232b85221f079e42691c36cf2db05a5e76b87ba8f6deb37a2c23a4a41
+  languageName: node
+  linkType: hard
+
+"classnames@npm:2.2.6":
+  version: 2.2.6
+  resolution: "classnames@npm:2.2.6"
+  checksum: 490eaeca5931846737ffd33e472a701d268d5b8bc5717dd4cf108a127b06e86e05350e06799abbbe763a0e4c945b4217f6700b7ae00ddc703505682c370e5cf2
   languageName: node
   linkType: hard
 
@@ -10050,13 +10096,6 @@ fsevents@~2.3.2:
   version: 8.0.1
   resolution: "immer@npm:8.0.1"
   checksum: a8c8d531af8f968f4d5a2ec3c5eeb6dd6933c69d216b3f8c55275e34c87926d556db4e3d81f5f038e66f9886e874da4ab4f7ffe228e33d718593820e2f57b68f
-  languageName: node
-  linkType: hard
-
-"immutable@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "immutable@npm:4.0.0"
-  checksum: b213379f1a5e764c9c301c5aee26342ca1486e50b8e1bf7cdcb5586ddcedcab4f75cffc8cd50b7a44133e4ecce71cbd066af016b11024b86c18ee6d6cf3209d0
   languageName: node
   linkType: hard
 
@@ -16056,16 +16095,14 @@ resolve@1.18.1:
   languageName: node
   linkType: hard
 
-"sass@npm:1.51.0":
-  version: 1.51.0
-  resolution: "sass@npm:1.51.0"
+"sass@npm:1.38.0":
+  version: 1.38.0
+  resolution: "sass@npm:1.38.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
-    immutable: ^4.0.0
-    source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: ae2d310f613685e50908441bb4f1322f55b013973ba7ebe81f97b8534e1b393a8035d5ac9a14154935382ed1ae72de35e8f26e62f25196ec7c78b0f3db0bde4c
+  checksum: ce6da83497f56daab29bc9ed316cbfd18111c1c0afa466912e8c7815c8f006620595b8d3c5db632e9f09366691c2d8fc5f8faa8eb9532ae3bd0364c2ae7c6a93
   languageName: node
   linkType: hard
 
@@ -16529,13 +16566,6 @@ resolve@1.18.1:
   version: 2.0.1
   resolution: "source-list-map@npm:2.0.1"
   checksum: d8d45f29987d00d995ccda308dcc78b710031a9958fdb5d26674d32220c952eb7a8562062638d91896628ae4eef30e1cd112a6a547563dfda0b013024c2a9bf7
-  languageName: node
-  linkType: hard
-
-"source-map-js@npm:>=0.6.2 <2.0.0":
-  version: 1.0.2
-  resolution: "source-map-js@npm:1.0.2"
-  checksum: 3bb232796ad9b71bad151cb30c7fc1a2afdaf5bcfd4aa7806f56a2d4ff4824e1481e960436c5e9ec26e8c1ae129aee8107df0859c15b1ccada31a9a7ef254abc
   languageName: node
   linkType: hard
 
