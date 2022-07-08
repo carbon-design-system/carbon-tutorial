@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './app.scss';
-import { Content, Theme } from '@carbon/react';
+import { Content } from 'carbon-components-react';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
@@ -10,9 +10,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Theme theme="g100">
-          <TutorialHeader />
-        </Theme>
+        <TutorialHeader />
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
