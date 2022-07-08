@@ -2816,10 +2816,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icon-helpers@npm:^10.28.0":
+"@carbon/icon-helpers@npm:^10.10.0, @carbon/icon-helpers@npm:^10.28.0":
   version: 10.31.0
   resolution: "@carbon/icon-helpers@npm:10.31.0"
   checksum: a525e850f7303e23d72895b7a0f7c9902a4b37b4a886937e2b6600a1988a4de7bf864d708441d3c95cf0b2c33504d3b01f7ac70ac89928b651678ef0e8cd7b61
+  languageName: node
+  linkType: hard
+
+"@carbon/icons-react@npm:10.22.0":
+  version: 10.22.0
+  resolution: "@carbon/icons-react@npm:10.22.0"
+  dependencies:
+    "@carbon/icon-helpers": ^10.10.0
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ">=16"
+  checksum: b6fcedcc03d4683d56e9f09b9e1506de73fb31f14a39c179f75920382edff3d7091f55daa5123ddf170b3bf0834a8fb1a118c1336cf077127fa7ddda1e4a9ca2
   languageName: node
   linkType: hard
 
@@ -6116,15 +6128,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"carbon-components@npm:10.25.0":
+  version: 10.25.0
+  resolution: "carbon-components@npm:10.25.0"
+  dependencies:
+    flatpickr: 4.6.1
+    lodash.debounce: ^4.0.8
+    warning: ^3.0.0
+  checksum: 9c91507044a909bec4b8fb61b6922f273aeea2645ea06fbd082c7180931dc21fb732f12be05068c0cd8a108e549398860aa875d7f958ddec2c4b93a3234beecf
+  languageName: node
+  linkType: hard
+
 "carbon-tutorial@workspace:.":
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
     "@apollo/client": 3.4.10
+    "@carbon/icons-react": 10.22.0
     "@carbon/react": 0.3.0-rc.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     apollo-boost: ^0.4.9
+    carbon-components: 10.25.0
     enzyme: 3.11.0
     enzyme-adapter-react-16: 1.15.5
     graphql: 15.5.2
@@ -9134,6 +9159,13 @@ __metadata:
     flatted: ^3.1.0
     rimraf: ^3.0.2
   checksum: 72d86ccdf840e70227168a20bb908db8bc382360f0b241efd4c2e5cf2d17a7d566c0849dc4c5d2e8e6d7838e052539dcc319f0cf295c0bb9f47b71844c1de78d
+  languageName: node
+  linkType: hard
+
+"flatpickr@npm:4.6.1":
+  version: 4.6.1
+  resolution: "flatpickr@npm:4.6.1"
+  checksum: 98486bd9e32c939cc3c62a514de132287abe711c0351f7e37bd9566be88395397e3267b307a4749c0597b7afff770223b7521762b7f365c58f4870431e0455db
   languageName: node
   linkType: hard
 
@@ -18385,6 +18417,15 @@ resolve@1.18.1:
   dependencies:
     makeerror: 1.0.x
   checksum: c014f264c473fc4464ba8f59eb9f7ffa1c0cf2c83b65353de28a6012d8dd29e974bf2b0fbd5c71231f56762a3ea0d970b635f7d6f6d670ff83f426741ce6a4da
+  languageName: node
+  linkType: hard
+
+"warning@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "warning@npm:3.0.0"
+  dependencies:
+    loose-envify: ^1.0.0
+  checksum: 91371f1e41c301c595b25b3f8df1826925d679b74c34b97284ec01937ee5e96aeaf65e7b78a7e9cbb34526597bf806edc9bf9d8d41314bae59b91526ff6712fa
   languageName: node
   linkType: hard
 
