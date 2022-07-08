@@ -2835,7 +2835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/icons-react@npm:^10.38.0-rc.0, @carbon/icons-react@npm:^10.49.0":
+"@carbon/icons-react@npm:^10.22.0, @carbon/icons-react@npm:^10.38.0-rc.0, @carbon/icons-react@npm:^10.49.0":
   version: 10.49.0
   resolution: "@carbon/icons-react@npm:10.49.0"
   dependencies:
@@ -6095,6 +6095,33 @@ __metadata:
   languageName: node
   linkType: hard
 
+"carbon-components-react@npm:7.25.0":
+  version: 7.25.0
+  resolution: "carbon-components-react@npm:7.25.0"
+  dependencies:
+    "@carbon/icons-react": ^10.22.0
+    classnames: 2.2.6
+    downshift: 5.2.1
+    flatpickr: 4.6.1
+    invariant: ^2.2.3
+    lodash.debounce: ^4.0.8
+    lodash.findlast: ^4.5.0
+    lodash.isequal: ^4.5.0
+    lodash.omit: ^4.5.0
+    lodash.throttle: ^4.1.1
+    react-is: ^16.8.6
+    use-resize-observer: ^6.0.0
+    warning: ^3.0.0
+    window-or-global: ^1.0.1
+  peerDependencies:
+    carbon-components: ^10.9.0
+    carbon-icons: ^7.0.7
+    react: ^16.8.6 || ^17.0.1
+    react-dom: ^16.8.6 || ^17.0.1
+  checksum: 8a62ffa53d9d6be821e643c0e3c89a5ea4a547ed3b68a8a97c0dfe1ebc404d22c77782cb923ba4e57a9ebe0904e2b893dc9462fc43e0aee16c46d86ca2775efa
+  languageName: node
+  linkType: hard
+
 "carbon-components-react@npm:^7.42.0-rc.0":
   version: 7.57.2
   resolution: "carbon-components-react@npm:7.57.2"
@@ -6150,6 +6177,7 @@ __metadata:
     "@commitlint/config-conventional": 7.5.0
     apollo-boost: ^0.4.9
     carbon-components: 10.25.0
+    carbon-components-react: 7.25.0
     enzyme: 3.11.0
     enzyme-adapter-react-16: 1.15.5
     graphql: 15.5.2
@@ -6370,6 +6398,13 @@ __metadata:
     isobject: ^3.0.0
     static-extend: ^0.1.1
   checksum: 6411679ad4d2bde81b62ad721d4771d108d5d8ef32805d10ebfa6f1d6bdcfd5cb6dfea5232b85221f079e42691c36cf2db05a5e76b87ba8f6deb37a2c23a4a41
+  languageName: node
+  linkType: hard
+
+"classnames@npm:2.2.6":
+  version: 2.2.6
+  resolution: "classnames@npm:2.2.6"
+  checksum: 490eaeca5931846737ffd33e472a701d268d5b8bc5717dd4cf108a127b06e86e05350e06799abbbe763a0e4c945b4217f6700b7ae00ddc703505682c370e5cf2
   languageName: node
   linkType: hard
 
