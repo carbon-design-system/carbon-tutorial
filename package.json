@@ -17,22 +17,14 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@apollo/client": "3.4.10",
-    "@carbon/icons-react": "10.22.0",
-    "@carbon/react": "0.3.0-rc.0",
-    "@carbon/themes": "^10.40.0",
-    "apollo-boost": "^0.4.9",
-    "carbon-components": "10.41.0",
-    "carbon-components-react": "7.41.0",
-    "carbon-icons": "7.0.7",
+    "@carbon/react": "1.1.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
-    "graphql": "^16.3.0",
     "react": "16.10.0",
     "react-dom": "16.10.0",
     "react-router-dom": "5.0.0",
     "react-scripts": "4.0.3",
-    "sass": "1.38.0"
+    "sass": "1.51.0"
   },
   "devDependencies": {
     "@commitlint/cli": "7.5.2",

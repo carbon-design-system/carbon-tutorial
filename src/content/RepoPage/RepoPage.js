@@ -1,47 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import RepoTable from './RepoTable';
-import {
-  Grid,
-  Column,
-  Link,
-  UnorderedList,
-  ListItem,
-  DataTableSkeleton,
-  Pagination,
-} from '@carbon/react';
-import { gql } from 'apollo-boost';
-import { Query } from 'react-apollo';
-
-const REPO_QUERY = gql`
-  query REPO_QUERY {
-    organization(login: "carbon-design-system") {
-      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
-        totalCount
-        nodes {
-          url
-          homepageUrl
-          issues(filterBy: { states: OPEN }) {
-            totalCount
-          }
-          stargazers {
-            totalCount
-          }
-          releases(first: 1) {
-            totalCount
-            nodes {
-              name
-            }
-          }
-          name
-          updatedAt
-          createdAt
-          description
-          id
-        }
-      }
-    }
-  }
-`;
+import { Grid, Column } from '@carbon/react';
 
 const headers = [
   {
@@ -70,86 +29,41 @@ const headers = [
   },
 ];
 
-const LinkList = ({ url, homepageUrl }) => (
-  <UnorderedList style={{ display: 'flex' }}>
-    <ListItem>
-      <Link href={url}>GitHub</Link>
-    </ListItem>
-    {homepageUrl && (
-      <ListItem>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </ListItem>
-    )}
-  </UnorderedList>
-);
-
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
+const rows = [
+  {
+    id: '1',
+    name: 'Repo 1',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '2',
+    name: 'Repo 2',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+  {
+    id: '3',
+    name: 'Repo 3',
+    createdAt: 'Date',
+    updatedAt: 'Date',
+    issueCount: '123',
+    stars: '456',
+    links: 'Links',
+  },
+];
 
 const RepoPage = () => {
-  const [totalItems, setTotalItems] = useState(0);
-  const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(10);
-
   return (
     <Grid className="repo-page">
       <Column lg={16} className="repo-page__r1">
-        <Query query={REPO_QUERY}>
-          {({ loading, error, data }) => {
-            // Wait for the request to complete
-            if (loading)
-              return (
-                <DataTableSkeleton
-                  columnCount={headers.length + 1}
-                  rowCount={10}
-                  headers={headers}
-                />
-              );
-
-            // Something went wrong with the data fetching
-            if (error) return `Error! ${error.message}`;
-
-            // If we're here, we've got our data!
-            const { repositories } = data.organization;
-            setTotalItems(repositories.totalCount);
-            const rows = getRowItems(repositories.nodes);
-
-            return (
-              <>
-                <RepoTable
-                  headers={headers}
-                  rows={rows.slice(
-                    firstRowIndex,
-                    firstRowIndex + currentPageSize
-                  )}
-                />
-                <Pagination
-                  totalItems={totalItems}
-                  backwardText="Previous page"
-                  forwardText="Next page"
-                  pageSize={currentPageSize}
-                  pageSizes={[5, 10, 15, 25]}
-                  itemsPerPageText="Items per page"
-                  onChange={({ page, pageSize }) => {
-                    if (pageSize !== currentPageSize) {
-                      setCurrentPageSize(pageSize);
-                    }
-                    setFirstRowIndex(pageSize * (page - 1));
-                  }}
-                />
-              </>
-            );
-          }}
-        </Query>
+        <RepoTable headers={headers} rows={rows} />
       </Column>
     </Grid>
   );
