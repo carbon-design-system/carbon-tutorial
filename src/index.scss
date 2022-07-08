@@ -18,11 +18,3 @@
   padding: 0;
   background: var(--cds-background);
 }
-
-.cds--content .cds--css-grid {
-  max-width: 100%;
-  @include breakpoint(md) {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
