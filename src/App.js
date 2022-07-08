@@ -12,6 +12,7 @@ class App extends Component {
       <>
         <Theme theme="g100">
           <TutorialHeader />
+          yay
         </Theme>
         <Content>
           <Switch>
