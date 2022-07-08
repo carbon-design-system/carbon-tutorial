@@ -1,4 +1,3 @@
-import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
 import React from 'react';
 import {
   Header,
@@ -14,6 +13,7 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from '@carbon/react';
+import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
@@ -26,14 +26,13 @@ const TutorialHeader = () => (
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
-        <HeaderMenuItem element={Link} to="/repos">
-          Repositories
-        </HeaderMenuItem>
-
+        <HeaderName element={Link} to="/" prefix="IBM">
+          Carbon Tutorial
+        </HeaderName>
         <HeaderNavigation aria-label="Carbon Tutorial">
-          <HeaderName element={Link} to="/" prefix="IBM">
-            Carbon Tutorial
-          </HeaderName>
+          <HeaderMenuItem element={Link} to="/repos">
+            Repositories
+          </HeaderMenuItem>
         </HeaderNavigation>
         <SideNav
           aria-label="Side navigation"
@@ -41,7 +40,9 @@ const TutorialHeader = () => (
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
-              <HeaderMenuItem href="/repos">Repositories</HeaderMenuItem>
+              <HeaderMenuItem element={Link} to="/repos">
+                Repositories
+              </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
