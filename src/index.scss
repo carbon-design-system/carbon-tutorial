@@ -1,11 +1,13 @@
-@use '@carbon/react';
+@use '@carbon/react' as styles;
+@use '@carbon/react/scss/components/button';
+@use '@carbon/react/scss/components/tag';
 @use '@carbon/react/scss/breakpoint' as *;
 
 /// Remove overrides once Carbon bugs are fixed upstream.
 /// Need grid option to not add page gutters at large viewports, to also use when nesting grids
 /// @link https://github.com/carbon-design-system/carbon/issues/2792
 @media (min-width: 42rem) {
-  .cds--grid--no-gutter {
+  .bx--grid--no-gutter {
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -13,13 +15,17 @@
 
 /// Padding was introduced in 10.3.0, needs an option to let grid set the viewport gutter
 /// @link https://github.com/carbon-design-system/carbon/issues/3010
-.cds--content {
+.bx--content {
   margin-top: 3rem;
   padding: 0;
-  background: var(--cds-background);
+  background: var(--bx-background);
 }
 
-.cds--content .cds--css-grid {
+:root {
+  @include styles.theme(styles.$white, button.$white, tag.$white);
+}
+
+.bx--content .bx--css-grid {
   max-width: 100%;
   @include breakpoint(md) {
     padding-left: 20px;
