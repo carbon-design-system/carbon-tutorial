@@ -3,6 +3,7 @@ import RepoPage from './content/RepoPage';
 import { mount } from 'enzyme';
 import { MockedProvider } from '@apollo/client/testing';
 import { gql } from '@apollo/client';
+import waitForExpect from 'wait-for-expect';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
