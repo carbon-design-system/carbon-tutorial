@@ -2,8 +2,10 @@ import React from 'react';
 import { act } from 'react-dom/test-utils';
 import RepoPage from './content/RepoPage';
 import { mount } from 'enzyme';
-import { MockedProvider } from '@apollo/client/testing';
-import { gql } from '@apollo/client';
+// import { MockedProvider } from '@apollo/client/testing';
+// import { gql } from '@apollo/client';
+import { MockedProvider } from 'react-apollo/test-utils';
+import { gql } from 'apollo-boost';
 
 const REPO_QUERY = gql`
   query REPO_QUERY {
