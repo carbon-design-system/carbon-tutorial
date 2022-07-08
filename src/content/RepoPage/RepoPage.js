@@ -133,7 +133,7 @@ const RepoPage = () => {
             rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
           />
           <Pagination
-            totalItems={rows.length}
+            totalItems={repositories.totalCount}
             backwardText="Previous page"
             forwardText="Next page"
             pageSize={currentPageSize}
