@@ -19,7 +19,7 @@
   "dependencies": {
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-scripts": "4.0.1"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
