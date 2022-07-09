@@ -13,12 +13,6 @@
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
   padding-left: $spacing-06;
-}
-
-.landing-page__banner {
-  padding-top: $spacing-05;
-  padding-bottom: $spacing-07 * 4;
-  padding-left: $spacing-06;
   @include landing-page-background;
 }
 
@@ -50,10 +44,6 @@
   }
 }
 
-.tabs-group {
-  background-color: $layer-01;
-}
-
 .landing-page__r3 {
   padding-top: $spacing-09;
   padding-bottom: $spacing-09;
@@ -63,6 +53,10 @@
 
 .landing-page__label {
   @include type-style('heading-01');
+}
+
+.tabs-group {
+  background-color: $layer-01;
 }
 
 .landing-page__banner,
