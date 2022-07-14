@@ -1,20 +1,36 @@
+// IE11 compatibility fix (converts js ES6-->ES5)
 import 'core-js/modules/es7.array.includes';
 import 'core-js/modules/es6.array.fill';
 import 'core-js/modules/es6.string.includes';
 import 'core-js/modules/es6.string.trim';
 import 'core-js/modules/es7.object.values';
-
+// App dependencies
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
+import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+
+const cache = new InMemoryCache();
+
+const client = new ApolloClient({
+  cache: cache,
+  uri: 'https://api.github.com/graphql',
+  headers: {
+    authorization: `Bearer ${
+      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
+    }`,
+  },
+});
 
 ReactDOM.render(
-  <Router>
-    <App />
-  </Router>,
+  <ApolloProvider client={client}>
+    <Router>
+      <App />
+    </Router>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
