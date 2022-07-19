@@ -1,6 +1,13 @@
 import React from 'react';
 import { Grid, Column } from '@carbon/react';
 
+// Take in a phrase and separate the third word in an array
+function createArrayFromPhrase(phrase) {
+  const splitPhrase = phrase.split(' ');
+  const thirdWord = splitPhrase.pop();
+  return [splitPhrase.join(' '), thirdWord];
+}
+
 const InfoSection = props => (
   <Grid className={`${props.className} info-section`}>
     <Column md={8} lg={4} xlg={3}>
@@ -24,12 +31,5 @@ const InfoCard = props => {
     </Column>
   );
 };
-
-// Take in a phrase and separate the third word in an array
-function createArrayFromPhrase(phrase) {
-  const splitPhrase = phrase.split(' ');
-  const thirdWord = splitPhrase.pop();
-  return [splitPhrase.join(' '), thirdWord];
-}
 
 export { InfoSection, InfoCard };
