@@ -13,7 +13,7 @@
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "format:diff": "prettier --list-different \"**/*.{js,md,scss}\"",
     "format:staged": "prettier --write",
-    "start": "react-scripts start",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "test": "react-scripts test"
   },
   "dependencies": {
