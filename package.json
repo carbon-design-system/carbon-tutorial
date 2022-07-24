@@ -34,6 +34,9 @@
     "prettier": "1.17.0",
     "wait-for-expect": "3.0.2"
   },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
