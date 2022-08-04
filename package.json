@@ -21,7 +21,7 @@
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",
     "react-dom": "16.10.0",
-    "react-scripts": "4.0.3"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "@commitlint/cli": "7.5.2",
