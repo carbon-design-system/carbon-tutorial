@@ -1,6 +1,6 @@
 import './app.scss';
 import React, { Component } from 'react';
-import { Button, Content, Theme } from '@carbon/react';
+import { Content, Theme } from '@carbon/react';
 import TutorialHeader from './components/TutorialHeader';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
@@ -18,7 +18,6 @@ class App extends Component {
             <Route exact path="/" component={LandingPage} />
             <Route path="/repos" component={RepoPage} />
           </Switch>
-          <Button>Button</Button>
         </Content>
       </>
     );
