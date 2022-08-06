@@ -1872,7 +1872,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/react@npm:^1.1.0":
+"@carbon/react@npm:^1.8.0":
   version: 1.9.0
   resolution: "@carbon/react@npm:1.9.0"
   dependencies:
@@ -4921,7 +4921,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "carbon-tutorial@workspace:."
   dependencies:
-    "@carbon/react": ^1.1.0
+    "@carbon/react": ^1.8.0
     "@commitlint/cli": 7.5.2
     "@commitlint/config-conventional": 7.5.0
     enzyme: 3.11.0
@@ -4933,7 +4933,7 @@ __metadata:
     react-dom: 16.10.0
     react-router-dom: ^5.0.0
     react-scripts: 5.0.1
-    sass: ^1.51.0
+    sass: 1.51.0
     wait-for-expect: 3.0.2
     yarn: ^1.22.19
   languageName: unknown
@@ -14080,16 +14080,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.51.0":
-  version: 1.54.3
-  resolution: "sass@npm:1.54.3"
+"sass@npm:1.51.0":
+  version: 1.51.0
+  resolution: "sass@npm:1.51.0"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 780500718ac5a9112f935babcdba2d7d2bc1f2add0220ae7df2e136f2611725b0e13d8aba21ef511f69bd57321ac904970c853b57df205d95e7bb807f91a766a
+  checksum: ae2d310f613685e50908441bb4f1322f55b013973ba7ebe81f97b8534e1b393a8035d5ac9a14154935382ed1ae72de35e8f26e62f25196ec7c78b0f3db0bde4c
   languageName: node
   linkType: hard
 
