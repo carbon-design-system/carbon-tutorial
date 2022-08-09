@@ -1,5 +1,4 @@
 {
-  "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml",
   "name": "carbon-tutorial",
   "version": "0.0.0",
   "private": true,
