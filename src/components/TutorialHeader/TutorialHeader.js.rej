@@ -1,0 +1,15 @@
+diff a/src/components/TutorialHeader/TutorialHeader.js b/src/components/TutorialHeader/TutorialHeader.js	(rejected hunks)
+@@ -38,2 +38 @@ const TutorialHeader = () => (
+-          isPersistent={false}
+-        >
++          isPersistent={false}>
+@@ -47 +46,3 @@ const TutorialHeader = () => (
+-          <HeaderGlobalAction aria-label="Notifications" tooltipAlignment="center">
++          <HeaderGlobalAction
++            aria-label="Notifications"
++            tooltipAlignment="center">
+@@ -50 +51,3 @@ const TutorialHeader = () => (
+-          <HeaderGlobalAction aria-label="User Avatar" tooltipAlignment="center">
++          <HeaderGlobalAction
++            aria-label="User Avatar"
++            tooltipAlignment="center">
