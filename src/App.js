@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './app.scss';
 import { Content, Theme } from '@carbon/react';
 import TutorialHeader from './components/TutorialHeader';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
 
@@ -14,10 +14,10 @@ class App extends Component {
           <TutorialHeader />
         </Theme>
         <Content>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route path="/repos" component={RepoPage} />
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<LandingPage />} />
+            <Route path="/repos" element={<RepoPage />} />
+          </Routes>
         </Content>
       </>
     );
