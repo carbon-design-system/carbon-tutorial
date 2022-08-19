@@ -4575,6 +4575,7 @@ __metadata:
     carbon-components: 10.25.0
     carbon-components-react: 7.25.0
     carbon-icons: 7.0.7
+    cf: ^0.0.3
     enzyme: 3.11.0
     enzyme-adapter-react-16: 1.15.5
     graphql: 14.3.1
@@ -4602,6 +4603,15 @@ __metadata:
   version: 0.12.0
   resolution: "caseless@npm:0.12.0"
   checksum: 147f48bff9bebf029d7050e2335da3f8d295f26d157edf08d8c3282c804dae04a462c4cd6efa8179755686aa3aeaca5c28f3e7f3559698bc0484c65e46c36c5b
+  languageName: node
+  linkType: hard
+
+"cf@npm:^0.0.3":
+  version: 0.0.3
+  resolution: "cf@npm:0.0.3"
+  dependencies:
+    xtend: ~2.1.1
+  checksum: e89e20d4894ab60c521b31e99af039403a609a0136a881b1ee4ba3c55c5443a764cd0c7ca8227fc477e93945ffcc545345381f55905c66bed3e59a6a6cb1b5f0
   languageName: node
   linkType: hard
 
@@ -11435,6 +11445,13 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
+"object-keys@npm:~0.4.0":
+  version: 0.4.0
+  resolution: "object-keys@npm:0.4.0"
+  checksum: 71d8801c2f70f692e3813c7dc1e15ad50d46000f7e0bd73e72617d4db4fb4812a4ac4be1f4cd47e06e3c0272253ebc5e44847188b64934c0a5ea0ade51b8275d
+  languageName: node
+  linkType: hard
+
 "object-visit@npm:^1.0.0":
   version: 1.0.1
   resolution: "object-visit@npm:1.0.1"
@@ -16976,6 +16993,15 @@ resolve@1.18.1:
   version: 4.0.2
   resolution: "xtend@npm:4.0.2"
   checksum: 37ee522a3e9fb9b143a400c30b21dc122aa8c9c9411c6afae1005a4617dc20a21765c114d544e37a6bb60c2733dd8ee0a44ed9e80d884ac78cccd30b5e0ab0da
+  languageName: node
+  linkType: hard
+
+"xtend@npm:~2.1.1":
+  version: 2.1.2
+  resolution: "xtend@npm:2.1.2"
+  dependencies:
+    object-keys: ~0.4.0
+  checksum: 363fc1d7f18cdeaae36d675b4aa46bbfd3d39b9fd6d71956e390113724ce5b60c5abf19ac5d3cf4be0d788899522fe854a4bc557832f53b9f603e3f395a882bd
   languageName: node
   linkType: hard
 
