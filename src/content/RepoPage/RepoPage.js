@@ -6,7 +6,7 @@ const RepoPage = () => {
   return (
     <Grid className="repo-page">
       <Column lg={16} className="repo-page__r1">
-        <RepoTable headers={headers} rows={rows} />
+        Table goes here
       </Column>
     </Grid>
   );
