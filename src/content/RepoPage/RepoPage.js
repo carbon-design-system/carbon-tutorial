@@ -1,12 +1,12 @@
 import React from 'react';
-//import RepoTable from './RepoTable';
+import RepoTable from './RepoTable';
 import { Grid, Column } from '@carbon/react';
 
 const RepoPage = () => {
   return (
     <Grid className="repo-page">
       <Column lg={16} className="repo-page__r1">
-        Table goes here
+        <RepoTable headers={headers} rows={rows} />
       </Column>
     </Grid>
   );
