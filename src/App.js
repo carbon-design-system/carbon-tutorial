@@ -14,7 +14,6 @@ class App extends Component {
         <Theme theme="g100">
           <TutorialHeader />
         </Theme>
-        <TutorialHeader />
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
