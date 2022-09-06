@@ -5,6 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
 
+//https://github.com/ibm-AlanWu888/carbon-tutorial/pull/new/v11-react-step-1
+//https://github.com/ibm-AlanWu888/carbon-tutorial/pull/new/v11-react-step-2
+
 // IE11 Polyfills
 import 'core-js/modules/es7.array.includes';
 import 'core-js/modules/es6.array.fill';
