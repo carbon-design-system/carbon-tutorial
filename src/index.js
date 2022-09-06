@@ -10,13 +10,10 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
-
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
-
-const cache = new InMemoryCache();
+import ApolloClient from 'apollo-boost';
+import { ApolloProvider } from 'react-apollo';
 
 const client = new ApolloClient({
-  cache: cache,
   uri: 'https://api.github.com/graphql',
   headers: {
     authorization: `Bearer ${
