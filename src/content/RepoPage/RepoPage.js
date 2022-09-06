@@ -157,7 +157,21 @@ const RepoPage = () => {
           <RepoTable
             headers={headers}
             rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-          />{' '}
+          />
+          <Pagination
+            totalItems={rows.length}
+            backwardText="Previous page"
+            forwardText="Next page"
+            pageSize={currentPageSize}
+            pageSizes={[5, 10, 15, 25]}
+            itemsPerPageText="Items per page"
+            onChange={({ page, pageSize }) => {
+              if (pageSize !== currentPageSize) {
+                setCurrentPageSize(pageSize);
+              }
+              setFirstRowIndex(pageSize * (page - 1));
+            }}
+          />
         </Column>
       </Grid>
     );
@@ -166,20 +180,6 @@ const RepoPage = () => {
     <Grid className="repo-page">
       <Column lg={16} className="repo-page__r1">
         <RepoTable headers={headers} rows={rows} />
-        <Pagination
-          totalItems={rows.length}
-          backwardText="Previous page"
-          forwardText="Next page"
-          pageSize={currentPageSize}
-          pageSizes={[5, 10, 15, 25]}
-          itemsPerPageText="Items per page"
-          onChange={({ page, pageSize }) => {
-            if (pageSize !== currentPageSize) {
-              setCurrentPageSize(pageSize);
-            }
-            setFirstRowIndex(pageSize * (page - 1));
-          }}
-        />
       </Column>
     </Grid>
   );
