@@ -1,4 +1,5 @@
 import React from 'react';
+import { Grid, Column } from '@carbon/react';
 
 // Take in a phrase and separate the third word in an array
 function createArrayFromPhrase(phrase) {
@@ -8,26 +9,26 @@ function createArrayFromPhrase(phrase) {
 }
 
 const InfoSection = props => (
-  <section className={`bx--row ${props.className} info-section`}>
-    <div className="bx--col-md-8 bx--col-lg-4 bx--col-xlg-3">
+  <Grid className={`${props.className} info-section`}>
+    <Column md={8} lg={4} xlg={3}>
       <h3 className="info-section__heading">{props.heading}</h3>
-    </div>
+    </Column>
     {props.children}
-  </section>
+  </Grid>
 );
 
 const InfoCard = props => {
   const splitHeading = createArrayFromPhrase(props.heading);
 
   return (
-    <div className="info-card bx--col-md-4 bx--col-lg-4 bx--col-xlg-3 bx--offset-xlg-1">
+    <Column sm={4} md={8} lg={4} className="info-card">
       <h4 className="info-card__heading">
         {`${splitHeading[0]} `}
         <strong>{splitHeading[1]}</strong>
       </h4>
       <p className="info-card__body">{props.body}</p>
-      {props.icon}
-    </div>
+      {props.icon()}
+    </Column>
   );
 };
 
