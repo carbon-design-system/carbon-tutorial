@@ -4,6 +4,7 @@ import 'core-js/modules/es6.string.includes';
 import 'core-js/modules/es6.string.trim';
 import 'core-js/modules/es7.object.values';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
