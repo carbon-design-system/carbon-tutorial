@@ -15,6 +15,7 @@ import {
 } from '@carbon/react';
 import { Switcher, Notification, UserAvatar } from '@carbon/react/icons';
 import { Link } from 'react-router-dom';
+import './_tutorial-header.scss';
 
 const TutorialHeader = () => (
   <HeaderContainer
