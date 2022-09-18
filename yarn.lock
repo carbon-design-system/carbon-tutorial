@@ -3997,7 +3997,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"anymatch@npm:^3.0.3, anymatch@npm:~3.1.1":
+"anymatch@npm:^3.0.3":
   version: 3.1.1
   resolution: "anymatch@npm:3.1.1"
   dependencies:
@@ -4949,7 +4949,7 @@ __metadata:
     react-dom: 16.10.0
     react-router-dom: 5.0.0
     react-scripts: 5.0.1
-    sass: 1.29.0
+    sass: 1.51.0
     wait-for-expect: 3.0.2
   languageName: unknown
   linkType: soft
@@ -5058,26 +5058,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:>=2.0.0 <4.0.0":
-  version: 3.4.3
-  resolution: "chokidar@npm:3.4.3"
-  dependencies:
-    anymatch: ~3.1.1
-    braces: ~3.0.2
-    fsevents: ~2.1.2
-    glob-parent: ~5.1.0
-    is-binary-path: ~2.1.0
-    is-glob: ~4.0.1
-    normalize-path: ~3.0.0
-    readdirp: ~3.5.0
-  dependenciesMeta:
-    fsevents:
-      optional: true
-  checksum: b5a566b31267b1a71c2e7544fbf8c21f597883515d9bfc0356719be6c3b34ee51b0329f3ee5f5d98060ce2930be68f8c33b53f8b3659dc101fd51be265831deb
-  languageName: node
-  linkType: hard
-
-"chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
+"chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.4.2, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -7850,24 +7831,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@~2.1.2#builtin<compat/fsevents>":
-  version: 2.1.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#builtin<compat/fsevents>::version=2.1.3&hash=11e9ea"
-  dependencies:
-    node-gyp: latest
-  checksum: e2b8c379340e21a786d32c653854c8876f94eb1202dd5be378fd42c062bc123aab5051c32bf0011865257c85982c41ded203f9fe8c9f9c8f8c84dc4672abc0e0
-  languageName: node
-  linkType: hard
-
-fsevents@~2.1.2:
-  version: 2.1.3
-  resolution: "fsevents@npm:2.1.3"
-  dependencies:
-    node-gyp: latest
-  checksum: 8977781884d06c5bcb97b5f909efdce9683c925f2a0ce7e098d2cdffe2e0a0a50b1868547bb94dca75428c06535a4a70517a7bb3bb5a974d93bf9ffc067291eb
-  languageName: node
-  linkType: hard
-
 "function-bind@npm:^1.1.1":
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
@@ -8083,15 +8046,6 @@ fsevents@~2.1.2:
   dependencies:
     is-glob: ^4.0.3
   checksum: 226293dc9d952acbe87d89eb4d87a1901a3eb64d9ec7338a65cb4dc8b337fe129d695e0bd5903b64f70c5044c6c3dfd5736fa18904f1d43d0136a752cb4d988f
-  languageName: node
-  linkType: hard
-
-"glob-parent@npm:~5.1.0":
-  version: 5.1.1
-  resolution: "glob-parent@npm:5.1.1"
-  dependencies:
-    is-glob: ^4.0.1
-  checksum: 2af6e196fba4071fb07ba261366e446ba2b320e6db0a2069cf8e12117c5811abc6721f08546148048882d01120df47e56aa5a965517a6e5ba19bfeb792655119
   languageName: node
   linkType: hard
 
@@ -8702,6 +8656,13 @@ fsevents@~2.1.2:
   version: 9.0.15
   resolution: "immer@npm:9.0.15"
   checksum: 77bf457789a4e89c9e655287f8876a0cdd1b23e6bbfcbe7f19f6463eacbe1767d946ad1a2f713a2fdd0b851e2bb2696cf86676f863a9d7138f4f9137ffe75076
+  languageName: node
+  linkType: hard
+
+"immutable@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "immutable@npm:4.1.0"
+  checksum: e2e191825582140debf8c1408c6c87e410b872b83e65ae199956064e3dce2c65f97b570efeb8bcf097b2b930478d8ab9d69ada41dd9df3b99ca772fe48ad19af
   languageName: node
   linkType: hard
 
@@ -13568,15 +13529,6 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"readdirp@npm:~3.5.0":
-  version: 3.5.0
-  resolution: "readdirp@npm:3.5.0"
-  dependencies:
-    picomatch: ^2.2.1
-  checksum: a64fe5606937d9655252230003362d95da05dbfd3baecedb4bb8c1bc0df497d051a192f9b75345c944e58a0b362c68349be602d6dbf05d03770e510b35a9f80f
-  languageName: node
-  linkType: hard
-
 "readdirp@npm:~3.6.0":
   version: 3.6.0
   resolution: "readdirp@npm:3.6.0"
@@ -14210,14 +14162,16 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"sass@npm:1.29.0":
-  version: 1.29.0
-  resolution: "sass@npm:1.29.0"
+"sass@npm:1.51.0":
+  version: 1.51.0
+  resolution: "sass@npm:1.51.0"
   dependencies:
-    chokidar: ">=2.0.0 <4.0.0"
+    chokidar: ">=3.0.0 <4.0.0"
+    immutable: ^4.0.0
+    source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: 8114e0c4e73be695d25030f51bff8da0151f335b135869e926d39e21688cd81a6be0368a332caec40425e64df499bd34962aa4ca59926a6bd0e11aa43ac306d9
+  checksum: ae2d310f613685e50908441bb4f1322f55b013973ba7ebe81f97b8534e1b393a8035d5ac9a14154935382ed1ae72de35e8f26e62f25196ec7c78b0f3db0bde4c
   languageName: node
   linkType: hard
 
@@ -14671,7 +14625,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"source-map-js@npm:^1.0.1, source-map-js@npm:^1.0.2":
+"source-map-js@npm:>=0.6.2 <2.0.0, source-map-js@npm:^1.0.1, source-map-js@npm:^1.0.2":
   version: 1.0.2
   resolution: "source-map-js@npm:1.0.2"
   checksum: 3bb232796ad9b71bad151cb30c7fc1a2afdaf5bcfd4aa7806f56a2d4ff4824e1481e960436c5e9ec26e8c1ae129aee8107df0859c15b1ccada31a9a7ef254abc
