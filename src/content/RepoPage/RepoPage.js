@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql, useQuery } from '@apollo/client';
-
 import {
   Link,
   DataTableSkeleton,
@@ -133,7 +132,7 @@ const RepoPage = () => {
             rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
           />
           <Pagination
-            totalItems={rows.length}
+            totalItems={repositories.totalCount}
             backwardText="Previous page"
             forwardText="Next page"
             pageSize={currentPageSize}
