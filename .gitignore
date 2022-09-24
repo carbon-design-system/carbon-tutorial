@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# tools
+/.yarn
+yarn.lock
+
 # testing
 /coverage
 
