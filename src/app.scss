@@ -1,3 +1,7 @@
+@use '@carbon/react'; // gives you all the Carbon Base styling
+//importing content Sass files
 @use './components/TutorialHeader/tutorial-header';
 @use './content/LandingPage/landing-page';
 @use './content/RepoPage/repo-page';
+
+@use './components/Info/info';
