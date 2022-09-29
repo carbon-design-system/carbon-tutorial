@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import RepoTable from './RepoTable';
 import { gql, useQuery } from '@apollo/client';
-import { Link, DataTableSkeleton, Grid, Column } from '@carbon/react';
 import {
   Link,
   DataTableSkeleton,
