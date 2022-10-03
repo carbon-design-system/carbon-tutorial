@@ -10,7 +10,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <Theme theme="g10">
+        <Theme theme="g100">
           <TutorialHeader />
         </Theme>
         <TutorialHeader />
