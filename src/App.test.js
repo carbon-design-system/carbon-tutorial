@@ -5,7 +5,6 @@ import { mount } from 'enzyme';
 import { MockedProvider } from '@apollo/client/testing';
 import { gql } from '@apollo/client';
 
-
 const REPO_QUERY = gql`
   query REPO_QUERY {
     organization(login: "carbon-design-system") {
@@ -85,10 +84,8 @@ it('renders a table with data and pagination', async () => {
 
   expect(wrapper.find('.cds--pagination').length).toBe(0);
 
-  await act(() => new Promise((resolve) => setTimeout(resolve, 0)));
+  await act(() => new Promise(resolve => setTimeout(resolve, 0)));
 
-  
   wrapper.update();
   expect(wrapper.find('.cds--pagination').length).toBe(1);
-  
 });
