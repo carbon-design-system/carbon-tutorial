@@ -69,8 +69,6 @@ const headers = [
   },
 ];
 
-const { loading, error, data } = useQuery(REPO_QUERY);
-
 const LinkList = ({ url, homepageUrl }) => (
   <ul style={{ display: 'flex' }}>
     <li>
@@ -97,9 +95,10 @@ const getRowItems = rows =>
   }));
 
 const RepoPage = () => {
+  const { loading, error, data } = useQuery(REPO_QUERY);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
-  const { repositories } = data.organization;
+  const { repositories } = data?.organization;
   const rows = getRowItems(repositories.nodes);
 
   if (loading) {
