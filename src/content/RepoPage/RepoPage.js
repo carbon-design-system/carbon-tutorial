@@ -98,8 +98,6 @@ const RepoPage = () => {
   const { loading, error, data } = useQuery(REPO_QUERY);
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
-  const { repositories } = data.organization;
-  const rows = getRowItems(repositories.nodes);
 
   if (loading) {
     return (
@@ -121,32 +119,34 @@ const RepoPage = () => {
 
   if (data) {
     // If we're here, we've got our data!
-    console.log(data.organization);
+    const { repositories } = data.organization;
+    const rows = getRowItems(repositories.nodes);
+
+    return (
+      <Grid className="repo-page">
+        <Column lg={16} className="repo-page__r1">
+          <RepoTable
+            headers={headers}
+            rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+          />
+          <Pagination
+            totalItems={rows.length}
+            backwardText="Previous page"
+            forwardText="Next page"
+            pageSize={currentPageSize}
+            pageSizes={[5, 10, 15, 25]}
+            itemsPerPageText="Items per page"
+            onChange={({ page, pageSize }) => {
+              if (pageSize !== currentPageSize) {
+                setCurrentPageSize(pageSize);
+              }
+              setFirstRowIndex(pageSize * (page - 1));
+            }}
+          />
+        </Column>
+      </Grid>
+    );
   }
-  return (
-    <Grid className="repo-page">
-      <Column lg={16} className="repo-page__r1">
-        <RepoTable
-          headers={headers}
-          rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-        />
-        <Pagination
-          totalItems={rows.length}
-          backwardText="Previous page"
-          forwardText="Next page"
-          pageSize={currentPageSize}
-          pageSizes={[5, 10, 15, 25]}
-          itemsPerPageText="Items per page"
-          onChange={({ page, pageSize }) => {
-            if (pageSize !== currentPageSize) {
-              setCurrentPageSize(pageSize);
-            }
-            setFirstRowIndex(pageSize * (page - 1));
-          }}
-        />
-      </Column>
-    </Grid>
-  );
 };
 
 export default RepoPage;
