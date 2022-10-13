@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import './app.scss';
-import { Content, Theme } from '@carbon/react';
+import { Button, Content, Theme } from '@carbon/react';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
+// import { Theme } from '@carbon/react';
 
 class App extends Component {
   render() {
     return (
       <>
-        <Theme theme="g100">
+        <Theme theme="g10">
           <TutorialHeader />
         </Theme>
         <Content>
@@ -23,5 +24,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
