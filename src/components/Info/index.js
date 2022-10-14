@@ -1,1 +1,2 @@
-export * from './Info.js';
+import './Info';
+export * from './Info';
