@@ -5,6 +5,7 @@
 @use './mixins.scss' as *;
 @use './overrides.scss';
 
+/* First Row */
 .landing-page__illo {
   max-width: 100%;
 }
@@ -20,6 +21,7 @@
   @include type-style('productive-heading-05');
 }
 
+/*Second Row*/
 .landing-page__r2 {
   margin-top: rem(-40px);
 }
@@ -30,7 +32,6 @@
 
 .landing-page__subheading {
   @include type-style('productive-heading-03');
-
   font-weight: 600;
 }
 
@@ -44,6 +45,11 @@
   }
 }
 
+.tabs-group {
+  background-color: $layer-01;
+}
+
+/*Third Row*/
 .landing-page__r3 {
   padding-top: $spacing-09;
   padding-bottom: $spacing-09;
@@ -55,10 +61,7 @@
   @include type-style('heading-01');
 }
 
-.tabs-group {
-  background-color: $layer-01;
-}
-
+/*Media Queries*/
 .landing-page__banner,
 .landing-page__r2,
 .landing-page__r3 {

@@ -15,8 +15,9 @@ import {
 const LandingPage = () => {
   return (
     <Grid className="landing-page" fullWidth>
+      {/*Grey header*/}
       <Column lg={16} md={8} sm={4} className="landing-page__banner">
-        <Breadcrumb noTrailingSlash aria-label="Page navigation">
+        <Breadcrumb noTrailingSlash aria-label="Page Navigation">
           <BreadcrumbItem>
             <a href="/">Getting started</a>
           </BreadcrumbItem>
@@ -25,9 +26,10 @@ const LandingPage = () => {
           Design &amp; build with Carbon
         </h1>
       </Column>
+      {/*Main Content*/}
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs defaultSelectedIndex={0}>
-          <TabList className="tabs-group" aria-label="Tab navigation">
+          <TabList className="tabs-group" aria-label="Tab Navigation">
             <Tab>About</Tab>
             <Tab>Design</Tab>
             <Tab>Develop</Tab>
@@ -50,6 +52,7 @@ const LandingPage = () => {
                   </p>
                   <Button>Learn more</Button>
                 </Column>
+                {/* Image */}
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
                   <img
                     className="landing-page__illo"
@@ -86,6 +89,7 @@ const LandingPage = () => {
           </TabPanels>
         </Tabs>
       </Column>
+      {/*Buttons/Tabs below content*/}
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <Grid>
           <Column md={4} lg={4} sm={4}>
