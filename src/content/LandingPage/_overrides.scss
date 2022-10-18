@@ -1,0 +1,34 @@
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/breakpoint' as *;
+
+.landing-page__r2 .cds--tabs--scrollable {
+  transform: translateZ(0);
+  justify-content: flex-end;
+  margin: $spacing-07 * 4;
+}
+
+.landing-page__r2 .cds--tab-content {
+  padding: 0;
+}
+
+.cds--tab--list {
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.landing-page__r2 .cds--tabs.tabs-group {
+  justify-content: flex-end;
+}
+
+.cds--subgrid--wide {
+  //fix needed to keep the subgrid from scrolling horizontally
+  margin-right: 1rem;
+}
+
+/*Fix tab width - wide for desktop, auto on mobile*/
+.landing-page__r2 .cds--tabs__nav-item {
+  width: $spacing-13;
+  @include breakpoint-down(md) {
+    width: auto;
+  }
+}
