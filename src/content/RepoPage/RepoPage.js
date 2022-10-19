@@ -9,6 +9,34 @@ import {
 import RepoTable from './RepoTable';
 import { gql, useQuery } from '@apollo/client';
 
+// Headers for the Repo Table
+const headers = [
+  {
+    key: 'name',
+    header: 'Name',
+  },
+  {
+    key: 'createdAt',
+    header: 'Created',
+  },
+  {
+    key: 'updatedAt',
+    header: 'Updated',
+  },
+  {
+    key: 'issueCount',
+    header: 'Open Issues',
+  },
+  {
+    key: 'stars',
+    header: 'Stars',
+  },
+  {
+    key: 'links',
+    header: 'Links',
+  },
+];
+
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
@@ -42,34 +70,6 @@ const REPO_QUERY = gql`
     }
   }
 `;
-
-// Headers for the Repo Table
-const headers = [
-  {
-    key: 'name',
-    header: 'Name',
-  },
-  {
-    key: 'createdAt',
-    header: 'Created',
-  },
-  {
-    key: 'updatedAt',
-    header: 'Updated',
-  },
-  {
-    key: 'issueCount',
-    header: 'Open Issues',
-  },
-  {
-    key: 'stars',
-    header: 'Stars',
-  },
-  {
-    key: 'links',
-    header: 'Links',
-  },
-];
 
 // Links
 const LinkList = ({ url, homepageUrl }) => (
