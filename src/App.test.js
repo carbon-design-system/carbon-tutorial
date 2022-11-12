@@ -19,12 +19,6 @@ const REPO_QUERY = gql`
           stargazers {
             totalCount
           }
-          releases(first: 1) {
-            totalCount
-            nodes {
-              name
-            }
-          }
           name
           updatedAt
           createdAt
@@ -55,11 +49,11 @@ const mocks = [
                   totalCount: 3054,
                   __typename: 'StargazerConnection',
                 },
-                releases: {
-                  totalCount: 640,
-                  nodes: [{ name: '7.0.0-rc.1', __typename: 'Release' }],
-                  __typename: 'ReleaseConnection',
-                },
+                // releases: {
+                //   totalCount: 640,
+                //   nodes: [{ name: '7.0.0-rc.1', __typename: 'Release' }],
+                //   __typename: 'ReleaseConnection',
+                // },
                 name: 'carbon',
                 updatedAt: '2020-05-27T18:55:53Z',
                 createdAt: '2017-03-13T14:23:59Z',

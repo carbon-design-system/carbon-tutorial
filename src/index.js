@@ -22,7 +22,6 @@ const client = new ApolloClient({
     }`,
   },
 });
-// console.log(client.link.options.headers)
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
