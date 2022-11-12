@@ -145,7 +145,6 @@ const RepoPage = () => {
     // console.log(data.organization);
     const { repositories } = data.organization;
     const rows = getRowItems(repositories.nodes);
-    console.log(rows);
 
     return (
       <Grid className="repo-page">
