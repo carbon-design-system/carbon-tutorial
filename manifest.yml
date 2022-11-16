@@ -1,0 +1,5 @@
+---
+applications:
+  - name: carbon-tutorial-akhil-jayan1
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
