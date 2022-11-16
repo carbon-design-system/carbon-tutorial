@@ -12,7 +12,7 @@ import {
 const REPO_QUERY = gql`
   query REPO_QUERY {
     # Let's use carbon as our organization
-    organization(login: "atomtechng") {
+    organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
       repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
@@ -119,37 +119,34 @@ const RepoPage = () => {
 
   if (data) {
     // If we're here, we've got our data!
-    console.log(data.organization);
+    const { repositories } = data.organization;
+    const rows = getRowItems(repositories.nodes);
+
+    return (
+      <Grid className="repo-page">
+        <Column lg={16} md={8} sm={4} className="repo-page__r1">
+          <RepoTable
+            headers={headers}
+            rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+          />
+          <Pagination
+            totalItems={rows.length}
+            backwardText="Previous page"
+            forwardText="Next page"
+            pageSize={currentPageSize}
+            pageSizes={[5, 10, 15, 25]}
+            itemsPerPageText="Items per page"
+            onChange={({ page, pageSize }) => {
+              if (pageSize !== currentPageSize) {
+                setCurrentPageSize(pageSize);
+              }
+              setFirstRowIndex(pageSize * (page - 1));
+            }}
+          />
+        </Column>
+      </Grid>
+    );
   }
-
-  // If we're here, we've got our data!
-  const { repositories } = data.organization;
-  const rows = getRowItems(repositories.nodes);
-
-  return (
-    <Grid className="repo-page">
-      <Column lg={16} md={8} sm={4} className="repo-page__r1">
-        <RepoTable
-          headers={headers}
-          rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-        />
-        <Pagination
-          totalItems={rows.length}
-          backwardText="Previous page"
-          forwardText="Next page"
-          pageSize={currentPageSize}
-          pageSizes={[5, 10, 15, 25]}
-          itemsPerPageText="Items per page"
-          onChange={({ page, pageSize }) => {
-            if (pageSize !== currentPageSize) {
-              setCurrentPageSize(pageSize);
-            }
-            setFirstRowIndex(pageSize * (page - 1));
-          }}
-        />
-      </Column>
-    </Grid>
-  );
 };
 
 export default RepoPage;
