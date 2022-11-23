@@ -22,3 +22,5 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .eslintcache
+#.env.local
+REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN=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
