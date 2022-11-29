@@ -12,3 +12,4 @@ describe('React Step 2 Tests', () => {
     expect(wrapper.find('RepoTable').length).toBe(1);
   });
 });
+
