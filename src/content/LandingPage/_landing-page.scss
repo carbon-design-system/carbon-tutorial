@@ -5,22 +5,22 @@
 @use './mixins.scss' as *;
 @use './overrides.scss';
 
-.landin-page__illo {
+.landing-page__illo {
   max-width: 100%;
 }
 
-.landin-page__banner {
+.landing-page__banner {
   padding-top: $spacing-05;
   padding-bottom: $spacing-07 * 4;
   padding-left: $spacing-06;
   @include landing-page-background;
 }
 
-.landin-page__heading {
+.landing-page__heading {
   @include type-style('productive-heading-05');
 }
 
-.landin-page__r2 {
+.landing-page__r2 {
   margin-top: rem(-40px);
 }
 
@@ -34,7 +34,21 @@
   font-weight: 600;
 }
 
-.landin-page__r3 {
+.landing-page__p {
+  @include type-style('productive-heading-03');
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-08;
+
+  @include breakpoint-between((320px +1), md) {
+    max-width: 75%;
+  }
+}
+
+tabs-group {
+  max-width: 75%;
+}
+
+.landing-page__r3 {
   padding-top: $spacing-09;
   padding-bottom: $spacing-09;
   padding-left: $spacing-06;
@@ -45,9 +59,9 @@
   @include type-style('heading-01');
 }
 
-.landin-page__banner,
-.landin-page__r2,
-.landin-page__r3 {
+.landing-page__banner,
+.landing-page__r2,
+.landing-page__r3 {
   margin-left: -20px;
   margin-right: -20px;
 

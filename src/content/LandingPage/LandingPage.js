@@ -28,16 +28,7 @@ const LandingPage = () => {
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs defaultSelectedInted={0}>
           <TabList className="tabs-group" aria-label="Tab navigation">
-            <Tab>
-              About
-              <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-                <img
-                  className="landing-page__illo"
-                  src={`${process.env.PUBLIC_URL}/tab-illo.png`}
-                  alt="Carbon illustration"
-                />
-              </Column>
-            </Tab>
+            <Tab>About</Tab>
             <Tab>Design</Tab>
             <Tab>Develop</Tab>
           </TabList>
@@ -60,7 +51,11 @@ const LandingPage = () => {
                   <Button>Learn more</Button>
                 </Column>
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
-                  IMAGE WILL GO HERE
+                  <img
+                    className="landing-page__illo"
+                    src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+                    alt="Carbon illustration"
+                  />
                 </Column>
               </Grid>
             </TabPanel>
