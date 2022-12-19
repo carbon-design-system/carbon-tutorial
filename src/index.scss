@@ -1,0 +1,7 @@
+@use '@carbon/react';
+@use './variables' as my-variables;
+$my-prefix: my-variables.$my-prefix;
+
+.#{$my-prefix}--content {
+  margin-top: 3rem;
+}
