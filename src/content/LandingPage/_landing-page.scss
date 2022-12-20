@@ -70,3 +70,11 @@
     margin-right: 0;
   }
 }
+
+.info-section__heading {
+  @include type-style('heading-01');
+}
+
+.info-card__heading {
+  @include type-style('productive-heading-03');
+}
