@@ -121,8 +121,6 @@ const RepoPage = () => {
 
   if (data) {
     // If we're here, we've got our data!
-    console.log(data.organization);
-    // If we're here, we've got our data!
     const { repositories } = data.organization;
     const rows = getRowItems(repositories.nodes);
 
