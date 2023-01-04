@@ -57,9 +57,7 @@ const TutorialHeader = () => (
             tooltipAlignment="center">
             <UserAvatar size={20} />
           </HeaderGlobalAction>
-          <HeaderGlobalAction
-            aria-label="App Switcher"
-            tooltipAlignment="end">
+          <HeaderGlobalAction aria-label="App Switcher" tooltipAlignment="end">
             <Switcher size={20} />
           </HeaderGlobalAction>
         </HeaderGlobalBar>
