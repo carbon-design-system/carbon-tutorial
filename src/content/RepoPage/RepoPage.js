@@ -67,7 +67,7 @@ const REPO_QUERY = gql`
     organization(login: "carbon-design-system") {
       # We'll grab all the repositories in one go. To load more resources
       # continuously, see the advanced topics.
-      repositories(first: 10, orderBy: { field: UPDATED_AT, direction: DESC }) {
+      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
         totalCount
         nodes {
           url
@@ -97,7 +97,7 @@ const REPO_QUERY = gql`
 
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
-  const [currentPageSize, setCurrentPageSize] = useState(5);
+  const [currentPageSize, setCurrentPageSize] = useState(10);
   const { loading, error, data } = useQuery(REPO_QUERY);
 
   if (loading) {
