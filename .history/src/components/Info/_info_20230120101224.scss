@@ -1,0 +1,5 @@
+@use '@carbon/react/scss/type' as *;
+
+.info-section__heading {
+  @include type-style('heading-01');
+}
