@@ -1,0 +1,7 @@
+@use '@carbon/react/scss/colors';
+
+//Changing the tooltip bg color
+
+.cds--header__global .cds--popover-content {
+  background-color: colors.$gray-20;
+}
