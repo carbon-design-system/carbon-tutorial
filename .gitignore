@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-/.yarn
+# /.yarn
 .pnp.js
 
 # testing
