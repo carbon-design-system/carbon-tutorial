@@ -51,17 +51,6 @@ const LinkList = ({ url, homepageUrl }) => (
   </ul>
 );
 
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
-  }));
-
 const headers = [
   {
     key: 'name',
@@ -90,6 +79,16 @@ const headers = [
 ];
 
 const rows = [];
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers.totalCount,
+    issueCount: row.issues.totalCount,
+    createdAt: new Date(row.createdAt).toLocaleDateString(),
+    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
+    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+  }));
 
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
@@ -122,35 +121,27 @@ const RepoPage = () => {
     return (
       <Grid className="repo-page">
         <Column lg={16} md={8} sm={4} className="repo-page__r1">
-          <RepoTable headers={headers} rows={rows} />
+          <RepoTable
+            headers={headers}
+            rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+          />
+          <Pagination
+            totalItems={rows.length}
+            backwardText="Previous page"
+            forwardText="Next page"
+            pageSize={currentPageSize}
+            pageSizes={[5, 10, 15, 25]}
+            itemsPerPageText="Items per page"
+            onChange={({ page, pageSize }) => {
+              if (pageSize !== currentPageSize) {
+                setCurrentPageSize(pageSize);
+              }
+              setFirstRowIndex(pageSize * (page - 1));
+            }}
+          />
         </Column>
       </Grid>
     );
   }
-
-  return (
-    <Grid className="repo-page">
-      <Column lg={16} className="repo-page__r1">
-        <RepoTable
-          headers={headers}
-          rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-        />
-        <Pagination
-          totalItems={rows.length}
-          backwardText="Previous page"
-          forwardText="Next page"
-          pageSize={currentPageSize}
-          pageSizes={[5, 10, 15, 25]}
-          itemsPerPageText="Items per page"
-          onChange={({ page, pageSize }) => {
-            if (pageSize !== currentPageSize) {
-              setCurrentPageSize(pageSize);
-            }
-            setFirstRowIndex(pageSize * (page - 1));
-          }}
-        />
-      </Column>
-    </Grid>
-  );
 };
 export default RepoPage;
