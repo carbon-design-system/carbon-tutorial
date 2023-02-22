@@ -1,8 +1,18 @@
-.landing-page__r2 .bx--tabs--scrollable {
+.landing-page__r2 .cds--tabs--scrollable {
   transform: translateZ(0);
   justify-content: flex-end;
 }
 
-.landing-page__r2 .bx--tab-content {
+.landing-page__r2 .cds--tab-content {
   padding: 0;
+}
+
+.cds--tab--list {
+  justify-content: flex-end;
+  padding-right: 1rem;
+}
+
+.cds--subgrid--wide {
+  //fix needed to keep the subgrid from scrolling horizontally
+  margin-right: 1rem;
 }
