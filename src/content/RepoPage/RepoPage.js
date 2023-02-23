@@ -27,12 +27,6 @@ const REPO_QUERY = gql`
           stargazers {
             totalCount
           }
-          releases(first: 1) {
-            totalCount
-            nodes {
-              name
-            }
-          }
           name
           updatedAt
           createdAt
