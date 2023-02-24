@@ -1,0 +1,123 @@
+---
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: asset-ccode
+  annotations:
+    # The event we are targeting as seen from the webhook payload
+    # this can be an array too, i.e: [pull_request, push]
+    pipelinesascode.tekton.dev/on-event: "[pull_request,push]"
+
+    # The branch or tag we are targeting (ie: main, refs/tags/*)
+    pipelinesascode.tekton.dev/on-target-branch: "[master]"
+
+    # Fetch the git-clone task from hub, we are able to reference later on it
+    # with taskRef and it will automatically be embedded into our pipeline.
+    pipelinesascode.tekton.dev/task: "git-clone"
+    pipelinesascode.tekton.dev/task-1: "[openshift-client]"
+    
+    # You can add more tasks by increasing the suffix number, you can specify them as array to have multiple of them.
+    # browse the tasks you want to include from hub on https://hub.tekton.dev/
+    #
+
+    # pipelinesascode.tekton.dev/task-2: "[curl, buildah]"
+    # How many runs we want to keep attached to this event
+    pipelinesascode.tekton.dev/max-keep-runs: "5"
+spec:
+  params:
+    # The variable with brackets are special to Pipelines as Code
+    # They will automatically be expanded with the events from Github.
+    - name: repo_url
+      value: "{{ repo_url }}"
+    - name: revision
+      value: "{{ revision }}"
+    - name: app_name
+      value: "{{ repo_name }}"
+    - name: image
+      value: "image-registry.openshift-image-registry.svc:5000/$(context.pipelineRun.namespace)/{{ repo_name }}:$(context.pipelineRun.uid)"
+    # To get Openshift domain, run this command 
+    # OS_DOMAIN=$(oc get ingresses.config/cluster -o jsonpath={.spec.domain})
+    - name: os_domain
+      value: "asset-dev-588850-0b8a4e8de101bcbaf4eafc441eda83b3-0000.us-south.containers.appdomain.cloud"
+  pipelineSpec:
+    params:
+      - name: repo_url
+      - name: revision
+      - name: app_name
+      - name: image
+      - name: os_domain
+    workspaces:
+      - name: source
+      - name: basic-auth
+    tasks:
+      - name: fetch-repository
+        taskRef:
+          name: git-clone
+        workspaces:
+          - name: output
+            workspace: source
+          - name: basic-auth
+            workspace: basic-auth
+        params:
+          - name: url
+            value: $(params.repo_url)
+          - name: revision
+            value: $(params.revision)
+      - name: build
+        params:
+          - name: IMAGE
+            value: $(params.image)
+          - name: TLSVERIFY
+            value: 'false'
+          - name: CONTEXT
+            value: "."
+        runAfter:
+          - fetch-repository
+        taskRef:
+          kind: ClusterTask
+          name: buildah
+        workspaces:
+          - name: source
+            workspace: source
+      - name: deploy
+        taskRef:
+          name: openshift-client 
+          
+        runAfter:
+          - build
+        params:
+          - name: VERSION
+            value: "4.10"
+          - name: SCRIPT
+            value: |
+              oc get "deploy/$(params.app_name)"  > /dev/null 2>&1
+              if [ "$?" != "0" ]; then
+                # Install git
+                dnf install -y git 
+                # Create new app 
+                oc new-app $(params.repo_url) --name $(params.app_name)
+                # Create route 
+                echo "Run this command to get openshift domain: oc get ingresses.config/cluster -o jsonpath={.spec.domain}"
+                oc create route edge \
+                    --insecure-policy="Redirect" \
+                    --service=$(params.app_name) \
+                    --hostname="$(params.app_name).$(params.os_domain)"
+              fi
+              # Application exists, patch the image
+              oc set image deploy/$(params.app_name) $(params.app_name)=$(params.image)
+              # print the application route 
+              oc get route $(params.app_name) -o jsonpath='{.spec.host}'
+  workspaces:
+    - name: source
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+            - ReadWriteOnce
+          resources:
+            requests:
+              storage: 1Gi
+    # This workspace will inject secret to help the git-clone task to be able to
+    # checkout the private repositories
+    - name: basic-auth
+      secret:
+        secretName: "{{ git_auth_secret }}"
