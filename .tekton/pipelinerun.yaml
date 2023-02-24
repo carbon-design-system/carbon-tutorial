@@ -63,6 +63,12 @@ spec:
             value: $(params.repo_url)
           - name: revision
             value: $(params.revision)
+      - name: unit test 
+        image: registry.access.redhat.com/ubi8/nodejs-16:1-82
+        command: ["react-scripts test"]
+        workspaces:
+          - name: source
+            workspace: source
       - name: build
         params:
           - name: IMAGE
