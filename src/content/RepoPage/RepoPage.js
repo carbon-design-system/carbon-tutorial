@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import { Octokit } from '@octokit/core';
 import RepoTable from './RepoTable';
-import { gql, useQuery } from '@apollo/client';
-
 import {
   Link,
   DataTableSkeleton,
@@ -10,39 +9,7 @@ import {
   Column,
 } from '@carbon/react';
 
-const REPO_QUERY = gql`
-  query REPO_QUERY {
-    # Let's use carbon as our organization
-    organization(login: "carbon-design-system") {
-      # We'll grab all the repositories in one go. To load more resources
-      # continuously, see the advanced topics.
-      repositories(first: 75, orderBy: { field: UPDATED_AT, direction: DESC }) {
-        totalCount
-        nodes {
-          url
-          homepageUrl
-          issues(filterBy: { states: OPEN }) {
-            totalCount
-          }
-          stargazers {
-            totalCount
-          }
-          releases(first: 1) {
-            totalCount
-            nodes {
-              name
-            }
-          }
-          name
-          updatedAt
-          createdAt
-          description
-          id
-        }
-      }
-    }
-  }
-`;
+const octokitClient = new Octokit({});
 
 const headers = [
   {
@@ -89,18 +56,39 @@ const getRowItems = rows =>
   rows.map(row => ({
     ...row,
     key: row.id,
-    stars: row.stargazers.totalCount,
-    issueCount: row.issues.totalCount,
-    createdAt: new Date(row.createdAt).toLocaleDateString(),
-    updatedAt: new Date(row.updatedAt).toLocaleDateString(),
-    links: <LinkList url={row.url} homepageUrl={row.homepageUrl} />,
+    stars: row.stargazers_count,
+    issueCount: row.open_issues_count,
+    createdAt: new Date(row.created_at).toLocaleDateString(),
+    updatedAt: new Date(row.updated_at).toLocaleDateString(),
+    links: <LinkList url={row.html_url} homepageUrl={row.homepage} />,
   }));
 
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState();
+  const [rows, setRows] = useState([]);
 
-  const { loading, error, data } = useQuery(REPO_QUERY);
+  useEffect(() => {
+    async function getCarbonRepos() {
+      const res = await octokitClient.request('GET /orgs/{org}/repos', {
+        org: 'carbon-design-system',
+        per_page: 75,
+        sort: 'updated',
+        direction: 'desc',
+      });
+
+      if (res.status === 200) {
+        setRows(getRowItems(res.data));
+      } else {
+        setError('Error obtaining repository data');
+      }
+      setLoading(false);
+    }
+
+    getCarbonRepos();
+  }, []);
 
   if (loading) {
     return (
@@ -117,39 +105,34 @@ const RepoPage = () => {
   }
 
   if (error) {
-    return `Error! ${error.message}`;
+    return `Error! ${error}`;
   }
 
-  if (data) {
-    // If we're here, we've got our data!
-    const { repositories } = data.organization;
-    const rows = getRowItems(repositories.nodes);
-
-    return (
-      <Grid className="repo-page">
-        <Column lg={16} md={8} sm={4} className="repo-page__r1">
-          <RepoTable
-            headers={headers}
-            rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
-          />
-          <Pagination
-            totalItems={rows.length}
-            backwardText="Previous page"
-            forwardText="Next page"
-            pageSize={currentPageSize}
-            pageSizes={[5, 10, 15, 25]}
-            itemsPerPageText="Items per page"
-            onChange={({ page, pageSize }) => {
-              if (pageSize !== currentPageSize) {
-                setCurrentPageSize(pageSize);
-              }
-              setFirstRowIndex(pageSize * (page - 1));
-            }}
-          />
-        </Column>
-      </Grid>
-    );
-  }
+  // If we're here, we've got our data!
+  return (
+    <Grid className="repo-page">
+      <Column lg={16} md={8} sm={4} className="repo-page__r1">
+        <RepoTable
+          headers={headers}
+          rows={rows.slice(firstRowIndex, firstRowIndex + currentPageSize)}
+        />
+        <Pagination
+          totalItems={rows.length}
+          backwardText="Previous page"
+          forwardText="Next page"
+          pageSize={currentPageSize}
+          pageSizes={[5, 10, 15, 25]}
+          itemsPerPageText="Items per page"
+          onChange={({ page, pageSize }) => {
+            if (pageSize !== currentPageSize) {
+              setCurrentPageSize(pageSize);
+            }
+            setFirstRowIndex(pageSize * (page - 1));
+          }}
+        />
+      </Column>
+    </Grid>
+  );
 };
 
 export default RepoPage;
