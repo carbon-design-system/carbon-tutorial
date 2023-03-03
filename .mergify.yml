@@ -6,7 +6,7 @@ pull_request_rules:
       close:
         message:
           'Looks good - You are one step closer to completion of the Carbon
-          React tutorial and earning the digital credential.'
+          React tutorial.'
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
@@ -29,7 +29,7 @@ pull_request_rules:
       close:
         message:
           'Looks good - You are one step closer to completion of the Carbon
-          React tutorial and earning the digital credential.'
+          React tutorial.'
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
@@ -52,7 +52,7 @@ pull_request_rules:
       close:
         message:
           'Looks good - You are one step closer to completion of the Carbon
-          React tutorial and earning the digital credential.'
+          React tutorial.'
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
@@ -75,7 +75,7 @@ pull_request_rules:
       close:
         message:
           'Looks good - You are one step closer to completion of the Carbon
-          React tutorial and earning the digital credential.'
+          React tutorial.'
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
@@ -97,9 +97,7 @@ pull_request_rules:
     actions:
       close:
         message:
-          "Congratulations! You've completed the Carbon tutorial for React! Feel
-          free to stop this running application on IBM Cloud to avoid the
-          possibility of incurring any charges."
+          "Congratulations! You've completed the Carbon tutorial for React!"
       label:
         add: ['status: approved']
         remove: ['status: needs correction']
