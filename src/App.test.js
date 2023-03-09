@@ -7,9 +7,9 @@ describe('React Step 5 Tests', () => {
     shallow(<LandingPage />);
   });
 
-  const testForManifestFile = require('../manifest.yml');
+  const testForIndexBuildFile = require('../build/index.html');
 
-  it('app contains a manifest file', () => {
-    expect(testForManifestFile).toBe('manifest.yml');
+  it('app contains a build folder', () => {
+    expect(testForIndexBuildFile).toBe('index.html');
   });
 });

@@ -5,6 +5,7 @@
   "repository": "git@github.com:carbon-design-system/carbon-tutorial.git",
   "bugs": "https://github.com/carbon-design-system/carbon-tutorial/issues",
   "license": "Apache-2.0",
+  "homepage": ".",
   "scripts": {
     "build": "react-scripts build",
     "ci-check": "yarn format:diff",
@@ -17,11 +18,10 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@apollo/client": "^3.4.10",
     "@carbon/react": "1.1.0",
+    "@octokit/core": "^4.2.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
-    "graphql": "15.5.2",
     "react": "16.10.0",
     "react-dom": "16.10.0",
     "react-router-dom": "5.0.0",
