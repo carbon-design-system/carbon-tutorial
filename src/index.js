@@ -10,26 +10,11 @@ import './index.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { HashRouter as Router } from 'react-router-dom';
-import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
-
-const cache = new InMemoryCache();
-
-const client = new ApolloClient({
-  cache: cache,
-  uri: 'https://api.github.com/graphql',
-  headers: {
-    authorization: `Bearer ${
-      process.env.REACT_APP_GITHUB_PERSONAL_ACCESS_TOKEN
-    }`,
-  },
-});
 
 ReactDOM.render(
-  <ApolloProvider client={client}>
-    <Router>
-      <App />
-    </Router>
-  </ApolloProvider>,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById('root')
 );
 
