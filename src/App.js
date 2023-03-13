@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Content } from '@carbon/react';
+import { Content } from '@carbon/react';
 import './app.scss';
 import TutorialHeader from './components/TutorialHeader';
 import { Route, Switch } from 'react-router-dom';
