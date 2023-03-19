@@ -1,0 +1,43 @@
+.user-avatar {
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  &__user-img {
+    border-radius: 50%;
+  }
+}
+#ibm-home {
+  float: left;
+  margin-left: 20px;
+  overflow: hidden;
+  position: relative;
+}
+.ibm-type * {
+  font-family: 'IBM Plex Sans', ibm-plex-sans, 'Helvetica Neue', Arial,
+    sans-serif;
+}
+
+.links {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.28572;
+  letter-spacing: 0.16px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 0 2rem 0 1rem;
+  border: 0.125rem solid transparent;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 1.25rem;
+  outline: none;
+  text-decoration: none;
+  transition: border-color 110ms;
+  -webkit-user-select: none;
+  user-select: none;
+  color: #f4f4f4;
+}
+
+.bx--header {
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f4f4f4;
+}
