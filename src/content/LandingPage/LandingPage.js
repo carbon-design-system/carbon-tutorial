@@ -18,7 +18,7 @@ const LandingPage = () => {
       <Column lg={16} md={8} sm={4} className="landing-page__banner">
         <Breadcrumb noTrailingSlash aria-label="Page navigation">
           <BreadcrumbItem>
-            <a href="/">Getting started</a>
+            <a href="/">Getting Started</a>
           </BreadcrumbItem>
         </Breadcrumb>
         <h1 className="landing-page__heading">
