@@ -14,7 +14,7 @@ const LandingPage = () => {
   return (
     <Grid className="landing-page" fullWidth>
       <Column lg={16} md={8} sm={4} className="landing-page-banner">
-        <h6>Getting started</h6>
+        <h6>Getting startede</h6>
         <h1 className="landing-page__heading">
           Design &amp; build with carbon
         </h1>
