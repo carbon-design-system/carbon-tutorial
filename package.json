@@ -17,10 +17,15 @@
     "test": "react-scripts test"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.11",
     "@carbon/react": "1.1.0",
+    "@graphql-tools/mock": "^8.7.19",
+    "@graphql-tools/schema": "^9.0.17",
     "@octokit/core": "4.2.0",
+    "@testing-library/react": "^14.0.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
+    "graphql": "^16.6.0",
     "react": "16.10.0",
     "react-dom": "16.10.0",
     "react-router-dom": "5.0.0",
