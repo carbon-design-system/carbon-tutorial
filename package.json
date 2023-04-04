@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@carbon/react": "1.1.0",
+    "@octokit/core": "4.2.0",
     "enzyme": "3.11.0",
     "enzyme-adapter-react-16": "1.15.5",
     "react": "16.10.0",

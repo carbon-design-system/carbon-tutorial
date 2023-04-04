@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ffcc4b8c-89b3-4a03-8e50-06ad691270ee" name="Changes" comment="feat(tutorial): complete step 1">
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-auth-token-npm-3.0.3-6fba099166-eaa2bd4a3e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-core-npm-4.2.0-0f3a7f3979-907a29f8ee.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-endpoint-npm-7.0.5-82841b7e23-19f42d465d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-graphql-npm-5.0.5-0534ea7757-72807d4e02.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-openapi-types-npm-16.0.0-2fe91e346e-dee5d1176d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-request-error-npm-3.0.3-cbba4d6220-5a92fdd94a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-request-npm-6.2.3-1b72fec7bb-1681c74aba.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@octokit-types-npm-9.0.0-3a83131100-7830d7710a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/before-after-hook-npm-2.2.3-d79e3d6608-d0401c55ef.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/deprecation-npm-2.3.1-e19c92d6e7-59343a0b92.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-plain-object-npm-5.0.0-285b70faa3-92bd87f095.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/node-fetch-npm-2.6.9-9fc9a54529-ca7e85e764.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/tr46-npm-0.0.3-de53018915-37bdfff7c5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/universal-user-agent-npm-6.0.0-b148fb997a-725797ab63.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/webidl-conversions-npm-3.0.1-60310f6a2b-25ef547ff1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/whatwg-url-npm-5.0.0-374fb45e60-55eca009f5.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/RepoPage/RepoTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2NQIFmRWQD2B0F63W69roXX1VeA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "v11-react-step-3",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/saikiran.sheshagiri/WebstormProjects/carbon-tutorial/node_modules/prettier",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffcc4b8c-89b3-4a03-8e50-06ad691270ee" name="Changes" comment="" />
+      <created>1679589777601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679589777601</updated>
+      <workItem from="1679589778701" duration="4252000" />
+      <workItem from="1679594040829" duration="10799000" />
+      <workItem from="1680193681293" duration="598000" />
+      <workItem from="1680195149764" duration="92000" />
+      <workItem from="1680622746021" duration="6364000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat(tutorial): complete step 1">
+      <created>1679592411585</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1679592411585</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat(tutorial): complete step 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(tutorial): complete step 1" />
+  </component>
+</project>
