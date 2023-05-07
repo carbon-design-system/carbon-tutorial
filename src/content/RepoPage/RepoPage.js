@@ -55,7 +55,7 @@ const LinkList = ({ url, homepageUrl }) => (
 const getRowItems = rows =>
   rows.map(row => ({
     ...row,
-    key: row.id,
+    key: String(row.id),
     stars: row.stargazers_count,
     issueCount: row.open_issues_count,
     createdAt: new Date(row.created_at).toLocaleDateString(),
@@ -72,8 +72,9 @@ const RepoPage = () => {
 
   useEffect(() => {
     async function getCarbonRepos() {
-      const res = await octokitClient.request('GET /orgs/{org}/repos', {
-        org: 'carbon-design-system',
+      // const res = await octokitClient.request('GET /orgs/{org}/repos', {
+      const res = await octokitClient.request('GET /users/{org}/repos', {
+        org: 'harry-oestreicher',
         per_page: 75,
         sort: 'updated',
         direction: 'desc',
