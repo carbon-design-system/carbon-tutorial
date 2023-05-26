@@ -1,12 +1,17 @@
+import './app.scss';
 import React, { Component } from 'react';
+import { Button, Content } from '@carbon/react';
+import TutorialHeader from './components/TutorialHeader';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        Hello Carbon! Well, not quite yet. This is the starting point for the
-        Carbon tutorial.
-      </div>
+      <>
+        <TutorialHeader />
+        <Content>
+          <Button>Button</Button>
+        </Content>
+      </>
     );
   }
 }
