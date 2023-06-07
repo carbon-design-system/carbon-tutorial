@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Octokit } from '@octokit/core';
 import RepoTable from './RepoTable';
 import {
   Link,
@@ -7,34 +8,8 @@ import {
   Grid,
   Column,
 } from '@carbon/react';
-import { Octokit } from '@octokit/core';
 
 const octokitClient = new Octokit({});
-
-const LinkList = ({ url, homepageUrl }) => (
-  <ul style={{ display: 'flex' }}>
-    <li>
-      <Link href={url}>GitHub</Link>
-    </li>
-    {homepageUrl && (
-      <li>
-        <span>&nbsp;|&nbsp;</span>
-        <Link href={homepageUrl}>Homepage</Link>
-      </li>
-    )}
-  </ul>
-);
-
-const getRowItems = rows =>
-  rows.map(row => ({
-    ...row,
-    key: row.id,
-    stars: row.stargazers_count,
-    issueCount: row.open_issues_count,
-    createdAt: new Date(row.created_at).toLocaleDateString(),
-    updatedAt: new Date(row.updated_at).toLocaleDateString(),
-    links: <LinkList url={row.html_url} homepageUrl={row.homepage} />,
-  }));
 
 const headers = [
   {
@@ -63,6 +38,31 @@ const headers = [
   },
 ];
 
+const LinkList = ({ url, homepageUrl }) => (
+  <ul style={{ display: 'flex' }}>
+    <li>
+      <Link href={url}>GitHub</Link>
+    </li>
+    {homepageUrl && (
+      <li>
+        <span>&nbsp;|&nbsp;</span>
+        <Link href={homepageUrl}>Homepage</Link>
+      </li>
+    )}
+  </ul>
+);
+
+const getRowItems = rows =>
+  rows.map(row => ({
+    ...row,
+    key: row.id,
+    stars: row.stargazers_count,
+    issueCount: row.open_issues_count,
+    createdAt: new Date(row.created_at).toLocaleDateString(),
+    updatedAt: new Date(row.updated_at).toLocaleDateString(),
+    links: <LinkList url={row.html_url} homepageUrl={row.homepage} />,
+  }));
+
 const RepoPage = () => {
   const [firstRowIndex, setFirstRowIndex] = useState(0);
   const [currentPageSize, setCurrentPageSize] = useState(10);
@@ -84,8 +84,8 @@ const RepoPage = () => {
       } else {
         setError('Error obtaining repository data');
       }
+      setLoading(false);
     }
-    setLoading(false);
 
     getCarbonRepos();
   }, []);
