@@ -12,8 +12,10 @@ import {
   TableCell,
   TableExpandedRow,
 } from '@carbon/react';
+import { getRowDescription } from './Repo.utils';
 
 const RepoTable = ({ rows, headers }) => {
+  const propRows = rows;
   return (
     <DataTable
       rows={rows}
@@ -48,7 +50,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(propRows, row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
