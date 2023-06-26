@@ -1,14 +1,15 @@
 import React from 'react';
 import App from './App';
-import { shallow } from 'enzyme';
+
+import { render, screen } from '@testing-library/react';
 
 describe('React Step 1 Tests', () => {
   it('renders without crashing', () => {
-    shallow(<App />);
+    render(<App />);
   });
 
-  const wrapper = shallow(<App />);
-  it('contains a TutorialHeader', () => {
-    expect(wrapper.find('TutorialHeader').length).toBe(1);
+  it('contains Carbon Tutorial heading', () => {
+    render(<App />);
+    expect(screen.getByText('Carbon Tutorial')).toBeInTheDocument();
   });
 });
