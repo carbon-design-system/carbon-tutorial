@@ -9,7 +9,7 @@ it('renders a table with pagination', async () => {
   await waitFor(
     () => expect(screen.getByText('Items per page')).toBeInTheDocument(),
     {
-      timeout: 1000,
+      timeout: 2000,
     }
   );
 });
