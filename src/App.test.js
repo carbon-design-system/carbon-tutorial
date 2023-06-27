@@ -9,6 +9,10 @@ describe('React Step 4 Tests', () => {
 
   it('contains InfoSection component content', () => {
     render(<LandingPage />);
-    expect(screen.getByText('The Principles')).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        'Based on the comprehensive IBM Design Language, every element and component of Carbon was designed from the ground up to work elegantly together to ensure consistent, cohesive user experiences.'
+      )
+    ).toBeInTheDocument();
   });
 });
