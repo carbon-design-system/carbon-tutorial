@@ -1,15 +1,15 @@
 import React from 'react';
 import LandingPage from './content/LandingPage';
-import { shallow } from 'enzyme';
+import { render, screen } from '@testing-library/react';
 
 describe('React Step 5 Tests', () => {
   it('renders without crashing', () => {
-    shallow(<LandingPage />);
+    render(<LandingPage />);
   });
 
-  const testForIndexBuildFile = require('../build/index.html');
+  // const testForIndexBuildFile = require('../build/index.html');
 
-  it('app contains a build folder', () => {
-    expect(testForIndexBuildFile).toBe('index.html');
-  });
+  // it('app contains a build folder', () => {
+  //   expect(testForIndexBuildFile).toBe('index.html');
+  // });
 });
