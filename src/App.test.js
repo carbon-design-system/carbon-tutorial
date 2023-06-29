@@ -1,15 +1,13 @@
 import React from 'react';
-import App from './App';
-
+import RepoPage from './content/RepoPage';
 import { render, screen } from '@testing-library/react';
-
-describe('React Step 1 Tests', () => {
+describe('React Step 2 Tests', () => {
   it('renders without crashing', () => {
-    render(<App />);
+    render(<RepoPage />);
   });
 
-  it('contains Carbon Tutorial heading', () => {
-    render(<App />);
-    expect(screen.getByText('Carbon Tutorial')).toBeInTheDocument();
+  it('contains a RepoTable', () => {
+    render(<RepoPage />);
+    expect(screen.getByText('Carbon Repositories')).toBeInTheDocument();
   });
 });
