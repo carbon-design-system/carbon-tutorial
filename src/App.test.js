@@ -1,31 +1,15 @@
 import React from 'react';
-import { act } from 'react-dom/test-utils';
 import RepoPage from './content/RepoPage';
-import { mount } from 'enzyme';
+import { render, screen, waitFor } from '@testing-library/react';
 
-jest.mock('@octokit/core', () => {
-  return {
-    __esModule: true,
-    Octokit: jest.fn().mockImplementation(() => {
-      return {
-        request: () => {
-          return Promise.resolve({
-            status: 200,
-            data: [],
-          });
-        },
-      };
-    }),
-  };
-});
-
-it('renders a table with data and pagination', async () => {
-  const wrapper = mount(<RepoPage />);
-
-  expect(wrapper.find('.cds--pagination').length).toBe(0);
-
-  await act(() => new Promise(resolve => setTimeout(resolve, 0)));
-
-  wrapper.update();
-  expect(wrapper.find('.cds--pagination').length).toBe(1);
+it('renders a table with pagination', async () => {
+  const { container } = render(<RepoPage />);
+  expect(container.getElementsByClassName('.cds--pagination').length).toBe(0);
+  render(<RepoPage />);
+  await waitFor(
+    () => expect(screen.getByText('Items per page')).toBeInTheDocument(),
+    {
+      timeout: 2000,
+    }
+  );
 });
