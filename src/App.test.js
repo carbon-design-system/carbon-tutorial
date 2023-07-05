@@ -6,7 +6,7 @@ describe('React Step 2 Tests', () => {
     render(<RepoPage />);
   });
 
-  it('contains a RepoTable', () => {
+  it('contains the repo table on the RepoPage', () => {
     render(<RepoPage />);
     expect(screen.getByText('Carbon Repositories')).toBeInTheDocument();
   });
