@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import './app.scss';
 
-import { Button } from '@carbon/react';
+import { Button, Content } from '@carbon/react';
+import TutorialHeader from './components/TutorialHeader';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Button>Button</Button>
-      </div>
+      <>
+        <TutorialHeader />
+        <Content>
+          <Button>Button</Button>
+        </Content>
+      </>
     );
   }
 }
