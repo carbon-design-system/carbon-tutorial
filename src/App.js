@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './app.scss';
 
-import { Button, Content } from '@carbon/react';
+import { Button, Content, Theme } from '@carbon/react';
 import TutorialHeader from './components/TutorialHeader';
 
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
@@ -12,7 +12,9 @@ class App extends Component {
   render() {
     return (
       <>
-        <TutorialHeader />
+        <Theme theme="g100">
+          <TutorialHeader />
+        </Theme>
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
