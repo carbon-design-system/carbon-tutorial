@@ -12,10 +12,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <Theme theme="g100">
-          <TutorialHeader />
-        </Theme>
         <BrowserRouter>
+          <Theme theme="g100">
+            <TutorialHeader />
+          </Theme>
           <Content>
             <Switch>
               <Route exact path="/" component={LandingPage} />
