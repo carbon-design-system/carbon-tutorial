@@ -71,6 +71,7 @@ const RepoPage = () => {
   const [rows, setRows] = useState([]);
 
   useEffect(() => {
+    // Query git repo
     async function getCarbonRepos() {
       const res = await octokitClient.request('GET /orgs/{org}/repos', {
         org: 'carbon-design-system',
