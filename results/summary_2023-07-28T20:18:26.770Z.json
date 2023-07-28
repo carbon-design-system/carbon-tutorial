@@ -1,0 +1,46 @@
+{
+    "counts": {
+        "ignored": 0,
+        "violation": 3,
+        "recommendation": 0,
+        "pass": 0,
+        "potentialviolation": 3,
+        "potentialrecommendation": 0,
+        "manual": 0,
+        "elements": 3,
+        "elementsViolation": 2,
+        "elementsViolationReview": 3
+    },
+    "startReport": 1690575506770,
+    "endReport": 1690575507240,
+    "toolID": "accessibility-checker-v3.1.58",
+    "policies": [
+        "IBM_Accessibility"
+    ],
+    "reportLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "failLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "scanID": "fe14eaf7-e738-4438-8d53-c5fef729cc52",
+    "pageScanSummary": [
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/src/index.js",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 3,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 3,
+                "elementsViolation": 2,
+                "elementsViolationReview": 3
+            }
+        }
+    ]
+}

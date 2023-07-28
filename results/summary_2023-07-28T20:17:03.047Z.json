@@ -1,0 +1,706 @@
+{
+    "counts": {
+        "ignored": 0,
+        "violation": 424,
+        "recommendation": 0,
+        "pass": 0,
+        "potentialviolation": 74,
+        "potentialrecommendation": 0,
+        "manual": 0,
+        "elements": 350,
+        "elementsViolation": 317,
+        "elementsViolationReview": 350
+    },
+    "startReport": 1690575423047,
+    "endReport": 1690575430181,
+    "toolID": "accessibility-checker-v3.1.58",
+    "policies": [
+        "IBM_Accessibility"
+    ],
+    "reportLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "failLevels": [
+        "violation",
+        "potentialviolation"
+    ],
+    "scanID": "a890e807-6814-468e-9c3b-d06708c1b4f1",
+    "pageScanSummary": [
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/amd-function-name/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/assets-in-worker/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/dynamic-import/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/import-meta/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/import-meta-worker/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/import-worker-url/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/import-worker-url-custom-scheme/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/module-worker/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/more-workers/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/public-path/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/simple-bundle/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/single-default/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/url-import-meta-worker/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/@surma/rollup-plugin-off-main-thread/tests/fixtures/worker/build/runner.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/chrome-trace-event/node_modules/tslib/tslib.es6.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/chrome-trace-event/node_modules/tslib/tslib.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/deep-equal/node_modules/object.assign/test.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/coverage/auto.js.html",
+            "counts": {
+                "violation": 16,
+                "potentialviolation": 3,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 16,
+                "elementsViolation": 13,
+                "elementsViolationReview": 16
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/coverage/implementation.js.html",
+            "counts": {
+                "violation": 38,
+                "potentialviolation": 3,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 38,
+                "elementsViolation": 35,
+                "elementsViolationReview": 38
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/coverage/index.html",
+            "counts": {
+                "violation": 21,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 20,
+                "elementsViolation": 19,
+                "elementsViolationReview": 20
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/coverage/index.js.html",
+            "counts": {
+                "violation": 28,
+                "potentialviolation": 3,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 28,
+                "elementsViolation": 25,
+                "elementsViolationReview": 28
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/coverage/polyfill.js.html",
+            "counts": {
+                "violation": 16,
+                "potentialviolation": 3,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 16,
+                "elementsViolation": 13,
+                "elementsViolationReview": 16
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/coverage/shim.js.html",
+            "counts": {
+                "violation": 20,
+                "potentialviolation": 3,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 20,
+                "elementsViolation": 17,
+                "elementsViolationReview": 20
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/eslint-plugin-react/node_modules/jsx-ast-utils/node_modules/array-includes/test.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/jsbn/example.html",
+            "counts": {
+                "violation": 2,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/lz-string/tests/SpecRunner.html",
+            "counts": {
+                "violation": 121,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 68,
+                "elementsViolation": 68,
+                "elementsViolationReview": 68
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/rxjs/node_modules/tslib/tslib.es6.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/rxjs/node_modules/tslib/tslib.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/serve-index/public/directory.html",
+            "counts": {
+                "violation": 4,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 4,
+                "elementsViolation": 4,
+                "elementsViolationReview": 4
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/sprintf-js/demo/angular.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 5,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 6,
+                "elementsViolation": 2,
+                "elementsViolationReview": 6
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/terser/tools/props.html",
+            "counts": {
+                "violation": 5,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 3,
+                "elementsViolation": 3,
+                "elementsViolationReview": 3
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/toggle-selection/example/index.html",
+            "counts": {
+                "violation": 7,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 6,
+                "elementsViolation": 6,
+                "elementsViolationReview": 6
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/tryer/test/index.html",
+            "counts": {
+                "violation": 2,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/tslib/tslib.es6.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/tslib/tslib.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/tsutils/node_modules/tslib/tslib.es6.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/tsutils/node_modules/tslib/tslib.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/ua-parser-js/dist/ua-parser.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 2,
+                "elementsViolationReview": 2
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/wicg-inert/demo/index.html",
+            "counts": {
+                "violation": 38,
+                "potentialviolation": 15,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 40,
+                "elementsViolation": 32,
+                "elementsViolationReview": 40
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/wicg-inert/test/fixtures/aria-hidden.html",
+            "counts": {
+                "violation": 3,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 4,
+                "elementsViolation": 3,
+                "elementsViolationReview": 4
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/wicg-inert/test/fixtures/basic.html",
+            "counts": {
+                "violation": 6,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 5,
+                "elementsViolation": 5,
+                "elementsViolationReview": 5
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/wicg-inert/test/fixtures/interactives.html",
+            "counts": {
+                "violation": 9,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 8,
+                "elementsViolation": 8,
+                "elementsViolationReview": 8
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/wicg-inert/test/fixtures/nested.html",
+            "counts": {
+                "violation": 5,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 6,
+                "elementsViolation": 5,
+                "elementsViolationReview": 6
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/node_modules/wicg-inert/test/fixtures/tabindex.html",
+            "counts": {
+                "violation": 4,
+                "potentialviolation": 2,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 6,
+                "elementsViolation": 4,
+                "elementsViolationReview": 6
+            }
+        },
+        {
+            "label": "/Users/chris/workspace/carbon-tutorial/public/index.html",
+            "counts": {
+                "violation": 1,
+                "potentialviolation": 1,
+                "recommendation": 0,
+                "potentialrecommendation": 0,
+                "manual": 0,
+                "pass": 0,
+                "ignored": 0,
+                "elements": 2,
+                "elementsViolation": 1,
+                "elementsViolationReview": 2
+            }
+        }
+    ]
+}
