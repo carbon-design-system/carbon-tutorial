@@ -47,18 +47,8 @@ const TutorialHeader = () => (
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
-          <HeaderGlobalAction
-            aria-label="Notifications"
-            tooltipAlignment="center">
-            <Notification size={20} />
-          </HeaderGlobalAction>
-          <HeaderGlobalAction
-            aria-label="User Avatar"
-            tooltipAlignment="center">
+          <HeaderGlobalAction aria-label="User" tooltipAlignment="center">
             <UserAvatar size={20} />
-          </HeaderGlobalAction>
-          <HeaderGlobalAction aria-label="App Switcher" tooltipAlignment="end">
-            <Switcher size={20} />
           </HeaderGlobalAction>
         </HeaderGlobalBar>
       </Header>
