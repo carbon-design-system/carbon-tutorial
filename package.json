@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@carbon/react": "1.32.0",
+    "@octokit/core": "4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "5.0.0",
