@@ -14,20 +14,26 @@ import {
 
 const LandingPage = () => {
   return (
-    <Column lg={16} md={8} sm={4} className="landing-page__banner">
-      <Breadcrumb noTrailingSlash aria-label="Page navigation">
-        <BreadcrumbItem>
-          <a href="/">Getting started</a>
-        </BreadcrumbItem>
-      </Breadcrumb>
-      <h1 className="landing-page__heading">Design &amp; build with Carbon</h1>
+    <Grid className="landing-page" fullWidth>
+      {/*column 1*/}
+      <Column lg={16} md={8} sm={4} className="landing-page__banner">
+        <Breadcrumb noTrailingSlash aria-label="Page navigation">
+          <BreadcrumbItem>
+            <a href="/">Getting started</a>
+          </BreadcrumbItem>
+        </Breadcrumb>
+        <h1 className="landing-page__heading">
+          Design &amp; build with Carbon
+        </h1>
+      </Column>
+
+      {/*column 2*/}
       <Column lg={16} md={8} sm={4} className="landing-page__r2">
         <Tabs defaultSelectedIndex={0}>
           <TabList className="tabs-group" aria-label="Tab navigation">
             <Tab>About</Tab>
             <Tab>Design</Tab>
             <Tab>Develop</Tab>
-            <Tab>Build</Tab>
           </TabList>
           <TabPanels>
             <TabPanel>
@@ -75,18 +81,6 @@ const LandingPage = () => {
                   md={8}
                   sm={4}
                   className="landing-page__tab-content">
-                  Building with carbon to learn react and using the various
-                  components it offers for us.
-                </Column>
-              </Grid>
-            </TabPanel>
-            <TabPanel>
-              <Grid className="tabs-group-content">
-                <Column
-                  lg={16}
-                  md={8}
-                  sm={4}
-                  className="landing-page__tab-content">
                   Carbon provides styles and components in Vanilla, React,
                   Angular, and Vue for anyone building on the web.
                 </Column>
@@ -95,6 +89,8 @@ const LandingPage = () => {
           </TabPanels>
         </Tabs>
       </Column>
+
+      {/*column 3*/}
       <Column lg={16} md={8} sm={4} className="landing-page__r3">
         <Grid>
           <Column md={4} lg={4} sm={4}>
@@ -111,7 +107,7 @@ const LandingPage = () => {
           </Column>
         </Grid>
       </Column>
-    </Column>
+    </Grid>
   );
 };
 
