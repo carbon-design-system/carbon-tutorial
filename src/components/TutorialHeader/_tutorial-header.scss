@@ -1,0 +1,12 @@
+@use '@carbon/react/scss/colors';
+
+// override header tooltip color so it won't blend within the content
+// (when header became dark, the tooltip became way too light)
+// The tutorial was using the code bellow, but it isn't working. After removing .cds--header__global from both styles, it worked
+.cds--popover-content {
+  background-color: colors.$gray-20;
+}
+
+.cds--popover-caret {
+  background-color: colors.$gray-20;
+}

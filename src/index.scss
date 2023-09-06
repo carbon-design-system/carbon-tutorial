@@ -1,0 +1,6 @@
+// @use '@carbon/react';
+
+// Makes the content of the pages don't dissapear behind the UI Shell (navbar)
+.cds--content {
+  margin-top: 3rem;
+}
