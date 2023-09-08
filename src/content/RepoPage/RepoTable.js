@@ -14,6 +14,17 @@ import {
 } from '@carbon/react';
 
 const RepoTable = ({ rows, headers }) => {
+  // Look-up function. It's used to get data that is NOT on the table header (E.g. the repo description)
+  // It recieves the row ID and checks if there is a description to show for that specific row
+  const getRowDescription = rowId => {
+    const row = rows.find(({ id }) => id === rowId);
+    if (row.description !== null) {
+      return row.description;
+    } else {
+      return 'No description found for this repository';
+    }
+  };
+
   return (
     <DataTable
       rows={rows}
@@ -48,7 +59,7 @@ const RepoTable = ({ rows, headers }) => {
                     ))}
                   </TableExpandRow>
                   <TableExpandedRow colSpan={headers.length + 1}>
-                    <p>Row description</p>
+                    <p>{getRowDescription(row.id)}</p>
                   </TableExpandedRow>
                 </React.Fragment>
               ))}
