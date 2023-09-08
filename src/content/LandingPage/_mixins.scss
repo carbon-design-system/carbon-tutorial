@@ -1,0 +1,9 @@
+// In order to add the wall-to-wall (fullscren kinda?) gray color, we create this file.
+// Using a mixin, I'm able to reuse the bg color for the 3rd row.
+@use '@carbon/react/scss/spacing' as *;
+@use '@carbon/react/scss/theme' as *;
+
+@mixin landing-page-background() {
+  background-color: $layer-01;
+  position: relative;
+}
