@@ -55,7 +55,7 @@ const LandingPage = () => {
                 <Column md={4} lg={{ span: 8, offset: 7 }} sm={4}>
                   <img
                     className="landing-page__illo"
-                    src={`${process.env.PUBLIC_URL}/tab-illo.png`}
+                    src=/tab-illo.png
                     alt="Carbon illustration"
                   />
                 </Column>
