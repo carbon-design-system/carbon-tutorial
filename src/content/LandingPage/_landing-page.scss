@@ -49,6 +49,8 @@
   padding-bottom: $spacing-09;
   padding-left: $spacing-06;
   @include landing-page-background;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 .landing-page__label {
