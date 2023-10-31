@@ -1,0 +1,12 @@
+Starting the development server...
+
+Compiled successfully!
+
+You can now view carbon-tutorial in the browser.
+
+  http://localhost:3000
+
+Note that the development build is not optimized.
+To create a production build, use yarn build.
+
+webpack compiled successfully
